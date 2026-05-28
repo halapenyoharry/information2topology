@@ -1,0 +1,755 @@
+{
+  "metadata": {
+    "topothink-version": "0.1",
+    "title": "Wizard of Oz \u2014 corrected plot spine (current-schema worked example)",
+    "createdDate": "2026-05-28",
+    "supersedes-aspect-of": "data/wizard-of-oz.hypergraph.topothink.json (createdDate 2026-05-04, pre-typology)",
+    "discipline-applied": [
+      "Four-category edge typology (edge-categories.md, 2026-05-11): every edge carries i2t:edge_category.",
+      "No reflexive reification: an event is reified ONLY if another edge references it as a node. The 6 plot-spine events earn reification via the history-DAG precedes-edges; wizard_appearance_each does NOT (nothing references it) and is therefore edge-only.",
+      "Token-level history-DAG: 6 state_change events sequenced by pairwise precedes-edges into a chain (a DAG / total order over story-time).",
+      "Category audit found 6 of 7 events are state_change (plot transitions) and 1 (wizard_appearance_each) is interactivity (a deception channel, one-to-many), so it is NOT on the spine."
+    ],
+    "type-quotient-finding": "The plot-spine history-DAG is a CHAIN (linear total order); no two spine events share a type, so its type-quotient is trivial (no cycle). A nontrivial type-quotient cycle would require recurring event-types \u2014 present in Oz only at the episodic obstacle-encounter level (Kalidahs, fighting trees, hammerheads), not on the main spine. Oz is therefore the near-degenerate case: it demonstrates the token-DAG cleanly and motivates a second fixture WITH recurrence to demonstrate the cyclic type-quotient."
+  },
+  "nodes": [
+    {
+      "id": "aunt_em",
+      "attrs": {
+        "label": "Aunt Em",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "role": "Dorothy's aunt; once young and pretty, made gray by the prairie sun and wind"
+      }
+    },
+    {
+      "id": "bucket_of_water",
+      "attrs": {
+        "label": "the Bucket of Water",
+        "instagraph:type": "Item",
+        "instagraph:color": "#E8DCC0",
+        "role": "Dorothy throws it on the Wicked Witch of the West; melts her; Dorothy did not know water would have this effect"
+      }
+    },
+    {
+      "id": "cowardly_lion",
+      "attrs": {
+        "label": "the Cowardly Lion",
+        "instagraph:type": "AnimatedCharacter",
+        "instagraph:color": "#F8D8C8",
+        "role": "great beast who admits his cowardice; wants courage; later King of the Beasts in the south forest"
+      }
+    },
+    {
+      "id": "deception",
+      "attrs": {
+        "label": "illusion / deception",
+        "instagraph:type": "Theme",
+        "instagraph:color": "#F8F0C8",
+        "role": "the Wizard's mode; the Emerald City's green is glasses; the Wizard's terrible forms are pulled-string illusions; the unmasking is the central pivot"
+      }
+    },
+    {
+      "id": "dorothy",
+      "attrs": {
+        "label": "Dorothy Gale",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "role": "protagonist; Kansas orphan; carried to Oz by cyclone; wants to go home"
+      }
+    },
+    {
+      "id": "glinda",
+      "attrs": {
+        "label": "Glinda the Good",
+        "instagraph:type": "Witch",
+        "instagraph:color": "#DCC8F8",
+        "role": "Good Witch of the South / Quadling Country; tells Dorothy the Silver Shoes can carry her home"
+      }
+    },
+    {
+      "id": "golden_cap",
+      "attrs": {
+        "label": "the Golden Cap",
+        "instagraph:type": "Item",
+        "instagraph:color": "#E8DCC0",
+        "power": "holder may command the Winged Monkeys three times before the cap loses its power for that holder",
+        "history": "belonged to the Wicked Witch of the West; passed to Dorothy when the witch melted; she uses all three commands"
+      }
+    },
+    {
+      "id": "good_witch_north",
+      "attrs": {
+        "label": "the Good Witch of the North",
+        "instagraph:type": "Witch",
+        "instagraph:color": "#DCC8F8",
+        "role": "greets Dorothy in the Munchkin Country; kisses her forehead as protection; tells her to seek the Wizard"
+      }
+    },
+    {
+      "id": "home",
+      "attrs": {
+        "label": "home",
+        "instagraph:type": "Theme",
+        "instagraph:color": "#F8F0C8",
+        "role": "Dorothy's want; the through-line; the silver shoes were the means all along"
+      }
+    },
+    {
+      "id": "kansas",
+      "attrs": {
+        "label": "Kansas",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "Dorothy's home; the gray prairie; everywhere is gray under the sun; the place she yearns to return to"
+      }
+    },
+    {
+      "id": "munchkin_country",
+      "attrs": {
+        "label": "Munchkin Country (East)",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "color_motif": "blue",
+        "role": "where Dorothy lands; where the Wicked Witch of the East ruled until the house killed her"
+      }
+    },
+    {
+      "id": "munchkins",
+      "attrs": {
+        "label": "the Munchkins",
+        "instagraph:type": "Collective",
+        "instagraph:color": "#F8C8DC",
+        "role": "small people of the East; freed by the death of the Wicked Witch of the East; dressed in blue"
+      }
+    },
+    {
+      "id": "scarecrow",
+      "attrs": {
+        "label": "the Scarecrow",
+        "instagraph:type": "AnimatedCharacter",
+        "instagraph:color": "#F8D8C8",
+        "role": "Dorothy's first companion; wants brains; later King of Emerald City; thinks well despite having no brain"
+      }
+    },
+    {
+      "id": "silver_shoes",
+      "attrs": {
+        "label": "the Silver Shoes",
+        "instagraph:type": "Item",
+        "instagraph:color": "#E8DCC0",
+        "power": "carry the wearer anywhere in three steps",
+        "history": "belonged to the Wicked Witch of the East; transferred to Dorothy when the witch died; lost in the Deadly Desert when Dorothy returns to Kansas"
+      }
+    },
+    {
+      "id": "tin_woodman",
+      "attrs": {
+        "label": "the Tin Woodman",
+        "instagraph:type": "AnimatedCharacter",
+        "instagraph:color": "#F8D8C8",
+        "role": "rusted-shut woodman; was a Munchkin in love with a girl; Witch enchanted his axe to chop off his limbs which were replaced with tin; wants a heart"
+      }
+    },
+    {
+      "id": "toto",
+      "attrs": {
+        "label": "Toto",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8D8C8",
+        "species": "small black dog",
+        "role": "Dorothy's companion; non-speaking; the one who pulls aside the Wizard's screen"
+      }
+    },
+    {
+      "id": "uncle_henry",
+      "attrs": {
+        "label": "Uncle Henry",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "role": "Dorothy's uncle; Kansas farmer; gray, stern, rarely speaks"
+      }
+    },
+    {
+      "id": "wicked_witch_east",
+      "attrs": {
+        "label": "the Wicked Witch of the East",
+        "instagraph:type": "Witch",
+        "instagraph:color": "#DCC8F8",
+        "role": "ruler-tyrant of the Munchkin Country; killed by Dorothy's house when it fell from the cyclone; owned the Silver Shoes"
+      }
+    },
+    {
+      "id": "wicked_witch_west",
+      "attrs": {
+        "label": "the Wicked Witch of the West",
+        "instagraph:type": "Witch",
+        "instagraph:color": "#DCC8F8",
+        "role": "ruler-tyrant of the Winkie Country; one powerful eye like a telescope; afraid of water and the dark; melted by Dorothy"
+      }
+    },
+    {
+      "id": "winkies",
+      "attrs": {
+        "label": "the Winkies",
+        "instagraph:type": "Collective",
+        "instagraph:color": "#F8C8DC",
+        "role": "yellow-dressed people of the West; enslaved by the Wicked Witch of the West; freed when she melts; ask the Tin Woodman to be their ruler"
+      }
+    },
+    {
+      "id": "witch_castle",
+      "attrs": {
+        "label": "the Wicked Witch's Castle",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "where Dorothy is held captive and made to scrub floors; where the witch melts"
+      }
+    },
+    {
+      "id": "wizard",
+      "attrs": {
+        "label": "the Wizard of Oz",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "true_identity": "a humbug; a man from Omaha who arrived by balloon; ventriloquist and circus showman",
+        "role": "ruler of Emerald City through illusion"
+      }
+    },
+    {
+      "id": "wizard_balloon",
+      "attrs": {
+        "label": "the Wizard's hot-air balloon",
+        "instagraph:type": "Item",
+        "instagraph:color": "#E8DCC0",
+        "role": "the way the Wizard came to Oz from Omaha; the way he leaves Emerald City without Dorothy when the rope breaks"
+      }
+    },
+    {
+      "id": "wizard_screen",
+      "attrs": {
+        "label": "the Throne-Room Screen",
+        "instagraph:type": "Item",
+        "instagraph:color": "#E8DCC0",
+        "role": "the screen behind which the Wizard hides; pulls strings to animate his various illusory forms; Toto reveals the man behind it"
+      }
+    },
+    {
+      "id": "the_cyclone",
+      "attrs": {
+        "label": "the Cyclone",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "transports Dorothy from Kansas to Oz; the originating event of the entire story",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    },
+    {
+      "id": "killing_witch_east",
+      "attrs": {
+        "label": "the Killing of the Wicked Witch of the East",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "the house falls on her when the cyclone deposits Dorothy; Dorothy did not intend it; frees the Munchkins; Silver Shoes pass to Dorothy",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    },
+    {
+      "id": "melting_witch_west",
+      "attrs": {
+        "label": "the Melting of the Wicked Witch of the West",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "Dorothy throws a bucket of water on the witch in anger; the witch melts; Dorothy did not know water would do this; Winkies are freed",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    },
+    {
+      "id": "unmasking",
+      "attrs": {
+        "label": "the Unmasking of the Wizard",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "Toto upsets the screen; the four discover the Wizard is a humbug from Omaha; the Wizard then improvises gifts that work because the recipients believe in them",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    },
+    {
+      "id": "balloon_departure",
+      "attrs": {
+        "label": "the Balloon's Premature Departure",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "the Wizard prepares to take Dorothy home in the balloon; Toto chases a kitten; Dorothy follows; the rope breaks; the Wizard ascends without her",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    },
+    {
+      "id": "homecoming",
+      "attrs": {
+        "label": "Dorothy's Return to Kansas",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "Glinda tells Dorothy the Silver Shoes can carry her home; Dorothy clicks her heels three times and asks; she lands on the Kansas prairie; Aunt Em runs to her",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "the_cyclone",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "displaces_dorothy_from_kansas_to_oz",
+        "label": "the house whirled around two or three times and rose slowly through the air. Dorothy felt as if she were going up in a balloon. ... it was carried miles and miles away as easily as you could carry a feather.",
+        "instagraph:color": "#A0A",
+        "i2t:edge_category": "state_change",
+        "i2t:edge_category_secondary": "interactivity"
+      }
+    },
+    {
+      "id": "killing_witch_east",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "death_by_house",
+        "label": "the house, as I said before, fell with a thud upon the Wicked Witch of the East, and as she had been wicked many years she dried up in the sun, leaving only the silver shoes behind.",
+        "instagraph:color": "#A0A",
+        "i2t:edge_category": "state_change",
+        "i2t:edge_category_secondary": "interactivity"
+      }
+    },
+    {
+      "id": "melting_witch_west",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "death_by_water",
+        "label": "in a few minutes I shall melt away. ... she fell down in a brown, melted, shapeless mass and began to spread over the clean boards of the kitchen floor.",
+        "instagraph:color": "#A0A",
+        "i2t:edge_category": "state_change",
+        "i2t:edge_category_secondary": "interactivity"
+      }
+    },
+    {
+      "id": "unmasking",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "humbug_revealed_to_the_four",
+        "label": "Toto had jumped from Dorothy's arms and hidden behind the screen. As Toto ran he tipped over the screen that stood in a corner. As it fell with a crash they looked that way, and the next moment all of them were filled with wonder.",
+        "instagraph:color": "#A0A",
+        "i2t:edge_category": "state_change"
+      }
+    },
+    {
+      "id": "balloon_departure",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "wizard_leaves_oz_without_dorothy",
+        "label": "Dorothy had run after Toto, when she saw the great balloon shoot into the air, without her in it. Come back! Come back! she screamed; I want to go, too! I can't come back, my dear, called Oz from the balloon. Good-bye!",
+        "instagraph:color": "#A0A",
+        "i2t:edge_category": "state_change"
+      }
+    },
+    {
+      "id": "homecoming",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "dorothy_returns_to_kansas",
+        "label": "the Silver Shoes will carry you in three steps... All you have to do is to knock the heels together three times and command the shoes to carry you wherever you wish to go.",
+        "instagraph:color": "#A0A",
+        "i2t:edge_category": "state_change"
+      }
+    },
+    {
+      "id": "wizard_appearance_each",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "humbug_appears_differently_to_each_petitioner",
+        "label": "Oz could take on any form he wished. So one day he would be like a fairy, and the next like a ferocious beast, and the third like a great fire... but he never lets anyone see his real shape.",
+        "instagraph:color": "#A0A",
+        "i2t:edge_category": "interactivity"
+      }
+    },
+    {
+      "id": "precedes:the_cyclone__killing_witch_east",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "precedes",
+        "i2t:edge_category": "state_change",
+        "label": "story-time succession: the_cyclone then killing_witch_east"
+      }
+    },
+    {
+      "id": "precedes:killing_witch_east__melting_witch_west",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "precedes",
+        "i2t:edge_category": "state_change",
+        "label": "story-time succession: killing_witch_east then melting_witch_west"
+      }
+    },
+    {
+      "id": "precedes:melting_witch_west__unmasking",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "precedes",
+        "i2t:edge_category": "state_change",
+        "label": "story-time succession: melting_witch_west then unmasking"
+      }
+    },
+    {
+      "id": "precedes:unmasking__balloon_departure",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "precedes",
+        "i2t:edge_category": "state_change",
+        "label": "story-time succession: unmasking then balloon_departure"
+      }
+    },
+    {
+      "id": "precedes:balloon_departure__homecoming",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "precedes",
+        "i2t:edge_category": "state_change",
+        "label": "story-time succession: balloon_departure then homecoming"
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "the_cyclone",
+      "node": "dorothy",
+      "role": "transported",
+      "attrs": {
+        "state": "in the bed when the house lands"
+      }
+    },
+    {
+      "edge": "the_cyclone",
+      "node": "toto",
+      "role": "transported",
+      "attrs": {
+        "state": "in Dorothy's arms"
+      }
+    },
+    {
+      "edge": "the_cyclone",
+      "node": "kansas",
+      "role": "origin"
+    },
+    {
+      "edge": "the_cyclone",
+      "node": "munchkin_country",
+      "role": "destination"
+    },
+    {
+      "edge": "the_cyclone",
+      "node": "aunt_em",
+      "role": "left_behind",
+      "attrs": {
+        "action": "fled to the cellar"
+      }
+    },
+    {
+      "edge": "killing_witch_east",
+      "node": "wicked_witch_east",
+      "role": "killed",
+      "attrs": {
+        "manner": "crushed when the cyclone-borne house lands on her"
+      }
+    },
+    {
+      "edge": "killing_witch_east",
+      "node": "dorothy",
+      "role": "unwitting_cause",
+      "attrs": {
+        "awareness": "she did not know there was a witch beneath"
+      }
+    },
+    {
+      "edge": "killing_witch_east",
+      "node": "munchkins",
+      "role": "freed_by",
+      "attrs": {
+        "duration_of_bondage": "many years"
+      }
+    },
+    {
+      "edge": "killing_witch_east",
+      "node": "silver_shoes",
+      "role": "released_inheritance",
+      "attrs": {
+        "transfer_to": "dorothy"
+      }
+    },
+    {
+      "edge": "killing_witch_east",
+      "node": "good_witch_north",
+      "role": "witness_who_explains"
+    },
+    {
+      "edge": "melting_witch_west",
+      "node": "wicked_witch_west",
+      "role": "killed",
+      "attrs": {
+        "vulnerability": "water; afraid of the dark; never bathed in her life"
+      }
+    },
+    {
+      "edge": "melting_witch_west",
+      "node": "dorothy",
+      "role": "unwitting_cause",
+      "attrs": {
+        "motive": "sudden anger when the witch seized one of the silver shoes; did not know water would melt the witch"
+      }
+    },
+    {
+      "edge": "melting_witch_west",
+      "node": "bucket_of_water",
+      "role": "instrument"
+    },
+    {
+      "edge": "melting_witch_west",
+      "node": "winkies",
+      "role": "freed_by",
+      "attrs": {
+        "reaction": "shouted for joy and held a great holiday"
+      }
+    },
+    {
+      "edge": "melting_witch_west",
+      "node": "golden_cap",
+      "role": "released_inheritance",
+      "attrs": {
+        "transfer_to": "dorothy"
+      }
+    },
+    {
+      "edge": "melting_witch_west",
+      "node": "witch_castle",
+      "role": "location"
+    },
+    {
+      "edge": "unmasking",
+      "node": "toto",
+      "role": "agent_of_revelation",
+      "attrs": {
+        "action": "tipped over the screen"
+      }
+    },
+    {
+      "edge": "unmasking",
+      "node": "wizard",
+      "role": "exposed",
+      "attrs": {
+        "true_form": "a little old man, with a bald head and a wrinkled face"
+      }
+    },
+    {
+      "edge": "unmasking",
+      "node": "wizard_screen",
+      "role": "fallen_apparatus"
+    },
+    {
+      "edge": "unmasking",
+      "node": "dorothy",
+      "role": "witness_petitioner",
+      "attrs": {
+        "prior_belief": "Great Head"
+      }
+    },
+    {
+      "edge": "unmasking",
+      "node": "scarecrow",
+      "role": "witness_petitioner",
+      "attrs": {
+        "prior_belief": "Lovely Lady"
+      }
+    },
+    {
+      "edge": "unmasking",
+      "node": "tin_woodman",
+      "role": "witness_petitioner",
+      "attrs": {
+        "prior_belief": "Terrible Beast"
+      }
+    },
+    {
+      "edge": "unmasking",
+      "node": "cowardly_lion",
+      "role": "witness_petitioner",
+      "attrs": {
+        "prior_belief": "Ball of Fire"
+      }
+    },
+    {
+      "edge": "balloon_departure",
+      "node": "wizard",
+      "role": "departs",
+      "attrs": {
+        "destination": "Omaha (presumed); the rope breaks; he ascends and is never seen again"
+      }
+    },
+    {
+      "edge": "balloon_departure",
+      "node": "dorothy",
+      "role": "left_behind",
+      "attrs": {
+        "cause": "ran after Toto, who had chased a kitten"
+      }
+    },
+    {
+      "edge": "balloon_departure",
+      "node": "toto",
+      "role": "proximate_cause"
+    },
+    {
+      "edge": "balloon_departure",
+      "node": "wizard_balloon",
+      "role": "vehicle"
+    },
+    {
+      "edge": "balloon_departure",
+      "node": "scarecrow",
+      "role": "appointed_ruler_of_emerald_city"
+    },
+    {
+      "edge": "homecoming",
+      "node": "dorothy",
+      "role": "returner"
+    },
+    {
+      "edge": "homecoming",
+      "node": "toto",
+      "role": "carried_with"
+    },
+    {
+      "edge": "homecoming",
+      "node": "silver_shoes",
+      "role": "vehicle",
+      "attrs": {
+        "fate": "fall off during flight and are lost in the Deadly Desert forever"
+      }
+    },
+    {
+      "edge": "homecoming",
+      "node": "glinda",
+      "role": "instructor",
+      "attrs": {
+        "action": "tells Dorothy how to use the shoes"
+      }
+    },
+    {
+      "edge": "homecoming",
+      "node": "kansas",
+      "role": "destination"
+    },
+    {
+      "edge": "homecoming",
+      "node": "aunt_em",
+      "role": "receiver",
+      "attrs": {
+        "action": "ran to her, caught her in her arms, and covered her face with kisses"
+      }
+    },
+    {
+      "edge": "homecoming",
+      "node": "uncle_henry",
+      "role": "receiver"
+    },
+    {
+      "edge": "homecoming",
+      "node": "home",
+      "role": "thematic_resolution"
+    },
+    {
+      "edge": "wizard_appearance_each",
+      "node": "wizard",
+      "role": "deceiver",
+      "attrs": {
+        "underlying_form": "an ordinary man from Omaha; a ventriloquist and circus showman"
+      }
+    },
+    {
+      "edge": "wizard_appearance_each",
+      "node": "dorothy",
+      "role": "saw_great_head"
+    },
+    {
+      "edge": "wizard_appearance_each",
+      "node": "scarecrow",
+      "role": "saw_lovely_lady"
+    },
+    {
+      "edge": "wizard_appearance_each",
+      "node": "tin_woodman",
+      "role": "saw_terrible_beast"
+    },
+    {
+      "edge": "wizard_appearance_each",
+      "node": "cowardly_lion",
+      "role": "saw_ball_of_fire"
+    },
+    {
+      "edge": "wizard_appearance_each",
+      "node": "deception",
+      "role": "thematic_substrate"
+    },
+    {
+      "edge": "precedes:the_cyclone__killing_witch_east",
+      "node": "the_cyclone",
+      "role": "predecessor"
+    },
+    {
+      "edge": "precedes:the_cyclone__killing_witch_east",
+      "node": "killing_witch_east",
+      "role": "successor"
+    },
+    {
+      "edge": "precedes:killing_witch_east__melting_witch_west",
+      "node": "killing_witch_east",
+      "role": "predecessor"
+    },
+    {
+      "edge": "precedes:killing_witch_east__melting_witch_west",
+      "node": "melting_witch_west",
+      "role": "successor"
+    },
+    {
+      "edge": "precedes:melting_witch_west__unmasking",
+      "node": "melting_witch_west",
+      "role": "predecessor"
+    },
+    {
+      "edge": "precedes:melting_witch_west__unmasking",
+      "node": "unmasking",
+      "role": "successor"
+    },
+    {
+      "edge": "precedes:unmasking__balloon_departure",
+      "node": "unmasking",
+      "role": "predecessor"
+    },
+    {
+      "edge": "precedes:unmasking__balloon_departure",
+      "node": "balloon_departure",
+      "role": "successor"
+    },
+    {
+      "edge": "precedes:balloon_departure__homecoming",
+      "node": "balloon_departure",
+      "role": "predecessor"
+    },
+    {
+      "edge": "precedes:balloon_departure__homecoming",
+      "node": "homecoming",
+      "role": "successor"
+    }
+  ]
+}

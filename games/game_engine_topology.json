@@ -1,0 +1,49 @@
+{
+  "game_engine_topology": {
+    "engine_core": {
+      "description": "The foundational C++/Java/Rust backend governing physics and memory.",
+      "threading_model": {
+        "main_thread": "Manages core game loop, input polling, and client state orchestration.",
+        "mesh_update_thread": "Asynchronously handles graphical vertex, fragment, and shader updates.",
+        "server_thread": "Executes authoritative backend logic, physics calculations, and networking.",
+        "emerge_thread": "Fetches, reads, and procedurally generates terrain and map data."
+      },
+      "memory_management": "Smart pointers, ECS memory pools, Vulkan/OpenGL data buffers."
+    },
+    "game_logic_layer": {
+      "description": "The discrete rulesets defining world behavior and entity interaction.",
+      "virtual_machine": "Executes sandboxed logic securely (e.g., Native Client, LuaJIT, QuakeC).",
+      "entity_component_system": {
+        "server_active_objects": "Defines the mathematically authoritative state of entities (SAOs).",
+        "client_active_objects": "Defines the visual and interpolative representation of entities (CAOs)."
+      },
+      "spatial_partitioning": "Octrees or Bounding Volume Hierarchies (BVH) for rapid collision and culling."
+    },
+    "ui_and_hud_subsystem": {
+      "description": "Decoupled presentation layer for the player interface, including minimaps.",
+      "framework": "RmlUi, TeraNUI, MyGUI, or native canvas overlays.",
+      "minimap_renderer": {
+        "data_ingestion": "Queries active CAOs and MapBlocks via the IGameDef API without blocking.",
+        "projection_math": "Orthographic matrix projection converting 3D world coordinates to a 2D plane.",
+        "raycasting_module": "DDA algorithm utilized for real-time line-of-sight and fog-of-war generation.",
+        "thermal_decay_tracking": "AI-driven SLAM memory buffers mapping cleared versus uncleared zones.",
+        "user_input_bindings": "Keybind listeners (e.g., Shift+V for rotation locking, M for display toggle)."
+      }
+    },
+    "asset_and_module_management": {
+      "description": "Virtual File Systems controlling dependency injection and resource loading.",
+      "data_directories": "Priority-based override stacking mechanisms (e.g., .pk3dir, .dpkdir, .omwaddon).",
+      "audio_video_decoding": "FFmpeg pipelines utilizing Vorbis (OGG) and Theora (OGV) codecs.",
+      "gestalt_module_system": {
+        "module_config": "JSON-based definition of module dependencies, versioning schemas, and metadata.",
+        "asset_deltas": "Systematic, non-destructive overriding of baseline textures and configuration sounds."
+      }
+    },
+    "continuous_integration_pipeline": {
+      "description": "Automated quality assurance and build verification systems.",
+      "build_tools": "CMake, Gradle (Kotlin DSL), Cargo, or Urcheon.",
+      "static_analysis": "Automated code scrutiny via Clang-Tidy, Spotbugs, and Clippy.",
+      "test_suites": "JUnit/GTest automated suites equipped with flaky-test isolation logic."
+    }
+  }
+}

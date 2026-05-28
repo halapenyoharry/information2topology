@@ -1,0 +1,512 @@
+{
+  "metadata": {
+    "topothink-version": "0.1",
+    "adapter": "propgraph_to_hypergraph.py",
+    "source-meta": {
+      "tool": "dirgraph",
+      "version": "1",
+      "scanned_at": "2026-04-27T19:52:51+00:00",
+      "root": "/Users/harold/ai/droids/mac-admin",
+      "max_depth": 12,
+      "skip_dirs": [
+        ".cache",
+        ".git",
+        ".gradle",
+        ".idea",
+        ".mypy_cache",
+        ".next",
+        ".pytest_cache",
+        ".ruff_cache",
+        ".tox",
+        ".venv",
+        "DerivedData",
+        "Pods",
+        "__pycache__",
+        "bower_components",
+        "build",
+        "dist",
+        "node_modules",
+        "target",
+        "vendor",
+        "venv"
+      ],
+      "skip_extensions": [
+        ".7z",
+        ".a",
+        ".aac",
+        ".avi",
+        ".bin",
+        ".bmp",
+        ".bz2",
+        ".class",
+        ".dll",
+        ".dmg",
+        ".dylib",
+        ".eot",
+        ".exe",
+        ".flac",
+        ".gif",
+        ".gz",
+        ".heic",
+        ".ico",
+        ".iso",
+        ".jar",
+        ".jpeg",
+        ".jpg",
+        ".m4a",
+        ".mkv",
+        ".mov",
+        ".mp3",
+        ".mp4",
+        ".o",
+        ".ogg",
+        ".otf",
+        ".pdf",
+        ".pkg",
+        ".png",
+        ".pyc",
+        ".pyo",
+        ".rar",
+        ".so",
+        ".svg",
+        ".tar",
+        ".tgz",
+        ".tiff",
+        ".ttf",
+        ".wav",
+        ".webm",
+        ".webp",
+        ".woff",
+        ".woff2",
+        ".zip"
+      ],
+      "sources": {
+        "filesystem": true,
+        "git": true,
+        "spotlight": true,
+        "ports": true
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin",
+        "fs:name": "mac-admin",
+        "fs:is_dir": true,
+        "fs:is_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin/.gemini-clipboard",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin/.gemini-clipboard",
+        "fs:name": ".gemini-clipboard",
+        "fs:is_dir": true,
+        "fs:hidden": true,
+        "fs:mtime": "2026-01-28T23:17:20",
+        "fs:depth": 1
+      }
+    },
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin/.claude",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin/.claude",
+        "fs:name": ".claude",
+        "fs:is_dir": true,
+        "fs:hidden": true,
+        "fs:mtime": "2026-04-14T18:53:24",
+        "fs:depth": 1
+      }
+    },
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin/CHANGELOG.md",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin/CHANGELOG.md",
+        "fs:name": "CHANGELOG.md",
+        "fs:is_dir": false,
+        "fs:hidden": false,
+        "fs:size": 1790,
+        "fs:mtime": "2026-04-27T14:29:55",
+        "fs:atime": "2026-04-27T14:29:57",
+        "fs:extension": "md",
+        "fs:depth": 1
+      }
+    },
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin/com.spectre.fixfolderdates.plist",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin/com.spectre.fixfolderdates.plist",
+        "fs:name": "com.spectre.fixfolderdates.plist",
+        "fs:is_dir": false,
+        "fs:hidden": false,
+        "fs:size": 766,
+        "fs:mtime": "2026-04-14T15:40:47",
+        "fs:atime": "2026-04-14T15:40:48",
+        "fs:extension": "plist",
+        "fs:depth": 1
+      }
+    },
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin/today.md",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin/today.md",
+        "fs:name": "today.md",
+        "fs:is_dir": false,
+        "fs:hidden": false,
+        "fs:size": 637,
+        "fs:mtime": "2026-04-18T19:48:22",
+        "fs:atime": "2026-04-18T19:48:24",
+        "fs:extension": "md",
+        "fs:depth": 1
+      }
+    },
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin/fix_folder_dates.py",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin/fix_folder_dates.py",
+        "fs:name": "fix_folder_dates.py",
+        "fs:is_dir": false,
+        "fs:hidden": false,
+        "fs:size": 1970,
+        "fs:mtime": "2026-04-14T15:28:13",
+        "fs:atime": "2026-04-14T15:28:14",
+        "fs:extension": "py",
+        "fs:depth": 1
+      }
+    },
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin/mac-admin.code-workspace",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin/mac-admin.code-workspace",
+        "fs:name": "mac-admin.code-workspace",
+        "fs:is_dir": false,
+        "fs:hidden": false,
+        "fs:size": 99,
+        "fs:mtime": "2026-02-11T14:18:19",
+        "fs:atime": "2026-02-11T14:18:20",
+        "fs:extension": "code-workspace",
+        "fs:depth": 1
+      }
+    },
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin/SPECTRE_LOG.md",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin/SPECTRE_LOG.md",
+        "fs:name": "SPECTRE_LOG.md",
+        "fs:is_dir": false,
+        "fs:hidden": false,
+        "fs:size": 1151,
+        "fs:mtime": "2026-01-21T11:39:55",
+        "fs:atime": "2026-04-27T14:47:34",
+        "fs:extension": "md",
+        "fs:depth": 1,
+        "fs:git_tracked": true,
+        "fs:git_commit_count": 1
+      }
+    },
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin/input-leap.log",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin/input-leap.log",
+        "fs:name": "input-leap.log",
+        "fs:is_dir": false,
+        "fs:hidden": false,
+        "fs:size": 840576,
+        "fs:mtime": "2026-01-12T18:28:34",
+        "fs:atime": "2026-01-12T18:28:36",
+        "fs:extension": "log",
+        "fs:depth": 1
+      }
+    },
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin/input-leap.log.1",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin/input-leap.log.1",
+        "fs:name": "input-leap.log.1",
+        "fs:is_dir": false,
+        "fs:hidden": false,
+        "fs:size": 1048686,
+        "fs:mtime": "2026-01-12T18:05:25",
+        "fs:atime": "2026-01-12T18:05:27",
+        "fs:extension": "1",
+        "fs:depth": 1
+      }
+    },
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin/input-leap.sync-conflict-20260112-190009-473PRUS.log",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin/input-leap.sync-conflict-20260112-190009-473PRUS.log",
+        "fs:name": "input-leap.sync-conflict-20260112-190009-473PRUS.log",
+        "fs:is_dir": false,
+        "fs:hidden": false,
+        "fs:size": 134974,
+        "fs:mtime": "2026-01-12T17:23:38",
+        "fs:atime": "2026-01-12T19:00:12",
+        "fs:extension": "log",
+        "fs:depth": 1
+      }
+    },
+    {
+      "id": "fs:/Users/harold/ai/droids/mac-admin/.claude/settings.json",
+      "attrs": {
+        "fs:path": "/Users/harold/ai/droids/mac-admin/.claude/settings.json",
+        "fs:name": "settings.json",
+        "fs:is_dir": false,
+        "fs:hidden": false,
+        "fs:size": 1617,
+        "fs:mtime": "2026-04-14T18:53:24",
+        "fs:atime": "2026-04-14T18:53:24",
+        "fs:extension": "json",
+        "fs:depth": 2
+      }
+    },
+    {
+      "id": "git:d3de37e625e4",
+      "attrs": {
+        "git:sha": "d3de37e625e4ebed5d27f8a8b6ed9d85b61f7448",
+        "git:date": "2026-01-21T11:41:48",
+        "git:message": "feat: Grand Reorganization and Establishment of Spectre Eidos"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:dirgraph/0",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "i2t:original-id": "e1"
+      }
+    },
+    {
+      "id": "edge:dirgraph/1",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "i2t:original-id": "e2"
+      }
+    },
+    {
+      "id": "edge:dirgraph/2",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "i2t:original-id": "e3"
+      }
+    },
+    {
+      "id": "edge:dirgraph/3",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "i2t:original-id": "e4"
+      }
+    },
+    {
+      "id": "edge:dirgraph/4",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "i2t:original-id": "e5"
+      }
+    },
+    {
+      "id": "edge:dirgraph/5",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "i2t:original-id": "e6"
+      }
+    },
+    {
+      "id": "edge:dirgraph/6",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "i2t:original-id": "e7"
+      }
+    },
+    {
+      "id": "edge:dirgraph/7",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "i2t:original-id": "e8"
+      }
+    },
+    {
+      "id": "edge:dirgraph/8",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "i2t:original-id": "e9"
+      }
+    },
+    {
+      "id": "edge:dirgraph/9",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "i2t:original-id": "e10"
+      }
+    },
+    {
+      "id": "edge:dirgraph/10",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "i2t:original-id": "e11"
+      }
+    },
+    {
+      "id": "edge:dirgraph/11",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "i2t:original-id": "e12"
+      }
+    },
+    {
+      "id": "edge:dirgraph/12",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "modified_in",
+        "i2t:original-id": "e13"
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:dirgraph/0",
+      "node": "fs:/Users/harold/ai/droids/mac-admin",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/0",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/.gemini-clipboard",
+      "role": "target"
+    },
+    {
+      "edge": "edge:dirgraph/1",
+      "node": "fs:/Users/harold/ai/droids/mac-admin",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/1",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/.claude",
+      "role": "target"
+    },
+    {
+      "edge": "edge:dirgraph/2",
+      "node": "fs:/Users/harold/ai/droids/mac-admin",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/2",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/CHANGELOG.md",
+      "role": "target"
+    },
+    {
+      "edge": "edge:dirgraph/3",
+      "node": "fs:/Users/harold/ai/droids/mac-admin",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/3",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/com.spectre.fixfolderdates.plist",
+      "role": "target"
+    },
+    {
+      "edge": "edge:dirgraph/4",
+      "node": "fs:/Users/harold/ai/droids/mac-admin",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/4",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/today.md",
+      "role": "target"
+    },
+    {
+      "edge": "edge:dirgraph/5",
+      "node": "fs:/Users/harold/ai/droids/mac-admin",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/5",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/fix_folder_dates.py",
+      "role": "target"
+    },
+    {
+      "edge": "edge:dirgraph/6",
+      "node": "fs:/Users/harold/ai/droids/mac-admin",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/6",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/mac-admin.code-workspace",
+      "role": "target"
+    },
+    {
+      "edge": "edge:dirgraph/7",
+      "node": "fs:/Users/harold/ai/droids/mac-admin",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/7",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/SPECTRE_LOG.md",
+      "role": "target"
+    },
+    {
+      "edge": "edge:dirgraph/8",
+      "node": "fs:/Users/harold/ai/droids/mac-admin",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/8",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/input-leap.log",
+      "role": "target"
+    },
+    {
+      "edge": "edge:dirgraph/9",
+      "node": "fs:/Users/harold/ai/droids/mac-admin",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/9",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/input-leap.log.1",
+      "role": "target"
+    },
+    {
+      "edge": "edge:dirgraph/10",
+      "node": "fs:/Users/harold/ai/droids/mac-admin",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/10",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/input-leap.sync-conflict-20260112-190009-473PRUS.log",
+      "role": "target"
+    },
+    {
+      "edge": "edge:dirgraph/11",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/.claude",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/11",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/.claude/settings.json",
+      "role": "target"
+    },
+    {
+      "edge": "edge:dirgraph/12",
+      "node": "fs:/Users/harold/ai/droids/mac-admin/SPECTRE_LOG.md",
+      "role": "source"
+    },
+    {
+      "edge": "edge:dirgraph/12",
+      "node": "git:d3de37e625e4",
+      "role": "target"
+    }
+  ]
+}

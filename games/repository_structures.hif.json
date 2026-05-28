@@ -1,0 +1,82 @@
+{
+  "network-type": "undirected",
+  "metadata": {
+    "name": "Open-source FPS repos as a hypergraph",
+    "format": "Hypergraph Interchange Format (HIF)",
+    "format_spec": "https://github.com/pszufe/HIF-standard",
+    "thesis": "Each hyperedge expresses a property-set: a single edge that connects every node sharing that property. This is structurally honest about n-ary facts ('these four repos are all C++ engines') instead of decomposing them into dyadic edges through an intermediate 'C++' node. The shape of the incidence matrix IS the topology you're meant to read.",
+    "compare_with": "repository_structures.jgf.json (same data, dyadic-edge model with intermediate language/engine/build nodes)"
+  },
+  "nodes": [
+    { "node": "luanti",       "attrs": { "label": "luanti-org/luanti",       "url": "https://github.com/luanti-org/luanti" } },
+    { "node": "terasology",   "attrs": { "label": "MovingBlocks/Terasology", "url": "https://github.com/MovingBlocks/Terasology" } },
+    { "node": "openmw",       "attrs": { "label": "OpenMW/openmw",           "url": "https://github.com/OpenMW/openmw" } },
+    { "node": "unvanquished", "attrs": { "label": "Unvanquished/Unvanquished","url": "https://github.com/Unvanquished/Unvanquished" } }
+  ],
+  "edges": [
+    { "edge": "lang/cpp",                "attrs": { "kind": "language",          "label": "Written in C++" } },
+    { "edge": "lang/java",               "attrs": { "kind": "language",          "label": "Written in Java" } },
+    { "edge": "scripting/lua",           "attrs": { "kind": "scripting-language","label": "Exposes a Lua scripting layer" } },
+    { "edge": "build/cmake",             "attrs": { "kind": "build-system",      "label": "Built with CMake" } },
+    { "edge": "build/gradle",            "attrs": { "kind": "build-system",      "label": "Built with Gradle (Kotlin DSL)" } },
+    { "edge": "ci/gitlab",               "attrs": { "kind": "ci-platform",       "label": "Integrated via GitLab CI" } },
+    { "edge": "ci/gh-actions",           "attrs": { "kind": "ci-platform",       "label": "Integrated via GitHub Actions" } },
+    { "edge": "ci/jenkins",              "attrs": { "kind": "ci-platform",       "label": "Integrated via Jenkins" } },
+    { "edge": "genre/voxel-sandbox",     "attrs": { "kind": "genre",             "label": "Voxel-based sandbox genre" } },
+    { "edge": "genre/rpg-reimpl",        "attrs": { "kind": "genre",             "label": "RPG engine reimplementation" } },
+    { "edge": "genre/fps-rts",           "attrs": { "kind": "genre",             "label": "FPS/RTS hybrid genre" } },
+    { "edge": "minimap/native-engine",   "attrs": { "kind": "minimap-arch",      "label": "Minimap implemented natively in engine code" } },
+    { "edge": "minimap/decoupled-ui",    "attrs": { "kind": "minimap-arch",      "label": "Minimap exposed through decoupled UI / module API" } },
+    { "edge": "spatial/blockwise",       "attrs": { "kind": "spatial-model",     "label": "World partitioned into discrete blocks/chunks (MapBlock or equivalent)" } },
+    { "edge": "spatial/cell-or-bsp",     "attrs": { "kind": "spatial-model",     "label": "World partitioned via cells or BSP rather than uniform voxels" } },
+    { "edge": "client-server-strict",    "attrs": { "kind": "execution-model",   "label": "Strict client-server separation with authoritative server thread" } }
+  ],
+  "incidences": [
+    { "edge": "lang/cpp", "node": "luanti" },
+    { "edge": "lang/cpp", "node": "openmw" },
+    { "edge": "lang/cpp", "node": "unvanquished" },
+
+    { "edge": "lang/java", "node": "terasology" },
+
+    { "edge": "scripting/lua", "node": "luanti" },
+    { "edge": "scripting/lua", "node": "openmw" },
+
+    { "edge": "build/cmake", "node": "luanti" },
+    { "edge": "build/cmake", "node": "openmw" },
+    { "edge": "build/cmake", "node": "unvanquished" },
+
+    { "edge": "build/gradle", "node": "terasology" },
+
+    { "edge": "ci/gitlab", "node": "luanti" },
+    { "edge": "ci/gitlab", "node": "openmw" },
+
+    { "edge": "ci/gh-actions", "node": "openmw" },
+    { "edge": "ci/gh-actions", "node": "unvanquished" },
+
+    { "edge": "ci/jenkins", "node": "terasology" },
+
+    { "edge": "genre/voxel-sandbox", "node": "luanti" },
+    { "edge": "genre/voxel-sandbox", "node": "terasology" },
+
+    { "edge": "genre/rpg-reimpl", "node": "openmw" },
+
+    { "edge": "genre/fps-rts", "node": "unvanquished" },
+
+    { "edge": "minimap/native-engine", "node": "luanti" },
+    { "edge": "minimap/native-engine", "node": "openmw" },
+    { "edge": "minimap/native-engine", "node": "unvanquished" },
+
+    { "edge": "minimap/decoupled-ui", "node": "luanti" },
+    { "edge": "minimap/decoupled-ui", "node": "terasology" },
+
+    { "edge": "spatial/blockwise", "node": "luanti" },
+    { "edge": "spatial/blockwise", "node": "terasology" },
+
+    { "edge": "spatial/cell-or-bsp", "node": "openmw" },
+    { "edge": "spatial/cell-or-bsp", "node": "unvanquished" },
+
+    { "edge": "client-server-strict", "node": "luanti" },
+    { "edge": "client-server-strict", "node": "terasology" },
+    { "edge": "client-server-strict", "node": "unvanquished" }
+  ]
+}

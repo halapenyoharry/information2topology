@@ -1,0 +1,13 @@
+{
+  "perfect_fps_repository_main_level": {
+    "folders": [
+      ".github",
+      "assets",
+      "docs",
+      "modules",
+      "src",
+      "tests"
+    ],
+    "files":
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "topothink-version": "0.1",
+    "adapter": "propgraph_to_hypergraph.py",
+    "source-meta": {
+      "tool": "merged",
+      "version": "1",
+      "sources": [
+        {
+          "tool": "dirgraph",
+          "version": "1",
+          "scanned_at": "2026-04-27T21:13:48+00:00",
+          "root": "/Users/harold/Projects",
+          "max_depth": 2,
+          "skip_dirs": [
+            ".cache",
+            ".git",
+            ".gradle",
+            ".idea",
+            ".mypy_cache",
+            ".next",
+            ".pytest_cache",
+            ".ruff_cache",
+            ".tox",
+            ".venv",
+            "DerivedData",
+            "Pods",
+            "__pycache__",
+            "bower_components",
+            "build",
+            "dist",
+            "node_modules",
+            "target",
+            "vendor",
+            "venv"
+          ],
+          "skip_extensions": [
+            ".7z",
+            ".a",
+            ".aac",
+            ".avi",
+            ".bin",
+            ".bmp",
+            ".bz2",
+            ".class",
+            ".dll",
+            ".dmg",
+            ".dylib",
+            ".eot",
+            ".exe",
+            ".flac",
+            ".gif",
+            ".gz",
+            ".heic",
+            ".ico",
+            ".iso",
+            ".jar",
+            ".jpeg",
+            ".jpg",
+            ".m4a",
+            ".mkv",
+            ".mov",
+            ".mp3",
+            ".mp4",
+            ".o",
+            ".ogg",
+            ".otf",
+            ".pdf",
+            ".pkg",
+            ".png",
+            ".pyc",
+            ".pyo",
+            ".rar",
+            ".so",
+            ".svg",
+            ".tar",
+            ".tgz",
+            ".tiff",
+            ".ttf",
+            ".wav",
+            ".webm",
+            ".webp",
+            ".woff",
+            ".woff2",
+            ".zip"
+          ],
+          "sources": {
+            "filesystem": true,
+            "git": true,
+            "spotlight": true,
+            "ports": true,
+            "github_remotes": true
+          }
+        },
+        {
+          "tool": "ghgraph",
+          "version": "1",
+          "scanned_at": "2026-04-27T21:13:25+00:00",
+          "viewer": "halapenyoharry",
+          "rate_limit": {
+            "remaining": 4819,
+            "limit": 5000,
+            "resetAt": "2026-04-27T21:20:25Z"
+          },
+          "sources": {
+            "github_graphql": true,
+            "include_prs": true,
+            "include_issues": true,
+            "per_repo_limit": 25
+          }
+        }
+      ],
+      "merged_at": "2026-04-28T01:00:02Z"
+    },
+    "i2t:relation_to_canonical": "predicate-layer",
+    "layer-predicate": "assigned_to",
+    "layer-stats": {
+      "nodes": 4,
+      "edges": 4,
+      "incidences": 8
+    }
+  },
+  "nodes": [
+    {
+      "id": "gh:pr:halapenyoharry/qrystal#1",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "Initialize Rust project with iced GUI framework",
+        "gh:url": "https://github.com/halapenyoharry/qrystal/pull/1",
+        "gh:created_at": "2026-01-22T16:09:56Z",
+        "gh:updated_at": "2026-01-22T16:29:35Z",
+        "gh:is_draft": true,
+        "gh:base": "main",
+        "gh:head": "copilot/initialize-rust-project-qrystal"
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/FileCraft#1",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "Add AGENTS.md and setup.sh for Linux filesystem-to-Luanti voxel bridge",
+        "gh:url": "https://github.com/halapenyoharry/FileCraft/pull/1",
+        "gh:created_at": "2026-02-07T00:50:06Z",
+        "gh:updated_at": "2026-02-07T00:58:56Z",
+        "gh:is_draft": true,
+        "gh:base": "main",
+        "gh:head": "copilot/create-agents-md-and-setup-script"
+      }
+    },
+    {
+      "id": "gh:user:Copilot",
+      "attrs": {
+        "gh:login": "Copilot"
+      }
+    },
+    {
+      "id": "gh:user:halapenyoharry",
+      "attrs": {
+        "gh:login": "halapenyoharry"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:merged/3227",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "assigned_to",
+        "i2t:original-id": "e142"
+      }
+    },
+    {
+      "id": "edge:merged/3228",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "assigned_to",
+        "i2t:original-id": "e143"
+      }
+    },
+    {
+      "id": "edge:merged/3233",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "assigned_to",
+        "i2t:original-id": "e148"
+      }
+    },
+    {
+      "id": "edge:merged/3234",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "assigned_to",
+        "i2t:original-id": "e149"
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:merged/3227",
+      "node": "gh:pr:halapenyoharry/FileCraft#1",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3227",
+      "node": "gh:user:Copilot",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3228",
+      "node": "gh:pr:halapenyoharry/FileCraft#1",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3228",
+      "node": "gh:user:halapenyoharry",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3233",
+      "node": "gh:pr:halapenyoharry/qrystal#1",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3233",
+      "node": "gh:user:Copilot",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3234",
+      "node": "gh:pr:halapenyoharry/qrystal#1",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3234",
+      "node": "gh:user:halapenyoharry",
+      "role": "target"
+    }
+  ]
+}
