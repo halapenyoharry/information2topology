@@ -40,7 +40,14 @@ except ImportError:
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-PROMPT_PATH  = PROJECT_ROOT / "prompts" / "text_to_topothink_hypergraph.md"
+
+# Import shared utilities (prompt loading, validation, source anchoring)
+from extraction_common import (
+    load_prompt,
+    strip_code_fences,
+    validate_instagraph,
+    anchor_to_source,
+)
 
 DEFAULT_MODEL = "claude-opus-4-7"
 MAX_OUTPUT_TOKENS = 16000
@@ -54,23 +61,6 @@ PRICING = {
 }
 
 
-def load_prompt() -> str:
-    if not PROMPT_PATH.exists():
-        sys.exit(f"error: prompt template not found at {PROMPT_PATH}")
-    return PROMPT_PATH.read_text(encoding="utf-8")
-
-
-def strip_code_fences(text: str) -> str:
-    """Remove markdown code fences if the model wrapped JSON in ```json ... ```."""
-    text = text.strip()
-    if text.startswith("```"):
-        lines = text.split("\n")
-        if lines[0].startswith("```"):
-            lines = lines[1:]
-        if lines and lines[-1].rstrip().startswith("```"):
-            lines = lines[:-1]
-        text = "\n".join(lines)
-    return text.strip()
 
 
 def extract(client: "anthropic.Anthropic", source_text: str,
@@ -130,52 +120,6 @@ def estimate_cost_usd(metadata: dict) -> float:
         + metadata["cache_creation_input_tokens"] * p["input"]      / 1_000_000  # cache create costs the same as fresh input
         + metadata["output_tokens"]              * p["output"]      / 1_000_000
     )
-
-
-def validate_instagraph(doc: dict) -> list[str]:
-    """Structural validation enforcing the editorial-discipline rule that every
-    edge MUST carry a text-evidence `label`. Returns list of error messages.
-    """
-    errors: list[str] = []
-    if not isinstance(doc, dict):
-        return ["top-level output is not a JSON object"]
-    for required_key in ("nodes", "edges"):
-        if required_key not in doc:
-            errors.append(f"missing top-level '{required_key}' array")
-        elif not isinstance(doc[required_key], list):
-            errors.append(f"'{required_key}' is not a list")
-
-    nodes = doc.get("nodes", [])
-    edges = doc.get("edges", [])
-
-    node_ids: set[str] = set()
-    for i, n in enumerate(nodes):
-        if not isinstance(n, dict):
-            errors.append(f"nodes[{i}] is not an object")
-            continue
-        nid = n.get("id")
-        if not nid:
-            errors.append(f"nodes[{i}] missing 'id'")
-            continue
-        if nid in node_ids:
-            errors.append(f"nodes[{i}] duplicate id: {nid}")
-        node_ids.add(nid)
-
-    for i, e in enumerate(edges):
-        if not isinstance(e, dict):
-            errors.append(f"edges[{i}] is not an object")
-            continue
-        if not e.get("label"):
-            errors.append(f"edges[{i}] missing 'label' — every edge must carry text evidence (editorial discipline)")
-        # Check from/to OR members
-        has_from_to = "from" in e and "to" in e
-        has_members = "members" in e
-        if not (has_from_to or has_members):
-            errors.append(f"edges[{i}] needs either from/to or members")
-        if has_members and not isinstance(e["members"], list):
-            errors.append(f"edges[{i}] 'members' is not a list")
-
-    return errors
 
 
 def main() -> int:
@@ -241,6 +185,13 @@ def main() -> int:
     parsed.setdefault("metadata", {})
     parsed["metadata"]["extractor_model"] = metadata["model"]
     parsed["metadata"]["extracted_via"] = "text_to_hypergraph_via_llm.py"
+
+    # Anchor labels back to source positions
+    total_edges = len(parsed.get("edges", []))
+    total_nodes = len(parsed.get("nodes", []))
+    anchored = anchor_to_source(parsed, source_text)
+    print(f"  source anchoring: {anchored} of {total_edges + total_nodes} items anchored",
+          file=sys.stderr)
 
     outpath = Path(args.output)
     outpath.parent.mkdir(parents=True, exist_ok=True)

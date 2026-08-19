@@ -143,36 +143,83 @@ def chapter_num_from_filename(path: Path) -> int | None:
     return int(m.group(1)) if m else None
 
 
-def split_paragraphs(scene_text: str) -> list[str]:
-    """Blank-line-separated paragraphs, dropping headings and empty lines."""
-    raw = re.split(r"\n\s*\n", scene_text)
-    out = []
-    for p in raw:
-        p = p.strip()
+def split_paragraphs(scene_text: str, line_base: int = 1,
+                     char_base: int = 0) -> list[tuple[str, int, int]]:
+    """Blank-line-separated paragraphs, dropping headings and empty lines.
+
+    Returns list of (text, source_line, source_char_offset) tuples.
+    line_base and char_base are the 1-indexed line number and 0-indexed
+    character offset of the first character of scene_text within the
+    original file, so returned positions are file-absolute.
+    """
+    out: list[tuple[str, int, int]] = []
+    # Walk by character to track positions precisely
+    pos = 0  # cursor within scene_text
+    lines_consumed = 0  # newlines seen so far
+    while pos < len(scene_text):
+        # Skip blank lines (paragraph separators)
+        while pos < len(scene_text) and scene_text[pos] in ' \t\n\r':
+            if scene_text[pos] == '\n':
+                lines_consumed += 1
+            pos += 1
+        if pos >= len(scene_text):
+            break
+        # Found start of a paragraph
+        para_start = pos
+        para_line = line_base + lines_consumed
+        para_char = char_base + pos
+        # Scan to next blank line (two newlines with optional whitespace between)
+        end = scene_text.find('\n\n', pos)
+        if end == -1:
+            end = len(scene_text)
+        p = scene_text[pos:end].strip()
+        # Advance past the paragraph text
+        lines_consumed += scene_text[pos:end].count('\n')
+        pos = end
         if not p:
             continue
         if p.startswith("#"):  # heading lingered, skip
             continue
-        out.append(p)
+        out.append((p, para_line, para_char))
     return out
 
 
-def split_scenes(body_text: str) -> list[str]:
-    """Split chapter body on `##`/`###` lines; return list of scene-bodies."""
-    scenes = []
-    current = []
+def split_scenes(body_text: str, line_base: int = 1,
+                 char_base: int = 0) -> list[tuple[str, int, int]]:
+    """Split chapter body on `##`/`###` lines.
+
+    Returns list of (scene_text, scene_start_line, scene_start_char) tuples.
+    line_base / char_base locate body_text within the original file.
+    """
+    scenes: list[tuple[str, int, int]] = []
+    current_lines: list[str] = []
+    current_start_line = line_base
+    current_start_char = char_base
+    line_num = line_base
+    char_pos = char_base
     for line in body_text.split("\n"):
         if SCENE_BREAK.match(line.strip()):
-            if current:
-                scenes.append("\n".join(current).strip())
-                current = []
+            if current_lines:
+                text = "\n".join(current_lines).strip()
+                if text:
+                    scenes.append((text, current_start_line, current_start_char))
+                current_lines = []
+            line_num += 1
+            char_pos += len(line) + 1  # +1 for the newline
+            current_start_line = line_num
+            current_start_char = char_pos
             continue
-        current.append(line)
-    if current:
-        rest = "\n".join(current).strip()
-        if rest:
-            scenes.append(rest)
-    return [s for s in scenes if s]
+        if not current_lines:
+            current_start_line = line_num
+            current_start_char = char_pos
+        current_lines.append(line)
+        line_num += 1
+        char_pos += len(line) + 1
+    if current_lines:
+        text = "\n".join(current_lines).strip()
+        if text:
+            scenes.append((text, current_start_line, current_start_char))
+    return scenes
 
 
 def slug_for_paragraph(text: str, max_words: int = 6) -> str:
@@ -419,6 +466,7 @@ def build(files: list[Path]) -> dict:
 
     for file_pos, path in enumerate(files):
         text = path.read_text(encoding="utf-8")
+        source_filename = path.name
         ch_num = chapter_num_from_filename(path) or (file_pos + 1)
         act_n = parse_act_from_text(text, path.name)
         ch_id = f"ch:{path.stem}"
@@ -445,33 +493,46 @@ def build(files: list[Path]) -> dict:
             "color": "#888",
         })
 
-        # Strip everything before the first H1 line of body
+        # Strip everything before the first H1 line of body,
+        # tracking where the body starts in the file.
         body_lines = []
         seen_h1 = False
-        for line in text.split("\n"):
+        body_start_line = 1
+        body_start_char = 0
+        char_cursor = 0
+        for line_idx, line in enumerate(text.split("\n"), start=1):
             if not seen_h1 and H1_TITLE.match(line.strip()):
                 seen_h1 = True
+                char_cursor += len(line) + 1
+                body_start_line = line_idx + 1
+                body_start_char = char_cursor
                 continue
             if seen_h1:
                 body_lines.append(line)
+            char_cursor += len(line) + 1
         body = "\n".join(body_lines).strip() if seen_h1 else text
+        if not seen_h1:
+            body_start_line = 1
+            body_start_char = 0
 
-        scenes = split_scenes(body)
+        scenes = split_scenes(body, line_base=body_start_line, char_base=body_start_char)
         ch_scenes: list[str] = []
         prev_para_in_chapter: str | None = None
 
         # ---- First pass: collect paragraphs + mentions per scene
-        # Structure: list of (scene_id, scene_idx, [(para_text, mentions_dict), ...])
-        chapter_scene_data: list[tuple[str, int, list[tuple[str, dict[str, list[str]]]]]] = []
+        # Structure: list of (scene_id, scene_idx, [(para_text, source_line, source_char, mentions_dict), ...])
+        chapter_scene_data: list[tuple[str, int, list[tuple[str, int, int, dict[str, list[str]]]]]] = []
         chapter_character_mentions: Counter = Counter()
-        for scene_idx, scene_text in enumerate(scenes):
+        for scene_idx, (scene_text, scene_start_line, scene_start_char) in enumerate(scenes):
             scene_id = f"{ch_id}:s{scene_idx + 1}"
-            paragraphs_in_scene: list[tuple[str, dict[str, list[str]]]] = []
-            for p_idx, p_text in enumerate(split_paragraphs(scene_text)):
+            paragraphs_in_scene: list[tuple[str, int, int, dict[str, list[str]]]] = []
+            for p_idx, (p_text, p_line, p_char) in enumerate(
+                split_paragraphs(scene_text, line_base=scene_start_line, char_base=scene_start_char)
+            ):
                 if scene_idx == 0 and p_idx == 0 and ITALIC_ONLY.match(p_text):
                     continue
                 mentions = detect_entities(p_text)
-                paragraphs_in_scene.append((p_text, mentions))
+                paragraphs_in_scene.append((p_text, p_line, p_char, mentions))
                 # Count character mentions for chapter-POV detection
                 for eid in mentions:
                     if ENTITY_TABLE[eid][1] == "Character":
@@ -492,7 +553,7 @@ def build(files: list[Path]) -> dict:
             ch_scenes.append(scene_id)
             scene_para_ids: list[str] = []
 
-            for p_text, mentions in paragraphs_in_scene:
+            for p_text, p_line, p_char, mentions in paragraphs_in_scene:
                 para_counter[ch_id] += 1
                 para_id = f"p:{path.stem}:{para_counter[ch_id]:03d}"
                 slug = slug_for_paragraph(p_text)
@@ -503,7 +564,10 @@ def build(files: list[Path]) -> dict:
                          sentence_count=sentence_count(p_text),
                          has_dialogue=has_dialogue(p_text),
                          has_ai_dialogue=has_ai_dialogue(p_text),
-                         text=p_text)  # full paragraph prose; the node IS the paragraph
+                         text=p_text,  # full paragraph prose; the node IS the paragraph
+                         source_file=source_filename,
+                         source_line=p_line,
+                         source_char_offset=p_char)
                 scene_para_ids.append(para_id)
 
                 # next_paragraph edge (within chapter only) — text-seam label

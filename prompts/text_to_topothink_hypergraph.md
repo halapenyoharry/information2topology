@@ -162,6 +162,7 @@ Produce **one JSON document** in InstaGraph-with-i2t-extensions schema. Don't in
       "type": "<your domain category, e.g., Philosopher, Concept, Paragraph, Character, Place, Theme, Event, Work>",
       "color": "<hex color grouping similar types, e.g., #F8C8DC>",
       "properties": {
+        "exact_quote": "<the exact, verbatim substring from the source text where this node is mentioned (CRITICAL for UI anchoring)>",
         "<key>": "<value>",
         ...
       }
@@ -197,12 +198,13 @@ Produce **one JSON document** in InstaGraph-with-i2t-extensions schema. Don't in
 ### Rules
 
 1. **Every edge MUST have a `label`** containing an excerpt of the source text. No exceptions.
-2. Use `from`/`to` for simple dyadic edges (one-to-one between two nodes).
-3. Use `members` when an edge connects 3+ nodes OR when the edge is reified (id appears in nodes list).
-4. Role names should be specific and text-supported, not generic (`source`/`target` is the fallback when no better role exists).
-5. Color-group nodes by type so visual rendering can dispatch on type.
-6. For `properties` (on nodes) and `attrs` (on incidence members), use whatever keys make sense for the domain. Keep keys in `snake_case`.
-7. Don't invent text. If you can't find the actual phrase that justifies an edge, the edge probably shouldn't exist.
+2. **Every node derived from text MUST have `properties.exact_quote`**. You may normalize the `label` for display in the graph UI (e.g., standardizing spellings or adding diacritics), but you MUST provide `properties.exact_quote` containing the raw, verbatim substring from the source text exactly as it appears.
+3. Use `from`/`to` for simple dyadic edges (one-to-one between two nodes).
+4. Use `members` when an edge connects 3+ nodes OR when the edge is reified (id appears in nodes list).
+5. Role names should be specific and text-supported, not generic (`source`/`target` is the fallback when no better role exists).
+6. Color-group nodes by type so visual rendering can dispatch on type.
+7. For `properties` (on nodes) and `attrs` (on incidence members), use whatever keys make sense for the domain. Keep keys in `snake_case`.
+8. Don't invent text. If you can't find the actual phrase that justifies an edge or node, it probably shouldn't exist.
 
 ---
 

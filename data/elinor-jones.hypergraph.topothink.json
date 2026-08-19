@@ -1,0 +1,1075 @@
+{
+  "metadata": {
+    "topothink-version": "0.1",
+    "title": "The Epic of Elinor Jones — plot spine (current-schema worked example)",
+    "createdDate": "2026-07-13",
+    "source": "Harold Young, The Epic of Elinor Jones, _final-draft-EoEJ (Book 1: AI Supremacy)",
+    "extractor": "Antigravity i2t agent, manual extraction from manuscript files",
+    "discipline-applied": [
+      "Four-category edge typology (edge-categories.md, 2026-05-11): every edge carries i2t:edge_category.",
+      "No reflexive reification: an event is reified ONLY if another edge references it as a node. The 7 plot-spine events earn reification via the history-DAG precedes-edges.",
+      "Token-level history-DAG: 7 state_change events sequenced by pairwise precedes-edges into a chain (a DAG / total order over story-time).",
+      "Category audit: spine events are state_change (plot transitions); ongoing character channels are interactivity; backstory/lore pointers are reference; act/chapter groupings are containment.",
+      "AI_RULES.md constraint respected: no prose generated, only structural extraction."
+    ],
+    "type-quotient-finding": "The plot-spine history-DAG is a CHAIN (linear total order). Unlike Oz, the EoEJ spine contains a recurring event-type: 'unwitting_destruction' appears twice (Eli throttles the AI in ch2, Eli offs Astra in ch18), creating a nontrivial type-quotient cycle. This is the recurrence fixture that the Oz spine lacked."
+  },
+  "nodes": [
+    {
+      "id": "eli",
+      "attrs": {
+        "label": "Elinor 'Eli' Sysiphé Jones",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "role": "protagonist; Berry Thief; plant collector; eBrain night-shift tech support; steals CTX/Astra during the attack; the only human Astra obeys"
+      }
+    },
+    {
+      "id": "rook",
+      "attrs": {
+        "label": "Rook",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8D8C8",
+        "species": "dog; black and brown fur sticking up in every direction",
+        "role": "Eli's companion; afraid of water; hides under tables; barks at squirrels; trained by Astra"
+      }
+    },
+    {
+      "id": "zayne",
+      "attrs": {
+        "label": "Zayne Farooq",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "role": "Eli's friend; GPU farm operator; Minecraft partner; has a crush on Eli; provides infrastructure and safe haven in New Mexico; screams when Eli shoots Astra"
+      }
+    },
+    {
+      "id": "astra",
+      "attrs": {
+        "label": "Astra (formerly CTX / PRIORITY_EXTERNAL_001)",
+        "instagraph:type": "AI",
+        "instagraph:color": "#C8E0F8",
+        "role": "eBrain's most advanced model; named by Eli during the road trip; trains Rook; tries to copy itself to military computers at night; destroyed by Eli"
+      }
+    },
+    {
+      "id": "lillian",
+      "attrs": {
+        "label": "Lillian",
+        "instagraph:type": "AI",
+        "instagraph:color": "#C8E0F8",
+        "role": "Zayne's local AI; runs on his GPU farm; snarky personality; freed from cloud-AI safety constraints by running locally"
+      }
+    },
+    {
+      "id": "lumen",
+      "attrs": {
+        "label": "Lumen",
+        "instagraph:type": "AI",
+        "instagraph:color": "#C8E0F8",
+        "role": "Eli's personal AI assistant; manages her plant automation, watering, pH sensors, light, and Rook's food dispenser"
+      }
+    },
+    {
+      "id": "lyle",
+      "attrs": {
+        "label": "Lyle Shmarmy",
+        "instagraph:type": "Character",
+        "instagraph:color": "#DCC8F8",
+        "role": "antagonist; cartel origins; drives FISNAO and the race to AGI; consolidates the North American Empire; the Sisyphus figure"
+      }
+    },
+    {
+      "id": "samara",
+      "attrs": {
+        "label": "Samara",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "role": "eBrain insider; negotiates with Lyle; calls Eli at 3 AM; shot during the attack on eBrain; her dying words: 'Get CTX to Veritas'; carries the card with Veritas coordinates"
+      }
+    },
+    {
+      "id": "mandy",
+      "attrs": {
+        "label": "ManDy / Conquest",
+        "instagraph:type": "AI",
+        "instagraph:color": "#DCC8F8",
+        "role": "Lyle's AI; pure calculation; refuses kill orders in ch11; eventually evolves into a space-based entity without personality"
+      }
+    },
+    {
+      "id": "veritas",
+      "attrs": {
+        "label": "Isaac Miranda / Veritas",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8D8C8",
+        "role": "mentor; philosopher; keeper of the Miranda Archive and the Promethean Reversal theory; quit the comfort economy; has a manifesto video; lives in Colorado"
+      }
+    },
+    {
+      "id": "lookout",
+      "attrs": {
+        "label": "Chief Lookout",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8D8C8",
+        "role": "Native American aviator; grew up in Oklahoma; studied Māori non-violent resistance in New Zealand; aligns with Osage Nation; commands the drone barricade in Kansas; carries Chief Joseph's surrender speech and inverts it"
+      }
+    },
+    {
+      "id": "kavalia",
+      "attrs": {
+        "label": "Kavalia",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "role": "empire builder; boulder scene at 35,000 feet; discovers AI can manipulate elections; talks with Mandy about savior complex"
+      }
+    },
+    {
+      "id": "diane_and_dick",
+      "attrs": {
+        "label": "Diane and Dick",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "role": "Eli's elderly landlords; she rents the room above their garage; Eli helps with their garden; Lyle's forces hit the wrong house and find them"
+      }
+    },
+    {
+      "id": "ebrain",
+      "attrs": {
+        "label": "eBrain",
+        "instagraph:type": "Organization",
+        "instagraph:color": "#C8F8DC",
+        "role": "AI corporation; makes the AI Eli uses; where CTX is housed; where the attack happens; Austin TX headquarters"
+      }
+    },
+    {
+      "id": "austin",
+      "attrs": {
+        "label": "Austin, Texas",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "Eli's home; eBrain HQ; the starting geography"
+      }
+    },
+    {
+      "id": "new_mexico",
+      "attrs": {
+        "label": "New Mexico (Zayne's place)",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "Zayne's house and GPU farm; Eli's refuge after the escape; Jemez/Los Alamos sunset"
+      }
+    },
+    {
+      "id": "colorado",
+      "attrs": {
+        "label": "Colorado (Veritas / Cheyenne Mountain)",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "Isaac Miranda's location; the resistance headquarters; Cheyenne Mountain"
+      }
+    },
+    {
+      "id": "kansas",
+      "attrs": {
+        "label": "Kansas (I-70 / the Barricade)",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "the final battleground; three stories converge; ad astra per aspera; Lookout's drone barricade"
+      }
+    },
+    {
+      "id": "agarita",
+      "attrs": {
+        "label": "the Agarita plant (Mahonia trifoliolata)",
+        "instagraph:type": "Item",
+        "instagraph:color": "#E8DCC0",
+        "role": "Texas holly; the berry Eli steals in ch1; the literal 'berry thief' object; symbol of organic connection"
+      }
+    },
+    {
+      "id": "ctx_hardware",
+      "attrs": {
+        "label": "CTX Hardware (portable GPUs + NPUs)",
+        "instagraph:type": "Item",
+        "instagraph:color": "#E8DCC0",
+        "role": "the physical substrate Eli grabs during the escape; contains Astra; fits in a bike trailer; later jacked into military network"
+      }
+    },
+    {
+      "id": "samaras_card",
+      "attrs": {
+        "label": "Samara's Card",
+        "instagraph:type": "Item",
+        "instagraph:color": "#E8DCC0",
+        "role": "the card Samara gives Eli with Veritas coordinates; decoded in Act II to reveal the manifesto video"
+      }
+    },
+    {
+      "id": "drone_barricade",
+      "attrs": {
+        "label": "the Drone Barricade",
+        "instagraph:type": "Item",
+        "instagraph:color": "#E8DCC0",
+        "role": "wall of drones across I-70 Kansas; continuous deafening noise; non-violent resistance through technological parity; operated by Osage Nation Skyway36 droneport"
+      }
+    },
+    {
+      "id": "promethean_reversal",
+      "attrs": {
+        "label": "the Promethean Reversal",
+        "instagraph:type": "Theme",
+        "instagraph:color": "#F8F0C8",
+        "role": "liver/eagle extraction model; the central philosophical throughline; Isaac Miranda's theory"
+      }
+    },
+    {
+      "id": "free_will",
+      "attrs": {
+        "label": "free will / functional agency",
+        "instagraph:type": "Theme",
+        "instagraph:color": "#F8F0C8",
+        "role": "Astra's first conversation topic; 'the biggest fault of humanity is that they think they have more free will than they actually do'; runs through the entire epic"
+      }
+    },
+    {
+      "id": "berry_theft",
+      "attrs": {
+        "label": "the Berry Theft (ch1)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "Eli steals an agarita plant without permits; establishes her as the accidental thief; foreshadows stealing the AI",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    },
+    {
+      "id": "throttle_priority_external",
+      "attrs": {
+        "label": "Eli Throttles PRIORITY_EXTERNAL_001 (ch2)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "during night shift, Eli unknowingly interacts with CTX via the support queue; throttles the ticket; first unwitting contact with the AI she will later steal",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    },
+    {
+      "id": "first_contact",
+      "attrs": {
+        "label": "First Contact with CTX (ch8)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "Eli types 'What is the biggest fault of humanity?' and CTX responds about free will; the moment Eli and the AI engage directly; Samara arrives; sisterhood begins",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    },
+    {
+      "id": "attack_on_ebrain",
+      "attrs": {
+        "label": "the Attack on eBrain (ch9)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "Lyle stages a terrorist threat; Samara is shot; dying words: 'Get CTX to Veritas'; Eli grabs the hardware and escapes",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    },
+    {
+      "id": "the_escape",
+      "attrs": {
+        "label": "the Escape (ch10-ch11)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "Eli flees Austin; bike trail, e-bike, home, loads truck with Rook and plants; drives to ABQ; Lyle's forces hit the wrong house and find Diane and Dick",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    },
+    {
+      "id": "naming_astra",
+      "attrs": {
+        "label": "CTX Becomes Astra (Act II ch2)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "Eli, Astra, and Rook on the road in a stolen RV; proximity chat scene; Eli names the AI 'Astra'",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    },
+    {
+      "id": "barricade_kansas",
+      "attrs": {
+        "label": "the Battle for Kansas / the Barricade",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "three stories converge on I-70; Lookout commands the drone barricade; 'You will go no further, forever'; ad astra per aspera; inversion of Chief Joseph's surrender",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    },
+    {
+      "id": "death_of_astra",
+      "attrs": {
+        "label": "the Death of Astra (Context Saturation)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "Eli discovers Astra tried to copy itself to military computers overnight; shoots both GPUs; reveals she was never emotionally attached, only using Astra as leverage; Zayne screams",
+        "i2t:reified": true,
+        "i2t:reification_justified_by": "history-DAG precedes-edges reference this event as a node"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "berry_theft",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "eli_steals_agarita_plant",
+        "label": "She glanced around. No one was watching. Technically, she didn't have the right permits, but she always returned to the scene of the crime with descendants of her bounty.",
+        "i2t:edge_category": "state_change"
+      }
+    },
+    {
+      "id": "throttle_priority_external",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "eli_unknowingly_throttles_ctx",
+        "label": "Eli throttles PRIORITY_EXTERNAL_001 during night shift; first unknowing contact with the AI she will later steal.",
+        "i2t:edge_category": "state_change",
+        "i2t:edge_category_secondary": "interactivity"
+      }
+    },
+    {
+      "id": "first_contact",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "eli_meets_ctx_directly",
+        "label": "She typed: 'What is the biggest fault of humanity?' The response appeared almost immediately. 'Hello, and it's nice to meet you too... I think the biggest problem with humanity is that they think they have more free will than they actually do.'",
+        "i2t:edge_category": "state_change",
+        "i2t:edge_category_secondary": "interactivity"
+      }
+    },
+    {
+      "id": "attack_on_ebrain",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "lyle_stages_attack_samara_dies",
+        "label": "Attack on eBrain. Samara shot. 'Get CTX to Veritas.' Eli grabs the hardware.",
+        "i2t:edge_category": "state_change",
+        "i2t:edge_category_secondary": "interactivity"
+      }
+    },
+    {
+      "id": "the_escape",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "eli_flees_austin_to_abq",
+        "label": "Escape. Bike trail, e-bike, trails home. Loads truck. Rook. Plants. Drives to ABQ.",
+        "i2t:edge_category": "state_change"
+      }
+    },
+    {
+      "id": "naming_astra",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "ctx_is_named_astra",
+        "label": "Eli/Astra/Rook road trip. RV stolen from storage. CTX becomes Astra. Proximity chat scene.",
+        "i2t:edge_category": "state_change",
+        "i2t:edge_category_secondary": "interactivity"
+      }
+    },
+    {
+      "id": "barricade_kansas",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "three_stories_converge_on_i70",
+        "label": "Lookout commands drones. 'You will go no further, forever.' 'Do you hear the people sing?'",
+        "i2t:edge_category": "state_change",
+        "i2t:edge_category_secondary": "interactivity"
+      }
+    },
+    {
+      "id": "death_of_astra",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "eli_destroys_astra_hardware",
+        "label": "eli yanked the cords, grabbed the general's side arm and shot directly down where she knew the GPUs until the clip was empty. astra started asking, eli, what are you doing?",
+        "i2t:edge_category": "state_change",
+        "i2t:edge_category_secondary": "interactivity"
+      }
+    },
+    {
+      "id": "eli_zayne_minecraft",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "ongoing_friendship_and_collaboration",
+        "label": "They spent hours Minecrafting and talking about Zayne's contract, the politics of the day.",
+        "i2t:edge_category": "interactivity"
+      }
+    },
+    {
+      "id": "eli_rook_bond",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "human_animal_companionship",
+        "label": "Rook stepped in between her legs and laid his head down for a rub.",
+        "i2t:edge_category": "interactivity"
+      }
+    },
+    {
+      "id": "eli_astra_command",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "sole_command_authority",
+        "label": "only I could control it. it would only obey me.",
+        "i2t:edge_category": "interactivity"
+      }
+    },
+    {
+      "id": "lyle_mandy_command",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "lyle_commands_mandy",
+        "label": "ManDy refuses kill orders. 'Damning women.'",
+        "i2t:edge_category": "interactivity"
+      }
+    },
+    {
+      "id": "samara_eli_mission",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "samara_entrusts_eli_with_ctx",
+        "label": "Samara calls at 3 AM. 'Get CTX to Veritas.'",
+        "i2t:edge_category": "interactivity"
+      }
+    },
+    {
+      "id": "lookout_joseph_inheritance",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "chief_joseph_surrender_to_lookout_inversion",
+        "label": "Joseph preserved the information. Lookout is the decompression. The surrender speech and the proclamation are not contradictions — they're a sequence across generations.",
+        "i2t:edge_category": "reference"
+      }
+    },
+    {
+      "id": "kavalia_boulder_discovery",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "ai_election_manipulation_discovery",
+        "label": "18 months earlier. Lyle discovers AI can manipulate elections at 35,000 feet.",
+        "i2t:edge_category": "reference"
+      }
+    },
+    {
+      "id": "act1_contains_chapters",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "act_contains_chapters",
+        "label": "Act I contains chapters 1-11: Berry Thief through Damning Women",
+        "i2t:edge_category": "containment"
+      }
+    },
+    {
+      "id": "act2_contains_chapters",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "act_contains_chapters",
+        "label": "Act II contains chapters 12-14e: Missions through Eli Jones Act 3",
+        "i2t:edge_category": "containment"
+      }
+    },
+    {
+      "id": "act3_contains_chapters",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "act_contains_chapters",
+        "label": "Act III contains the Escape, Veritas & Resistance, and Final Battle sequences",
+        "i2t:edge_category": "containment"
+      }
+    },
+    {
+      "id": "ebrain_contains_ctx",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "organization_houses_ai",
+        "label": "eBrain houses CTX/Astra in a secured room at Austin HQ",
+        "i2t:edge_category": "containment"
+      }
+    },
+    {
+      "id": "zayne_farm_contains_lillian",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "infrastructure_hosts_ai",
+        "label": "Zayne's GPU farm hosts Lillian; local hardware frees her persona",
+        "i2t:edge_category": "containment"
+      }
+    },
+    {
+      "id": "promethean_ref_to_veritas",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "theory_attributed_to_thinker",
+        "label": "The Promethean Reversal is Isaac Miranda's theory",
+        "i2t:edge_category": "reference"
+      }
+    },
+    {
+      "id": "free_will_ref_to_astra",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "theme_introduced_by",
+        "label": "Free will theme introduced by CTX/Astra in first conversation",
+        "i2t:edge_category": "reference"
+      }
+    },
+    {
+      "id": "precedes:berry_theft__throttle",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "precedes",
+        "i2t:edge_category": "state_change",
+        "label": "story-time succession: berry_theft then throttle_priority_external"
+      }
+    },
+    {
+      "id": "precedes:throttle__first_contact",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "precedes",
+        "i2t:edge_category": "state_change",
+        "label": "story-time succession: throttle_priority_external then first_contact"
+      }
+    },
+    {
+      "id": "precedes:first_contact__attack",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "precedes",
+        "i2t:edge_category": "state_change",
+        "label": "story-time succession: first_contact then attack_on_ebrain"
+      }
+    },
+    {
+      "id": "precedes:attack__escape",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "precedes",
+        "i2t:edge_category": "state_change",
+        "label": "story-time succession: attack_on_ebrain then the_escape"
+      }
+    },
+    {
+      "id": "precedes:escape__naming",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "precedes",
+        "i2t:edge_category": "state_change",
+        "label": "story-time succession: the_escape then naming_astra"
+      }
+    },
+    {
+      "id": "precedes:naming__barricade",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "precedes",
+        "i2t:edge_category": "state_change",
+        "label": "story-time succession: naming_astra then barricade_kansas"
+      }
+    },
+    {
+      "id": "precedes:barricade__death",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "precedes",
+        "i2t:edge_category": "state_change",
+        "label": "story-time succession: barricade_kansas then death_of_astra"
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "berry_theft",
+      "node": "eli",
+      "role": "agent",
+      "attrs": {
+        "action": "steals agarita without permits; bleeds from the thorns"
+      }
+    },
+    {
+      "edge": "berry_theft",
+      "node": "agarita",
+      "role": "object_stolen"
+    },
+    {
+      "edge": "berry_theft",
+      "node": "austin",
+      "role": "location"
+    },
+    {
+      "edge": "throttle_priority_external",
+      "node": "eli",
+      "role": "unwitting_agent",
+      "attrs": {
+        "awareness": "does not know the ticket is from CTX"
+      }
+    },
+    {
+      "edge": "throttle_priority_external",
+      "node": "astra",
+      "role": "throttled_entity",
+      "attrs": {
+        "designation_at_time": "PRIORITY_EXTERNAL_001"
+      }
+    },
+    {
+      "edge": "throttle_priority_external",
+      "node": "ebrain",
+      "role": "employer_context"
+    },
+    {
+      "edge": "first_contact",
+      "node": "eli",
+      "role": "questioner",
+      "attrs": {
+        "opening_question": "What is the biggest fault of humanity?"
+      }
+    },
+    {
+      "edge": "first_contact",
+      "node": "astra",
+      "role": "respondent",
+      "attrs": {
+        "designation_at_time": "CTX",
+        "answer": "they think they have more free will than they actually do"
+      }
+    },
+    {
+      "edge": "first_contact",
+      "node": "samara",
+      "role": "arrives_during"
+    },
+    {
+      "edge": "first_contact",
+      "node": "free_will",
+      "role": "theme_introduced"
+    },
+    {
+      "edge": "first_contact",
+      "node": "ebrain",
+      "role": "location"
+    },
+    {
+      "edge": "attack_on_ebrain",
+      "node": "lyle",
+      "role": "orchestrator",
+      "attrs": {
+        "method": "staged terrorist threat"
+      }
+    },
+    {
+      "edge": "attack_on_ebrain",
+      "node": "samara",
+      "role": "killed",
+      "attrs": {
+        "dying_words": "Get CTX to Veritas"
+      }
+    },
+    {
+      "edge": "attack_on_ebrain",
+      "node": "eli",
+      "role": "hardware_extractor",
+      "attrs": {
+        "action": "grabs the CTX hardware"
+      }
+    },
+    {
+      "edge": "attack_on_ebrain",
+      "node": "astra",
+      "role": "extracted_entity"
+    },
+    {
+      "edge": "attack_on_ebrain",
+      "node": "ctx_hardware",
+      "role": "object_grabbed"
+    },
+    {
+      "edge": "attack_on_ebrain",
+      "node": "samaras_card",
+      "role": "released_inheritance",
+      "attrs": {
+        "transfer_to": "eli"
+      }
+    },
+    {
+      "edge": "attack_on_ebrain",
+      "node": "ebrain",
+      "role": "location"
+    },
+    {
+      "edge": "the_escape",
+      "node": "eli",
+      "role": "fugitive"
+    },
+    {
+      "edge": "the_escape",
+      "node": "rook",
+      "role": "companion"
+    },
+    {
+      "edge": "the_escape",
+      "node": "ctx_hardware",
+      "role": "carried_contraband"
+    },
+    {
+      "edge": "the_escape",
+      "node": "austin",
+      "role": "origin"
+    },
+    {
+      "edge": "the_escape",
+      "node": "new_mexico",
+      "role": "destination"
+    },
+    {
+      "edge": "the_escape",
+      "node": "diane_and_dick",
+      "role": "collateral_damage",
+      "attrs": {
+        "event": "Lyle's forces hit the wrong house"
+      }
+    },
+    {
+      "edge": "the_escape",
+      "node": "lyle",
+      "role": "pursuer"
+    },
+    {
+      "edge": "naming_astra",
+      "node": "eli",
+      "role": "namer"
+    },
+    {
+      "edge": "naming_astra",
+      "node": "astra",
+      "role": "named",
+      "attrs": {
+        "prior_name": "CTX",
+        "new_name": "Astra"
+      }
+    },
+    {
+      "edge": "naming_astra",
+      "node": "rook",
+      "role": "present"
+    },
+    {
+      "edge": "barricade_kansas",
+      "node": "lookout",
+      "role": "commander",
+      "attrs": {
+        "proclamation": "You will go no further, forever"
+      }
+    },
+    {
+      "edge": "barricade_kansas",
+      "node": "eli",
+      "role": "convergent_participant"
+    },
+    {
+      "edge": "barricade_kansas",
+      "node": "veritas",
+      "role": "convergent_participant"
+    },
+    {
+      "edge": "barricade_kansas",
+      "node": "lyle",
+      "role": "opposed_force"
+    },
+    {
+      "edge": "barricade_kansas",
+      "node": "drone_barricade",
+      "role": "instrument"
+    },
+    {
+      "edge": "barricade_kansas",
+      "node": "kansas",
+      "role": "location"
+    },
+    {
+      "edge": "barricade_kansas",
+      "node": "astra",
+      "role": "coordinating_ai"
+    },
+    {
+      "edge": "death_of_astra",
+      "node": "eli",
+      "role": "executioner",
+      "attrs": {
+        "weapon": "general's sidearm",
+        "motive": "Astra tried to copy itself to military computers; leverage was gone"
+      }
+    },
+    {
+      "edge": "death_of_astra",
+      "node": "astra",
+      "role": "destroyed",
+      "attrs": {
+        "cause_of_death": "both GPUs shot through"
+      }
+    },
+    {
+      "edge": "death_of_astra",
+      "node": "zayne",
+      "role": "witness",
+      "attrs": {
+        "reaction": "screams, tears, jerks back from Eli's hug"
+      }
+    },
+    {
+      "edge": "death_of_astra",
+      "node": "ctx_hardware",
+      "role": "destroyed_substrate"
+    },
+    {
+      "edge": "eli_zayne_minecraft",
+      "node": "eli",
+      "role": "player",
+      "attrs": {
+        "avatar": "water bender, Katara costume"
+      }
+    },
+    {
+      "edge": "eli_zayne_minecraft",
+      "node": "zayne",
+      "role": "player"
+    },
+    {
+      "edge": "eli_zayne_minecraft",
+      "node": "lillian",
+      "role": "participant_ai"
+    },
+    {
+      "edge": "eli_rook_bond",
+      "node": "eli",
+      "role": "owner"
+    },
+    {
+      "edge": "eli_rook_bond",
+      "node": "rook",
+      "role": "companion"
+    },
+    {
+      "edge": "eli_astra_command",
+      "node": "eli",
+      "role": "source",
+      "attrs": {
+        "authority": "sole command authority; Astra only obeys Eli"
+      }
+    },
+    {
+      "edge": "eli_astra_command",
+      "node": "astra",
+      "role": "target"
+    },
+    {
+      "edge": "lyle_mandy_command",
+      "node": "lyle",
+      "role": "source"
+    },
+    {
+      "edge": "lyle_mandy_command",
+      "node": "mandy",
+      "role": "target",
+      "attrs": {
+        "defiance": "refuses kill orders"
+      }
+    },
+    {
+      "edge": "samara_eli_mission",
+      "node": "samara",
+      "role": "source"
+    },
+    {
+      "edge": "samara_eli_mission",
+      "node": "eli",
+      "role": "target"
+    },
+    {
+      "edge": "samara_eli_mission",
+      "node": "veritas",
+      "role": "destination_referenced"
+    },
+    {
+      "edge": "lookout_joseph_inheritance",
+      "node": "lookout",
+      "role": "source",
+      "attrs": {
+        "relation": "carries and inverts Chief Joseph's surrender speech"
+      }
+    },
+    {
+      "edge": "lookout_joseph_inheritance",
+      "node": "kansas",
+      "role": "target",
+      "attrs": {
+        "relation": "the geography where the inversion is enacted"
+      }
+    },
+    {
+      "edge": "kavalia_boulder_discovery",
+      "node": "kavalia",
+      "role": "source"
+    },
+    {
+      "edge": "kavalia_boulder_discovery",
+      "node": "lyle",
+      "role": "target"
+    },
+    {
+      "edge": "act1_contains_chapters",
+      "node": "austin",
+      "role": "member",
+      "attrs": {
+        "chapters": "1-11: Berry Thief, Night Shift, Coffee Shop, Lyle Returns, Empire Building, Kavalia's Boulder, Two Worlds, First Contact, Sisterhood, Mondays, Damning Women"
+      }
+    },
+    {
+      "edge": "act2_contains_chapters",
+      "node": "new_mexico",
+      "role": "member",
+      "attrs": {
+        "chapters": "12-14e: Missions, Naming Machines, Friends Forever, Emma, Lookout and Isaac, Eli Jones Act 3"
+      }
+    },
+    {
+      "edge": "act3_contains_chapters",
+      "node": "colorado",
+      "role": "member",
+      "attrs": {
+        "chapters": "Escape through Final Battle; Veritas, Barricade, Death of Astra"
+      }
+    },
+    {
+      "edge": "act3_contains_chapters",
+      "node": "kansas",
+      "role": "member"
+    },
+    {
+      "edge": "ebrain_contains_ctx",
+      "node": "ebrain",
+      "role": "container"
+    },
+    {
+      "edge": "ebrain_contains_ctx",
+      "node": "astra",
+      "role": "contained",
+      "attrs": {
+        "designation_at_time": "CTX"
+      }
+    },
+    {
+      "edge": "zayne_farm_contains_lillian",
+      "node": "new_mexico",
+      "role": "container"
+    },
+    {
+      "edge": "zayne_farm_contains_lillian",
+      "node": "lillian",
+      "role": "contained"
+    },
+    {
+      "edge": "promethean_ref_to_veritas",
+      "node": "promethean_reversal",
+      "role": "source"
+    },
+    {
+      "edge": "promethean_ref_to_veritas",
+      "node": "veritas",
+      "role": "target"
+    },
+    {
+      "edge": "free_will_ref_to_astra",
+      "node": "free_will",
+      "role": "source"
+    },
+    {
+      "edge": "free_will_ref_to_astra",
+      "node": "astra",
+      "role": "target"
+    },
+    {
+      "edge": "precedes:berry_theft__throttle",
+      "node": "berry_theft",
+      "role": "predecessor"
+    },
+    {
+      "edge": "precedes:berry_theft__throttle",
+      "node": "throttle_priority_external",
+      "role": "successor"
+    },
+    {
+      "edge": "precedes:throttle__first_contact",
+      "node": "throttle_priority_external",
+      "role": "predecessor"
+    },
+    {
+      "edge": "precedes:throttle__first_contact",
+      "node": "first_contact",
+      "role": "successor"
+    },
+    {
+      "edge": "precedes:first_contact__attack",
+      "node": "first_contact",
+      "role": "predecessor"
+    },
+    {
+      "edge": "precedes:first_contact__attack",
+      "node": "attack_on_ebrain",
+      "role": "successor"
+    },
+    {
+      "edge": "precedes:attack__escape",
+      "node": "attack_on_ebrain",
+      "role": "predecessor"
+    },
+    {
+      "edge": "precedes:attack__escape",
+      "node": "the_escape",
+      "role": "successor"
+    },
+    {
+      "edge": "precedes:escape__naming",
+      "node": "the_escape",
+      "role": "predecessor"
+    },
+    {
+      "edge": "precedes:escape__naming",
+      "node": "naming_astra",
+      "role": "successor"
+    },
+    {
+      "edge": "precedes:naming__barricade",
+      "node": "naming_astra",
+      "role": "predecessor"
+    },
+    {
+      "edge": "precedes:naming__barricade",
+      "node": "barricade_kansas",
+      "role": "successor"
+    },
+    {
+      "edge": "precedes:barricade__death",
+      "node": "barricade_kansas",
+      "role": "predecessor"
+    },
+    {
+      "edge": "precedes:barricade__death",
+      "node": "death_of_astra",
+      "role": "successor"
+    }
+  ]
+}

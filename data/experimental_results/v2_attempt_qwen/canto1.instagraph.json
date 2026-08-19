@@ -1,0 +1,578 @@
+{
+  "metadata": {
+    "extractor_model": "qwen2.5-coder:32b-instruct-q4_K_M",
+    "extracted_via": "test script",
+    "local_ai": true
+  },
+  "nodes": [
+    {
+      "id": "narad",
+      "label": "N\u00e1rad",
+      "type": "Deity",
+      "color": "#F8D8C8",
+      "properties": {
+        "role": "prince of those whose lore in words of wisdom flows"
+      }
+    },
+    {
+      "id": "valmiki",
+      "label": "V\u00e1lm\u00edki",
+      "type": "Sage",
+      "color": "#F8D8C8"
+    },
+    {
+      "id": "rama",
+      "label": "R\u00e1ma",
+      "type": "Prince",
+      "color": "#F8D8C8",
+      "properties": {
+        "lineage": "Ikshv\u00e1ku's line"
+      }
+    },
+    {
+      "id": "lakshman",
+      "label": "Lakshma\u1e47",
+      "type": "Prince",
+      "color": "#F8D8C8"
+    },
+    {
+      "id": "sita",
+      "label": "S\u00edt\u00e1",
+      "type": "Queen",
+      "color": "#F8D8C8",
+      "properties": {
+        "lineage": "Janak's royal lineage"
+      }
+    },
+    {
+      "id": "dasharatha",
+      "label": "King Da\u015baratha",
+      "type": "King",
+      "color": "#E0E0E0"
+    },
+    {
+      "id": "kaikeyi",
+      "label": "Kaikey\u00ed",
+      "type": "Queen",
+      "color": "#E0E0E0"
+    },
+    {
+      "id": "bharat",
+      "label": "Bharat",
+      "type": "Prince",
+      "color": "#E0E0E0"
+    },
+    {
+      "id": "viradha",
+      "label": "Vir\u00e1dha",
+      "type": "Giant Fiend",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "agastya",
+      "label": "Agastya",
+      "type": "Sage",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "surpanakha",
+      "label": "\u015a\u00farpa\u1e47akh\u00e1",
+      "type": "Giantess",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "dushana",
+      "label": "D\u00fasha\u1e47",
+      "type": "Giant",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "ravana",
+      "label": "R\u00e1va\u1e47",
+      "type": "Demon King",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "maricha",
+      "label": "M\u00e1r\u00edcha",
+      "type": "Demon",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "jatayu",
+      "label": "Ja\u1e6d\u00e1yu",
+      "type": "Vulture",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "kabandha",
+      "label": "Kabandha",
+      "type": "Monstrous Fiend",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "hanuman",
+      "label": "Hanum\u00e1n",
+      "type": "Wind-God's Son",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "sugriva",
+      "label": "Sugr\u00edva",
+      "type": "V\u00e1nar Chief",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "bali",
+      "label": "B\u00e1li",
+      "type": "Demon King",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "sampati",
+      "label": "Samp\u00e1ti",
+      "type": "Bird",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "vibhishana",
+      "label": "Vibhisha\u1e47",
+      "type": "Demon Prince",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "brahma",
+      "label": "Brahm\u00e1",
+      "type": "Deity",
+      "color": "#E0E0E0"
+    },
+    {
+      "id": "varuna",
+      "label": "Varu\u1e47a",
+      "type": "God of the Sea",
+      "color": "#E0E0E0"
+    },
+    {
+      "id": "nala",
+      "label": "Nala",
+      "type": "Builder",
+      "color": "#F8C8B8"
+    },
+    {
+      "id": "ayodhya",
+      "label": "Ayodhy\u00e1",
+      "type": "City",
+      "color": "#DCC8F8",
+      "properties": {
+        "role": "capital of King Da\u015baratha"
+      }
+    },
+    {
+      "id": "chitrakuta",
+      "label": "Chitrak\u00fa\u1e6da",
+      "type": "Hill",
+      "color": "#DCC8F8"
+    },
+    {
+      "id": "nandigram",
+      "label": "Nandigr\u00e1ma",
+      "type": "City",
+      "color": "#DCC8F8"
+    },
+    {
+      "id": "lanka",
+      "label": "Lank\u00e1",
+      "type": "City",
+      "color": "#DCC8F8",
+      "properties": {
+        "role": "capital of R\u00e1va\u1e47"
+      }
+    },
+    {
+      "id": "pampa",
+      "label": "Pamp\u00e1",
+      "type": "River",
+      "color": "#DCC8F8"
+    },
+    {
+      "id": "ashoka_vana",
+      "label": "A\u015boka Vana",
+      "type": "Forest",
+      "color": "#DCC8F8"
+    }
+  ],
+  "edges": [
+    {
+      "from": "valmiki",
+      "to": "narad",
+      "label": "The good V\u00e1lm\u00edki, first and best / Of hermit saints, these words addressed:",
+      "relationship": "addresses",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "valmiki",
+      "to": "rama",
+      "label": "In whom alone these virtues dwell.",
+      "relationship": "describes",
+      "direction": "directed",
+      "color": "#26A",
+      "properties": {
+        "source_line": 41,
+        "source_char_offset": 1299
+      }
+    },
+    {
+      "from": "dasharatha",
+      "to": "rama",
+      "label": "With him, his best and eldest son / By all his princely virtues won / King Da\u015baratha willed to share / His kingdom as the Regent Heir.",
+      "relationship": "designates_heir",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "kaikeyi",
+      "to": "dasharatha",
+      "label": "She bade the hapless king bestow / Two gifts he promised long ago, / That R\u00e1ma to the woods should flee, / And that her child the heir should be.",
+      "relationship": "demands_gifts",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "dasharatha",
+      "to": "rama",
+      "label": "By chains of duty firmly tied, / The wretched king perforce complied.",
+      "relationship": "obeys_duty",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "chitrakuta",
+      "label": "He bade his driver turn and go. / Guha, Nish\u00e1das\u2019 king, he met, / And on the farther bank was set.",
+      "relationship": "arrives_at",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "lakshman",
+      "label": "Then Lakshma\u1e47\u2019s truth was nobly shown, / Then were his love and courage known, / When for his brother\u2019s sake he dared / All perils, and his exile shared.",
+      "relationship": "supports_brother",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "sita",
+      "label": "And S\u00edt\u00e1, R\u00e1ma\u2019s darling wife, / Loved even as he loved his life, / Whom happy marks combined to bless, / A miracle of loveliness.",
+      "relationship": "marries",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "ayodhya",
+      "label": "The King and people, sad of mood, / The hero\u2019s car awhile pursued. / But when Prince R\u00e1ma lighted down / At \u015aringavera\u2019s pleasant town, / Where Gang\u00e1\u2019s holy waters flow, / He bade his driver turn and go.",
+      "relationship": "leaves",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "bharat",
+      "to": "rama",
+      "label": "Forth to the woods he fared to meet / His brother, fell before his feet, / And cried, \u201cThy claim all men allow: / O come, our lord and king be thou.\u201d",
+      "relationship": "pleads_with_brother",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "bharat",
+      "label": "He placed his sandals in his hand / A pledge that he would rule the land: / And bade his brother turn again.",
+      "relationship": "gives_pledge",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "bharat",
+      "to": "nandigram",
+      "label": "Then Bharat, finding prayer was vain, / The sandals took and went away; / Nor in Ayodhy\u00e1 would he stay. / But turned to Nandigr\u00e1ma, where / He ruled the realm with watchful care.",
+      "relationship": "rules",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "viradha",
+      "label": "Vir\u00e1dha, giant fiend, he slew,",
+      "relationship": "defeats",
+      "direction": "directed",
+      "color": "#26A",
+      "properties": {
+        "source_line": 178,
+        "source_char_offset": 5924
+      }
+    },
+    {
+      "from": "rama",
+      "to": "agastya",
+      "label": "And then Agastya\u2019s friendship knew.",
+      "relationship": "befriends",
+      "direction": "directed",
+      "color": "#26A",
+      "properties": {
+        "source_line": 179,
+        "source_char_offset": 5955
+      }
+    },
+    {
+      "from": "rama",
+      "to": "surpanakha",
+      "label": "R\u00e1ma\u2019s falchion left its trace / Deep cut on \u015a\u00farpa\u1e47akh\u00e1\u2019s face:",
+      "relationship": "injures",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "dushana",
+      "to": "rama",
+      "label": "The monster of the triple head. / And D\u00fasha\u1e47 to the contest sped.",
+      "relationship": "attacks",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "ravana",
+      "to": "maricha",
+      "label": "He bade the fiend M\u00e1r\u00edcha aid / The vengeful plot his fury laid.",
+      "relationship": "commands",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "maricha",
+      "to": "rama",
+      "label": "There, by M\u00e1r\u00edcha\u2019s magic art, / He wiled the princely youths apart,",
+      "relationship": "deceives",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "jatayu",
+      "to": "rama",
+      "label": "The son of Raghu came and found / Ja\u1e6d\u00e1yu slain upon the ground.",
+      "relationship": "dies_protecting_sita",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "kabandha",
+      "label": "The monstrous fiend he smote and slew, / And in the flame the body threw;",
+      "relationship": "defeats",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "kabandha",
+      "to": "rama",
+      "label": "When straight from out the funeral flame / In lovely form Kabandha came,",
+      "relationship": "transforms",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "kabandha",
+      "to": "hanuman",
+      "label": "And bade him seek in his distress / A wise and holy hermitess.",
+      "relationship": "advises",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "hanuman",
+      "to": "pampa",
+      "label": "By counsel of this saintly dame / To Pamp\u00e1\u2019s pleasant flood he came,",
+      "relationship": "travels_to",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "hanuman",
+      "to": "sugriva",
+      "label": "And there the steadfast friendship won / Of Hanum\u00e1n the Wind-God\u2019s son.",
+      "relationship": "befriends",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "sugriva",
+      "label": "Counselled by him he told his grief / To great Sugr\u00edva, V\u00e1nar chief,",
+      "relationship": "confides_in",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "sugriva",
+      "to": "rama",
+      "label": "And R\u00e1ma lent a willing ear / And promised to allay his fear.",
+      "relationship": "promises_alliance",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "bali",
+      "to": "sugriva",
+      "label": "First comforted his trembling wife, / Then sought Sugr\u00edva in the strife.",
+      "relationship": "attacks",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "bali",
+      "label": "One shaft from R\u00e1ma\u2019s deadly bow / The monarch in the dust laid low.",
+      "relationship": "defeats",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "sugriva",
+      "to": "rama",
+      "label": "Then R\u00e1ma bade Sugr\u00edva reign / In place of royal B\u00e1li slain.",
+      "relationship": "grants_kingdom",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "hanuman",
+      "to": "lanka",
+      "label": "Then by Samp\u00e1ti\u2019s counsel led, / Brave Hanum\u00e1n, who mocked at dread, / Sprang at one wild tremendous leap / Two hundred leagues across the deep.",
+      "relationship": "travels_to",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "hanuman",
+      "to": "sita",
+      "label": "There pensive \u2019neath A\u015boka boughs / He found poor S\u00edt\u00e1, R\u00e1ma\u2019s spouse.",
+      "relationship": "finds",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "hanuman",
+      "to": "ravana",
+      "label": "Five captains of the host he slew, / Seven sons of councillors o\u2019erthrew;",
+      "relationship": "defeats",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "hanuman",
+      "to": "lanka",
+      "label": "The town he burnt with hostile flame,",
+      "relationship": "destroys",
+      "direction": "directed",
+      "color": "#26A",
+      "properties": {
+        "source_line": 296,
+        "source_char_offset": 9919
+      }
+    },
+    {
+      "from": "rama",
+      "to": "varuna",
+      "label": "He smote the sea with shafts as bright / As sunbeams in their summer height, / And quick appeared the Rivers\u2019 King / Obedient to the summoning.",
+      "relationship": "summons",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "nala",
+      "to": "lanka",
+      "label": "A bridge was thrown by Nala o\u2019er / The narrow sea from shore to shore.",
+      "relationship": "builds_bridge",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "ravana",
+      "label": "They crossed to Lank\u00e1\u2019s golden town, / Where R\u00e1ma\u2019s hand smote R\u00e1va\u1e47 down.",
+      "relationship": "defeats",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "vibhishana",
+      "to": "rama",
+      "label": "Vibhisha\u1e47 there was left to reign / Over his brother\u2019s wide domain.",
+      "relationship": "grants_kingdom",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "sita",
+      "to": "rama",
+      "label": "To meet her husband S\u00edt\u00e1 came;",
+      "relationship": "returns_to_husband",
+      "direction": "directed",
+      "color": "#26A",
+      "properties": {
+        "source_line": 313,
+        "source_char_offset": 10472
+      }
+    },
+    {
+      "from": "rama",
+      "to": "sita",
+      "label": "With bitter words his wife addressed / Before the crowd that round her pressed.",
+      "relationship": "questions_wife",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "sita",
+      "to": "rama",
+      "label": "Then S\u00edt\u00e1, touched with noble ire, / Gave her fair body to the fire.",
+      "relationship": "tests_purity",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "brahma",
+      "to": "sita",
+      "label": "And straight the God of Fire appeared, / And words from heaven her honour cleared.",
+      "relationship": "clears_honour",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "sita",
+      "label": "Then R\u00e1ma clasped his wife again, / Uninjured, pure from spot and stain.",
+      "relationship": "reunites_with_wife",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "ayodhya",
+      "label": "Led by the Lord who rules the sky, / The Gods and heavenly saints drew nigh, / And honoured him with worthy meed, / Rejoicing in each glorious deed. / His task achieved, his foe removed, / He triumphed, by the Gods approved.",
+      "relationship": "returns_to_capital",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "brahma",
+      "label": "By grace of Heaven he raised to life / The chieftains slain in mortal strife;",
+      "relationship": "raises_from_dead",
+      "direction": "directed",
+      "color": "#26A"
+    }
+  ]
+}

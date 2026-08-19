@@ -1,0 +1,619 @@
+{
+  "_comment": "Native Cytoscape.js JSON — Wizard of Oz plot spine. This is what cy.json() produces and what cytoscape({ elements, style, layout }) consumes directly. No adapter needed.",
+
+  "elements": {
+    "nodes": [
+      {
+        "data": {
+          "id": "oz",
+          "label": "The Land of Oz",
+          "type": "Place"
+        },
+        "classes": "place container"
+      },
+      {
+        "data": {
+          "id": "kansas",
+          "label": "Kansas",
+          "type": "Place"
+        },
+        "classes": "place"
+      },
+      {
+        "data": {
+          "id": "munchkin_country",
+          "label": "Munchkin Country",
+          "type": "Place",
+          "parent": "oz"
+        },
+        "classes": "place"
+      },
+      {
+        "data": {
+          "id": "emerald_city",
+          "label": "Emerald City",
+          "type": "Place",
+          "parent": "oz"
+        },
+        "classes": "place"
+      },
+      {
+        "data": {
+          "id": "winkie_country",
+          "label": "Winkie Country",
+          "type": "Place",
+          "parent": "oz"
+        },
+        "classes": "place"
+      },
+      {
+        "data": {
+          "id": "quadling_country",
+          "label": "Quadling Country",
+          "type": "Place",
+          "parent": "oz"
+        },
+        "classes": "place"
+      },
+
+      {
+        "data": {
+          "id": "dorothy",
+          "label": "Dorothy Gale",
+          "type": "Character",
+          "role": "protagonist"
+        },
+        "classes": "character protagonist"
+      },
+      {
+        "data": {
+          "id": "toto",
+          "label": "Toto",
+          "type": "Character",
+          "role": "companion"
+        },
+        "classes": "character"
+      },
+      {
+        "data": {
+          "id": "scarecrow",
+          "label": "the Scarecrow",
+          "type": "AnimatedCharacter",
+          "role": "companion",
+          "wants": "brains"
+        },
+        "classes": "character animated"
+      },
+      {
+        "data": {
+          "id": "tin_woodman",
+          "label": "the Tin Woodman",
+          "type": "AnimatedCharacter",
+          "role": "companion",
+          "wants": "heart"
+        },
+        "classes": "character animated"
+      },
+      {
+        "data": {
+          "id": "cowardly_lion",
+          "label": "the Cowardly Lion",
+          "type": "AnimatedCharacter",
+          "role": "companion",
+          "wants": "courage"
+        },
+        "classes": "character animated"
+      },
+      {
+        "data": {
+          "id": "wizard",
+          "label": "the Wizard of Oz",
+          "type": "Character",
+          "role": "false authority",
+          "real_identity": "Oscar Zoroaster Phadrig Isaac Norman Henkle Emmannuel Ambroise Diggs, a balloonist from Omaha"
+        },
+        "classes": "character antagonist"
+      },
+      {
+        "data": {
+          "id": "wicked_witch_west",
+          "label": "the Wicked Witch of the West",
+          "type": "Witch",
+          "role": "antagonist"
+        },
+        "classes": "character antagonist witch"
+      },
+      {
+        "data": {
+          "id": "glinda",
+          "label": "Glinda the Good",
+          "type": "Witch",
+          "role": "true authority"
+        },
+        "classes": "character witch"
+      },
+      {
+        "data": {
+          "id": "good_witch_north",
+          "label": "Good Witch of the North",
+          "type": "Witch",
+          "role": "herald"
+        },
+        "classes": "character witch"
+      },
+
+      {
+        "data": {
+          "id": "silver_shoes",
+          "label": "the Silver Shoes",
+          "type": "Item",
+          "power": "can carry the wearer anywhere in three steps"
+        },
+        "classes": "item magical"
+      },
+      {
+        "data": {
+          "id": "golden_cap",
+          "label": "the Golden Cap",
+          "type": "Item",
+          "power": "commands the Winged Monkeys three times per holder"
+        },
+        "classes": "item magical"
+      },
+      {
+        "data": {
+          "id": "bucket_of_water",
+          "label": "the Bucket of Water",
+          "type": "Item"
+        },
+        "classes": "item"
+      },
+
+      {
+        "data": {
+          "id": "theme_home",
+          "label": "Home",
+          "type": "Theme"
+        },
+        "classes": "theme"
+      },
+      {
+        "data": {
+          "id": "theme_deception",
+          "label": "Illusion / Deception",
+          "type": "Theme"
+        },
+        "classes": "theme"
+      },
+      {
+        "data": {
+          "id": "theme_self_sufficiency",
+          "label": "Already Had It All Along",
+          "type": "Theme"
+        },
+        "classes": "theme"
+      }
+    ],
+
+    "edges": [
+
+      {
+        "data": {
+          "id": "e_cyclone",
+          "source": "kansas",
+          "target": "munchkin_country",
+          "label": "cyclone carries Dorothy",
+          "predicate": "transports_to",
+          "edge_category": "state_change",
+          "weight": 1.0,
+          "sequence": 1
+        },
+        "classes": "state_change spine"
+      },
+      {
+        "data": {
+          "id": "e_journey_ec",
+          "source": "munchkin_country",
+          "target": "emerald_city",
+          "label": "yellow brick road journey",
+          "predicate": "travels_to",
+          "edge_category": "state_change",
+          "weight": 0.9,
+          "sequence": 2
+        },
+        "classes": "state_change spine"
+      },
+      {
+        "data": {
+          "id": "e_quest_west",
+          "source": "emerald_city",
+          "target": "winkie_country",
+          "label": "Wizard sends party to kill the Witch",
+          "predicate": "sent_to",
+          "edge_category": "state_change",
+          "weight": 0.95,
+          "sequence": 3
+        },
+        "classes": "state_change spine"
+      },
+      {
+        "data": {
+          "id": "e_witch_death",
+          "source": "dorothy",
+          "target": "wicked_witch_west",
+          "label": "Dorothy throws water; Witch melts",
+          "predicate": "kills",
+          "edge_category": "state_change",
+          "edge_category_secondary": "interactivity",
+          "weight": 1.0,
+          "sequence": 4
+        },
+        "classes": "state_change spine"
+      },
+      {
+        "data": {
+          "id": "e_unmasking",
+          "source": "toto",
+          "target": "wizard",
+          "label": "Toto pulls back the curtain",
+          "predicate": "exposes",
+          "edge_category": "state_change",
+          "edge_category_secondary": "interactivity",
+          "weight": 1.0,
+          "sequence": 5
+        },
+        "classes": "state_change spine"
+      },
+      {
+        "data": {
+          "id": "e_return_home",
+          "source": "quadling_country",
+          "target": "kansas",
+          "label": "silver shoes carry Dorothy home",
+          "predicate": "transports_to",
+          "edge_category": "state_change",
+          "weight": 1.0,
+          "sequence": 6
+        },
+        "classes": "state_change spine"
+      },
+
+      {
+        "data": {
+          "id": "e_companion_scarecrow",
+          "source": "dorothy",
+          "target": "scarecrow",
+          "label": "companionship",
+          "predicate": "travels_with",
+          "edge_category": "interactivity",
+          "weight": 0.9
+        },
+        "classes": "interactivity"
+      },
+      {
+        "data": {
+          "id": "e_companion_tin",
+          "source": "dorothy",
+          "target": "tin_woodman",
+          "label": "companionship",
+          "predicate": "travels_with",
+          "edge_category": "interactivity",
+          "weight": 0.85
+        },
+        "classes": "interactivity"
+      },
+      {
+        "data": {
+          "id": "e_companion_lion",
+          "source": "dorothy",
+          "target": "cowardly_lion",
+          "label": "companionship",
+          "predicate": "travels_with",
+          "edge_category": "interactivity",
+          "weight": 0.8
+        },
+        "classes": "interactivity"
+      },
+      {
+        "data": {
+          "id": "e_companion_toto",
+          "source": "dorothy",
+          "target": "toto",
+          "label": "inseparable bond",
+          "predicate": "owns",
+          "edge_category": "interactivity",
+          "weight": 0.95
+        },
+        "classes": "interactivity"
+      },
+      {
+        "data": {
+          "id": "e_wizard_deception",
+          "source": "wizard",
+          "target": "dorothy",
+          "label": "the Wizard's deception channel",
+          "predicate": "deceives",
+          "edge_category": "interactivity",
+          "weight": 0.7
+        },
+        "classes": "interactivity"
+      },
+      {
+        "data": {
+          "id": "e_witch_commands_monkeys",
+          "source": "wicked_witch_west",
+          "target": "golden_cap",
+          "label": "commands Winged Monkeys via cap",
+          "predicate": "wields",
+          "edge_category": "interactivity",
+          "weight": 0.85
+        },
+        "classes": "interactivity"
+      },
+
+      {
+        "data": {
+          "id": "e_shoes_power",
+          "source": "silver_shoes",
+          "target": "theme_self_sufficiency",
+          "label": "the shoes could always take her home",
+          "predicate": "embodies",
+          "edge_category": "reference",
+          "weight": 0.6
+        },
+        "classes": "reference"
+      },
+      {
+        "data": {
+          "id": "e_wizard_embodies_deception",
+          "source": "wizard",
+          "target": "theme_deception",
+          "label": "the Wizard is the embodiment of illusion",
+          "predicate": "embodies",
+          "edge_category": "reference",
+          "weight": 0.7
+        },
+        "classes": "reference"
+      },
+      {
+        "data": {
+          "id": "e_dorothy_wants_home",
+          "source": "dorothy",
+          "target": "theme_home",
+          "label": "Dorothy's want",
+          "predicate": "is_about",
+          "edge_category": "reference",
+          "weight": 0.5
+        },
+        "classes": "reference"
+      },
+      {
+        "data": {
+          "id": "e_north_kiss",
+          "source": "good_witch_north",
+          "target": "dorothy",
+          "label": "kiss of protection on forehead",
+          "predicate": "protects",
+          "edge_category": "interactivity",
+          "weight": 0.6
+        },
+        "classes": "interactivity"
+      },
+      {
+        "data": {
+          "id": "e_glinda_reveal",
+          "source": "glinda",
+          "target": "dorothy",
+          "label": "tells Dorothy the shoes can carry her home",
+          "predicate": "reveals_to",
+          "edge_category": "interactivity",
+          "edge_category_secondary": "state_change",
+          "weight": 0.95
+        },
+        "classes": "interactivity"
+      },
+      {
+        "data": {
+          "id": "e_north_sends",
+          "source": "good_witch_north",
+          "target": "dorothy",
+          "label": "tells Dorothy to follow the yellow brick road",
+          "predicate": "directs",
+          "edge_category": "interactivity",
+          "weight": 0.7
+        },
+        "classes": "interactivity"
+      }
+    ]
+  },
+
+  "style": [
+    {
+      "selector": "node",
+      "style": {
+        "label": "data(label)",
+        "text-valign": "center",
+        "text-halign": "center",
+        "font-size": "11px",
+        "text-wrap": "wrap",
+        "text-max-width": "80px",
+        "width": "40px",
+        "height": "40px",
+        "border-width": 1,
+        "border-color": "#555"
+      }
+    },
+
+    {
+      "selector": "node.character",
+      "style": {
+        "background-color": "#F8C8DC",
+        "shape": "ellipse"
+      }
+    },
+    {
+      "selector": "node.protagonist",
+      "style": {
+        "background-color": "#E8607A",
+        "width": "55px",
+        "height": "55px",
+        "font-weight": "bold",
+        "font-size": "13px"
+      }
+    },
+    {
+      "selector": "node.antagonist",
+      "style": {
+        "background-color": "#D44D4D",
+        "shape": "diamond"
+      }
+    },
+    {
+      "selector": "node.witch",
+      "style": {
+        "shape": "star",
+        "border-color": "#7B3F9E"
+      }
+    },
+    {
+      "selector": "node.animated",
+      "style": {
+        "background-color": "#F8D8C8",
+        "shape": "round-rectangle"
+      }
+    },
+    {
+      "selector": "node.place",
+      "style": {
+        "background-color": "#C8E0F8",
+        "shape": "round-rectangle"
+      }
+    },
+    {
+      "selector": "node.container",
+      "style": {
+        "background-color": "#E8F0FF",
+        "background-opacity": 0.3,
+        "border-width": 2,
+        "border-style": "dashed",
+        "border-color": "#6B9BD2",
+        "text-valign": "top",
+        "text-halign": "center",
+        "font-size": "14px",
+        "font-weight": "bold",
+        "padding": "30px"
+      }
+    },
+    {
+      "selector": "node.item",
+      "style": {
+        "background-color": "#E8DCC0",
+        "shape": "hexagon",
+        "width": "30px",
+        "height": "30px"
+      }
+    },
+    {
+      "selector": "node.magical",
+      "style": {
+        "border-width": 2,
+        "border-color": "#DAA520",
+        "border-style": "double"
+      }
+    },
+    {
+      "selector": "node.theme",
+      "style": {
+        "background-color": "#F8F0C8",
+        "shape": "round-tag",
+        "width": "35px",
+        "height": "35px",
+        "font-style": "italic",
+        "background-opacity": 0.6
+      }
+    },
+
+    {
+      "selector": "edge",
+      "style": {
+        "label": "data(label)",
+        "font-size": "9px",
+        "text-rotation": "autorotate",
+        "text-margin-y": -8,
+        "curve-style": "bezier",
+        "opacity": 0.7
+      }
+    },
+
+    {
+      "selector": "edge.state_change",
+      "style": {
+        "line-color": "#E87D3E",
+        "target-arrow-color": "#E87D3E",
+        "target-arrow-shape": "triangle",
+        "width": "mapData(weight, 0, 1, 1, 6)",
+        "line-style": "solid",
+        "opacity": 0.9
+      }
+    },
+    {
+      "selector": "edge.spine",
+      "style": {
+        "line-color": "#D95B1A",
+        "target-arrow-color": "#D95B1A",
+        "width": "mapData(weight, 0, 1, 2, 8)",
+        "z-index": 10,
+        "opacity": 1.0
+      }
+    },
+    {
+      "selector": "edge.interactivity",
+      "style": {
+        "line-color": "#9B59B6",
+        "target-arrow-shape": "none",
+        "width": "mapData(weight, 0, 1, 1, 4)",
+        "line-style": "solid",
+        "opacity": 0.6,
+        "curve-style": "unbundled-bezier"
+      }
+    },
+    {
+      "selector": "edge.reference",
+      "style": {
+        "line-color": "#95A5A6",
+        "target-arrow-shape": "none",
+        "width": 1,
+        "line-style": "dotted",
+        "opacity": 0.35
+      }
+    },
+    {
+      "selector": "edge.containment",
+      "style": {
+        "line-color": "#3498DB",
+        "width": 2,
+        "line-style": "dashed",
+        "opacity": 0.4
+      }
+    },
+
+    {
+      "selector": ":selected",
+      "style": {
+        "background-color": "#FFD700",
+        "border-width": 3,
+        "border-color": "#333"
+      }
+    }
+  ],
+
+  "layout": {
+    "name": "cose",
+    "idealEdgeLength": 120,
+    "nodeOverlap": 20,
+    "padding": 40,
+    "animate": true,
+    "animationDuration": 500,
+    "nestingFactor": 0.5
+  }
+}

@@ -1,0 +1,894 @@
+{
+  "metadata": {
+    "topothink-version": "0.1",
+    "adapter": "instagraph_to_hypergraph.py",
+    "source-format": "instagraph",
+    "source-meta": {
+      "extractor_model": "gemma4:latest",
+      "extracted_via": "test script",
+      "local_ai": true
+    }
+  },
+  "nodes": [
+    {
+      "id": "canto_i",
+      "attrs": {
+        "label": "Canto I.",
+        "instagraph:type": "StructuralUnit",
+        "instagraph:color": "#DDEEFF",
+        "section": "Opening Canto"
+      }
+    },
+    {
+      "id": "narad",
+      "attrs": {
+        "label": "N\u00e1rad",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "role": "Sage/Seer",
+        "description": "Prince of lore, addressed the question of virtue."
+      }
+    },
+    {
+      "id": "valmiki",
+      "attrs": {
+        "label": "V\u00e1lm\u00edki",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "role": "Hermit Saint",
+        "description": "Mentioned as the best of hermit saints."
+      }
+    },
+    {
+      "id": "the_question_of_virtue",
+      "attrs": {
+        "label": "In all this world, I pray thee, who / Is virtuous, heroic, true?",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "theme": "Ideal Man/Virtue",
+        "asked_by": "N\u00e1rad"
+      }
+    },
+    {
+      "id": "indra",
+      "attrs": {
+        "label": "Indra",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#E0E0E0",
+        "domain": "Sky/Warfare"
+      }
+    },
+    {
+      "id": "vishnu",
+      "attrs": {
+        "label": "Vish\u1e47u",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#E0E0E0",
+        "domain": "Preserver"
+      }
+    },
+    {
+      "id": "rama",
+      "attrs": {
+        "label": "R\u00e1ma",
+        "instagraph:type": "Character",
+        "instagraph:color": "#FFD700",
+        "role": "Protagonist",
+        "lineage": "Ikshv\u00e1ku's line",
+        "attributes": "Virtuous, noble, divine"
+      }
+    },
+    {
+      "id": "da\u015baratha",
+      "attrs": {
+        "label": "King Da\u015baratha",
+        "instagraph:type": "Character",
+        "instagraph:color": "#FFD700",
+        "role": "King",
+        "relation": "Father of Rama"
+      }
+    },
+    {
+      "id": "kaikey\u00ed",
+      "attrs": {
+        "label": "Kaikey\u00ed",
+        "instagraph:type": "Character",
+        "instagraph:color": "#FFD700",
+        "role": "Queen",
+        "motivation": "Envious hate"
+      }
+    },
+    {
+      "id": "s\u00edt\u00e1",
+      "attrs": {
+        "label": "S\u00edt\u00e1",
+        "instagraph:type": "Character",
+        "instagraph:color": "#FFD700",
+        "role": "Wife of Rama",
+        "attributes": "Loveliness, devotion"
+      }
+    },
+    {
+      "id": "lak\u1e63ma\u1e47",
+      "attrs": {
+        "label": "Lak\u1e63ma\u1e47",
+        "instagraph:type": "Character",
+        "instagraph:color": "#FFD700",
+        "role": "Brother of Rama",
+        "attributes": "Loyal, courageous"
+      }
+    },
+    {
+      "id": "\u015bringavera",
+      "attrs": {
+        "label": "\u015aringavera\u2019s pleasant town",
+        "instagraph:type": "Place",
+        "instagraph:color": "#CCEEFF",
+        "significance": "First stop after exile"
+      }
+    },
+    {
+      "id": "gang\u00e1",
+      "attrs": {
+        "label": "Gang\u00e1\u2019s holy waters",
+        "instagraph:type": "Place",
+        "instagraph:color": "#CCEEFF",
+        "significance": "Holy river"
+      }
+    },
+    {
+      "id": "chitrak\u00fa\u1e6da",
+      "attrs": {
+        "label": "Chitrak\u00fa\u1e6da\u2019s hill",
+        "instagraph:type": "Place",
+        "instagraph:color": "#CCEEFF",
+        "significance": "Exile location"
+      }
+    },
+    {
+      "id": "meru",
+      "attrs": {
+        "label": "Meru\u2019s sacred peaks",
+        "instagraph:type": "Place",
+        "instagraph:color": "#CCEEFF",
+        "significance": "Cosmic mountain"
+      }
+    },
+    {
+      "id": "bh\u0101rat",
+      "attrs": {
+        "label": "Bharat",
+        "instagraph:type": "Character",
+        "instagraph:color": "#FFD700",
+        "role": "Brother of Rama",
+        "action": "Attempted to claim the throne"
+      }
+    },
+    {
+      "id": "da\u1e47\u1e0dak\u00e1",
+      "attrs": {
+        "label": "Da\u1e47\u1e0dak\u00e1\u2019s primeval wood",
+        "instagraph:type": "Place",
+        "instagraph:color": "#CCEEFF",
+        "significance": "Location of encounter with Vir\u00e1dha"
+      }
+    },
+    {
+      "id": "\u015b\u00farpa\u1e47akh\u00e1",
+      "attrs": {
+        "label": "\u015a\u00farpa\u1e47akh\u00e1\u2019s face",
+        "instagraph:type": "Character",
+        "instagraph:color": "#FFD700",
+        "role": "Giantess",
+        "status": "Defeated by Rama"
+      }
+    },
+    {
+      "id": "r\u00e1va\u1e47",
+      "attrs": {
+        "label": "R\u00e1va\u1e47",
+        "instagraph:type": "Character",
+        "instagraph:color": "#FF6666",
+        "role": "Antagonist",
+        "title": "King of Lanka",
+        "attributes": "Dreaded warrior"
+      }
+    },
+    {
+      "id": "m\u00e1r\u00edcha",
+      "attrs": {
+        "label": "M\u00e1r\u00edcha",
+        "instagraph:type": "Character",
+        "instagraph:color": "#FF6666",
+        "role": "Servant/Enabler",
+        "action": "Aided Rava\u1e47a's plot"
+      }
+    },
+    {
+      "id": "kabandha",
+      "attrs": {
+        "label": "Kabandha",
+        "instagraph:type": "Character",
+        "instagraph:color": "#FF6666",
+        "role": "Giant",
+        "status": "Defeated by Rama"
+      }
+    },
+    {
+      "id": "hanum\u00e1n",
+      "attrs": {
+        "label": "Hanum\u00e1n the Wind-God\u2019s son",
+        "instagraph:type": "Character",
+        "instagraph:color": "#66CCFF",
+        "role": "Devotee/Warrior",
+        "attributes": "Strength, loyalty"
+      }
+    },
+    {
+      "id": "sugr\u00edva",
+      "attrs": {
+        "label": "Sugr\u00edva, V\u00e1nar chief",
+        "instagraph:type": "Character",
+        "instagraph:color": "#66CCFF",
+        "role": "Vaanar King",
+        "alliance": "With Rama"
+      }
+    },
+    {
+      "id": "lank\u00e1",
+      "attrs": {
+        "label": "Lank\u00e1\u2019s town",
+        "instagraph:type": "Place",
+        "instagraph:color": "#CCEEFF",
+        "ruler": "R\u00e1va\u1e47"
+      }
+    },
+    {
+      "id": "brahm\u00e1",
+      "attrs": {
+        "label": "Brahm\u00e1",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#E0E0E0",
+        "domain": "Creator"
+      }
+    },
+    {
+      "id": "golden_age",
+      "attrs": {
+        "label": "The Golden Age",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "description": "Period of peace and prosperity"
+      }
+    },
+    {
+      "id": "the_poem_reader",
+      "attrs": {
+        "label": "Whoe\u2019er this noble poem reads",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "theme": "Merit/Blessing"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:instagraph/0",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "poses_question_about",
+        "label": "In all this world, I pray thee, who / Is virtuous, heroic, true?",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/1",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "identifies_ideal_figure",
+        "label": "From old Ikshv\u00e1ku\u2019s(15) line he came, / Known to the world by R\u00e1ma\u2019s name:",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/2",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "son_of",
+        "label": "With him, his best and eldest son, / By all his princely virtues won / King Da\u015baratha(24) willed to share",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/3",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "manipulates",
+        "label": "She bade the hapless king bestow / Two gifts he promised long ago,",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "id": "edge:instagraph/4",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "exiles",
+        "label": "R\u00e1ma, to please Kaikey\u00ed went / Obedient forth to banishment.",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "id": "edge:instagraph/5",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "shares_exile_with",
+        "label": "Then were his love and courage known, / When for his brother\u2019s sake he dared / All perils, and his exile shared.",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/6",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "is_spouse_of",
+        "label": "And S\u00edt\u00e1, R\u00e1ma\u2019s darling wife, / Loved even as he loved his life,",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/7",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "passes_through",
+        "label": "But when Prince R\u00e1ma lighted down / At \u015aringavera\u2019s pleasant town,",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/8",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "is_near",
+        "label": "Where Gang\u00e1\u2019s holy waters flow,",
+        "instagraph:color": "#888",
+        "source_line": 132,
+        "source_char_offset": 4408
+      }
+    },
+    {
+      "id": "edge:instagraph/9",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "settles_at",
+        "label": "Till They came to Chitrak\u00fa\u1e6da\u2019s hill.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/10",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "compares_to",
+        "label": "And Chitrak\u00fa\u1e6da grew to be / As bright with those illustrious three / As Meru\u2019s(27) sacred peaks that shine",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/11",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "pleads_with",
+        "label": "Forth to the woods he fared to meet / His brother, fell before his feet, / And cried, \u201cThy claim all men allow: / O come, our lord and king be thou.\u201d",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "id": "edge:instagraph/12",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "rejects_claim_of",
+        "label": "But R\u00e1ma nobly chose to be / Observant of his sire\u2019s decree.",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/13",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "travels_through",
+        "label": "Away from Chitrak\u00fa\u1e6da\u2019s hill / Fared R\u00e1ma ever onward till / Beneath the shady trees he stood / Of Da\u1e47\u1e0dak\u00e1\u2019s primeval wood,",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/14",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "defeats",
+        "label": "And R\u00e1ma\u2019s falchion left its trace / Deep cut on \u015a\u00farpa\u1e47akh\u00e1\u2019s face:",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "id": "edge:instagraph/15",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "utilizes_aid_from",
+        "label": "He bade the fiend M\u00e1r\u00edcha aid / The vengeful plot his fury laid.",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "id": "edge:instagraph/16",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "separates_by_magic",
+        "label": "There, by M\u00e1r\u00edcha\u2019s magic art, / He wiled the princely youths apart,",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "id": "edge:instagraph/17",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "abduction_of",
+        "label": "The vulture(31) slew, and bore away / The wife of R\u00e1ma as his prey.",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "id": "edge:instagraph/18",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "defeats",
+        "label": "The monstrous fiend he smote and slew,",
+        "instagraph:color": "#A00",
+        "source_line": 227,
+        "source_char_offset": 7577
+      }
+    },
+    {
+      "id": "edge:instagraph/19",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "gains_aid_from",
+        "label": "And there the steadfast friendship won / Of Hanum\u00e1n the Wind-God\u2019s son.",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/20",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "guides_to",
+        "label": "Counselled by him he told his grief / To great Sugr\u00edva, V\u00e1nar chief,",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/21",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "reveals_foe_to",
+        "label": "Showed the huge fiend(33) by B\u00e1li slain.",
+        "instagraph:color": "#26A",
+        "source_line": 250,
+        "source_char_offset": 8340
+      }
+    },
+    {
+      "id": "edge:instagraph/22",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "defeats",
+        "label": "One shaft from R\u00e1ma\u2019s deadly bow / The monarch in the dust laid low.",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "id": "edge:instagraph/23",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "travels_to",
+        "label": "Sprang at one wild tremendous leap / Two hundred leagues across the deep. / To Lank\u00e1\u2019s(35) town he urged his way,",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/24",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "finds",
+        "label": "There pensive \u2019neath A\u015boka(36) boughs / He found poor S\u00edt\u00e1, R\u00e1ma\u2019s spouse.",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/25",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "defeats",
+        "label": "Where R\u00e1ma\u2019s hand smote R\u00e1va\u1e47 down.",
+        "instagraph:color": "#A00",
+        "source_line": 310,
+        "source_char_offset": 10370
+      }
+    },
+    {
+      "id": "edge:instagraph/26",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "self_immolates_in",
+        "label": "But S\u00edt\u00e1, touched with noble ire, / Gave her fair body to the fire.",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "id": "edge:instagraph/27",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "rescues_by",
+        "label": "Then straight the God of Wind appeared, / And words from heaven her honour cleared.",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/28",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "reunites_with",
+        "label": "And R\u00e1ma clasped his wife again, / Uninjured, pure from spot and stain, / Obedient to the Lord of Fire",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/29",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "returns_to",
+        "label": "Then in the magic chariot through / The clouds to Nandigr\u00e1ma flew.",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/30",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "establishes",
+        "label": "The Golden Age(40) had come again / To bless the days of R\u00e1ma\u2019s reign.",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "id": "edge:instagraph/31",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "receives_blessing_from",
+        "label": "Whoe\u2019er this noble poem reads / That tells the tale of R\u00e1ma\u2019s deeds,",
+        "instagraph:color": "#26A"
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:instagraph/0",
+      "node": "narad",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/0",
+      "node": "the_question_of_virtue",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/1",
+      "node": "narad",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/1",
+      "node": "rama",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/2",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/2",
+      "node": "da\u015baratha",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/3",
+      "node": "kaikey\u00ed",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/3",
+      "node": "da\u015baratha",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/4",
+      "node": "da\u015baratha",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/4",
+      "node": "rama",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/5",
+      "node": "lak\u1e63ma\u1e47",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/5",
+      "node": "rama",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/6",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/6",
+      "node": "s\u00edt\u00e1",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/7",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/7",
+      "node": "\u015bringavera",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/8",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/8",
+      "node": "gang\u00e1",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/9",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/9",
+      "node": "chitrak\u00fa\u1e6da",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/10",
+      "node": "chitrak\u00fa\u1e6da",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/10",
+      "node": "meru",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/11",
+      "node": "bh\u0101rat",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/11",
+      "node": "rama",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/12",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/12",
+      "node": "bh\u0101rat",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/13",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/13",
+      "node": "da\u1e47\u1e0dak\u00e1",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/14",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/14",
+      "node": "\u015b\u00farpa\u1e47akh\u00e1",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/15",
+      "node": "r\u00e1va\u1e47",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/15",
+      "node": "m\u00e1r\u00edcha",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/16",
+      "node": "m\u00e1r\u00edcha",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/16",
+      "node": "rama",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/17",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/17",
+      "node": "s\u00edt\u00e1",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/18",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/18",
+      "node": "kabandha",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/19",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/19",
+      "node": "hanum\u00e1n",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/20",
+      "node": "hanum\u00e1n",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/20",
+      "node": "sugr\u00edva",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/21",
+      "node": "sugr\u00edva",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/21",
+      "node": "b\u00e1li",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/22",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/22",
+      "node": "b\u00e1li",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/23",
+      "node": "hanum\u00e1n",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/23",
+      "node": "lank\u00e1",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/24",
+      "node": "hanum\u00e1n",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/24",
+      "node": "s\u00edt\u00e1",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/25",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/25",
+      "node": "r\u00e1va\u1e47",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/26",
+      "node": "s\u00edt\u00e1",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/26",
+      "node": "fire",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/27",
+      "node": "god_of_wind",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/27",
+      "node": "s\u00edt\u00e1",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/28",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/28",
+      "node": "god_of_wind",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/29",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/29",
+      "node": "nandigr\u00e1ma",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/30",
+      "node": "rama",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/30",
+      "node": "golden_age",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/31",
+      "node": "the_poem_reader",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/31",
+      "node": "rama",
+      "role": "target"
+    }
+  ]
+}

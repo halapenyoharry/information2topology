@@ -1,0 +1,543 @@
+{
+  "metadata": {
+    "extractor_model": "gemma4:latest",
+    "extracted_via": "test script",
+    "local_ai": true
+  },
+  "nodes": [
+    {
+      "id": "canto_i",
+      "label": "Canto I.",
+      "type": "StructuralUnit",
+      "color": "#DDEEFF",
+      "properties": {
+        "section": "Opening Canto"
+      }
+    },
+    {
+      "id": "narad",
+      "label": "N\u00e1rad",
+      "type": "Character",
+      "color": "#F8C8DC",
+      "properties": {
+        "role": "Sage/Seer",
+        "description": "Prince of lore, addressed the question of virtue."
+      }
+    },
+    {
+      "id": "valmiki",
+      "label": "V\u00e1lm\u00edki",
+      "type": "Character",
+      "color": "#F8C8DC",
+      "properties": {
+        "role": "Hermit Saint",
+        "description": "Mentioned as the best of hermit saints."
+      }
+    },
+    {
+      "id": "the_question_of_virtue",
+      "label": "In all this world, I pray thee, who / Is virtuous, heroic, true?",
+      "type": "Concept",
+      "color": "#F8F0C8",
+      "properties": {
+        "theme": "Ideal Man/Virtue",
+        "asked_by": "N\u00e1rad"
+      }
+    },
+    {
+      "id": "indra",
+      "label": "Indra",
+      "type": "Deity",
+      "color": "#E0E0E0",
+      "properties": {
+        "domain": "Sky/Warfare"
+      }
+    },
+    {
+      "id": "vishnu",
+      "label": "Vish\u1e47u",
+      "type": "Deity",
+      "color": "#E0E0E0",
+      "properties": {
+        "domain": "Preserver"
+      }
+    },
+    {
+      "id": "rama",
+      "label": "R\u00e1ma",
+      "type": "Character",
+      "color": "#FFD700",
+      "properties": {
+        "role": "Protagonist",
+        "lineage": "Ikshv\u00e1ku's line",
+        "attributes": "Virtuous, noble, divine"
+      }
+    },
+    {
+      "id": "da\u015baratha",
+      "label": "King Da\u015baratha",
+      "type": "Character",
+      "color": "#FFD700",
+      "properties": {
+        "role": "King",
+        "relation": "Father of Rama"
+      }
+    },
+    {
+      "id": "kaikey\u00ed",
+      "label": "Kaikey\u00ed",
+      "type": "Character",
+      "color": "#FFD700",
+      "properties": {
+        "role": "Queen",
+        "motivation": "Envious hate"
+      }
+    },
+    {
+      "id": "s\u00edt\u00e1",
+      "label": "S\u00edt\u00e1",
+      "type": "Character",
+      "color": "#FFD700",
+      "properties": {
+        "role": "Wife of Rama",
+        "attributes": "Loveliness, devotion"
+      }
+    },
+    {
+      "id": "lak\u1e63ma\u1e47",
+      "label": "Lak\u1e63ma\u1e47",
+      "type": "Character",
+      "color": "#FFD700",
+      "properties": {
+        "role": "Brother of Rama",
+        "attributes": "Loyal, courageous"
+      }
+    },
+    {
+      "id": "\u015bringavera",
+      "label": "\u015aringavera\u2019s pleasant town",
+      "type": "Place",
+      "color": "#CCEEFF",
+      "properties": {
+        "significance": "First stop after exile"
+      }
+    },
+    {
+      "id": "gang\u00e1",
+      "label": "Gang\u00e1\u2019s holy waters",
+      "type": "Place",
+      "color": "#CCEEFF",
+      "properties": {
+        "significance": "Holy river"
+      }
+    },
+    {
+      "id": "chitrak\u00fa\u1e6da",
+      "label": "Chitrak\u00fa\u1e6da\u2019s hill",
+      "type": "Place",
+      "color": "#CCEEFF",
+      "properties": {
+        "significance": "Exile location"
+      }
+    },
+    {
+      "id": "meru",
+      "label": "Meru\u2019s sacred peaks",
+      "type": "Place",
+      "color": "#CCEEFF",
+      "properties": {
+        "significance": "Cosmic mountain"
+      }
+    },
+    {
+      "id": "bh\u0101rat",
+      "label": "Bharat",
+      "type": "Character",
+      "color": "#FFD700",
+      "properties": {
+        "role": "Brother of Rama",
+        "action": "Attempted to claim the throne"
+      }
+    },
+    {
+      "id": "da\u1e47\u1e0dak\u00e1",
+      "label": "Da\u1e47\u1e0dak\u00e1\u2019s primeval wood",
+      "type": "Place",
+      "color": "#CCEEFF",
+      "properties": {
+        "significance": "Location of encounter with Vir\u00e1dha"
+      }
+    },
+    {
+      "id": "\u015b\u00farpa\u1e47akh\u00e1",
+      "label": "\u015a\u00farpa\u1e47akh\u00e1\u2019s face",
+      "type": "Character",
+      "color": "#FFD700",
+      "properties": {
+        "role": "Giantess",
+        "status": "Defeated by Rama"
+      }
+    },
+    {
+      "id": "r\u00e1va\u1e47",
+      "label": "R\u00e1va\u1e47",
+      "type": "Character",
+      "color": "#FF6666",
+      "properties": {
+        "role": "Antagonist",
+        "title": "King of Lanka",
+        "attributes": "Dreaded warrior"
+      }
+    },
+    {
+      "id": "m\u00e1r\u00edcha",
+      "label": "M\u00e1r\u00edcha",
+      "type": "Character",
+      "color": "#FF6666",
+      "properties": {
+        "role": "Servant/Enabler",
+        "action": "Aided Rava\u1e47a's plot"
+      }
+    },
+    {
+      "id": "kabandha",
+      "label": "Kabandha",
+      "type": "Character",
+      "color": "#FF6666",
+      "properties": {
+        "role": "Giant",
+        "status": "Defeated by Rama"
+      }
+    },
+    {
+      "id": "hanum\u00e1n",
+      "label": "Hanum\u00e1n the Wind-God\u2019s son",
+      "type": "Character",
+      "color": "#66CCFF",
+      "properties": {
+        "role": "Devotee/Warrior",
+        "attributes": "Strength, loyalty"
+      }
+    },
+    {
+      "id": "sugr\u00edva",
+      "label": "Sugr\u00edva, V\u00e1nar chief",
+      "type": "Character",
+      "color": "#66CCFF",
+      "properties": {
+        "role": "Vaanar King",
+        "alliance": "With Rama"
+      }
+    },
+    {
+      "id": "lank\u00e1",
+      "label": "Lank\u00e1\u2019s town",
+      "type": "Place",
+      "color": "#CCEEFF",
+      "properties": {
+        "ruler": "R\u00e1va\u1e47"
+      }
+    },
+    {
+      "id": "brahm\u00e1",
+      "label": "Brahm\u00e1",
+      "type": "Deity",
+      "color": "#E0E0E0",
+      "properties": {
+        "domain": "Creator"
+      }
+    },
+    {
+      "id": "golden_age",
+      "label": "The Golden Age",
+      "type": "Concept",
+      "color": "#F8F0C8",
+      "properties": {
+        "description": "Period of peace and prosperity"
+      }
+    },
+    {
+      "id": "the_poem_reader",
+      "label": "Whoe\u2019er this noble poem reads",
+      "type": "Concept",
+      "color": "#F8F0C8",
+      "properties": {
+        "theme": "Merit/Blessing"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "narad",
+      "to": "the_question_of_virtue",
+      "label": "In all this world, I pray thee, who / Is virtuous, heroic, true?",
+      "relationship": "poses_question_about",
+      "direction": "directed",
+      "color": "#888"
+    },
+    {
+      "from": "narad",
+      "to": "rama",
+      "label": "From old Ikshv\u00e1ku\u2019s(15) line he came, / Known to the world by R\u00e1ma\u2019s name:",
+      "relationship": "identifies_ideal_figure",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "da\u015baratha",
+      "label": "With him, his best and eldest son, / By all his princely virtues won / King Da\u015baratha(24) willed to share",
+      "relationship": "son_of",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "kaikey\u00ed",
+      "to": "da\u015baratha",
+      "label": "She bade the hapless king bestow / Two gifts he promised long ago,",
+      "relationship": "manipulates",
+      "direction": "directed",
+      "color": "#A00"
+    },
+    {
+      "from": "da\u015baratha",
+      "to": "rama",
+      "label": "R\u00e1ma, to please Kaikey\u00ed went / Obedient forth to banishment.",
+      "relationship": "exiles",
+      "direction": "directed",
+      "color": "#A00"
+    },
+    {
+      "from": "lak\u1e63ma\u1e47",
+      "to": "rama",
+      "label": "Then were his love and courage known, / When for his brother\u2019s sake he dared / All perils, and his exile shared.",
+      "relationship": "shares_exile_with",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "s\u00edt\u00e1",
+      "label": "And S\u00edt\u00e1, R\u00e1ma\u2019s darling wife, / Loved even as he loved his life,",
+      "relationship": "is_spouse_of",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "\u015bringavera",
+      "label": "But when Prince R\u00e1ma lighted down / At \u015aringavera\u2019s pleasant town,",
+      "relationship": "passes_through",
+      "direction": "directed",
+      "color": "#888"
+    },
+    {
+      "from": "rama",
+      "to": "gang\u00e1",
+      "label": "Where Gang\u00e1\u2019s holy waters flow,",
+      "relationship": "is_near",
+      "direction": "directed",
+      "color": "#888",
+      "properties": {
+        "source_line": 132,
+        "source_char_offset": 4408
+      }
+    },
+    {
+      "from": "rama",
+      "to": "chitrak\u00fa\u1e6da",
+      "label": "Till They came to Chitrak\u00fa\u1e6da\u2019s hill.",
+      "relationship": "settles_at",
+      "direction": "directed",
+      "color": "#888"
+    },
+    {
+      "from": "chitrak\u00fa\u1e6da",
+      "to": "meru",
+      "label": "And Chitrak\u00fa\u1e6da grew to be / As bright with those illustrious three / As Meru\u2019s(27) sacred peaks that shine",
+      "relationship": "compares_to",
+      "direction": "undirected",
+      "color": "#888"
+    },
+    {
+      "from": "bh\u0101rat",
+      "to": "rama",
+      "label": "Forth to the woods he fared to meet / His brother, fell before his feet, / And cried, \u201cThy claim all men allow: / O come, our lord and king be thou.\u201d",
+      "relationship": "pleads_with",
+      "direction": "directed",
+      "color": "#A00"
+    },
+    {
+      "from": "rama",
+      "to": "bh\u0101rat",
+      "label": "But R\u00e1ma nobly chose to be / Observant of his sire\u2019s decree.",
+      "relationship": "rejects_claim_of",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "da\u1e47\u1e0dak\u00e1",
+      "label": "Away from Chitrak\u00fa\u1e6da\u2019s hill / Fared R\u00e1ma ever onward till / Beneath the shady trees he stood / Of Da\u1e47\u1e0dak\u00e1\u2019s primeval wood,",
+      "relationship": "travels_through",
+      "direction": "directed",
+      "color": "#888"
+    },
+    {
+      "from": "rama",
+      "to": "\u015b\u00farpa\u1e47akh\u00e1",
+      "label": "And R\u00e1ma\u2019s falchion left its trace / Deep cut on \u015a\u00farpa\u1e47akh\u00e1\u2019s face:",
+      "relationship": "defeats",
+      "direction": "directed",
+      "color": "#A00"
+    },
+    {
+      "from": "r\u00e1va\u1e47",
+      "to": "m\u00e1r\u00edcha",
+      "label": "He bade the fiend M\u00e1r\u00edcha aid / The vengeful plot his fury laid.",
+      "relationship": "utilizes_aid_from",
+      "direction": "directed",
+      "color": "#A00"
+    },
+    {
+      "from": "m\u00e1r\u00edcha",
+      "to": "rama",
+      "label": "There, by M\u00e1r\u00edcha\u2019s magic art, / He wiled the princely youths apart,",
+      "relationship": "separates_by_magic",
+      "direction": "directed",
+      "color": "#A00"
+    },
+    {
+      "from": "rama",
+      "to": "s\u00edt\u00e1",
+      "label": "The vulture(31) slew, and bore away / The wife of R\u00e1ma as his prey.",
+      "relationship": "abduction_of",
+      "direction": "directed",
+      "color": "#A00"
+    },
+    {
+      "from": "rama",
+      "to": "kabandha",
+      "label": "The monstrous fiend he smote and slew,",
+      "relationship": "defeats",
+      "direction": "directed",
+      "color": "#A00",
+      "properties": {
+        "source_line": 227,
+        "source_char_offset": 7577
+      }
+    },
+    {
+      "from": "rama",
+      "to": "hanum\u00e1n",
+      "label": "And there the steadfast friendship won / Of Hanum\u00e1n the Wind-God\u2019s son.",
+      "relationship": "gains_aid_from",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "hanum\u00e1n",
+      "to": "sugr\u00edva",
+      "label": "Counselled by him he told his grief / To great Sugr\u00edva, V\u00e1nar chief,",
+      "relationship": "guides_to",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "sugr\u00edva",
+      "to": "b\u00e1li",
+      "label": "Showed the huge fiend(33) by B\u00e1li slain.",
+      "relationship": "reveals_foe_to",
+      "direction": "directed",
+      "color": "#26A",
+      "properties": {
+        "source_line": 250,
+        "source_char_offset": 8340
+      }
+    },
+    {
+      "from": "rama",
+      "to": "b\u00e1li",
+      "label": "One shaft from R\u00e1ma\u2019s deadly bow / The monarch in the dust laid low.",
+      "relationship": "defeats",
+      "direction": "directed",
+      "color": "#A00"
+    },
+    {
+      "from": "hanum\u00e1n",
+      "to": "lank\u00e1",
+      "label": "Sprang at one wild tremendous leap / Two hundred leagues across the deep. / To Lank\u00e1\u2019s(35) town he urged his way,",
+      "relationship": "travels_to",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "hanum\u00e1n",
+      "to": "s\u00edt\u00e1",
+      "label": "There pensive \u2019neath A\u015boka(36) boughs / He found poor S\u00edt\u00e1, R\u00e1ma\u2019s spouse.",
+      "relationship": "finds",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "r\u00e1va\u1e47",
+      "label": "Where R\u00e1ma\u2019s hand smote R\u00e1va\u1e47 down.",
+      "relationship": "defeats",
+      "direction": "directed",
+      "color": "#A00",
+      "properties": {
+        "source_line": 310,
+        "source_char_offset": 10370
+      }
+    },
+    {
+      "from": "s\u00edt\u00e1",
+      "to": "fire",
+      "label": "But S\u00edt\u00e1, touched with noble ire, / Gave her fair body to the fire.",
+      "relationship": "self_immolates_in",
+      "direction": "directed",
+      "color": "#A00"
+    },
+    {
+      "from": "god_of_wind",
+      "to": "s\u00edt\u00e1",
+      "label": "Then straight the God of Wind appeared, / And words from heaven her honour cleared.",
+      "relationship": "rescues_by",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "god_of_wind",
+      "label": "And R\u00e1ma clasped his wife again, / Uninjured, pure from spot and stain, / Obedient to the Lord of Fire",
+      "relationship": "reunites_with",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "nandigr\u00e1ma",
+      "label": "Then in the magic chariot through / The clouds to Nandigr\u00e1ma flew.",
+      "relationship": "returns_to",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "rama",
+      "to": "golden_age",
+      "label": "The Golden Age(40) had come again / To bless the days of R\u00e1ma\u2019s reign.",
+      "relationship": "establishes",
+      "direction": "directed",
+      "color": "#26A"
+    },
+    {
+      "from": "the_poem_reader",
+      "to": "rama",
+      "label": "Whoe\u2019er this noble poem reads / That tells the tale of R\u00e1ma\u2019s deeds,",
+      "relationship": "receives_blessing_from",
+      "direction": "directed",
+      "color": "#26A"
+    }
+  ]
+}
