@@ -1,0 +1,3629 @@
+{
+  "metadata": {
+    "topothink-version": "0.1",
+    "adapter": "propgraph_to_hypergraph.py",
+    "source-meta": {
+      "tool": "merged",
+      "version": "1",
+      "sources": [
+        {
+          "tool": "dirgraph",
+          "version": "1",
+          "scanned_at": "2026-04-27T21:13:48+00:00",
+          "root": "/Users/harold/Projects",
+          "max_depth": 2,
+          "skip_dirs": [
+            ".cache",
+            ".git",
+            ".gradle",
+            ".idea",
+            ".mypy_cache",
+            ".next",
+            ".pytest_cache",
+            ".ruff_cache",
+            ".tox",
+            ".venv",
+            "DerivedData",
+            "Pods",
+            "__pycache__",
+            "bower_components",
+            "build",
+            "dist",
+            "node_modules",
+            "target",
+            "vendor",
+            "venv"
+          ],
+          "skip_extensions": [
+            ".7z",
+            ".a",
+            ".aac",
+            ".avi",
+            ".bin",
+            ".bmp",
+            ".bz2",
+            ".class",
+            ".dll",
+            ".dmg",
+            ".dylib",
+            ".eot",
+            ".exe",
+            ".flac",
+            ".gif",
+            ".gz",
+            ".heic",
+            ".ico",
+            ".iso",
+            ".jar",
+            ".jpeg",
+            ".jpg",
+            ".m4a",
+            ".mkv",
+            ".mov",
+            ".mp3",
+            ".mp4",
+            ".o",
+            ".ogg",
+            ".otf",
+            ".pdf",
+            ".pkg",
+            ".png",
+            ".pyc",
+            ".pyo",
+            ".rar",
+            ".so",
+            ".svg",
+            ".tar",
+            ".tgz",
+            ".tiff",
+            ".ttf",
+            ".wav",
+            ".webm",
+            ".webp",
+            ".woff",
+            ".woff2",
+            ".zip"
+          ],
+          "sources": {
+            "filesystem": true,
+            "git": true,
+            "spotlight": true,
+            "ports": true,
+            "github_remotes": true
+          }
+        },
+        {
+          "tool": "ghgraph",
+          "version": "1",
+          "scanned_at": "2026-04-27T21:13:25+00:00",
+          "viewer": "halapenyoharry",
+          "rate_limit": {
+            "remaining": 4819,
+            "limit": 5000,
+            "resetAt": "2026-04-27T21:20:25Z"
+          },
+          "sources": {
+            "github_graphql": true,
+            "include_prs": true,
+            "include_issues": true,
+            "per_repo_limit": 25
+          }
+        }
+      ],
+      "merged_at": "2026-04-28T01:00:02Z"
+    },
+    "i2t:relation_to_canonical": "predicate-layer",
+    "layer-predicate": "mirrors",
+    "layer-stats": {
+      "nodes": 141,
+      "edges": 75,
+      "incidences": 150
+    }
+  },
+  "nodes": [
+    {
+      "id": "fs:/Users/harold/Projects/Sunshine",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/Sunshine",
+        "fs:name": "Sunshine",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:30",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/ollama-manager",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/ollama-manager",
+        "gh:url": "https://github.com/halapenyoharry/ollama-manager"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/ai-infrastructure",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/ai-infrastructure",
+        "gh:url": "https://github.com/halapenyoharry/ai-infrastructure",
+        "gh:description": "Private AI infrastructure backup and versioning",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 93396,
+        "gh:pushed_at": "2026-01-21T17:41:50Z",
+        "gh:created_at": "2025-08-27T22:58:18Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML",
+          "MDX",
+          "JavaScript",
+          "TypeScript",
+          "Python"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 9,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/math-thing",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/math-thing",
+        "gh:url": "https://github.com/halapenyoharry/math-thing",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 34,
+        "gh:pushed_at": "2025-09-16T02:44:07Z",
+        "gh:created_at": "2025-09-16T02:29:59Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 8,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/wren/mcp-bridge-official",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/wren/mcp-bridge-official",
+        "fs:name": "mcp-bridge-official",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-02-09T15:39:50",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/PHP-Dynamic-Qr-code",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/PHP-Dynamic-Qr-code",
+        "fs:name": "PHP-Dynamic-Qr-code",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/json-visual-viewer",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/json-visual-viewer",
+        "fs:name": "json-visual-viewer",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-27T16:04:03",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/voicez",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/voicez",
+        "gh:url": "https://github.com/halapenyoharry/voicez",
+        "gh:description": "Gemini TTS web app with FastAPI backend and React frontend",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 50409,
+        "gh:pushed_at": "2025-12-15T01:43:29Z",
+        "gh:created_at": "2025-12-14T15:04:56Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "TypeScript",
+          "CSS",
+          "Shell",
+          "Dockerfile"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 8,
+        "gh:open_issues": 2,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/creative-hub-comfyui",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/creative-hub-comfyui",
+        "fs:name": "creative-hub-comfyui",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:modelcontextprotocol/servers",
+      "attrs": {
+        "gh:name_with_owner": "modelcontextprotocol/servers",
+        "gh:url": "https://github.com/modelcontextprotocol/servers"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/ai_supremacy",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/ai_supremacy",
+        "gh:url": "https://github.com/halapenyoharry/ai_supremacy"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/OpenSuperWhisper",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/OpenSuperWhisper",
+        "gh:url": "https://github.com/halapenyoharry/OpenSuperWhisper",
+        "gh:description": "macOS whisper dictation app",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 73218,
+        "gh:pushed_at": "2025-07-14T18:19:53Z",
+        "gh:created_at": "2025-07-14T15:53:53Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Swift",
+        "gh:languages": [
+          "Swift",
+          "Shell",
+          "CMake",
+          "Ruby",
+          "C"
+        ],
+        "gh:default_branch": "master",
+        "gh:commit_total": 110,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:a2aproject/A2A",
+      "attrs": {
+        "gh:name_with_owner": "a2aproject/A2A",
+        "gh:url": "https://github.com/a2aproject/A2A"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/mcp-official-servers",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/mcp-official-servers",
+        "fs:name": "mcp-official-servers",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-14T12:48:35",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/river",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/river",
+        "fs:name": "river",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-22T23:51:07",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:open-webui/open-webui",
+      "attrs": {
+        "gh:name_with_owner": "open-webui/open-webui",
+        "gh:url": "https://github.com/open-webui/open-webui"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/graph-maker",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/graph-maker",
+        "fs:name": "graph-maker",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/TopoSpace",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/TopoSpace",
+        "fs:name": "TopoSpace",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-23T21:08:40",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/gov-next",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/gov-next",
+        "fs:name": "gov-next",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/pw-mixerz",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/pw-mixerz",
+        "gh:url": "https://github.com/halapenyoharry/pw-mixerz",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 56,
+        "gh:pushed_at": "2025-11-04T02:26:39Z",
+        "gh:created_at": "2025-10-30T22:18:01Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML",
+          "Python"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 1,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/claudeZ",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/claudeZ",
+        "gh:url": "https://github.com/halapenyoharry/claudeZ",
+        "gh:description": "create multiple instances of claude desktop on macos",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 1501,
+        "gh:pushed_at": "2025-06-20T19:31:01Z",
+        "gh:created_at": "2025-05-26T14:25:03Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "Swift",
+        "gh:languages": [
+          "Swift",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 9,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/writehub",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/writehub",
+        "gh:url": "https://github.com/halapenyoharry/writehub",
+        "gh:description": "GitHub for Writers - An experimental platform for version control and collaboration designed specifically for creative writing (ALPHA)",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 744,
+        "gh:pushed_at": "2026-02-11T01:18:22Z",
+        "gh:created_at": "2025-09-12T15:23:34Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "HTML",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 4,
+        "gh:open_issues": 2,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:bishopdynamics/superbird-tool",
+      "attrs": {
+        "gh:name_with_owner": "bishopdynamics/superbird-tool",
+        "gh:url": "https://github.com/bishopdynamics/superbird-tool"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/the-post-dead",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/the-post-dead",
+        "gh:url": "https://github.com/halapenyoharry/the-post-dead",
+        "gh:description": "A collaborative speculative fiction, online, forkable, episodic, novelike experience.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 102,
+        "gh:pushed_at": "2025-09-12T15:07:47Z",
+        "gh:created_at": "2025-09-11T14:07:56Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 11,
+        "gh:open_issues": 1,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/browser-control-mcp",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/browser-control-mcp",
+        "gh:url": "https://github.com/halapenyoharry/browser-control-mcp",
+        "gh:description": "MCP server paired with a browser extension that enables AI agents to control the user's browser.",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 340,
+        "gh:pushed_at": "2025-09-12T15:09:41Z",
+        "gh:created_at": "2025-08-13T15:47:24Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "TypeScript",
+        "gh:languages": [
+          "TypeScript",
+          "HTML",
+          "Dockerfile",
+          "JavaScript"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 65,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/finderz/nemo-upstream",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/finderz/nemo-upstream",
+        "fs:name": "nemo-upstream",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2025-12-08T17:08:07",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/epstein-files/epstein-docs.github.io",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/epstein-files/epstein-docs.github.io",
+        "fs:name": "epstein-docs.github.io",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-14T14:23:15",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/claude-mcp-webapp",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/claude-mcp-webapp",
+        "fs:name": "claude-mcp-webapp",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:30",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/zen-jack-bridge",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/zen-jack-bridge",
+        "gh:url": "https://github.com/halapenyoharry/zen-jack-bridge",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 16702,
+        "gh:pushed_at": "2025-09-25T02:58:37Z",
+        "gh:created_at": "2025-09-24T07:26:05Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Rust",
+        "gh:languages": [
+          "Rust",
+          "Makefile",
+          "JavaScript",
+          "HTML",
+          "DTrace"
+        ],
+        "gh:default_branch": "master",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:LizardByte/Sunshine",
+      "attrs": {
+        "gh:name_with_owner": "LizardByte/Sunshine",
+        "gh:url": "https://github.com/LizardByte/Sunshine"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/post-dead",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/post-dead",
+        "fs:name": "post-dead",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/reachz-osc",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/reachz-osc",
+        "fs:name": "reachz-osc",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:eyalzh/browser-control-mcp",
+      "attrs": {
+        "gh:name_with_owner": "eyalzh/browser-control-mcp",
+        "gh:url": "https://github.com/eyalzh/browser-control-mcp"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/vortex",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/vortex",
+        "gh:url": "https://github.com/halapenyoharry/vortex",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 462,
+        "gh:pushed_at": "2026-04-27T18:47:29Z",
+        "gh:created_at": "2026-04-11T17:12:56Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 28,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/ClusterZ",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/ClusterZ",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 73,
+        "gh:pushed_at": "2026-02-08T00:31:21Z",
+        "gh:created_at": "2026-01-18T18:30:34Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Shell",
+        "gh:languages": [
+          "Shell",
+          "Python"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 5,
+        "gh:open_issues": 16,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:Starmel/OpenSuperWhisper",
+      "attrs": {
+        "gh:name_with_owner": "Starmel/OpenSuperWhisper",
+        "gh:url": "https://github.com/Starmel/OpenSuperWhisper"
+      }
+    },
+    {
+      "id": "gh:repo:SecretiveShell/MCP-Bridge",
+      "attrs": {
+        "gh:name_with_owner": "SecretiveShell/MCP-Bridge",
+        "gh:url": "https://github.com/SecretiveShell/MCP-Bridge"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/math-thing/templates",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/math-thing/templates",
+        "fs:name": "templates",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2025-09-28T16:41:42",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:limklister/mcp-google-custom-search-server",
+      "attrs": {
+        "gh:name_with_owner": "limklister/mcp-google-custom-search-server",
+        "gh:url": "https://github.com/limklister/mcp-google-custom-search-server"
+      }
+    },
+    {
+      "id": "gh:repo:Houston4444/RaySession",
+      "attrs": {
+        "gh:name_with_owner": "Houston4444/RaySession",
+        "gh:url": "https://github.com/Houston4444/RaySession"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/collection",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/collection",
+        "fs:name": "collection",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-26T23:34:48",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/writing-evaluationz",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/writing-evaluationz",
+        "fs:name": "writing-evaluationz",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/write-hub/gitea-stable",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/write-hub/gitea-stable",
+        "fs:name": "gitea-stable",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-14T14:23:26",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/claude-desktop/chatbox",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/claude-desktop/chatbox",
+        "fs:name": "chatbox",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-14T14:05:02",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/voicez",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/voicez",
+        "fs:name": "voicez",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/reachz-osc",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/reachz-osc",
+        "gh:url": "https://github.com/halapenyoharry/reachz-osc",
+        "gh:description": "Turn your phone into a virtual trackpad for Mac using Open Stage Control",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 23,
+        "gh:pushed_at": "2026-01-06T18:14:13Z",
+        "gh:created_at": "2025-12-27T01:24:17Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 3,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/writers-assistant",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/writers-assistant",
+        "gh:url": "https://github.com/halapenyoharry/writers-assistant",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 784,
+        "gh:pushed_at": "2025-11-09T19:50:29Z",
+        "gh:created_at": "2025-11-09T19:32:27Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/superbird/superbird-tool",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/superbird/superbird-tool",
+        "fs:name": "superbird-tool",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-02-09T15:39:45",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/syncthing-dir-time-fixer",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/syncthing-dir-time-fixer",
+        "gh:url": "https://github.com/halapenyoharry/syncthing-dir-time-fixer",
+        "gh:description": "Automatically fix directory timestamps after Syncthing sync to show actual modification times",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 19,
+        "gh:pushed_at": "2025-09-15T19:36:12Z",
+        "gh:created_at": "2025-09-15T18:55:12Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "Shell"
+        ],
+        "gh:default_branch": "master",
+        "gh:commit_total": 4,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/the\ud83c\udfebof\ud834\udf4d\u270a/plugged.out",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/the\ud83c\udfebof\ud834\udf4d\u270a/plugged.out",
+        "fs:name": "plugged.out",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2025-07-04T00:32:07",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/LibreChat",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/LibreChat",
+        "fs:name": "LibreChat",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:28",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/RaySession",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/RaySession",
+        "fs:name": "RaySession",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/bookz-main",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/bookz-main",
+        "fs:name": "bookz-main",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-23T21:08:40",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/river",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/river",
+        "gh:url": "https://github.com/halapenyoharry/river",
+        "gh:description": "A creative terminal for capturing human thought in flow state - type and watch consciousness flow upward",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 30682,
+        "gh:pushed_at": "2025-10-27T19:11:22Z",
+        "gh:created_at": "2025-08-13T17:13:58Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Swift",
+        "gh:languages": [
+          "Swift",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:vesoft-inc/nebula",
+      "attrs": {
+        "gh:name_with_owner": "vesoft-inc/nebula",
+        "gh:url": "https://github.com/vesoft-inc/nebula"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/profile-creator",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/profile-creator",
+        "fs:name": "profile-creator",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-23T21:40:32",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/EcoSpot-macos",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/EcoSpot-macos",
+        "fs:name": "EcoSpot-macos",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:30",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/claude-mcp-webapp/cline",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/claude-mcp-webapp/cline",
+        "fs:name": "cline",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-02-09T15:39:40",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/ClusterZ",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/ClusterZ",
+        "fs:name": "ClusterZ",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:28",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/TopoLand/Babylon.js",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/TopoLand/Babylon.js",
+        "fs:name": "Babylon.js",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-27T01:23:57",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/profile-creator",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/profile-creator",
+        "gh:url": "https://github.com/halapenyoharry/profile-creator",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 40,
+        "gh:pushed_at": "2026-04-24T02:40:00Z",
+        "gh:created_at": "2026-04-24T01:14:07Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 6,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/human-map",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/human-map",
+        "fs:name": "human-map",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/yabai-tomodachi",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 22903,
+        "gh:pushed_at": "2026-04-14T23:28:38Z",
+        "gh:created_at": "2025-06-18T17:37:58Z",
+        "gh:stargazers": 2,
+        "gh:forks": 0,
+        "gh:primary_language": "Swift",
+        "gh:languages": [
+          "Swift",
+          "Shell",
+          "JavaScript",
+          "TypeScript",
+          "Rich Text Format"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 26,
+        "gh:open_issues": 14,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/zen-browser-mcp/browser-control-mcp",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/zen-browser-mcp/browser-control-mcp",
+        "fs:name": "browser-control-mcp",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-14T14:23:26",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/prezence",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/prezence",
+        "fs:name": "prezence",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-23T21:08:40",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/human_ai_interaction-a_first_look",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/human_ai_interaction-a_first_look",
+        "gh:url": "https://github.com/halapenyoharry/human_ai_interaction-a_first_look",
+        "gh:description": "a book about ai interaction, introducing concepts.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 5,
+        "gh:pushed_at": "2025-10-29T00:58:22Z",
+        "gh:created_at": "2025-10-29T00:56:21Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:kolbytn/mindcraft",
+      "attrs": {
+        "gh:name_with_owner": "kolbytn/mindcraft",
+        "gh:url": "https://github.com/kolbytn/mindcraft"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/free-keys",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/free-keys",
+        "gh:url": "https://github.com/halapenyoharry/free-keys",
+        "gh:description": "Making music impossible to play wrong - intelligent MIDI constraint system",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 24,
+        "gh:pushed_at": "2025-08-05T15:42:36Z",
+        "gh:created_at": "2025-08-05T14:51:33Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "master",
+        "gh:commit_total": 4,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/infotopoia",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/infotopoia",
+        "gh:url": "https://github.com/halapenyoharry/infotopoia",
+        "gh:description": "A spatial information medium. Exposing the topology of information that already exists.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 6,
+        "gh:pushed_at": "2026-03-23T23:20:41Z",
+        "gh:created_at": "2026-03-23T21:43:02Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 4,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:giandonatoinverso/PHP-Dynamic-Qr-code",
+      "attrs": {
+        "gh:name_with_owner": "giandonatoinverso/PHP-Dynamic-Qr-code",
+        "gh:url": "https://github.com/giandonatoinverso/PHP-Dynamic-Qr-code"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/writers-assistant",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/writers-assistant",
+        "fs:name": "writers-assistant",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/post-pipe",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/post-pipe",
+        "fs:name": "post-pipe",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T22:46:31",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:danny-avila/LibreChat",
+      "attrs": {
+        "gh:name_with_owner": "danny-avila/LibreChat",
+        "gh:url": "https://github.com/danny-avila/LibreChat"
+      }
+    },
+    {
+      "id": "gh:repo:RichardAtCT/claude-code-openai-wrapper",
+      "attrs": {
+        "gh:name_with_owner": "RichardAtCT/claude-code-openai-wrapper",
+        "gh:url": "https://github.com/RichardAtCT/claude-code-openai-wrapper"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/yabai-tomodachi",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/yabai-tomodachi",
+        "fs:name": "yabai-tomodachi",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-23T21:08:40",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:remsky/Kokoro-FastAPI",
+      "attrs": {
+        "gh:name_with_owner": "remsky/Kokoro-FastAPI",
+        "gh:url": "https://github.com/remsky/Kokoro-FastAPI"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/rmix-brane-audio-environment",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 16401,
+        "gh:pushed_at": "2026-04-07T00:13:35Z",
+        "gh:created_at": "2025-10-04T23:25:05Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "HTML",
+          "Dockerfile"
+        ],
+        "gh:default_branch": "master",
+        "gh:commit_total": 42,
+        "gh:open_issues": 37,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/pw-mixerz",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/pw-mixerz",
+        "fs:name": "pw-mixerz",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/human-map",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/human-map",
+        "gh:url": "https://github.com/halapenyoharry/human-map",
+        "gh:description": "an open source, 'cloud sourced' navigation for human topology.",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 10,
+        "gh:pushed_at": "2025-11-09T20:24:52Z",
+        "gh:created_at": "2025-11-08T17:01:34Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 4,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/claude-code-openai-wrapper",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/claude-code-openai-wrapper",
+        "fs:name": "claude-code-openai-wrapper",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:30",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:Comfy-Org/ComfyUI_frontend",
+      "attrs": {
+        "gh:name_with_owner": "Comfy-Org/ComfyUI_frontend",
+        "gh:url": "https://github.com/Comfy-Org/ComfyUI_frontend"
+      }
+    },
+    {
+      "id": "gh:repo:allenporter/mcp-server-home-assistant",
+      "attrs": {
+        "gh:name_with_owner": "allenporter/mcp-server-home-assistant",
+        "gh:url": "https://github.com/allenporter/mcp-server-home-assistant"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/membrane-physics",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/membrane-physics",
+        "gh:url": "https://github.com/halapenyoharry/membrane-physics",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 282,
+        "gh:pushed_at": "2025-09-22T02:45:04Z",
+        "gh:created_at": "2025-09-19T21:15:14Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML",
+          "JavaScript",
+          "Python",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 6,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:chatboxai/chatbox",
+      "attrs": {
+        "gh:name_with_owner": "chatboxai/chatbox",
+        "gh:url": "https://github.com/chatboxai/chatbox"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/free-keys",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/free-keys",
+        "fs:name": "free-keys",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:30",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/wren",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/wren",
+        "fs:name": "wren",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/rmix/version-0001-dontuse",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/rmix/version-0001-dontuse",
+        "fs:name": "version-0001-dontuse",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2025-12-25T23:15:20",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:linuxmint/nemo",
+      "attrs": {
+        "gh:name_with_owner": "linuxmint/nemo",
+        "gh:url": "https://github.com/linuxmint/nemo"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/ollama-manager",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/ollama-manager",
+        "fs:name": "ollama-manager",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/linux-audio-mcp",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/linux-audio-mcp",
+        "fs:name": "linux-audio-mcp",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:tsl0922/ttyd",
+      "attrs": {
+        "gh:name_with_owner": "tsl0922/ttyd",
+        "gh:url": "https://github.com/tsl0922/ttyd"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/claudeZ",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/claudeZ",
+        "fs:name": "claudeZ",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/Kokoro-FastAPI",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/Kokoro-FastAPI",
+        "fs:name": "Kokoro-FastAPI",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:28",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/prometheos-pyr/.ai-link",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/prometheos-pyr/.ai-link",
+        "fs:name": ".ai-link",
+        "fs:is_dir": true,
+        "fs:hidden": true,
+        "fs:mtime": "2026-04-17T10:56:37",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/chuck/mindcraft",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/chuck/mindcraft",
+        "fs:name": "mindcraft",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-14T14:03:23",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/spot-control/superbird-tool",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/spot-control/superbird-tool",
+        "fs:name": "superbird-tool",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2025-12-14T09:01:47",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:ggerganov/whisper.cpp",
+      "attrs": {
+        "gh:name_with_owner": "ggerganov/whisper.cpp",
+        "gh:url": "https://github.com/ggerganov/whisper.cpp"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/finderz",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/finderz",
+        "gh:url": "https://github.com/halapenyoharry/finderz",
+        "gh:description": "A better file explorer for Linux that respects macOS .DS_Store metadata - because mixed Mac/Linux studios deserve better",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 1321,
+        "gh:pushed_at": "2025-09-16T18:49:07Z",
+        "gh:created_at": "2025-09-15T19:38:35Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "C",
+        "gh:languages": [
+          "C",
+          "Meson",
+          "Python",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 11,
+        "gh:open_issues": 1,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/project-science-fair-hub/frontend-base",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/project-science-fair-hub/frontend-base",
+        "fs:name": "frontend-base",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2025-12-25T23:15:20",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/syncthing-dir-time-fixer",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/syncthing-dir-time-fixer",
+        "fs:name": "syncthing-dir-time-fixer",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-23T21:08:40",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/rmix",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/rmix",
+        "gh:url": "https://github.com/halapenyoharry/rmix",
+        "gh:description": "mixing reality with science, and art.",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 1527,
+        "gh:pushed_at": "2025-09-28T07:53:44Z",
+        "gh:created_at": "2025-09-22T15:29:58Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML",
+          "JavaScript",
+          "Python",
+          "Shell",
+          "Dockerfile"
+        ],
+        "gh:default_branch": "master",
+        "gh:commit_total": 12,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/writing-evaluationz",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/writing-evaluationz",
+        "gh:url": "https://github.com/halapenyoharry/writing-evaluationz",
+        "gh:description": "a tool to see if what your writing needs to be work with traditional publishing systems.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 5,
+        "gh:pushed_at": "2025-11-20T01:21:21Z",
+        "gh:created_at": "2025-11-19T20:05:15Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 4,
+        "gh:open_issues": 5,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/plugged.out",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/plugged.out",
+        "gh:url": "https://github.com/halapenyoharry/plugged.out",
+        "gh:description": "Plugged.in MCP Server manages all your other MCPs in one MCP.",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 540,
+        "gh:pushed_at": "2025-07-03T00:30:05Z",
+        "gh:created_at": "2025-07-03T01:02:45Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "TypeScript",
+        "gh:languages": [
+          "TypeScript",
+          "JavaScript",
+          "Shell",
+          "Dockerfile"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 147,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/collection",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/collection",
+        "gh:url": "https://github.com/halapenyoharry/collection",
+        "gh:description": "collection of negentropic explorations",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 23,
+        "gh:pushed_at": "2026-04-19T22:47:20Z",
+        "gh:created_at": "2026-04-17T16:28:41Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 4,
+        "gh:open_issues": 0,
+        "gh:open_prs": 1
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/linux-audio-mcp",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/linux-audio-mcp",
+        "gh:url": "https://github.com/halapenyoharry/linux-audio-mcp",
+        "gh:description": "Model Context Protocol servers for Linux audio applications - Control RaySession, Agordejo, Carla and more with AI",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 22,
+        "gh:pushed_at": "2025-09-12T04:02:41Z",
+        "gh:created_at": "2025-09-10T16:08:04Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 5,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/wren-openwebui",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/wren-openwebui",
+        "gh:url": "https://github.com/halapenyoharry/wren-openwebui",
+        "gh:description": "Open WebUI configuration and data backup",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 0,
+        "gh:pushed_at": "2025-08-30T22:36:40Z",
+        "gh:created_at": "2025-08-30T22:36:40Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/icon-creator",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/icon-creator",
+        "gh:url": "https://github.com/halapenyoharry/icon-creator",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 3,
+        "gh:pushed_at": "2026-04-26T19:40:32Z",
+        "gh:created_at": "2026-04-26T12:52:00Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 3,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/human_ai_interaction-a_first_look",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/human_ai_interaction-a_first_look",
+        "fs:name": "human_ai_interaction-a_first_look",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:cline/cline",
+      "attrs": {
+        "gh:name_with_owner": "cline/cline",
+        "gh:url": "https://github.com/cline/cline"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/OpenSuperWhisper",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/OpenSuperWhisper",
+        "fs:name": "OpenSuperWhisper",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:30",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/EcoSpot-macos",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/EcoSpot-macos",
+        "gh:url": "https://github.com/halapenyoharry/EcoSpot-macos",
+        "gh:description": "Sustainable AI file search for macOS using native Spotlight - 95% token savings through metadata-only responses",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 82,
+        "gh:pushed_at": "2025-09-12T14:30:52Z",
+        "gh:created_at": "2025-07-08T12:42:39Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 6,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/ai_supremacy",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/ai_supremacy",
+        "fs:name": "ai_supremacy",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/rmix",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/rmix",
+        "fs:name": "rmix",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/human-context.md",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/human-context.md",
+        "gh:url": "https://github.com/halapenyoharry/human-context.md",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 1,
+        "gh:pushed_at": "2026-02-10T21:10:05Z",
+        "gh:created_at": "2026-02-10T21:10:03Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 1,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/voicez-studio",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/voicez-studio",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 255,
+        "gh:pushed_at": "2025-12-24T00:07:24Z",
+        "gh:created_at": "2025-12-15T20:10:44Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "CSS",
+          "Python",
+          "Mermaid",
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 19,
+        "gh:open_issues": 19,
+        "gh:open_prs": 2
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/json-visual-viewer",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/json-visual-viewer",
+        "gh:url": "https://github.com/halapenyoharry/json-visual-viewer",
+        "gh:description": "Lightweight native macOS app for visualizing JSON as interactive node graphs. Looking for testers!",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 5085,
+        "gh:pushed_at": "2026-04-27T21:04:58Z",
+        "gh:created_at": "2026-03-12T02:00:51Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "TypeScript",
+        "gh:languages": [
+          "TypeScript",
+          "CSS",
+          "Rust",
+          "JavaScript",
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 3,
+        "gh:open_issues": 4,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/open-webui",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/open-webui",
+        "gh:url": "https://github.com/halapenyoharry/open-webui",
+        "gh:description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 268220,
+        "gh:pushed_at": "2025-08-28T16:19:49Z",
+        "gh:created_at": "2025-08-28T21:41:58Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "Svelte",
+          "Python",
+          "TypeScript",
+          "CSS"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 12810,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/gov-next",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/gov-next",
+        "gh:url": "https://github.com/halapenyoharry/gov-next",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 2,
+        "gh:pushed_at": "2025-11-09T19:56:51Z",
+        "gh:created_at": "2025-11-09T19:42:25Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/prezence",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/prezence",
+        "gh:url": "https://github.com/halapenyoharry/prezence",
+        "gh:description": "A personal presence and media mixing rig \u2014 multi-device streaming and audio/video mixing built on OBS, MediaMTX, and OSC-driven control surfaces. Mix your own life, not someone else's algorithm.",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 20,
+        "gh:pushed_at": "2026-04-13T03:12:50Z",
+        "gh:created_at": "2026-04-13T03:09:00Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 1,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/rmix-brane-audio-environment",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/rmix-brane-audio-environment",
+        "fs:name": "rmix-brane-audio-environment",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-14T14:23:31",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/vortex",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/vortex",
+        "fs:name": "vortex",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-27T00:57:16",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/icon-creator",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/icon-creator",
+        "fs:name": "icon-creator",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-26T23:34:53",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:jasmine9876/epstein-docs.github.io",
+      "attrs": {
+        "gh:name_with_owner": "jasmine9876/epstein-docs.github.io",
+        "gh:url": "https://github.com/jasmine9876/epstein-docs.github.io"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/human-context",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/human-context",
+        "fs:name": "human-context",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:28",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/bookz",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/bookz",
+        "gh:url": "https://github.com/halapenyoharry/bookz",
+        "gh:description": "all the texts of you life in one place (ish)",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 423,
+        "gh:pushed_at": "2025-12-27T16:45:37Z",
+        "gh:created_at": "2025-12-26T00:59:07Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 23,
+        "gh:open_issues": 5,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/post-pipe",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/post-pipe",
+        "gh:url": "https://github.com/halapenyoharry/post-pipe",
+        "gh:description": "Markdown-to-platform publishing pipeline. Write once in Quarto, push to GitHub Pages, cross-post everywhere.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 643,
+        "gh:pushed_at": "2026-04-18T21:02:36Z",
+        "gh:created_at": "2026-03-22T17:46:35Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML",
+          "JavaScript"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 11,
+        "gh:open_issues": 2,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/zen-jack-bridge",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/zen-jack-bridge",
+        "fs:name": "zen-jack-bridge",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/tty-tmux-webui/ttyd",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/tty-tmux-webui/ttyd",
+        "fs:name": "ttyd",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-14T14:23:31",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/voicez-studio",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/voicez-studio",
+        "fs:name": "voicez-studio",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:28",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/graph-maker",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/graph-maker",
+        "gh:url": "https://github.com/halapenyoharry/graph-maker",
+        "gh:description": "makes graphs from files or urls.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 33,
+        "gh:pushed_at": "2025-11-12T23:13:49Z",
+        "gh:created_at": "2025-11-12T16:18:45Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "TypeScript",
+        "gh:languages": [
+          "TypeScript",
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 5,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:comfyanonymous/ComfyUI",
+      "attrs": {
+        "gh:name_with_owner": "comfyanonymous/ComfyUI",
+        "gh:url": "https://github.com/comfyanonymous/ComfyUI"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/mcp-google-custom-search-server",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/mcp-google-custom-search-server",
+        "fs:name": "mcp-google-custom-search-server",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/finderz",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/finderz",
+        "fs:name": "finderz",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:29",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/A2A",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/A2A",
+        "fs:name": "A2A",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-14T14:02:06",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/mcp-server-home-assistant",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/mcp-server-home-assistant",
+        "fs:name": "mcp-server-home-assistant",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:30",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:BabylonJS/Babylon.js",
+      "attrs": {
+        "gh:name_with_owner": "BabylonJS/Babylon.js",
+        "gh:url": "https://github.com/BabylonJS/Babylon.js"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/write-hub",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/write-hub",
+        "fs:name": "write-hub",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-24T00:23:28",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "gh:repo:go-gitea/gitea",
+      "attrs": {
+        "gh:name_with_owner": "go-gitea/gitea",
+        "gh:url": "https://github.com/go-gitea/gitea"
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/math-thing",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/math-thing",
+        "fs:name": "math-thing",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-23T21:08:40",
+        "fs:depth": 1,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/wren/open-webui-dev",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/wren/open-webui-dev",
+        "fs:name": "open-webui-dev",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2026-04-12T20:48:40",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    },
+    {
+      "id": "fs:/Users/harold/Projects/droidz/nebula",
+      "attrs": {
+        "fs:path": "/Users/harold/Projects/droidz/nebula",
+        "fs:name": "nebula",
+        "fs:is_dir": true,
+        "fs:hidden": false,
+        "fs:mtime": "2025-11-30T21:45:52",
+        "fs:depth": 2,
+        "fs:is_git_repo_root": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:merged/3011",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3012",
+        "merged:remote_url": "https://github.com/limklister/mcp-google-custom-search-server.git"
+      }
+    },
+    {
+      "id": "edge:merged/3012",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3013",
+        "merged:remote_url": "git@github.com:halapenyoharry/ollama-manager.git"
+      }
+    },
+    {
+      "id": "edge:merged/3013",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3014",
+        "merged:remote_url": "https://github.com/halapenyoharry/ai_supremacy.git"
+      }
+    },
+    {
+      "id": "edge:merged/3014",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3015",
+        "merged:remote_url": "https://github.com/halapenyoharry/river.git"
+      }
+    },
+    {
+      "id": "edge:merged/3015",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3016",
+        "merged:remote_url": "https://github.com/halapenyoharry/vortex.git"
+      }
+    },
+    {
+      "id": "edge:merged/3016",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3017",
+        "merged:remote_url": "https://github.com/Houston4444/RaySession.git"
+      }
+    },
+    {
+      "id": "edge:merged/3017",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3018",
+        "merged:remote_url": "https://github.com/halapenyoharry/collection"
+      }
+    },
+    {
+      "id": "edge:merged/3018",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3019",
+        "merged:remote_url": "https://github.com/halapenyoharry/profile-creator.git"
+      }
+    },
+    {
+      "id": "edge:merged/3019",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3020",
+        "merged:remote_url": "https://github.com/halapenyoharry/free-keys.git"
+      }
+    },
+    {
+      "id": "edge:merged/3020",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3021",
+        "merged:remote_url": "https://github.com/halapenyoharry/rmix.git"
+      }
+    },
+    {
+      "id": "edge:merged/3021",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3022",
+        "merged:remote_url": "https://github.com/halapenyoharry/syncthing-dir-time-fixer.git"
+      }
+    },
+    {
+      "id": "edge:merged/3022",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3023",
+        "merged:remote_url": "https://github.com/a2aproject/A2A.git"
+      }
+    },
+    {
+      "id": "edge:merged/3023",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3024",
+        "merged:remote_url": "https://github.com/halapenyoharry/reachz-osc.git"
+      }
+    },
+    {
+      "id": "edge:merged/3024",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3025",
+        "merged:remote_url": "https://github.com/danny-avila/LibreChat.git"
+      }
+    },
+    {
+      "id": "edge:merged/3025",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3026",
+        "merged:remote_url": "https://github.com/halapenyoharry/pw-mixerz.git"
+      }
+    },
+    {
+      "id": "edge:merged/3026",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3027",
+        "merged:remote_url": "https://github.com/halapenyoharry/bookz.git"
+      }
+    },
+    {
+      "id": "edge:merged/3027",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3028",
+        "merged:remote_url": "https://github.com/halapenyoharry/prezence.git"
+      }
+    },
+    {
+      "id": "edge:merged/3028",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3029",
+        "merged:remote_url": "https://github.com/halapenyoharry/post-pipe.git"
+      }
+    },
+    {
+      "id": "edge:merged/3029",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3030",
+        "merged:remote_url": "https://github.com/halapenyoharry/ClusterZ.git"
+      }
+    },
+    {
+      "id": "edge:merged/3030",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3031",
+        "merged:remote_url": "https://github.com/halapenyoharry/graph-maker.git"
+      }
+    },
+    {
+      "id": "edge:merged/3031",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3032",
+        "merged:remote_url": "https://github.com/halapenyoharry/voicez-studio.git"
+      }
+    },
+    {
+      "id": "edge:merged/3032",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3033",
+        "merged:remote_url": "https://github.com/halapenyoharry/wren-openwebui.git"
+      }
+    },
+    {
+      "id": "edge:merged/3033",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3034",
+        "merged:remote_url": "https://github.com/halapenyoharry/claudeZ.git"
+      }
+    },
+    {
+      "id": "edge:merged/3034",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3035",
+        "merged:remote_url": "https://github.com/halapenyoharry/linux-audio-mcp.git"
+      }
+    },
+    {
+      "id": "edge:merged/3035",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3036",
+        "merged:remote_url": "https://github.com/halapenyoharry/rmix-brane-audio-environment.git"
+      }
+    },
+    {
+      "id": "edge:merged/3036",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3037",
+        "merged:remote_url": "https://github.com/halapenyoharry/the-post-dead.git"
+      }
+    },
+    {
+      "id": "edge:merged/3037",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3038",
+        "merged:remote_url": "https://github.com/halapenyoharry/infotopoia.git"
+      }
+    },
+    {
+      "id": "edge:merged/3038",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3039",
+        "merged:remote_url": "https://github.com/modelcontextprotocol/servers.git"
+      }
+    },
+    {
+      "id": "edge:merged/3039",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3040",
+        "merged:remote_url": "https://github.com/allenporter/mcp-server-home-assistant.git"
+      }
+    },
+    {
+      "id": "edge:merged/3040",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3041",
+        "merged:remote_url": "https://github.com/remsky/Kokoro-FastAPI"
+      }
+    },
+    {
+      "id": "edge:merged/3041",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3042",
+        "merged:remote_url": "https://github.com/halapenyoharry/human-context.md.git"
+      }
+    },
+    {
+      "id": "edge:merged/3042",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3043",
+        "merged:remote_url": "https://github.com/linuxmint/nemo.git"
+      }
+    },
+    {
+      "id": "edge:merged/3043",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3044",
+        "merged:remote_url": "https://github.com/halapenyoharry/finderz.git"
+      }
+    },
+    {
+      "id": "edge:merged/3044",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3045",
+        "merged:remote_url": "https://github.com/halapenyoharry/writers-assistant.git"
+      }
+    },
+    {
+      "id": "edge:merged/3045",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3046",
+        "merged:remote_url": "https://github.com/halapenyoharry/gov-next.git"
+      }
+    },
+    {
+      "id": "edge:merged/3046",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3047",
+        "merged:remote_url": "https://github.com/halapenyoharry/zen-jack-bridge.git"
+      }
+    },
+    {
+      "id": "edge:merged/3047",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3048",
+        "merged:remote_url": "https://github.com/halapenyoharry/voicez.git"
+      }
+    },
+    {
+      "id": "edge:merged/3048",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3049",
+        "merged:remote_url": "https://github.com/halapenyoharry/EcoSpot-macos.git"
+      }
+    },
+    {
+      "id": "edge:merged/3049",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3050",
+        "merged:remote_url": "https://github.com/halapenyoharry/writehub.git"
+      }
+    },
+    {
+      "id": "edge:merged/3050",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3051",
+        "merged:remote_url": "https://github.com/halapenyoharry/yabai-tomodachi.git"
+      }
+    },
+    {
+      "id": "edge:merged/3051",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3052",
+        "merged:remote_url": "https://github.com/halapenyoharry/icon-creator.git"
+      }
+    },
+    {
+      "id": "edge:merged/3052",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3053",
+        "merged:remote_url": "https://github.com/halapenyoharry/json-visual-viewer.git"
+      }
+    },
+    {
+      "id": "edge:merged/3053",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3054",
+        "merged:remote_url": "https://github.com/halapenyoharry/human-map.git"
+      }
+    },
+    {
+      "id": "edge:merged/3054",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3055",
+        "merged:remote_url": "https://github.com/halapenyoharry/writing-evaluationz.git"
+      }
+    },
+    {
+      "id": "edge:merged/3055",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3056",
+        "merged:remote_url": "https://github.com/LizardByte/Sunshine.git"
+      }
+    },
+    {
+      "id": "edge:merged/3056",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3057",
+        "merged:remote_url": "https://github.com/RichardAtCT/claude-code-openai-wrapper.git"
+      }
+    },
+    {
+      "id": "edge:merged/3057",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3058",
+        "merged:remote_url": "https://github.com/halapenyoharry/math-thing.git"
+      }
+    },
+    {
+      "id": "edge:merged/3058",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3059",
+        "merged:remote_url": "https://github.com/Starmel/OpenSuperWhisper.git"
+      }
+    },
+    {
+      "id": "edge:merged/3059",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3060",
+        "merged:remote_url": "https://github.com/ggerganov/whisper.cpp"
+      }
+    },
+    {
+      "id": "edge:merged/3060",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3061",
+        "merged:remote_url": "https://github.com/halapenyoharry/OpenSuperWhisper.git"
+      }
+    },
+    {
+      "id": "edge:merged/3061",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3062",
+        "merged:remote_url": "https://github.com/comfyanonymous/ComfyUI"
+      }
+    },
+    {
+      "id": "edge:merged/3062",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3063",
+        "merged:remote_url": "https://github.com/halapenyoharry/human_ai_interaction-a_first_look.git"
+      }
+    },
+    {
+      "id": "edge:merged/3063",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3064",
+        "merged:remote_url": "https://github.com/open-webui/open-webui.git"
+      }
+    },
+    {
+      "id": "edge:merged/3064",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3065",
+        "merged:remote_url": "https://github.com/giandonatoinverso/PHP-Dynamic-Qr-code.git"
+      }
+    },
+    {
+      "id": "edge:merged/3065",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3066",
+        "merged:remote_url": "https://github.com/BabylonJS/Babylon.js.git"
+      }
+    },
+    {
+      "id": "edge:merged/3066",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3067",
+        "merged:remote_url": "https://github.com/halapenyoharry/plugged.out.git"
+      }
+    },
+    {
+      "id": "edge:merged/3067",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3068",
+        "merged:remote_url": "https://github.com/vesoft-inc/nebula.git"
+      }
+    },
+    {
+      "id": "edge:merged/3068",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3069",
+        "merged:remote_url": "https://github.com/tsl0922/ttyd"
+      }
+    },
+    {
+      "id": "edge:merged/3069",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3070",
+        "merged:remote_url": "https://github.com/halapenyoharry/rmix.git"
+      }
+    },
+    {
+      "id": "edge:merged/3070",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3071",
+        "merged:remote_url": "https://github.com/Comfy-Org/ComfyUI_frontend.git"
+      }
+    },
+    {
+      "id": "edge:merged/3071",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3072",
+        "merged:remote_url": "https://github.com/kolbytn/mindcraft.git"
+      }
+    },
+    {
+      "id": "edge:merged/3072",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3073",
+        "merged:remote_url": "https://github.com/bishopdynamics/superbird-tool.git"
+      }
+    },
+    {
+      "id": "edge:merged/3073",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3074",
+        "merged:remote_url": "https://github.com/SecretiveShell/MCP-Bridge.git"
+      }
+    },
+    {
+      "id": "edge:merged/3074",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3075",
+        "merged:remote_url": "https://github.com/halapenyoharry/open-webui.git"
+      }
+    },
+    {
+      "id": "edge:merged/3075",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3076",
+        "merged:remote_url": "https://github.com/open-webui/open-webui.git"
+      }
+    },
+    {
+      "id": "edge:merged/3076",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3077",
+        "merged:remote_url": "https://github.com/chatboxai/chatbox.git"
+      }
+    },
+    {
+      "id": "edge:merged/3077",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3078",
+        "merged:remote_url": "https://github.com/linuxmint/nemo.git"
+      }
+    },
+    {
+      "id": "edge:merged/3078",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3079",
+        "merged:remote_url": "https://github.com/bishopdynamics/superbird-tool.git"
+      }
+    },
+    {
+      "id": "edge:merged/3079",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3080",
+        "merged:remote_url": "https://github.com/halapenyoharry/ai-infrastructure.git"
+      }
+    },
+    {
+      "id": "edge:merged/3080",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3081",
+        "merged:remote_url": "https://github.com/go-gitea/gitea.git"
+      }
+    },
+    {
+      "id": "edge:merged/3081",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3082",
+        "merged:remote_url": "https://github.com/jasmine9876/epstein-docs.github.io.git"
+      }
+    },
+    {
+      "id": "edge:merged/3082",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3083",
+        "merged:remote_url": "https://github.com/halapenyoharry/membrane-physics.git"
+      }
+    },
+    {
+      "id": "edge:merged/3083",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3084",
+        "merged:remote_url": "https://github.com/eyalzh/browser-control-mcp.git"
+      }
+    },
+    {
+      "id": "edge:merged/3084",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3085",
+        "merged:remote_url": "https://github.com/halapenyoharry/browser-control-mcp.git"
+      }
+    },
+    {
+      "id": "edge:merged/3085",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "mirrors",
+        "i2t:original-id": "e3086",
+        "merged:remote_url": "https://github.com/cline/cline.git"
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:merged/3011",
+      "node": "fs:/Users/harold/Projects/mcp-google-custom-search-server",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3011",
+      "node": "gh:repo:limklister/mcp-google-custom-search-server",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3012",
+      "node": "fs:/Users/harold/Projects/ollama-manager",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3012",
+      "node": "gh:repo:halapenyoharry/ollama-manager",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3013",
+      "node": "fs:/Users/harold/Projects/ai_supremacy",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3013",
+      "node": "gh:repo:halapenyoharry/ai_supremacy",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3014",
+      "node": "fs:/Users/harold/Projects/river",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3014",
+      "node": "gh:repo:halapenyoharry/river",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3015",
+      "node": "fs:/Users/harold/Projects/vortex",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3015",
+      "node": "gh:repo:halapenyoharry/vortex",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3016",
+      "node": "fs:/Users/harold/Projects/RaySession",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3016",
+      "node": "gh:repo:Houston4444/RaySession",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3017",
+      "node": "fs:/Users/harold/Projects/collection",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3017",
+      "node": "gh:repo:halapenyoharry/collection",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3018",
+      "node": "fs:/Users/harold/Projects/profile-creator",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3018",
+      "node": "gh:repo:halapenyoharry/profile-creator",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3019",
+      "node": "fs:/Users/harold/Projects/free-keys",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3019",
+      "node": "gh:repo:halapenyoharry/free-keys",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3020",
+      "node": "fs:/Users/harold/Projects/rmix",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3020",
+      "node": "gh:repo:halapenyoharry/rmix",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3021",
+      "node": "fs:/Users/harold/Projects/syncthing-dir-time-fixer",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3021",
+      "node": "gh:repo:halapenyoharry/syncthing-dir-time-fixer",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3022",
+      "node": "fs:/Users/harold/Projects/A2A",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3022",
+      "node": "gh:repo:a2aproject/A2A",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3023",
+      "node": "fs:/Users/harold/Projects/reachz-osc",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3023",
+      "node": "gh:repo:halapenyoharry/reachz-osc",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3024",
+      "node": "fs:/Users/harold/Projects/LibreChat",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3024",
+      "node": "gh:repo:danny-avila/LibreChat",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3025",
+      "node": "fs:/Users/harold/Projects/pw-mixerz",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3025",
+      "node": "gh:repo:halapenyoharry/pw-mixerz",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3026",
+      "node": "fs:/Users/harold/Projects/bookz-main",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3026",
+      "node": "gh:repo:halapenyoharry/bookz",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3027",
+      "node": "fs:/Users/harold/Projects/prezence",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3027",
+      "node": "gh:repo:halapenyoharry/prezence",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3028",
+      "node": "fs:/Users/harold/Projects/post-pipe",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3028",
+      "node": "gh:repo:halapenyoharry/post-pipe",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3029",
+      "node": "fs:/Users/harold/Projects/ClusterZ",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3029",
+      "node": "gh:repo:halapenyoharry/ClusterZ",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3030",
+      "node": "fs:/Users/harold/Projects/graph-maker",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3030",
+      "node": "gh:repo:halapenyoharry/graph-maker",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3031",
+      "node": "fs:/Users/harold/Projects/voicez-studio",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3031",
+      "node": "gh:repo:halapenyoharry/voicez-studio",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3032",
+      "node": "fs:/Users/harold/Projects/wren",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3032",
+      "node": "gh:repo:halapenyoharry/wren-openwebui",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3033",
+      "node": "fs:/Users/harold/Projects/claudeZ",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3033",
+      "node": "gh:repo:halapenyoharry/claudeZ",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3034",
+      "node": "fs:/Users/harold/Projects/linux-audio-mcp",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3034",
+      "node": "gh:repo:halapenyoharry/linux-audio-mcp",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3035",
+      "node": "fs:/Users/harold/Projects/rmix-brane-audio-environment",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3035",
+      "node": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3036",
+      "node": "fs:/Users/harold/Projects/post-dead",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3036",
+      "node": "gh:repo:halapenyoharry/the-post-dead",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3037",
+      "node": "fs:/Users/harold/Projects/TopoSpace",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3037",
+      "node": "gh:repo:halapenyoharry/infotopoia",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3038",
+      "node": "fs:/Users/harold/Projects/mcp-official-servers",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3038",
+      "node": "gh:repo:modelcontextprotocol/servers",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3039",
+      "node": "fs:/Users/harold/Projects/mcp-server-home-assistant",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3039",
+      "node": "gh:repo:allenporter/mcp-server-home-assistant",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3040",
+      "node": "fs:/Users/harold/Projects/Kokoro-FastAPI",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3040",
+      "node": "gh:repo:remsky/Kokoro-FastAPI",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3041",
+      "node": "fs:/Users/harold/Projects/human-context",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3041",
+      "node": "gh:repo:halapenyoharry/human-context.md",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3042",
+      "node": "fs:/Users/harold/Projects/finderz",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3042",
+      "node": "gh:repo:linuxmint/nemo",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3043",
+      "node": "fs:/Users/harold/Projects/finderz",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3043",
+      "node": "gh:repo:halapenyoharry/finderz",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3044",
+      "node": "fs:/Users/harold/Projects/writers-assistant",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3044",
+      "node": "gh:repo:halapenyoharry/writers-assistant",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3045",
+      "node": "fs:/Users/harold/Projects/gov-next",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3045",
+      "node": "gh:repo:halapenyoharry/gov-next",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3046",
+      "node": "fs:/Users/harold/Projects/zen-jack-bridge",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3046",
+      "node": "gh:repo:halapenyoharry/zen-jack-bridge",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3047",
+      "node": "fs:/Users/harold/Projects/voicez",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3047",
+      "node": "gh:repo:halapenyoharry/voicez",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3048",
+      "node": "fs:/Users/harold/Projects/EcoSpot-macos",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3048",
+      "node": "gh:repo:halapenyoharry/EcoSpot-macos",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3049",
+      "node": "fs:/Users/harold/Projects/write-hub",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3049",
+      "node": "gh:repo:halapenyoharry/writehub",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3050",
+      "node": "fs:/Users/harold/Projects/yabai-tomodachi",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3050",
+      "node": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3051",
+      "node": "fs:/Users/harold/Projects/icon-creator",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3051",
+      "node": "gh:repo:halapenyoharry/icon-creator",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3052",
+      "node": "fs:/Users/harold/Projects/json-visual-viewer",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3052",
+      "node": "gh:repo:halapenyoharry/json-visual-viewer",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3053",
+      "node": "fs:/Users/harold/Projects/human-map",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3053",
+      "node": "gh:repo:halapenyoharry/human-map",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3054",
+      "node": "fs:/Users/harold/Projects/writing-evaluationz",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3054",
+      "node": "gh:repo:halapenyoharry/writing-evaluationz",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3055",
+      "node": "fs:/Users/harold/Projects/Sunshine",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3055",
+      "node": "gh:repo:LizardByte/Sunshine",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3056",
+      "node": "fs:/Users/harold/Projects/claude-code-openai-wrapper",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3056",
+      "node": "gh:repo:RichardAtCT/claude-code-openai-wrapper",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3057",
+      "node": "fs:/Users/harold/Projects/math-thing",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3057",
+      "node": "gh:repo:halapenyoharry/math-thing",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3058",
+      "node": "fs:/Users/harold/Projects/OpenSuperWhisper",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3058",
+      "node": "gh:repo:Starmel/OpenSuperWhisper",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3059",
+      "node": "fs:/Users/harold/Projects/OpenSuperWhisper",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3059",
+      "node": "gh:repo:ggerganov/whisper.cpp",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3060",
+      "node": "fs:/Users/harold/Projects/OpenSuperWhisper",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3060",
+      "node": "gh:repo:halapenyoharry/OpenSuperWhisper",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3061",
+      "node": "fs:/Users/harold/Projects/creative-hub-comfyui",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3061",
+      "node": "gh:repo:comfyanonymous/ComfyUI",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3062",
+      "node": "fs:/Users/harold/Projects/human_ai_interaction-a_first_look",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3062",
+      "node": "gh:repo:halapenyoharry/human_ai_interaction-a_first_look",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3063",
+      "node": "fs:/Users/harold/Projects/claude-mcp-webapp",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3063",
+      "node": "gh:repo:open-webui/open-webui",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3064",
+      "node": "fs:/Users/harold/Projects/PHP-Dynamic-Qr-code",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3064",
+      "node": "gh:repo:giandonatoinverso/PHP-Dynamic-Qr-code",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3065",
+      "node": "fs:/Users/harold/Projects/TopoLand/Babylon.js",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3065",
+      "node": "gh:repo:BabylonJS/Babylon.js",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3066",
+      "node": "fs:/Users/harold/Projects/the\ud83c\udfebof\ud834\udf4d\u270a/plugged.out",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3066",
+      "node": "gh:repo:halapenyoharry/plugged.out",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3067",
+      "node": "fs:/Users/harold/Projects/droidz/nebula",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3067",
+      "node": "gh:repo:vesoft-inc/nebula",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3068",
+      "node": "fs:/Users/harold/Projects/tty-tmux-webui/ttyd",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3068",
+      "node": "gh:repo:tsl0922/ttyd",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3069",
+      "node": "fs:/Users/harold/Projects/rmix/version-0001-dontuse",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3069",
+      "node": "gh:repo:halapenyoharry/rmix",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3070",
+      "node": "fs:/Users/harold/Projects/project-science-fair-hub/frontend-base",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3070",
+      "node": "gh:repo:Comfy-Org/ComfyUI_frontend",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3071",
+      "node": "fs:/Users/harold/Projects/chuck/mindcraft",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3071",
+      "node": "gh:repo:kolbytn/mindcraft",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3072",
+      "node": "fs:/Users/harold/Projects/spot-control/superbird-tool",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3072",
+      "node": "gh:repo:bishopdynamics/superbird-tool",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3073",
+      "node": "fs:/Users/harold/Projects/wren/mcp-bridge-official",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3073",
+      "node": "gh:repo:SecretiveShell/MCP-Bridge",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3074",
+      "node": "fs:/Users/harold/Projects/wren/open-webui-dev",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3074",
+      "node": "gh:repo:halapenyoharry/open-webui",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3075",
+      "node": "fs:/Users/harold/Projects/wren/open-webui-dev",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3075",
+      "node": "gh:repo:open-webui/open-webui",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3076",
+      "node": "fs:/Users/harold/Projects/claude-desktop/chatbox",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3076",
+      "node": "gh:repo:chatboxai/chatbox",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3077",
+      "node": "fs:/Users/harold/Projects/finderz/nemo-upstream",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3077",
+      "node": "gh:repo:linuxmint/nemo",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3078",
+      "node": "fs:/Users/harold/Projects/superbird/superbird-tool",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3078",
+      "node": "gh:repo:bishopdynamics/superbird-tool",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3079",
+      "node": "fs:/Users/harold/Projects/prometheos-pyr/.ai-link",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3079",
+      "node": "gh:repo:halapenyoharry/ai-infrastructure",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3080",
+      "node": "fs:/Users/harold/Projects/write-hub/gitea-stable",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3080",
+      "node": "gh:repo:go-gitea/gitea",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3081",
+      "node": "fs:/Users/harold/Projects/epstein-files/epstein-docs.github.io",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3081",
+      "node": "gh:repo:jasmine9876/epstein-docs.github.io",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3082",
+      "node": "fs:/Users/harold/Projects/math-thing/templates",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3082",
+      "node": "gh:repo:halapenyoharry/membrane-physics",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3083",
+      "node": "fs:/Users/harold/Projects/zen-browser-mcp/browser-control-mcp",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3083",
+      "node": "gh:repo:eyalzh/browser-control-mcp",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3084",
+      "node": "fs:/Users/harold/Projects/zen-browser-mcp/browser-control-mcp",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3084",
+      "node": "gh:repo:halapenyoharry/browser-control-mcp",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3085",
+      "node": "fs:/Users/harold/Projects/claude-mcp-webapp/cline",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3085",
+      "node": "gh:repo:cline/cline",
+      "role": "target"
+    }
+  ]
+}

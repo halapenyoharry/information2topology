@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "format": "normalized-dyadic",
+    "flavor": "dyadic-projection-from-hypergraph",
+    "i2t:relation_to_canonical": "dyadic-projection",
+    "originalCounts": {
+      "nodes": 9,
+      "edges": 10,
+      "incidences": 20
+    },
+    "source-metadata": {
+      "topothink-version": "0.1",
+      "title": "test_sample",
+      "source_file": "data/test_sample.txt",
+      "source_sha256": "dfed770121b28a017f8049e15973b154c913d3cba2ecc4be30bb44052e2b4852",
+      "extracted_at": "2026-09-12T20:24:10.467697+00:00",
+      "model_used": "google/gemini-2.5-flash"
+    }
+  },
+  "nodes": [
+    {
+      "id": "harold_young",
+      "kind": "node",
+      "attrs": {
+        "exact_quote": "Harold Young",
+        "label": "Harold Young",
+        "type": "Person"
+      },
+      "label": "Harold Young"
+    },
+    {
+      "id": "topothink_engine",
+      "kind": "node",
+      "attrs": {
+        "exact_quote": "TopoThink engine",
+        "label": "TopoThink engine",
+        "type": "SoftwareComponent"
+      },
+      "label": "TopoThink engine"
+    },
+    {
+      "id": "containment",
+      "kind": "node",
+      "attrs": {
+        "exact_quote": "Containment",
+        "label": "Containment",
+        "type": "EdgeCategory"
+      },
+      "label": "Containment"
+    },
+    {
+      "id": "state_change",
+      "kind": "node",
+      "attrs": {
+        "exact_quote": "State Change",
+        "label": "State Change",
+        "type": "EdgeCategory"
+      },
+      "label": "State Change"
+    },
+    {
+      "id": "interactivity",
+      "kind": "node",
+      "attrs": {
+        "exact_quote": "Interactivity",
+        "label": "Interactivity",
+        "type": "EdgeCategory"
+      },
+      "label": "Interactivity"
+    },
+    {
+      "id": "reference",
+      "kind": "node",
+      "attrs": {
+        "exact_quote": "Reference",
+        "label": "Reference",
+        "type": "EdgeCategory"
+      },
+      "label": "Reference"
+    },
+    {
+      "id": "alice",
+      "kind": "node",
+      "attrs": {
+        "exact_quote": "Alice",
+        "label": "Alice",
+        "type": "Person"
+      },
+      "label": "Alice"
+    },
+    {
+      "id": "exoskeleton_workstation",
+      "kind": "node",
+      "attrs": {
+        "exact_quote": "Exoskeleton workstation",
+        "label": "Exoskeleton workstation",
+        "type": "SoftwareSystem"
+      },
+      "label": "Exoskeleton workstation"
+    },
+    {
+      "id": "open_tools_for_human_cognition",
+      "kind": "node",
+      "attrs": {
+        "exact_quote": "open tools for human cognition",
+        "label": "open tools for human cognition",
+        "type": "ProjectGoal"
+      },
+      "label": "open tools for human cognition"
+    }
+  ],
+  "links": [
+    {
+      "source": "harold_young",
+      "target": "topothink_engine",
+      "directed": true,
+      "label": "designed",
+      "layer": "designed",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "designed",
+        "i2t:category": "reference",
+        "i2t:evidence": "Harold Young designed the TopoThink engine."
+      }
+    },
+    {
+      "source": "topothink_engine",
+      "target": "containment",
+      "directed": true,
+      "label": "contains_category",
+      "layer": "contains_category",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "contains_category",
+        "i2t:category": "containment",
+        "i2t:evidence": "The TopoThink engine contains four relational edge categories: Containment, State Change, Interactivity, and Reference."
+      }
+    },
+    {
+      "source": "topothink_engine",
+      "target": "state_change",
+      "directed": true,
+      "label": "contains_category",
+      "layer": "contains_category",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "contains_category",
+        "i2t:category": "containment",
+        "i2t:evidence": "The TopoThink engine contains four relational edge categories: Containment, State Change, Interactivity, and Reference."
+      }
+    },
+    {
+      "source": "topothink_engine",
+      "target": "interactivity",
+      "directed": true,
+      "label": "contains_category",
+      "layer": "contains_category",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "contains_category",
+        "i2t:category": "containment",
+        "i2t:evidence": "The TopoThink engine contains four relational edge categories: Containment, State Change, Interactivity, and Reference."
+      }
+    },
+    {
+      "source": "topothink_engine",
+      "target": "reference",
+      "directed": true,
+      "label": "contains_category",
+      "layer": "contains_category",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "contains_category",
+        "i2t:category": "containment",
+        "i2t:evidence": "The TopoThink engine contains four relational edge categories: Containment, State Change, Interactivity, and Reference."
+      }
+    },
+    {
+      "source": "alice",
+      "target": "exoskeleton_workstation",
+      "directed": true,
+      "label": "manages",
+      "layer": "manages",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "manages",
+        "i2t:category": "reference",
+        "i2t:evidence": "Alice manages the Exoskeleton workstation"
+      }
+    },
+    {
+      "source": "exoskeleton_workstation",
+      "target": "topothink_engine",
+      "directed": true,
+      "label": "imports",
+      "layer": "imports",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "imports",
+        "i2t:category": "reference",
+        "i2t:evidence": "which imports the TopoThink engine at runtime to render multi-layer topological maps."
+      }
+    },
+    {
+      "source": "alice",
+      "target": "harold_young",
+      "directed": false,
+      "label": "allied_with",
+      "layer": "allied_with",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "allied_with",
+        "i2t:category": "interactivity",
+        "i2t:evidence": "Alice is allied with Harold in building open tools for human cognition."
+      }
+    },
+    {
+      "source": "alice",
+      "target": "open_tools_for_human_cognition",
+      "directed": true,
+      "label": "contributes_to",
+      "layer": "contributes_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "contributes_to",
+        "i2t:category": "reference",
+        "i2t:evidence": "Alice is allied with Harold in building open tools for human cognition."
+      }
+    },
+    {
+      "source": "harold_young",
+      "target": "open_tools_for_human_cognition",
+      "directed": true,
+      "label": "contributes_to",
+      "layer": "contributes_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "contributes_to",
+        "i2t:category": "reference",
+        "i2t:evidence": "Alice is allied with Harold in building open tools for human cognition."
+      }
+    }
+  ]
+}

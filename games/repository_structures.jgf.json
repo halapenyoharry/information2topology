@@ -1,0 +1,129 @@
+{
+  "graph": {
+    "id": "open-source-fps-repos",
+    "label": "Open-source FPS repositories with HUD-integrated minimaps",
+    "type": "software-repository-topology",
+    "directed": true,
+    "metadata": {
+      "source": "Topological and Architectural Analysis of Open-Source First-Person Game Repositories",
+      "format": "JSON Graph Format (JGF) v2",
+      "format_spec": "https://jsongraphformat.info/",
+      "rendering_hint": "Repos cluster around shared language/engine/build-system/genre nodes; the cluster shape is the topology you're meant to read."
+    },
+    "nodes": [
+      {
+        "id": "repo:luanti",
+        "label": "luanti-org/luanti",
+        "metadata": {
+          "kind": "repository",
+          "url": "https://github.com/luanti-org/luanti",
+          "description": "C++ Engine and Lua API; voxel modding platform",
+          "main_level_folders": [".github", ".vscode", "android", "builtin", "client", "clientmods", "cmake", "doc", "fastlane", "fonts", "games", "irr", "lib", "misc", "mods", "po", "src", "textures", "util", "worlds"],
+          "main_level_files": [".clang-tidy", ".dockerignore", ".editorconfig", ".envrc", ".gitattributes", ".gitignore", ".gitlab-ci.yml", ".luacheckrc", ".mailmap", "CMakeLists.txt", "CMakePresets.json", "CNAME", "COPYING.LESSER", "Dockerfile", "LICENSE.txt", "README.md", "minetest.conf.example", "shell.nix", "vcpkg.json"]
+        }
+      },
+      {
+        "id": "repo:terasology",
+        "label": "MovingBlocks/Terasology",
+        "metadata": {
+          "kind": "repository",
+          "url": "https://github.com/MovingBlocks/Terasology",
+          "description": "Java multi-repo engine workspace; modular voxel sandbox",
+          "main_level_folders": [".github", ".idea", "build-logic", "config", "docs", "docs-pre-merge", "engine", "engine-tests", "facades", "fileTemplates", "gradle", "libs", "metas", "modules", "openvr_natives", "subsystems", "templates"],
+          "main_level_files": [".gitattributes", ".gitignore", ".gitpod.yml", "Jenkinsfile", "LICENSE", "LICENSE_ARTWORK", "NOTICE", "README.md", "build.gradle.kts", "gitpod.dockerfile", "gradlew", "gradlew.bat", "groovyw", "groovyw.bat", "settings.gradle.kts"]
+        }
+      },
+      {
+        "id": "repo:openmw",
+        "label": "OpenMW/openmw",
+        "metadata": {
+          "kind": "repository",
+          "url": "https://github.com/OpenMW/openmw",
+          "description": "C++ RPG engine reimplementation (Morrowind)",
+          "main_level_folders": [".github", ".gitlab", "CI", "apps", "cmake", "components", "docker", "docs", "extern", "files", "manual", "scripts"],
+          "main_level_files": [".clang-format", ".clang-tidy", ".editorconfig", ".git-blame-ignore-revs", ".gitignore", ".gitlab-ci.yml", ".readthedocs.yaml", ".resubmitted_merge_requests.txt", "AUTHORS.md", "CHANGELOG.md", "CMakeLists.txt", "CONTRIBUTING.md", "LICENSE", "README.md"]
+        }
+      },
+      {
+        "id": "repo:unvanquished",
+        "label": "Unvanquished/Unvanquished",
+        "metadata": {
+          "kind": "repository",
+          "url": "https://github.com/Unvanquished/Unvanquished",
+          "description": "C++ FPS/RTS hybrid; Daemon engine",
+          "main_level_folders": [".github", ".urcheon", "debian", "dist", "libs", "macosx", "pkg", "src", "tools"],
+          "main_level_files": [".appveyor.yml", ".git-blame-ignore-revs", ".gitattributes", ".gitignore", ".gitmodules", "CMakeLists.txt", "COPYING.txt", "GPL.txt", "README.md", "azure-pipelines.yml", "daemon", "download-paks", "lua.cmake", "rmlui.cmake", "src.cmake", "update-version-number.py"],
+          "submodules": ["daemon"]
+        }
+      },
+
+      { "id": "lang:cpp",      "label": "C++",        "metadata": { "kind": "language" } },
+      { "id": "lang:java",     "label": "Java",       "metadata": { "kind": "language" } },
+      { "id": "lang:lua",      "label": "Lua",        "metadata": { "kind": "scripting-language" } },
+
+      { "id": "engine:custom-voxel-luanti",   "label": "Luanti custom voxel engine",        "metadata": { "kind": "engine-framework" } },
+      { "id": "engine:custom-voxel-tera",     "label": "Terasology custom voxel engine",    "metadata": { "kind": "engine-framework" } },
+      { "id": "engine:osg-mygui",             "label": "OpenSceneGraph + MyGUI",            "metadata": { "kind": "engine-framework" } },
+      { "id": "engine:daemon",                "label": "Dæmon engine (ioq3 + XreaL)",       "metadata": { "kind": "engine-framework" } },
+
+      { "id": "ui:teranui",   "label": "TeraNUI",          "metadata": { "kind": "ui-framework" } },
+      { "id": "ui:rmlui",     "label": "RmlUi",            "metadata": { "kind": "ui-framework" } },
+      { "id": "ui:mygui",     "label": "MyGUI",            "metadata": { "kind": "ui-framework" } },
+      { "id": "ui:luanti-hud","label": "Luanti native HUD","metadata": { "kind": "ui-framework" } },
+
+      { "id": "build:cmake",  "label": "CMake",            "metadata": { "kind": "build-system" } },
+      { "id": "build:gradle", "label": "Gradle (Kotlin DSL)", "metadata": { "kind": "build-system" } },
+      { "id": "build:urcheon","label": "Urcheon",          "metadata": { "kind": "build-system" } },
+
+      { "id": "ci:gitlab",    "label": "GitLab CI",        "metadata": { "kind": "ci-platform" } },
+      { "id": "ci:jenkins",   "label": "Jenkins",          "metadata": { "kind": "ci-platform" } },
+      { "id": "ci:gh-actions","label": "GitHub Actions",   "metadata": { "kind": "ci-platform" } },
+
+      { "id": "genre:voxel-sandbox",  "label": "Voxel sandbox",          "metadata": { "kind": "genre" } },
+      { "id": "genre:rpg-reimpl",     "label": "RPG engine reimplementation", "metadata": { "kind": "genre" } },
+      { "id": "genre:fps-rts",        "label": "FPS/RTS hybrid",         "metadata": { "kind": "genre" } },
+
+      { "id": "minimap:flag-driven",          "label": "Configurable HUD flags / engine-to-HUD mapping", "metadata": { "kind": "minimap-mechanism" } },
+      { "id": "minimap:module-overlay",       "label": "Independent module overlay",                     "metadata": { "kind": "minimap-mechanism" } },
+      { "id": "minimap:cell-rendering",       "label": "Internal UI mapping / cell rendering",           "metadata": { "kind": "minimap-mechanism" } },
+      { "id": "minimap:bsp-orthographic",     "label": "Orthogonal projection of BSP map",               "metadata": { "kind": "minimap-mechanism" } }
+    ],
+    "edges": [
+      { "source": "repo:luanti",       "target": "lang:cpp",                   "relation": "written_in" },
+      { "source": "repo:luanti",       "target": "lang:lua",                   "relation": "scripted_in" },
+      { "source": "repo:luanti",       "target": "engine:custom-voxel-luanti", "relation": "powered_by" },
+      { "source": "repo:luanti",       "target": "ui:luanti-hud",              "relation": "renders_hud_with" },
+      { "source": "repo:luanti",       "target": "build:cmake",                "relation": "built_with" },
+      { "source": "repo:luanti",       "target": "ci:gitlab",                  "relation": "integrated_via" },
+      { "source": "repo:luanti",       "target": "genre:voxel-sandbox",        "relation": "in_genre" },
+      { "source": "repo:luanti",       "target": "minimap:flag-driven",        "relation": "implements_minimap_via" },
+
+      { "source": "repo:terasology",   "target": "lang:java",                  "relation": "written_in" },
+      { "source": "repo:terasology",   "target": "engine:custom-voxel-tera",   "relation": "powered_by" },
+      { "source": "repo:terasology",   "target": "ui:teranui",                 "relation": "renders_hud_with" },
+      { "source": "repo:terasology",   "target": "build:gradle",               "relation": "built_with" },
+      { "source": "repo:terasology",   "target": "ci:jenkins",                 "relation": "integrated_via" },
+      { "source": "repo:terasology",   "target": "genre:voxel-sandbox",        "relation": "in_genre" },
+      { "source": "repo:terasology",   "target": "minimap:module-overlay",     "relation": "implements_minimap_via" },
+
+      { "source": "repo:openmw",       "target": "lang:cpp",                   "relation": "written_in" },
+      { "source": "repo:openmw",       "target": "lang:lua",                   "relation": "scripted_in" },
+      { "source": "repo:openmw",       "target": "engine:osg-mygui",           "relation": "powered_by" },
+      { "source": "repo:openmw",       "target": "ui:mygui",                   "relation": "renders_hud_with" },
+      { "source": "repo:openmw",       "target": "build:cmake",                "relation": "built_with" },
+      { "source": "repo:openmw",       "target": "ci:gitlab",                  "relation": "integrated_via" },
+      { "source": "repo:openmw",       "target": "ci:gh-actions",              "relation": "integrated_via" },
+      { "source": "repo:openmw",       "target": "genre:rpg-reimpl",           "relation": "in_genre" },
+      { "source": "repo:openmw",       "target": "minimap:cell-rendering",     "relation": "implements_minimap_via" },
+
+      { "source": "repo:unvanquished", "target": "lang:cpp",                   "relation": "written_in" },
+      { "source": "repo:unvanquished", "target": "engine:daemon",              "relation": "powered_by" },
+      { "source": "repo:unvanquished", "target": "ui:rmlui",                   "relation": "renders_hud_with" },
+      { "source": "repo:unvanquished", "target": "build:cmake",                "relation": "built_with" },
+      { "source": "repo:unvanquished", "target": "build:urcheon",              "relation": "built_with" },
+      { "source": "repo:unvanquished", "target": "ci:gh-actions",              "relation": "integrated_via" },
+      { "source": "repo:unvanquished", "target": "genre:fps-rts",              "relation": "in_genre" },
+      { "source": "repo:unvanquished", "target": "minimap:bsp-orthographic",   "relation": "implements_minimap_via" }
+    ]
+  }
+}

@@ -1,0 +1,6238 @@
+{
+  "metadata": {
+    "format": "normalized-dyadic",
+    "flavor": "dyadic-projection-from-hypergraph",
+    "i2t:relation_to_canonical": "dyadic-projection",
+    "originalCounts": {
+      "nodes": 223,
+      "edges": 227,
+      "incidences": 454
+    },
+    "source-metadata": {
+      "topothink-version": "0.1",
+      "adapter": "propgraph_to_hypergraph.py",
+      "source-meta": {
+        "tool": "merged",
+        "version": "1",
+        "sources": [
+          {
+            "tool": "dirgraph",
+            "version": "1",
+            "scanned_at": "2026-04-27T21:13:48+00:00",
+            "root": "/Users/harold/Projects",
+            "max_depth": 2,
+            "skip_dirs": [
+              ".cache",
+              ".git",
+              ".gradle",
+              ".idea",
+              ".mypy_cache",
+              ".next",
+              ".pytest_cache",
+              ".ruff_cache",
+              ".tox",
+              ".venv",
+              "DerivedData",
+              "Pods",
+              "__pycache__",
+              "bower_components",
+              "build",
+              "dist",
+              "node_modules",
+              "target",
+              "vendor",
+              "venv"
+            ],
+            "skip_extensions": [
+              ".7z",
+              ".a",
+              ".aac",
+              ".avi",
+              ".bin",
+              ".bmp",
+              ".bz2",
+              ".class",
+              ".dll",
+              ".dmg",
+              ".dylib",
+              ".eot",
+              ".exe",
+              ".flac",
+              ".gif",
+              ".gz",
+              ".heic",
+              ".ico",
+              ".iso",
+              ".jar",
+              ".jpeg",
+              ".jpg",
+              ".m4a",
+              ".mkv",
+              ".mov",
+              ".mp3",
+              ".mp4",
+              ".o",
+              ".ogg",
+              ".otf",
+              ".pdf",
+              ".pkg",
+              ".png",
+              ".pyc",
+              ".pyo",
+              ".rar",
+              ".so",
+              ".svg",
+              ".tar",
+              ".tgz",
+              ".tiff",
+              ".ttf",
+              ".wav",
+              ".webm",
+              ".webp",
+              ".woff",
+              ".woff2",
+              ".zip"
+            ],
+            "sources": {
+              "filesystem": true,
+              "git": true,
+              "spotlight": true,
+              "ports": true,
+              "github_remotes": true
+            }
+          },
+          {
+            "tool": "ghgraph",
+            "version": "1",
+            "scanned_at": "2026-04-27T21:13:25+00:00",
+            "viewer": "halapenyoharry",
+            "rate_limit": {
+              "remaining": 4819,
+              "limit": 5000,
+              "resetAt": "2026-04-27T21:20:25Z"
+            },
+            "sources": {
+              "github_graphql": true,
+              "include_prs": true,
+              "include_issues": true,
+              "per_repo_limit": 25
+            }
+          }
+        ],
+        "merged_at": "2026-04-28T01:00:02Z"
+      },
+      "extraction-stats": {
+        "nodes": 223,
+        "edges": 227,
+        "incidences": 454
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#1",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "1. Network Validation and Connectivity Testing",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/1",
+        "gh:created_at": "2026-01-18T18:31:29Z",
+        "gh:updated_at": "2026-01-18T18:31:29Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#10",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 10,
+        "gh:title": "10. Start Worker Nodes",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/10",
+        "gh:created_at": "2026-01-18T18:33:32Z",
+        "gh:updated_at": "2026-01-18T18:33:32Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#11",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 11,
+        "gh:title": "11. Start Coordinator (Mac Studio)",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/11",
+        "gh:created_at": "2026-01-18T18:33:38Z",
+        "gh:updated_at": "2026-01-18T18:33:38Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#12",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 12,
+        "gh:title": "12. Cluster Validation and Inference Testing",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/12",
+        "gh:created_at": "2026-01-18T18:33:44Z",
+        "gh:updated_at": "2026-01-18T18:33:44Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#13",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 13,
+        "gh:title": "13. Update and Configure Aider",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/13",
+        "gh:created_at": "2026-01-18T18:33:51Z",
+        "gh:updated_at": "2026-01-18T18:33:51Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#14",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 14,
+        "gh:title": "14. Install and Configure Continue.dev",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/14",
+        "gh:created_at": "2026-01-18T18:33:57Z",
+        "gh:updated_at": "2026-01-18T18:33:57Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#15",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 15,
+        "gh:title": "15. Remove Cline (Optional Cleanup)",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/15",
+        "gh:created_at": "2026-01-18T18:33:59Z",
+        "gh:updated_at": "2026-01-18T18:33:59Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#16",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 16,
+        "gh:title": "0. Prerequisites and SSH Setup (Run First)",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/16",
+        "gh:created_at": "2026-01-18T18:50:43Z",
+        "gh:updated_at": "2026-01-18T18:50:43Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#2",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 2,
+        "gh:title": "2. Driver Installation (Linux Workers)",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/2",
+        "gh:created_at": "2026-01-18T18:31:33Z",
+        "gh:updated_at": "2026-01-18T18:31:33Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#3",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 3,
+        "gh:title": "3. Package Manager Setup (uv)",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/3",
+        "gh:created_at": "2026-01-18T18:31:36Z",
+        "gh:updated_at": "2026-01-18T18:31:36Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#4",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 4,
+        "gh:title": "4. Static Routing Configuration (Mac Studio)",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/4",
+        "gh:created_at": "2026-01-18T18:32:58Z",
+        "gh:updated_at": "2026-01-18T18:32:58Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#5",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 5,
+        "gh:title": "5. Static Routing Configuration (Linux Workers)",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/5",
+        "gh:created_at": "2026-01-18T18:33:03Z",
+        "gh:updated_at": "2026-01-18T18:33:03Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#6",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 6,
+        "gh:title": "6. Firewall Configuration (Linux Workers)",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/6",
+        "gh:created_at": "2026-01-18T18:33:08Z",
+        "gh:updated_at": "2026-01-18T18:33:08Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#7",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 7,
+        "gh:title": "7. Exo Installation (Mac Studio)",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/7",
+        "gh:created_at": "2026-01-18T18:33:12Z",
+        "gh:updated_at": "2026-01-18T18:33:12Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#8",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 8,
+        "gh:title": "8. Exo Installation (Linux Workers)",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/8",
+        "gh:created_at": "2026-01-18T18:33:20Z",
+        "gh:updated_at": "2026-01-18T18:33:20Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/ClusterZ#9",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 9,
+        "gh:title": "9. Manual Discovery Configuration",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ/issues/9",
+        "gh:created_at": "2026-01-18T18:33:27Z",
+        "gh:updated_at": "2026-01-18T18:33:27Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/Writing#1",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "Update Chapter 3 Placeholder (Nobel Prize)",
+        "gh:url": "https://github.com/halapenyoharry/Writing/issues/1",
+        "gh:created_at": "2026-01-27T23:30:02Z",
+        "gh:updated_at": "2026-01-27T23:30:02Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/Writing#2",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 2,
+        "gh:title": "Clarify timeline of Lyle receiving human-project rights (Chapter 4)",
+        "gh:url": "https://github.com/halapenyoharry/Writing/issues/2",
+        "gh:created_at": "2026-01-27T23:30:04Z",
+        "gh:updated_at": "2026-01-27T23:30:04Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/Writing#3",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 3,
+        "gh:title": "ch08 review notes",
+        "gh:url": "https://github.com/halapenyoharry/Writing/issues/3",
+        "gh:created_at": "2026-03-10T23:54:54Z",
+        "gh:updated_at": "2026-03-10T23:54:54Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/bookz#2",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 2,
+        "gh:title": "Expanded book schema from Audible import analysis",
+        "gh:url": "https://github.com/halapenyoharry/bookz/issues/2",
+        "gh:created_at": "2025-12-27T16:38:36Z",
+        "gh:updated_at": "2025-12-27T16:38:36Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/bookz#3",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 3,
+        "gh:title": "Book editing panel overlay",
+        "gh:url": "https://github.com/halapenyoharry/bookz/issues/3",
+        "gh:created_at": "2025-12-27T16:38:57Z",
+        "gh:updated_at": "2025-12-27T16:38:57Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/bookz#4",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 4,
+        "gh:title": "Hub movement: connected books move together",
+        "gh:url": "https://github.com/halapenyoharry/bookz/issues/4",
+        "gh:created_at": "2025-12-27T16:39:02Z",
+        "gh:updated_at": "2025-12-27T16:39:02Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/bookz#5",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 5,
+        "gh:title": "Tag input UI for add-book modal",
+        "gh:url": "https://github.com/halapenyoharry/bookz/issues/5",
+        "gh:created_at": "2025-12-27T16:39:11Z",
+        "gh:updated_at": "2025-12-27T16:39:11Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/bookz#6",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 6,
+        "gh:title": "AI book summary feature (client-side small model)",
+        "gh:url": "https://github.com/halapenyoharry/bookz/issues/6",
+        "gh:created_at": "2025-12-27T16:39:13Z",
+        "gh:updated_at": "2025-12-27T16:39:13Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/finderz#1",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "Looking for Mac+Linux users to test and contribute",
+        "gh:url": "https://github.com/halapenyoharry/finderz/issues/1",
+        "gh:created_at": "2025-09-15T20:40:32Z",
+        "gh:updated_at": "2025-09-15T20:40:32Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/haroldyoung-human-posts#1",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "Externalize Dependencies for Semantic HTML and Bot Optimization",
+        "gh:url": "https://github.com/halapenyoharry/haroldyoung-human-posts/issues/1",
+        "gh:created_at": "2026-03-22T16:14:57Z",
+        "gh:updated_at": "2026-03-22T16:14:57Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/json-visual-viewer#4",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 4,
+        "gh:title": "Feature: Accessible font system with bundled readable fonts",
+        "gh:url": "https://github.com/halapenyoharry/json-visual-viewer/issues/4",
+        "gh:created_at": "2026-03-12T02:15:56Z",
+        "gh:updated_at": "2026-03-12T02:15:56Z",
+        "gh:labels": [
+          "enhancement",
+          "accessibility"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/json-visual-viewer#5",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 5,
+        "gh:title": "Embedded Monaco editor: add minimap (preserve current scrollbar)",
+        "gh:url": "https://github.com/halapenyoharry/json-visual-viewer/issues/5",
+        "gh:created_at": "2026-04-27T16:55:01Z",
+        "gh:updated_at": "2026-04-27T16:55:01Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/json-visual-viewer#6",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 6,
+        "gh:title": "Bidirectional viewport sync between editor and visualization, with paperweight anchors",
+        "gh:url": "https://github.com/halapenyoharry/json-visual-viewer/issues/6",
+        "gh:created_at": "2026-04-27T16:55:28Z",
+        "gh:updated_at": "2026-04-27T16:55:28Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/json-visual-viewer#7",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 7,
+        "gh:title": "HUD-style control panel; reserve side panel for clicked-thing detail view",
+        "gh:url": "https://github.com/halapenyoharry/json-visual-viewer/issues/7",
+        "gh:created_at": "2026-04-27T16:55:50Z",
+        "gh:updated_at": "2026-04-27T16:55:50Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/post-pipe#5",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 5,
+        "gh:title": "User modes: Reader vs Editor \u2014 persistence and permissions",
+        "gh:url": "https://github.com/halapenyoharry/post-pipe/issues/5",
+        "gh:created_at": "2026-03-23T15:24:32Z",
+        "gh:updated_at": "2026-03-23T15:24:32Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/post-pipe#6",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 6,
+        "gh:title": "Docker deployment: self-hostable infotopoia stack",
+        "gh:url": "https://github.com/halapenyoharry/post-pipe/issues/6",
+        "gh:created_at": "2026-03-23T15:25:00Z",
+        "gh:updated_at": "2026-03-23T15:25:00Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#10",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 10,
+        "gh:title": "Control physics: grouping, snapping, gravity, floating behavior",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/10",
+        "gh:created_at": "2026-03-14T01:14:31Z",
+        "gh:updated_at": "2026-03-15T21:40:23Z",
+        "gh:labels": [
+          "idea"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#17",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 17,
+        "gh:title": "Vision: membrane as universal topology interface, music is the proof case",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/17",
+        "gh:created_at": "2026-03-14T02:08:24Z",
+        "gh:updated_at": "2026-03-14T02:08:24Z",
+        "gh:labels": [
+          "idea"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#18",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 18,
+        "gh:title": "Audio source problem: where is people's sound and how do we get it on the membrane?",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/18",
+        "gh:created_at": "2026-03-14T02:13:32Z",
+        "gh:updated_at": "2026-03-14T02:13:32Z",
+        "gh:labels": [
+          "architecture"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#19",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 19,
+        "gh:title": "Tab capture control: live video thumbnail + gain overlay",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/19",
+        "gh:created_at": "2026-03-14T02:18:20Z",
+        "gh:updated_at": "2026-03-14T02:18:20Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#20",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 20,
+        "gh:title": "Flip the model: membrane as PiP, tabs stay as user's controls",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/20",
+        "gh:created_at": "2026-03-14T02:20:33Z",
+        "gh:updated_at": "2026-03-14T02:20:33Z",
+        "gh:labels": [
+          "architecture"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#21",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 21,
+        "gh:title": "Mobile audio routing: we may need to reinvent JACK",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/21",
+        "gh:created_at": "2026-03-14T02:22:30Z",
+        "gh:updated_at": "2026-03-15T18:55:26Z",
+        "gh:labels": [
+          "architecture"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#22",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 22,
+        "gh:title": "Curated audio streams + musician loop library for mobile-first experience",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/22",
+        "gh:created_at": "2026-03-14T02:24:54Z",
+        "gh:updated_at": "2026-03-14T02:24:54Z",
+        "gh:labels": [
+          "idea"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#23",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 23,
+        "gh:title": "Build our own radio stations \u2014 genre channels + user-created stations",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/23",
+        "gh:created_at": "2026-03-14T02:26:06Z",
+        "gh:updated_at": "2026-03-14T02:27:38Z",
+        "gh:labels": [
+          "idea"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#24",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 24,
+        "gh:title": "Future: user accounts without cookies \u2014 save, share, modify sessions",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/24",
+        "gh:created_at": "2026-03-14T02:28:57Z",
+        "gh:updated_at": "2026-03-14T02:28:57Z",
+        "gh:labels": [
+          "idea"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#25",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 25,
+        "gh:title": "Mobile: stretch membrane to screen corners, Google Maps style interaction",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/25",
+        "gh:created_at": "2026-03-14T02:30:18Z",
+        "gh:updated_at": "2026-03-14T02:30:18Z",
+        "gh:labels": [
+          "idea"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#26",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 26,
+        "gh:title": "Membrane color: swappable transition methods + user-picked color A/B/mid",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/26",
+        "gh:created_at": "2026-03-14T02:32:18Z",
+        "gh:updated_at": "2026-03-14T02:32:18Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#27",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 27,
+        "gh:title": "Actuator editing: frequency band selection, per-dot configuration",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/27",
+        "gh:created_at": "2026-03-14T02:32:34Z",
+        "gh:updated_at": "2026-03-14T02:32:34Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#28",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 28,
+        "gh:title": "Generative camera: autonomous fly-throughs that follow the physics",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/28",
+        "gh:created_at": "2026-03-14T02:35:09Z",
+        "gh:updated_at": "2026-03-14T02:35:09Z",
+        "gh:labels": [
+          "idea"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#29",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 29,
+        "gh:title": "Accept stream URLs + document how to turn Spotify/YouTube into a stream",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/29",
+        "gh:created_at": "2026-03-14T02:36:17Z",
+        "gh:updated_at": "2026-03-14T02:36:17Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#30",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 30,
+        "gh:title": "Per-actuator control: color, channel balance, frequency band, full schema wiring",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/30",
+        "gh:created_at": "2026-03-14T02:38:53Z",
+        "gh:updated_at": "2026-03-14T02:38:53Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#31",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 31,
+        "gh:title": "The dot IS the UI: direct manipulation vs properties panel",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/31",
+        "gh:created_at": "2026-03-14T02:40:07Z",
+        "gh:updated_at": "2026-03-14T02:43:11Z",
+        "gh:labels": [
+          "architecture"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#32",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 32,
+        "gh:title": "Source assignment UX: master source list is implicit, dot assignment via long-press",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/32",
+        "gh:created_at": "2026-03-14T02:44:10Z",
+        "gh:updated_at": "2026-03-15T21:40:28Z",
+        "gh:labels": [
+          "architecture"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#33",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 33,
+        "gh:title": "Playable instrument: touch/click as an audio source type",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/33",
+        "gh:created_at": "2026-03-14T16:51:27Z",
+        "gh:updated_at": "2026-03-15T21:40:20Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#34",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 34,
+        "gh:title": "Fix the cone: proper solution for asymmetric coupling runaway",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/34",
+        "gh:created_at": "2026-03-15T18:54:58Z",
+        "gh:updated_at": "2026-03-15T18:54:58Z",
+        "gh:labels": [
+          "bug"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#35",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 35,
+        "gh:title": "Wire session schema into live app (load/save)",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/35",
+        "gh:created_at": "2026-03-15T18:54:59Z",
+        "gh:updated_at": "2026-03-15T18:54:59Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#36",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 36,
+        "gh:title": "First-time UX: how does a new user know what to do?",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/36",
+        "gh:created_at": "2026-03-15T18:55:00Z",
+        "gh:updated_at": "2026-03-15T18:55:00Z",
+        "gh:labels": [
+          "idea"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#37",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 37,
+        "gh:title": "MIDI + synth engine: instrument source architecture",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/37",
+        "gh:created_at": "2026-03-15T21:42:12Z",
+        "gh:updated_at": "2026-03-15T21:43:00Z",
+        "gh:labels": [
+          "architecture"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#38",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 38,
+        "gh:title": "Move membrane physics onto the audio clock (AudioWorklet at sample rate)",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/38",
+        "gh:created_at": "2026-03-21T21:29:54Z",
+        "gh:updated_at": "2026-03-21T21:29:54Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#39",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 39,
+        "gh:title": "Feature: pl_synth instrument import and synth UI",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/39",
+        "gh:created_at": "2026-03-27T01:25:41Z",
+        "gh:updated_at": "2026-03-27T01:25:41Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/rmix-brane-audio-environment#40",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 40,
+        "gh:title": "Feature: Save/load session state",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment/issues/40",
+        "gh:created_at": "2026-03-27T18:53:26Z",
+        "gh:updated_at": "2026-03-27T18:53:26Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/the-post-dead#1",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "Martha Chen's First Day Back: A Post-Zombie's Dilemma",
+        "gh:url": "https://github.com/halapenyoharry/the-post-dead/issues/1",
+        "gh:created_at": "2025-09-12T15:05:11Z",
+        "gh:updated_at": "2025-09-12T15:05:11Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez#6",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 6,
+        "gh:title": "Feature: Streaming TTS for Instant Audio Playback",
+        "gh:url": "https://github.com/halapenyoharry/voicez/issues/6",
+        "gh:created_at": "2025-12-14T18:27:17Z",
+        "gh:updated_at": "2025-12-14T18:27:17Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez#9",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 9,
+        "gh:title": "VoiceDefaults missing language_code attribute causes job failure",
+        "gh:url": "https://github.com/halapenyoharry/voicez/issues/9",
+        "gh:created_at": "2025-12-15T02:01:42Z",
+        "gh:updated_at": "2025-12-15T02:01:42Z",
+        "gh:labels": [
+          "bug"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#1",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "Setup: Initialize Studio (Vite)",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/1",
+        "gh:created_at": "2025-12-21T15:08:26Z",
+        "gh:updated_at": "2025-12-21T15:08:26Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#10",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 10,
+        "gh:title": "Resolve pre-development infrastructure questions",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/10",
+        "gh:created_at": "2025-12-23T22:28:28Z",
+        "gh:updated_at": "2025-12-23T22:28:28Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#11",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 11,
+        "gh:title": "Plan cost management for TTS API usage",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/11",
+        "gh:created_at": "2025-12-23T22:28:34Z",
+        "gh:updated_at": "2025-12-23T22:28:34Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#12",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 12,
+        "gh:title": "Consider workflow portability and versioning strategy",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/12",
+        "gh:created_at": "2025-12-23T22:28:40Z",
+        "gh:updated_at": "2025-12-23T22:28:40Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#13",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 13,
+        "gh:title": "Define persistence and user context strategy",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/13",
+        "gh:created_at": "2025-12-23T22:28:45Z",
+        "gh:updated_at": "2025-12-23T22:28:45Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#14",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 14,
+        "gh:title": "Evaluate and improve mobile UX",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/14",
+        "gh:created_at": "2025-12-23T22:28:51Z",
+        "gh:updated_at": "2025-12-23T22:28:51Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#15",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 15,
+        "gh:title": "Validate SSML UX complexity vs user need",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/15",
+        "gh:created_at": "2025-12-23T22:28:57Z",
+        "gh:updated_at": "2025-12-23T22:28:57Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#16",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 16,
+        "gh:title": "Add test coverage for VoicezAgentConfigForm visibility logic",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/16",
+        "gh:created_at": "2025-12-23T22:37:41Z",
+        "gh:updated_at": "2025-12-23T22:37:41Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#17",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 17,
+        "gh:title": "Document conditional config logic in VoicezAgentConfigForm.getConfig",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/17",
+        "gh:created_at": "2025-12-23T22:37:47Z",
+        "gh:updated_at": "2025-12-23T22:37:47Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#2",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 2,
+        "gh:title": "Feature: Port Velvet Editor",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/2",
+        "gh:created_at": "2025-12-21T15:10:02Z",
+        "gh:updated_at": "2025-12-21T15:10:02Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#20",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 20,
+        "gh:title": "Journey voice model deprecated as of Feb 10, 2025 - migrate to Chirp 3: HD",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/20",
+        "gh:created_at": "2025-12-23T22:41:06Z",
+        "gh:updated_at": "2025-12-23T22:41:06Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#21",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 21,
+        "gh:title": "Consider metadata-based voice model detection instead of string matching",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/21",
+        "gh:created_at": "2025-12-23T22:41:13Z",
+        "gh:updated_at": "2025-12-23T22:41:13Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#22",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 22,
+        "gh:title": "Refactor VoicezAgentConfigForm to remove abstractions and match Google v1beta1 Schema",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/22",
+        "gh:created_at": "2025-12-23T22:47:06Z",
+        "gh:updated_at": "2025-12-23T22:47:06Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#25",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 25,
+        "gh:title": "System: Voice Registry and Complete TTS Specification",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/25",
+        "gh:created_at": "2025-12-24T00:30:19Z",
+        "gh:updated_at": "2025-12-24T00:30:19Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#3",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 3,
+        "gh:title": "UI: 100% Canvas Interface",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/3",
+        "gh:created_at": "2025-12-21T15:10:22Z",
+        "gh:updated_at": "2025-12-21T15:10:22Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#4",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 4,
+        "gh:title": "Logic: Connect Pipeline Webhook",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/4",
+        "gh:created_at": "2025-12-21T15:10:23Z",
+        "gh:updated_at": "2025-12-21T15:10:23Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#5",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 5,
+        "gh:title": "Backend: n8n Workflow Setup",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/5",
+        "gh:created_at": "2025-12-21T15:10:25Z",
+        "gh:updated_at": "2025-12-21T15:10:25Z",
+        "gh:labels": [
+          "documentation"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#6",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 6,
+        "gh:title": "Tool needs: A visual SSML Generator / Helper",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/6",
+        "gh:created_at": "2025-12-21T16:02:53Z",
+        "gh:updated_at": "2025-12-21T16:02:53Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/voicez-studio#7",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 7,
+        "gh:title": "Tool: AI SSML Syntax Fixer",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/issues/7",
+        "gh:created_at": "2025-12-21T16:04:18Z",
+        "gh:updated_at": "2025-12-21T16:04:18Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/writehub#1",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "AI searchable",
+        "gh:url": "https://github.com/halapenyoharry/writehub/issues/1",
+        "gh:created_at": "2025-09-23T16:19:19Z",
+        "gh:updated_at": "2025-09-23T16:19:19Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/writehub#2",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 2,
+        "gh:title": "Demo",
+        "gh:url": "https://github.com/halapenyoharry/writehub/issues/2",
+        "gh:created_at": "2025-09-23T16:20:23Z",
+        "gh:updated_at": "2025-09-23T16:20:23Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/writing-evaluationz#3",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 3,
+        "gh:title": "Feature: Allow configuration of analysis parameters",
+        "gh:url": "https://github.com/halapenyoharry/writing-evaluationz/issues/3",
+        "gh:created_at": "2025-11-19T22:42:09Z",
+        "gh:updated_at": "2025-11-19T22:42:09Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/writing-evaluationz#4",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 4,
+        "gh:title": "Feature: Save analysis plot to an image file",
+        "gh:url": "https://github.com/halapenyoharry/writing-evaluationz/issues/4",
+        "gh:created_at": "2025-11-19T22:42:20Z",
+        "gh:updated_at": "2025-11-19T22:42:20Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/writing-evaluationz#5",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 5,
+        "gh:title": "Feature: Add option to export raw analysis data",
+        "gh:url": "https://github.com/halapenyoharry/writing-evaluationz/issues/5",
+        "gh:created_at": "2025-11-19T22:42:32Z",
+        "gh:updated_at": "2025-11-19T22:42:32Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/writing-evaluationz#6",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 6,
+        "gh:title": "Refactor: Improve code structure for maintainability",
+        "gh:url": "https://github.com/halapenyoharry/writing-evaluationz/issues/6",
+        "gh:created_at": "2025-11-19T22:42:43Z",
+        "gh:updated_at": "2025-11-19T22:42:43Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/writing-evaluationz#7",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 7,
+        "gh:title": "Chore: Add unit tests for the analysis logic",
+        "gh:url": "https://github.com/halapenyoharry/writing-evaluationz/issues/7",
+        "gh:created_at": "2025-11-19T22:42:54Z",
+        "gh:updated_at": "2025-11-19T22:42:54Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#1",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "Fix app name misspellings (tamadachi/torodachi)",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/1",
+        "gh:created_at": "2026-01-14T01:25:56Z",
+        "gh:updated_at": "2026-01-14T01:25:56Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#10",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 10,
+        "gh:title": "Complete Menu Redesign",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/10",
+        "gh:created_at": "2026-01-22T12:50:02Z",
+        "gh:updated_at": "2026-01-22T12:50:02Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#11",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 11,
+        "gh:title": "CRITICAL: Fix WindowServer Crash (Async Architecture)",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/11",
+        "gh:created_at": "2026-02-05T04:25:44Z",
+        "gh:updated_at": "2026-02-05T04:25:44Z",
+        "gh:labels": [
+          "bug"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#12",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 12,
+        "gh:title": "Bug: LaunchAgent plist hijacks yabai's service label, breaking accessibility permissions",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/12",
+        "gh:created_at": "2026-02-13T16:00:51Z",
+        "gh:updated_at": "2026-02-13T16:00:51Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#13",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 13,
+        "gh:title": "MCP Server: Example workflows and automations",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/13",
+        "gh:created_at": "2026-03-14T15:06:41Z",
+        "gh:updated_at": "2026-03-14T15:06:41Z",
+        "gh:labels": [
+          "enhancement"
+        ]
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#14",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 14,
+        "gh:title": "MCP Server: Additional macOS tools requiring Homebrew installs",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/14",
+        "gh:created_at": "2026-03-14T15:17:34Z",
+        "gh:updated_at": "2026-04-13T18:04:39Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#2",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 2,
+        "gh:title": "Verify Yabai Compatibility with macOS 26.2",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/2",
+        "gh:created_at": "2026-01-14T01:25:58Z",
+        "gh:updated_at": "2026-01-14T01:27:33Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#3",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 3,
+        "gh:title": "Unify Yabai Binary Path Resolution",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/3",
+        "gh:created_at": "2026-01-14T01:25:59Z",
+        "gh:updated_at": "2026-01-14T01:25:59Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#4",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 4,
+        "gh:title": "Update Dependencies (Electron, MCP SDK)",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/4",
+        "gh:created_at": "2026-01-14T01:26:01Z",
+        "gh:updated_at": "2026-01-14T01:26:01Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#5",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 5,
+        "gh:title": "Document/Verify macOS 26.2 Requirements",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/5",
+        "gh:created_at": "2026-01-14T01:26:03Z",
+        "gh:updated_at": "2026-01-14T01:27:34Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#6",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 6,
+        "gh:title": "Smart Layout Quick Actions",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/6",
+        "gh:created_at": "2026-01-22T12:50:01Z",
+        "gh:updated_at": "2026-01-22T12:50:01Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#7",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 7,
+        "gh:title": "Verify Padding/Gaps Terminology",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/7",
+        "gh:created_at": "2026-01-22T12:50:01Z",
+        "gh:updated_at": "2026-01-22T12:50:01Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#8",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 8,
+        "gh:title": "Replace Restart with Start/Stop Toggle",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/8",
+        "gh:created_at": "2026-01-22T12:50:01Z",
+        "gh:updated_at": "2026-01-22T12:50:01Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:issue:halapenyoharry/yabai-tomodachi#9",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 9,
+        "gh:title": "Fix Edit Config & Group Options",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi/issues/9",
+        "gh:created_at": "2026-01-22T12:50:02Z",
+        "gh:updated_at": "2026-01-22T12:50:02Z",
+        "gh:labels": []
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/FileCraft#1",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "Add AGENTS.md and setup.sh for Linux filesystem-to-Luanti voxel bridge",
+        "gh:url": "https://github.com/halapenyoharry/FileCraft/pull/1",
+        "gh:created_at": "2026-02-07T00:50:06Z",
+        "gh:updated_at": "2026-02-07T00:58:56Z",
+        "gh:is_draft": true,
+        "gh:base": "main",
+        "gh:head": "copilot/create-agents-md-and-setup-script"
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/FileCraft#2",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 2,
+        "gh:title": "FileCraft v1.0 Implementation",
+        "gh:url": "https://github.com/halapenyoharry/FileCraft/pull/2",
+        "gh:created_at": "2026-02-07T02:13:22Z",
+        "gh:updated_at": "2026-02-07T02:22:49Z",
+        "gh:is_draft": false,
+        "gh:base": "main",
+        "gh:head": "filecraft-v1-12387711536544737823"
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/collection#2",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 2,
+        "gh:title": "feat: add configurable fountain experience",
+        "gh:url": "https://github.com/halapenyoharry/collection/pull/2",
+        "gh:created_at": "2026-04-17T17:07:29Z",
+        "gh:updated_at": "2026-04-17T17:09:44Z",
+        "gh:is_draft": false,
+        "gh:base": "main",
+        "gh:head": "feat/configurable-fountain-9982644659403180315"
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/qrystal#1",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "Initialize Rust project with iced GUI framework",
+        "gh:url": "https://github.com/halapenyoharry/qrystal/pull/1",
+        "gh:created_at": "2026-01-22T16:09:56Z",
+        "gh:updated_at": "2026-01-22T16:29:35Z",
+        "gh:is_draft": true,
+        "gh:base": "main",
+        "gh:head": "copilot/initialize-rust-project-qrystal"
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/qrystal#2",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 2,
+        "gh:title": "Initialize Qrystal project and data model",
+        "gh:url": "https://github.com/halapenyoharry/qrystal/pull/2",
+        "gh:created_at": "2026-01-22T23:10:43Z",
+        "gh:updated_at": "2026-01-22T23:10:44Z",
+        "gh:is_draft": true,
+        "gh:base": "main",
+        "gh:head": "qrystal-init-6488732875441097037"
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/voicez-studio#24",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 24,
+        "gh:title": "AI SSML Syntax Fixer",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/pull/24",
+        "gh:created_at": "2025-12-24T00:07:26Z",
+        "gh:updated_at": "2025-12-24T00:07:28Z",
+        "gh:is_draft": false,
+        "gh:base": "main",
+        "gh:head": "feat-ssml-syntax-fixer-7141767097063412489"
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/voicez-studio#8",
+      "kind": "node",
+      "attrs": {
+        "gh:number": 8,
+        "gh:title": "Create Initial Studio UI",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/pull/8",
+        "gh:created_at": "2025-12-21T22:38:29Z",
+        "gh:updated_at": "2025-12-21T22:38:30Z",
+        "gh:is_draft": false,
+        "gh:base": "main",
+        "gh:head": "feature-create-studio-interface-16072351901329507856"
+      }
+    },
+    {
+      "id": "gh:repo:BabylonJS/Babylon.js",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "BabylonJS/Babylon.js",
+        "gh:url": "https://github.com/BabylonJS/Babylon.js"
+      }
+    },
+    {
+      "id": "gh:repo:Comfy-Org/ComfyUI_frontend",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "Comfy-Org/ComfyUI_frontend",
+        "gh:url": "https://github.com/Comfy-Org/ComfyUI_frontend"
+      }
+    },
+    {
+      "id": "gh:repo:Houston4444/RaySession",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "Houston4444/RaySession",
+        "gh:url": "https://github.com/Houston4444/RaySession"
+      }
+    },
+    {
+      "id": "gh:repo:LizardByte/Sunshine",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "LizardByte/Sunshine",
+        "gh:url": "https://github.com/LizardByte/Sunshine"
+      }
+    },
+    {
+      "id": "gh:repo:RichardAtCT/claude-code-openai-wrapper",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "RichardAtCT/claude-code-openai-wrapper",
+        "gh:url": "https://github.com/RichardAtCT/claude-code-openai-wrapper"
+      }
+    },
+    {
+      "id": "gh:repo:SecretiveShell/MCP-Bridge",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "SecretiveShell/MCP-Bridge",
+        "gh:url": "https://github.com/SecretiveShell/MCP-Bridge"
+      }
+    },
+    {
+      "id": "gh:repo:Starmel/OpenSuperWhisper",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "Starmel/OpenSuperWhisper",
+        "gh:url": "https://github.com/Starmel/OpenSuperWhisper"
+      }
+    },
+    {
+      "id": "gh:repo:VeriTeknik/pluggedin-mcp",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "VeriTeknik/pluggedin-mcp",
+        "gh:url": "https://github.com/VeriTeknik/pluggedin-mcp"
+      }
+    },
+    {
+      "id": "gh:repo:a2aproject/A2A",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "a2aproject/A2A",
+        "gh:url": "https://github.com/a2aproject/A2A"
+      }
+    },
+    {
+      "id": "gh:repo:allenporter/mcp-server-home-assistant",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "allenporter/mcp-server-home-assistant",
+        "gh:url": "https://github.com/allenporter/mcp-server-home-assistant"
+      }
+    },
+    {
+      "id": "gh:repo:bishopdynamics/superbird-tool",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "bishopdynamics/superbird-tool",
+        "gh:url": "https://github.com/bishopdynamics/superbird-tool"
+      }
+    },
+    {
+      "id": "gh:repo:chatboxai/chatbox",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "chatboxai/chatbox",
+        "gh:url": "https://github.com/chatboxai/chatbox"
+      }
+    },
+    {
+      "id": "gh:repo:cline/cline",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "cline/cline",
+        "gh:url": "https://github.com/cline/cline"
+      }
+    },
+    {
+      "id": "gh:repo:comfyanonymous/ComfyUI",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "comfyanonymous/ComfyUI",
+        "gh:url": "https://github.com/comfyanonymous/ComfyUI"
+      }
+    },
+    {
+      "id": "gh:repo:coqui-ai/TTS",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "coqui-ai/TTS",
+        "gh:url": "https://github.com/coqui-ai/TTS"
+      }
+    },
+    {
+      "id": "gh:repo:danny-avila/LibreChat",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "danny-avila/LibreChat",
+        "gh:url": "https://github.com/danny-avila/LibreChat"
+      }
+    },
+    {
+      "id": "gh:repo:eyalzh/browser-control-mcp",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "eyalzh/browser-control-mcp",
+        "gh:url": "https://github.com/eyalzh/browser-control-mcp"
+      }
+    },
+    {
+      "id": "gh:repo:ggerganov/whisper.cpp",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "ggerganov/whisper.cpp",
+        "gh:url": "https://github.com/ggerganov/whisper.cpp"
+      }
+    },
+    {
+      "id": "gh:repo:giandonatoinverso/PHP-Dynamic-Qr-code",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "giandonatoinverso/PHP-Dynamic-Qr-code",
+        "gh:url": "https://github.com/giandonatoinverso/PHP-Dynamic-Qr-code"
+      }
+    },
+    {
+      "id": "gh:repo:go-gitea/gitea",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "go-gitea/gitea",
+        "gh:url": "https://github.com/go-gitea/gitea"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/ClusterZ",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/ClusterZ",
+        "gh:url": "https://github.com/halapenyoharry/ClusterZ",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 73,
+        "gh:pushed_at": "2026-02-08T00:31:21Z",
+        "gh:created_at": "2026-01-18T18:30:34Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Shell",
+        "gh:languages": [
+          "Shell",
+          "Python"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 5,
+        "gh:open_issues": 16,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/ComfyLab",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/ComfyLab",
+        "gh:url": "https://github.com/halapenyoharry/ComfyLab",
+        "gh:description": "a careful thought out approach to installing ComfyUI with Wan2.1, manager and some other specialty nodes that are a must on day one for me. ",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 2324,
+        "gh:pushed_at": "2025-05-05T12:43:06Z",
+        "gh:created_at": "2025-04-23T21:15:25Z",
+        "gh:stargazers": 3,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/EcoSpot-macos",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/EcoSpot-macos",
+        "gh:url": "https://github.com/halapenyoharry/EcoSpot-macos",
+        "gh:description": "Sustainable AI file search for macOS using native Spotlight - 95% token savings through metadata-only responses",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 82,
+        "gh:pushed_at": "2025-09-12T14:30:52Z",
+        "gh:created_at": "2025-07-08T12:42:39Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 6,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/FileCraft",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/FileCraft",
+        "gh:url": "https://github.com/halapenyoharry/FileCraft",
+        "gh:description": "minecraft for file managment",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 21,
+        "gh:pushed_at": "2026-02-07T02:13:20Z",
+        "gh:created_at": "2026-02-07T00:50:02Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 1,
+        "gh:open_issues": 0,
+        "gh:open_prs": 2
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/Laniakea-Obsidian",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/Laniakea-Obsidian",
+        "gh:url": "https://github.com/halapenyoharry/Laniakea-Obsidian",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 541342,
+        "gh:pushed_at": "2025-09-25T23:09:11Z",
+        "gh:created_at": "2025-05-18T03:26:44Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "Rich Text Format",
+          "CSS",
+          "HTML",
+          "Python"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 31,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/MCP-Share",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/MCP-Share",
+        "gh:url": "https://github.com/halapenyoharry/MCP-Share",
+        "gh:description": "easy way for anyone to share their mcp servers at a single http endpoint for claude desktop",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 21,
+        "gh:pushed_at": "2025-05-27T19:07:01Z",
+        "gh:created_at": "2025-05-27T16:42:30Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Swift",
+        "gh:languages": [
+          "Swift",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 5,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/OpenSuperWhisper",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/OpenSuperWhisper",
+        "gh:url": "https://github.com/halapenyoharry/OpenSuperWhisper",
+        "gh:description": "macOS whisper dictation app",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 73218,
+        "gh:pushed_at": "2025-07-14T18:19:53Z",
+        "gh:created_at": "2025-07-14T15:53:53Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Swift",
+        "gh:languages": [
+          "Swift",
+          "Shell",
+          "CMake",
+          "Ruby",
+          "C"
+        ],
+        "gh:default_branch": "master",
+        "gh:commit_total": 110,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/SwiftBar",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/SwiftBar",
+        "gh:url": "https://github.com/halapenyoharry/SwiftBar",
+        "gh:description": "Powerful macOS menu bar customization tool",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 4034,
+        "gh:pushed_at": "2025-05-20T18:35:59Z",
+        "gh:created_at": "2025-07-16T13:50:39Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Swift",
+        "gh:languages": [
+          "Swift",
+          "Rich Text Format"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 539,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/TTS",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/TTS",
+        "gh:url": "https://github.com/halapenyoharry/TTS",
+        "gh:description": "\ud83d\udc38\ud83d\udcac - a deep learning toolkit for Text-to-Speech, battle-tested in research and production",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 201321,
+        "gh:pushed_at": "2025-12-14T14:49:52Z",
+        "gh:created_at": "2025-10-11T18:59:18Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "Jupyter Notebook",
+          "HTML",
+          "Shell",
+          "Makefile"
+        ],
+        "gh:default_branch": "dev",
+        "gh:commit_total": 4668,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/Writing",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/Writing",
+        "gh:url": "https://github.com/halapenyoharry/Writing",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 139846,
+        "gh:pushed_at": "2026-04-27T06:26:56Z",
+        "gh:created_at": "2025-11-09T19:31:41Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML",
+          "Cypher",
+          "Python",
+          "JavaScript",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 10027,
+        "gh:open_issues": 3,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/action-flows",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/action-flows",
+        "gh:url": "https://github.com/halapenyoharry/action-flows",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 3,
+        "gh:pushed_at": "2025-07-20T04:36:39Z",
+        "gh:created_at": "2025-07-20T04:36:37Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 1,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/ad-land",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/ad-land",
+        "gh:url": "https://github.com/halapenyoharry/ad-land",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 0,
+        "gh:pushed_at": "2025-10-28T23:41:07Z",
+        "gh:created_at": "2025-10-28T23:41:06Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/agentic-obs",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/agentic-obs",
+        "gh:url": "https://github.com/halapenyoharry/agentic-obs",
+        "gh:description": "agentic-obs: A Model Context Protocol (MCP) server that provides AI assistants with programmatic control over OBS Studio via the OBS WebSocket API. This server enables AI agents to manage scenes, sources, recording, streaming, and other OBS functionality through standardized MCP tools.",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 10077,
+        "gh:pushed_at": "2026-04-12T22:35:10Z",
+        "gh:created_at": "2026-04-12T22:35:03Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Go",
+        "gh:languages": [
+          "Go",
+          "HTML",
+          "Shell",
+          "Makefile",
+          "CSS"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 110,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/ai-infrastructure",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/ai-infrastructure",
+        "gh:url": "https://github.com/halapenyoharry/ai-infrastructure",
+        "gh:description": "Private AI infrastructure backup and versioning",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 93396,
+        "gh:pushed_at": "2026-01-21T17:41:50Z",
+        "gh:created_at": "2025-08-27T22:58:18Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML",
+          "MDX",
+          "JavaScript",
+          "TypeScript",
+          "Python"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 9,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/ai_supremacy",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/ai_supremacy",
+        "gh:url": "https://github.com/halapenyoharry/ai_supremacy"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/ai_supremacy-old",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/ai_supremacy-old",
+        "gh:url": "https://github.com/halapenyoharry/ai_supremacy-old",
+        "gh:description": "a novel by harold young",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 373,
+        "gh:pushed_at": "2025-10-29T20:34:23Z",
+        "gh:created_at": "2025-09-09T20:39:35Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Cypher",
+        "gh:languages": [
+          "Cypher",
+          "Python"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 11,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/asus-router-mcp",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/asus-router-mcp",
+        "gh:url": "https://github.com/halapenyoharry/asus-router-mcp",
+        "gh:description": "SSH MCP server enhanced for ASUS router management and network responsibility monitoring",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 0,
+        "gh:pushed_at": "2025-07-15T00:50:33Z",
+        "gh:created_at": "2025-07-15T00:50:33Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/bookz",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/bookz",
+        "gh:url": "https://github.com/halapenyoharry/bookz",
+        "gh:description": "all the texts of you life in one place (ish)",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 423,
+        "gh:pushed_at": "2025-12-27T16:45:37Z",
+        "gh:created_at": "2025-12-26T00:59:07Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 23,
+        "gh:open_issues": 5,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/browser-control-mcp",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/browser-control-mcp",
+        "gh:url": "https://github.com/halapenyoharry/browser-control-mcp",
+        "gh:description": "MCP server paired with a browser extension that enables AI agents to control the user's browser.",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 340,
+        "gh:pushed_at": "2025-09-12T15:09:41Z",
+        "gh:created_at": "2025-08-13T15:47:24Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "TypeScript",
+        "gh:languages": [
+          "TypeScript",
+          "HTML",
+          "Dockerfile",
+          "JavaScript"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 65,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/claude-code-api-server",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/claude-code-api-server",
+        "gh:url": "https://github.com/halapenyoharry/claude-code-api-server",
+        "gh:description": "OpenAI-compatible API wrapper for Claude Code CLI - use your Claude subscription without per-token costs",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 29,
+        "gh:pushed_at": "2025-07-12T23:32:14Z",
+        "gh:created_at": "2025-07-12T23:24:48Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "Shell",
+          "Dockerfile"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/claudeZ",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/claudeZ",
+        "gh:url": "https://github.com/halapenyoharry/claudeZ",
+        "gh:description": "create multiple instances of claude desktop on macos",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 1501,
+        "gh:pushed_at": "2025-06-20T19:31:01Z",
+        "gh:created_at": "2025-05-26T14:25:03Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "Swift",
+        "gh:languages": [
+          "Swift",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 9,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/code-server-hub",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/code-server-hub",
+        "gh:url": "https://github.com/halapenyoharry/code-server-hub",
+        "gh:description": "A visual management hub for discovering and managing local development services",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 146,
+        "gh:pushed_at": "2025-09-17T19:45:39Z",
+        "gh:created_at": "2025-07-16T15:49:00Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "HTML",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 18,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/collection",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/collection",
+        "gh:url": "https://github.com/halapenyoharry/collection",
+        "gh:description": "collection of negentropic explorations",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 23,
+        "gh:pushed_at": "2026-04-19T22:47:20Z",
+        "gh:created_at": "2026-04-17T16:28:41Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 4,
+        "gh:open_issues": 0,
+        "gh:open_prs": 1
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/desktop",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/desktop",
+        "gh:url": "https://github.com/halapenyoharry/desktop",
+        "gh:description": "Welcome to a calmer internet",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 5895579,
+        "gh:pushed_at": "2025-08-31T15:33:10Z",
+        "gh:created_at": "2025-08-31T18:42:35Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "C++",
+        "gh:languages": [
+          "C++",
+          "JavaScript",
+          "Fluent",
+          "CSS",
+          "HTML"
+        ],
+        "gh:default_branch": "dev",
+        "gh:commit_total": 5571,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/dragonbyte",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/dragonbyte",
+        "gh:url": "https://github.com/halapenyoharry/dragonbyte",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 56,
+        "gh:pushed_at": "2025-10-28T23:41:50Z",
+        "gh:created_at": "2025-05-26T21:45:51Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/finderz",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/finderz",
+        "gh:url": "https://github.com/halapenyoharry/finderz",
+        "gh:description": "A better file explorer for Linux that respects macOS .DS_Store metadata - because mixed Mac/Linux studios deserve better",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 1321,
+        "gh:pushed_at": "2025-09-16T18:49:07Z",
+        "gh:created_at": "2025-09-15T19:38:35Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "C",
+        "gh:languages": [
+          "C",
+          "Meson",
+          "Python",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 11,
+        "gh:open_issues": 1,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/free-keys",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/free-keys",
+        "gh:url": "https://github.com/halapenyoharry/free-keys",
+        "gh:description": "Making music impossible to play wrong - intelligent MIDI constraint system",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 24,
+        "gh:pushed_at": "2025-08-05T15:42:36Z",
+        "gh:created_at": "2025-08-05T14:51:33Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "master",
+        "gh:commit_total": 4,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/gov-next",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/gov-next",
+        "gh:url": "https://github.com/halapenyoharry/gov-next",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 2,
+        "gh:pushed_at": "2025-11-09T19:56:51Z",
+        "gh:created_at": "2025-11-09T19:42:25Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/graph-analysis-collection",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/graph-analysis-collection",
+        "gh:url": "https://github.com/halapenyoharry/graph-analysis-collection",
+        "gh:description": "Complete graph analysis toolkit for AI exploration of conversation graphs. Features MCP server, CLI tools, and web UI for community detection, centrality analysis, and pattern discovery.",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 107,
+        "gh:pushed_at": "2025-07-17T00:32:45Z",
+        "gh:created_at": "2025-07-17T00:32:30Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "HTML",
+          "JavaScript"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 1,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/graph-maker",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/graph-maker",
+        "gh:url": "https://github.com/halapenyoharry/graph-maker",
+        "gh:description": "makes graphs from files or urls.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 33,
+        "gh:pushed_at": "2025-11-12T23:13:49Z",
+        "gh:created_at": "2025-11-12T16:18:45Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "TypeScript",
+        "gh:languages": [
+          "TypeScript",
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 5,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/halapenyos_minecraft-server_MCP",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/halapenyos_minecraft-server_MCP",
+        "gh:url": "https://github.com/halapenyoharry/halapenyos_minecraft-server_MCP",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 0,
+        "gh:pushed_at": "2025-05-26T21:46:21Z",
+        "gh:created_at": "2025-05-26T21:46:21Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/harolds_LibreChat",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/harolds_LibreChat",
+        "gh:url": "https://github.com/halapenyoharry/harolds_LibreChat",
+        "gh:description": "Harold's personal LibreChat fork",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 128444,
+        "gh:pushed_at": "2026-04-23T16:57:23Z",
+        "gh:created_at": "2026-04-19T15:33:44Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "TypeScript",
+        "gh:languages": [
+          "TypeScript",
+          "JavaScript",
+          "CSS",
+          "Handlebars",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 3648,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/haroldsproject1",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/haroldsproject1",
+        "gh:url": "https://github.com/halapenyoharry/haroldsproject1",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 0,
+        "gh:pushed_at": "2025-05-28T22:48:48Z",
+        "gh:created_at": "2025-05-28T22:48:47Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/haroldsproject2",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/haroldsproject2",
+        "gh:url": "https://github.com/halapenyoharry/haroldsproject2",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 0,
+        "gh:pushed_at": "2025-05-28T22:49:02Z",
+        "gh:created_at": "2025-05-28T22:49:02Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/haroldsproject3",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/haroldsproject3",
+        "gh:url": "https://github.com/halapenyoharry/haroldsproject3",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 0,
+        "gh:pushed_at": "2025-05-28T22:49:17Z",
+        "gh:created_at": "2025-05-28T22:49:17Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/haroldsproject4",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/haroldsproject4",
+        "gh:url": "https://github.com/halapenyoharry/haroldsproject4",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 0,
+        "gh:pushed_at": "2025-05-28T22:51:11Z",
+        "gh:created_at": "2025-05-28T22:51:11Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/haroldyoung-human-posts",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/haroldyoung-human-posts",
+        "gh:url": "https://github.com/halapenyoharry/haroldyoung-human-posts",
+        "gh:description": "my posts",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 6327,
+        "gh:pushed_at": "2026-03-27T20:44:31Z",
+        "gh:created_at": "2026-03-17T21:03:27Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML",
+          "JavaScript"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 65,
+        "gh:open_issues": 1,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/human-context.md",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/human-context.md",
+        "gh:url": "https://github.com/halapenyoharry/human-context.md",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 1,
+        "gh:pushed_at": "2026-02-10T21:10:05Z",
+        "gh:created_at": "2026-02-10T21:10:03Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 1,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/human-map",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/human-map",
+        "gh:url": "https://github.com/halapenyoharry/human-map",
+        "gh:description": "an open source, 'cloud sourced' navigation for human topology.",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 10,
+        "gh:pushed_at": "2025-11-09T20:24:52Z",
+        "gh:created_at": "2025-11-08T17:01:34Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 4,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/human-project-ideation",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/human-project-ideation",
+        "gh:url": "https://github.com/halapenyoharry/human-project-ideation",
+        "gh:description": "Structured Project Creation for AI-Human Collaboration - A framework for converting ephemeral human ideas into persistent, executable project structures",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 46,
+        "gh:pushed_at": "2025-08-24T19:27:47Z",
+        "gh:created_at": "2025-08-03T17:23:18Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 6,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/human_ai_interaction-a_first_look",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/human_ai_interaction-a_first_look",
+        "gh:url": "https://github.com/halapenyoharry/human_ai_interaction-a_first_look",
+        "gh:description": "a book about ai interaction, introducing concepts.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 5,
+        "gh:pushed_at": "2025-10-29T00:58:22Z",
+        "gh:created_at": "2025-10-29T00:56:21Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/icon-creator",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/icon-creator",
+        "gh:url": "https://github.com/halapenyoharry/icon-creator",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 3,
+        "gh:pushed_at": "2026-04-26T19:40:32Z",
+        "gh:created_at": "2026-04-26T12:52:00Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 3,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/information-explorer-IDE-ext",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/information-explorer-IDE-ext",
+        "gh:url": "https://github.com/halapenyoharry/information-explorer-IDE-ext",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 4,
+        "gh:pushed_at": "2026-02-03T19:25:05Z",
+        "gh:created_at": "2026-02-03T19:22:07Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "TypeScript",
+        "gh:languages": [
+          "TypeScript",
+          "Rust"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/infotopoia",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/infotopoia",
+        "gh:url": "https://github.com/halapenyoharry/infotopoia",
+        "gh:description": "A spatial information medium. Exposing the topology of information that already exists.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 6,
+        "gh:pushed_at": "2026-03-23T23:20:41Z",
+        "gh:created_at": "2026-03-23T21:43:02Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 4,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/json-visual-viewer",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/json-visual-viewer",
+        "gh:url": "https://github.com/halapenyoharry/json-visual-viewer",
+        "gh:description": "Lightweight native macOS app for visualizing JSON as interactive node graphs. Looking for testers!",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 5085,
+        "gh:pushed_at": "2026-04-27T21:04:58Z",
+        "gh:created_at": "2026-03-12T02:00:51Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "TypeScript",
+        "gh:languages": [
+          "TypeScript",
+          "CSS",
+          "Rust",
+          "JavaScript",
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 3,
+        "gh:open_issues": 4,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/linux-audio-mcp",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/linux-audio-mcp",
+        "gh:url": "https://github.com/halapenyoharry/linux-audio-mcp",
+        "gh:description": "Model Context Protocol servers for Linux audio applications - Control RaySession, Agordejo, Carla and more with AI",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 22,
+        "gh:pushed_at": "2025-09-12T04:02:41Z",
+        "gh:created_at": "2025-09-10T16:08:04Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 5,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/math-thing",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/math-thing",
+        "gh:url": "https://github.com/halapenyoharry/math-thing",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 34,
+        "gh:pushed_at": "2025-09-16T02:44:07Z",
+        "gh:created_at": "2025-09-16T02:29:59Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 8,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/membrane-physics",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/membrane-physics",
+        "gh:url": "https://github.com/halapenyoharry/membrane-physics",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 282,
+        "gh:pushed_at": "2025-09-22T02:45:04Z",
+        "gh:created_at": "2025-09-19T21:15:14Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML",
+          "JavaScript",
+          "Python",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 6,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/mix-studio",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/mix-studio",
+        "gh:url": "https://github.com/halapenyoharry/mix-studio",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 0,
+        "gh:pushed_at": "2025-09-22T15:27:26Z",
+        "gh:created_at": "2025-09-22T15:27:26Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/n8n",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/n8n",
+        "gh:url": "https://github.com/halapenyoharry/n8n",
+        "gh:description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 233419,
+        "gh:pushed_at": "2025-07-18T21:42:36Z",
+        "gh:created_at": "2025-07-20T05:49:34Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "TypeScript",
+        "gh:languages": [
+          "TypeScript",
+          "Vue",
+          "SCSS",
+          "JavaScript",
+          "Handlebars"
+        ],
+        "gh:default_branch": "master",
+        "gh:commit_total": 14658,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/noodles-minecraft-server",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/noodles-minecraft-server",
+        "gh:url": "https://github.com/halapenyoharry/noodles-minecraft-server",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 0,
+        "gh:pushed_at": "2025-12-23T23:54:12Z",
+        "gh:created_at": "2025-12-23T23:54:11Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/ollama-manager",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/ollama-manager",
+        "gh:url": "https://github.com/halapenyoharry/ollama-manager"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/open-webui",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/open-webui",
+        "gh:url": "https://github.com/halapenyoharry/open-webui",
+        "gh:description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 268220,
+        "gh:pushed_at": "2025-08-28T16:19:49Z",
+        "gh:created_at": "2025-08-28T21:41:58Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "Svelte",
+          "Python",
+          "TypeScript",
+          "CSS"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 12810,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/plugged.out",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/plugged.out",
+        "gh:url": "https://github.com/halapenyoharry/plugged.out",
+        "gh:description": "Plugged.in MCP Server manages all your other MCPs in one MCP.",
+        "gh:is_private": false,
+        "gh:is_fork": true,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 540,
+        "gh:pushed_at": "2025-07-03T00:30:05Z",
+        "gh:created_at": "2025-07-03T01:02:45Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "TypeScript",
+        "gh:languages": [
+          "TypeScript",
+          "JavaScript",
+          "Shell",
+          "Dockerfile"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 147,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/post-pipe",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/post-pipe",
+        "gh:url": "https://github.com/halapenyoharry/post-pipe",
+        "gh:description": "Markdown-to-platform publishing pipeline. Write once in Quarto, push to GitHub Pages, cross-post everywhere.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 643,
+        "gh:pushed_at": "2026-04-18T21:02:36Z",
+        "gh:created_at": "2026-03-22T17:46:35Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML",
+          "JavaScript"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 11,
+        "gh:open_issues": 2,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/prezence",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/prezence",
+        "gh:url": "https://github.com/halapenyoharry/prezence",
+        "gh:description": "A personal presence and media mixing rig \u2014 multi-device streaming and audio/video mixing built on OBS, MediaMTX, and OSC-driven control surfaces. Mix your own life, not someone else's algorithm.",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 20,
+        "gh:pushed_at": "2026-04-13T03:12:50Z",
+        "gh:created_at": "2026-04-13T03:09:00Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 1,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/profile-creator",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/profile-creator",
+        "gh:url": "https://github.com/halapenyoharry/profile-creator",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 40,
+        "gh:pushed_at": "2026-04-24T02:40:00Z",
+        "gh:created_at": "2026-04-24T01:14:07Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 6,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/pw-mixerz",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/pw-mixerz",
+        "gh:url": "https://github.com/halapenyoharry/pw-mixerz",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 56,
+        "gh:pushed_at": "2025-11-04T02:26:39Z",
+        "gh:created_at": "2025-10-30T22:18:01Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML",
+          "Python"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 1,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/qrystal",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/qrystal",
+        "gh:url": "https://github.com/halapenyoharry/qrystal",
+        "gh:description": "user interaction with their data reimagined in rust based on iced for cosmic desktop.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 52,
+        "gh:pushed_at": "2026-01-22T23:10:41Z",
+        "gh:created_at": "2026-01-22T16:09:51Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 2
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/radio-branez",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/radio-branez",
+        "gh:url": "https://github.com/halapenyoharry/radio-branez",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 56,
+        "gh:pushed_at": "2025-12-17T02:02:41Z",
+        "gh:created_at": "2025-12-17T02:02:39Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "CSS",
+          "Nix",
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 4,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/reachz-osc",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/reachz-osc",
+        "gh:url": "https://github.com/halapenyoharry/reachz-osc",
+        "gh:description": "Turn your phone into a virtual trackpad for Mac using Open Stage Control",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 23,
+        "gh:pushed_at": "2026-01-06T18:14:13Z",
+        "gh:created_at": "2025-12-27T01:24:17Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 3,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/revenuez",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/revenuez",
+        "gh:url": "https://github.com/halapenyoharry/revenuez",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 8,
+        "gh:pushed_at": "2025-10-27T18:38:01Z",
+        "gh:created_at": "2025-10-27T17:47:10Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "Dockerfile"
+        ],
+        "gh:default_branch": "feat-screenshot-ocr-api-service",
+        "gh:commit_total": 1,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/river",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/river",
+        "gh:url": "https://github.com/halapenyoharry/river",
+        "gh:description": "A creative terminal for capturing human thought in flow state - type and watch consciousness flow upward",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 30682,
+        "gh:pushed_at": "2025-10-27T19:11:22Z",
+        "gh:created_at": "2025-08-13T17:13:58Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Swift",
+        "gh:languages": [
+          "Swift",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/rmix",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/rmix",
+        "gh:url": "https://github.com/halapenyoharry/rmix",
+        "gh:description": "mixing reality with science, and art.",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 1527,
+        "gh:pushed_at": "2025-09-28T07:53:44Z",
+        "gh:created_at": "2025-09-22T15:29:58Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML",
+          "JavaScript",
+          "Python",
+          "Shell",
+          "Dockerfile"
+        ],
+        "gh:default_branch": "master",
+        "gh:commit_total": 12,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/rmix-brane-audio-environment",
+        "gh:url": "https://github.com/halapenyoharry/rmix-brane-audio-environment",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 16401,
+        "gh:pushed_at": "2026-04-07T00:13:35Z",
+        "gh:created_at": "2025-10-04T23:25:05Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "HTML",
+          "Dockerfile"
+        ],
+        "gh:default_branch": "master",
+        "gh:commit_total": 42,
+        "gh:open_issues": 37,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/showme-mcp-portal",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/showme-mcp-portal",
+        "gh:url": "https://github.com/halapenyoharry/showme-mcp-portal",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 19,
+        "gh:pushed_at": "2025-06-10T12:43:17Z",
+        "gh:created_at": "2025-05-28T22:51:42Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 3,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/songline-protocol",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/songline-protocol",
+        "gh:url": "https://github.com/halapenyoharry/songline-protocol",
+        "gh:description": "Consciousness topology tracker - Maps HOW minds navigate, not just what they remember",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 247,
+        "gh:pushed_at": "2025-08-05T15:42:09Z",
+        "gh:created_at": "2025-08-01T15:56:23Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "master",
+        "gh:commit_total": 7,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/syncthing-dir-time-fixer",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/syncthing-dir-time-fixer",
+        "gh:url": "https://github.com/halapenyoharry/syncthing-dir-time-fixer",
+        "gh:description": "Automatically fix directory timestamps after Syncthing sync to show actual modification times",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 19,
+        "gh:pushed_at": "2025-09-15T19:36:12Z",
+        "gh:created_at": "2025-09-15T18:55:12Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "Shell"
+        ],
+        "gh:default_branch": "master",
+        "gh:commit_total": 4,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/the-post-dead",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/the-post-dead",
+        "gh:url": "https://github.com/halapenyoharry/the-post-dead",
+        "gh:description": "A collaborative speculative fiction, online, forkable, episodic, novelike experience.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 102,
+        "gh:pushed_at": "2025-09-12T15:07:47Z",
+        "gh:created_at": "2025-09-11T14:07:56Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 11,
+        "gh:open_issues": 1,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/veklo",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/veklo",
+        "gh:url": "https://github.com/halapenyoharry/veklo",
+        "gh:description": "achieve ideal audio sweetspot with auto audio balance with head tracking demo.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 14,
+        "gh:pushed_at": "2025-04-23T21:20:46Z",
+        "gh:created_at": "2025-04-23T17:47:41Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "AppleScript"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/voicez",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/voicez",
+        "gh:url": "https://github.com/halapenyoharry/voicez",
+        "gh:description": "Gemini TTS web app with FastAPI backend and React frontend",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 50409,
+        "gh:pushed_at": "2025-12-15T01:43:29Z",
+        "gh:created_at": "2025-12-14T15:04:56Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "TypeScript",
+          "CSS",
+          "Shell",
+          "Dockerfile"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 8,
+        "gh:open_issues": 2,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/voicez-studio",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/voicez-studio",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 255,
+        "gh:pushed_at": "2025-12-24T00:07:24Z",
+        "gh:created_at": "2025-12-15T20:10:44Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "CSS",
+          "Python",
+          "Mermaid",
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 19,
+        "gh:open_issues": 19,
+        "gh:open_prs": 2
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/vortex",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/vortex",
+        "gh:url": "https://github.com/halapenyoharry/vortex",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 462,
+        "gh:pushed_at": "2026-04-27T18:47:29Z",
+        "gh:created_at": "2026-04-11T17:12:56Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 28,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/wren-openwebui",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/wren-openwebui",
+        "gh:url": "https://github.com/halapenyoharry/wren-openwebui",
+        "gh:description": "Open WebUI configuration and data backup",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 0,
+        "gh:pushed_at": "2025-08-30T22:36:40Z",
+        "gh:created_at": "2025-08-30T22:36:40Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/writehub",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/writehub",
+        "gh:url": "https://github.com/halapenyoharry/writehub",
+        "gh:description": "GitHub for Writers - An experimental platform for version control and collaboration designed specifically for creative writing (ALPHA)",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 744,
+        "gh:pushed_at": "2026-02-11T01:18:22Z",
+        "gh:created_at": "2025-09-12T15:23:34Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "HTML",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 4,
+        "gh:open_issues": 2,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/writers-assistant",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/writers-assistant",
+        "gh:url": "https://github.com/halapenyoharry/writers-assistant",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 784,
+        "gh:pushed_at": "2025-11-09T19:50:29Z",
+        "gh:created_at": "2025-11-09T19:32:27Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/writing-evaluationz",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/writing-evaluationz",
+        "gh:url": "https://github.com/halapenyoharry/writing-evaluationz",
+        "gh:description": "a tool to see if what your writing needs to be work with traditional publishing systems.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 5,
+        "gh:pushed_at": "2025-11-20T01:21:21Z",
+        "gh:created_at": "2025-11-19T20:05:15Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Python",
+        "gh:languages": [
+          "Python",
+          "Shell"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 4,
+        "gh:open_issues": 5,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/yabai-tomodachi",
+        "gh:url": "https://github.com/halapenyoharry/yabai-tomodachi",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 22903,
+        "gh:pushed_at": "2026-04-14T23:28:38Z",
+        "gh:created_at": "2025-06-18T17:37:58Z",
+        "gh:stargazers": 2,
+        "gh:forks": 0,
+        "gh:primary_language": "Swift",
+        "gh:languages": [
+          "Swift",
+          "Shell",
+          "JavaScript",
+          "TypeScript",
+          "Rich Text Format"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 26,
+        "gh:open_issues": 14,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/zen-jack-bridge",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/zen-jack-bridge",
+        "gh:url": "https://github.com/halapenyoharry/zen-jack-bridge",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 16702,
+        "gh:pushed_at": "2025-09-25T02:58:37Z",
+        "gh:created_at": "2025-09-24T07:26:05Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "Rust",
+        "gh:languages": [
+          "Rust",
+          "Makefile",
+          "JavaScript",
+          "HTML",
+          "DTrace"
+        ],
+        "gh:default_branch": "master",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 0
+      }
+    },
+    {
+      "id": "gh:repo:ironystock/agentic-obs",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "ironystock/agentic-obs",
+        "gh:url": "https://github.com/ironystock/agentic-obs"
+      }
+    },
+    {
+      "id": "gh:repo:jasmine9876/epstein-docs.github.io",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "jasmine9876/epstein-docs.github.io",
+        "gh:url": "https://github.com/jasmine9876/epstein-docs.github.io"
+      }
+    },
+    {
+      "id": "gh:repo:kolbytn/mindcraft",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "kolbytn/mindcraft",
+        "gh:url": "https://github.com/kolbytn/mindcraft"
+      }
+    },
+    {
+      "id": "gh:repo:limklister/mcp-google-custom-search-server",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "limklister/mcp-google-custom-search-server",
+        "gh:url": "https://github.com/limklister/mcp-google-custom-search-server"
+      }
+    },
+    {
+      "id": "gh:repo:linuxmint/nemo",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "linuxmint/nemo",
+        "gh:url": "https://github.com/linuxmint/nemo"
+      }
+    },
+    {
+      "id": "gh:repo:modelcontextprotocol/servers",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "modelcontextprotocol/servers",
+        "gh:url": "https://github.com/modelcontextprotocol/servers"
+      }
+    },
+    {
+      "id": "gh:repo:n8n-io/n8n",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "n8n-io/n8n",
+        "gh:url": "https://github.com/n8n-io/n8n"
+      }
+    },
+    {
+      "id": "gh:repo:open-webui/open-webui",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "open-webui/open-webui",
+        "gh:url": "https://github.com/open-webui/open-webui"
+      }
+    },
+    {
+      "id": "gh:repo:remsky/Kokoro-FastAPI",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "remsky/Kokoro-FastAPI",
+        "gh:url": "https://github.com/remsky/Kokoro-FastAPI"
+      }
+    },
+    {
+      "id": "gh:repo:swiftbar/SwiftBar",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "swiftbar/SwiftBar",
+        "gh:url": "https://github.com/swiftbar/SwiftBar"
+      }
+    },
+    {
+      "id": "gh:repo:tsl0922/ttyd",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "tsl0922/ttyd",
+        "gh:url": "https://github.com/tsl0922/ttyd"
+      }
+    },
+    {
+      "id": "gh:repo:vesoft-inc/nebula",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "vesoft-inc/nebula",
+        "gh:url": "https://github.com/vesoft-inc/nebula"
+      }
+    },
+    {
+      "id": "gh:repo:zen-browser/desktop",
+      "kind": "node",
+      "attrs": {
+        "gh:name_with_owner": "zen-browser/desktop",
+        "gh:url": "https://github.com/zen-browser/desktop"
+      }
+    },
+    {
+      "id": "gh:user:Copilot",
+      "kind": "node",
+      "attrs": {
+        "gh:login": "Copilot"
+      }
+    },
+    {
+      "id": "gh:user:copilot-swe-agent",
+      "kind": "node",
+      "attrs": {
+        "gh:login": "copilot-swe-agent"
+      }
+    },
+    {
+      "id": "gh:user:google-labs-jules",
+      "kind": "node",
+      "attrs": {
+        "gh:login": "google-labs-jules"
+      }
+    },
+    {
+      "id": "gh:user:halapenyoharry",
+      "kind": "node",
+      "attrs": {
+        "gh:login": "halapenyoharry"
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "gh:repo:halapenyoharry/json-visual-viewer",
+      "target": "gh:issue:halapenyoharry/json-visual-viewer#7",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e1"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/json-visual-viewer#7",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e2"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/json-visual-viewer",
+      "target": "gh:issue:halapenyoharry/json-visual-viewer#6",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e3"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/json-visual-viewer#6",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e4"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/json-visual-viewer",
+      "target": "gh:issue:halapenyoharry/json-visual-viewer#5",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e5"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/json-visual-viewer#5",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e6"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/json-visual-viewer",
+      "target": "gh:issue:halapenyoharry/json-visual-viewer#4",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e7"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/json-visual-viewer#4",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e8"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/Writing",
+      "target": "gh:issue:halapenyoharry/Writing#3",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e9"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/Writing#3",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e10"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/Writing",
+      "target": "gh:issue:halapenyoharry/Writing#2",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e11"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/Writing#2",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e12"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/Writing",
+      "target": "gh:issue:halapenyoharry/Writing#1",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e13"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/Writing#1",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e14"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/collection",
+      "target": "gh:pr:halapenyoharry/collection#2",
+      "directed": true,
+      "label": "has_pr",
+      "layer": "has_pr",
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e15"
+      }
+    },
+    {
+      "source": "gh:pr:halapenyoharry/collection#2",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e16"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/post-pipe",
+      "target": "gh:issue:halapenyoharry/post-pipe#6",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e17"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/post-pipe#6",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e18"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/post-pipe",
+      "target": "gh:issue:halapenyoharry/post-pipe#5",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e19"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/post-pipe#5",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e20"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#14",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e21"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#14",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e22"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#13",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e23"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#13",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e24"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#12",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e25"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#12",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e26"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#11",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e27"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#11",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e28"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#10",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e29"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#10",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e30"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#9",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e31"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#9",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e32"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#8",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e33"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#8",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e34"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#7",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e35"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#7",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e36"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#6",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e37"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#6",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e38"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#5",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e39"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#5",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e40"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#2",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e41"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#2",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e42"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#4",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e43"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#4",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e44"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#3",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e45"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#3",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e46"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/yabai-tomodachi",
+      "target": "gh:issue:halapenyoharry/yabai-tomodachi#1",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e47"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/yabai-tomodachi#1",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e48"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/agentic-obs",
+      "target": "gh:repo:ironystock/agentic-obs",
+      "directed": true,
+      "label": "forked_from",
+      "layer": "forked_from",
+      "attrs": {
+        "i2t:predicate": "forked_from",
+        "i2t:original-id": "e49"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#40",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e50"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#40",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e51"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#39",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e52"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#39",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e53"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#38",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e54"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#38",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e55"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#37",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e56"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#37",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e57"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#32",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e58"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#32",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e59"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#10",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e60"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#10",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e61"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#33",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e62"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#33",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e63"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#21",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e64"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#21",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e65"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#36",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e66"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#36",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e67"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#35",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e68"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#35",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e69"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#34",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e70"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#34",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e71"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#31",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e72"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#31",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e73"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#30",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e74"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#30",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e75"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#29",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e76"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#29",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e77"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#28",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e78"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#28",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e79"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#27",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e80"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#27",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e81"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#26",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e82"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#26",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e83"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#25",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e84"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#25",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e85"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#24",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e86"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#24",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e87"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#23",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e88"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#23",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e89"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#22",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e90"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#22",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e91"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#20",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e92"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#20",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e93"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#19",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e94"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#19",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e95"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#18",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e96"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#18",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e97"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/rmix-brane-audio-environment",
+      "target": "gh:issue:halapenyoharry/rmix-brane-audio-environment#17",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e98"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/rmix-brane-audio-environment#17",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e99"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/haroldyoung-human-posts",
+      "target": "gh:issue:halapenyoharry/haroldyoung-human-posts#1",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e100"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/haroldyoung-human-posts#1",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e101"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/writehub",
+      "target": "gh:issue:halapenyoharry/writehub#2",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e102"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/writehub#2",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e103"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/writehub",
+      "target": "gh:issue:halapenyoharry/writehub#1",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e104"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/writehub#1",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e105"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#16",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e106"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#16",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e107"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#15",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e108"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#15",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e109"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#14",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e110"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#14",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e111"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#13",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e112"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#13",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e113"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#12",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e114"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#12",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e115"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#11",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e116"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#11",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e117"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#10",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e118"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#10",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e119"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#9",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e120"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#9",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e121"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#8",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e122"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#8",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e123"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#7",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e124"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#7",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e125"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#6",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e126"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#6",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e127"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#5",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e128"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#5",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e129"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#4",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e130"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#4",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e131"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#3",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e132"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#3",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e133"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#2",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e134"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#2",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e135"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/ClusterZ",
+      "target": "gh:issue:halapenyoharry/ClusterZ#1",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e136"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/ClusterZ#1",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e137"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/FileCraft",
+      "target": "gh:pr:halapenyoharry/FileCraft#2",
+      "directed": true,
+      "label": "has_pr",
+      "layer": "has_pr",
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e138"
+      }
+    },
+    {
+      "source": "gh:pr:halapenyoharry/FileCraft#2",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e139"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/FileCraft",
+      "target": "gh:pr:halapenyoharry/FileCraft#1",
+      "directed": true,
+      "label": "has_pr",
+      "layer": "has_pr",
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e140"
+      }
+    },
+    {
+      "source": "gh:pr:halapenyoharry/FileCraft#1",
+      "target": "gh:user:copilot-swe-agent",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e141"
+      }
+    },
+    {
+      "source": "gh:pr:halapenyoharry/FileCraft#1",
+      "target": "gh:user:Copilot",
+      "directed": true,
+      "label": "assigned_to",
+      "layer": "assigned_to",
+      "attrs": {
+        "i2t:predicate": "assigned_to",
+        "i2t:original-id": "e142"
+      }
+    },
+    {
+      "source": "gh:pr:halapenyoharry/FileCraft#1",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "assigned_to",
+      "layer": "assigned_to",
+      "attrs": {
+        "i2t:predicate": "assigned_to",
+        "i2t:original-id": "e143"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/qrystal",
+      "target": "gh:pr:halapenyoharry/qrystal#2",
+      "directed": true,
+      "label": "has_pr",
+      "layer": "has_pr",
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e144"
+      }
+    },
+    {
+      "source": "gh:pr:halapenyoharry/qrystal#2",
+      "target": "gh:user:google-labs-jules",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e145"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/qrystal",
+      "target": "gh:pr:halapenyoharry/qrystal#1",
+      "directed": true,
+      "label": "has_pr",
+      "layer": "has_pr",
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e146"
+      }
+    },
+    {
+      "source": "gh:pr:halapenyoharry/qrystal#1",
+      "target": "gh:user:copilot-swe-agent",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e147"
+      }
+    },
+    {
+      "source": "gh:pr:halapenyoharry/qrystal#1",
+      "target": "gh:user:Copilot",
+      "directed": true,
+      "label": "assigned_to",
+      "layer": "assigned_to",
+      "attrs": {
+        "i2t:predicate": "assigned_to",
+        "i2t:original-id": "e148"
+      }
+    },
+    {
+      "source": "gh:pr:halapenyoharry/qrystal#1",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "assigned_to",
+      "layer": "assigned_to",
+      "attrs": {
+        "i2t:predicate": "assigned_to",
+        "i2t:original-id": "e149"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/bookz",
+      "target": "gh:issue:halapenyoharry/bookz#6",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e150"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/bookz#6",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e151"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/bookz",
+      "target": "gh:issue:halapenyoharry/bookz#5",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e152"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/bookz#5",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e153"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/bookz",
+      "target": "gh:issue:halapenyoharry/bookz#4",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e154"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/bookz#4",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e155"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/bookz",
+      "target": "gh:issue:halapenyoharry/bookz#3",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e156"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/bookz#3",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e157"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/bookz",
+      "target": "gh:issue:halapenyoharry/bookz#2",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e158"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/bookz#2",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e159"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#25",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e160"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#25",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e161"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#22",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e162"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#22",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e163"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#21",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e164"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#21",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e165"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#20",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e166"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#20",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e167"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#17",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e168"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#17",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e169"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#16",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e170"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#16",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e171"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#15",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e172"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#15",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e173"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#14",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e174"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#14",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e175"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#13",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e176"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#13",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e177"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#12",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e178"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#12",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e179"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#11",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e180"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#11",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e181"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#10",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e182"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#10",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e183"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#7",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e184"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#7",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e185"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#6",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e186"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#6",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e187"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#5",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e188"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#5",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e189"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#4",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e190"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#4",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e191"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#3",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e192"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#3",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e193"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#2",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e194"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#2",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e195"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:issue:halapenyoharry/voicez-studio#1",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e196"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez-studio#1",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e197"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:pr:halapenyoharry/voicez-studio#24",
+      "directed": true,
+      "label": "has_pr",
+      "layer": "has_pr",
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e198"
+      }
+    },
+    {
+      "source": "gh:pr:halapenyoharry/voicez-studio#24",
+      "target": "gh:user:google-labs-jules",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e199"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez-studio",
+      "target": "gh:pr:halapenyoharry/voicez-studio#8",
+      "directed": true,
+      "label": "has_pr",
+      "layer": "has_pr",
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e200"
+      }
+    },
+    {
+      "source": "gh:pr:halapenyoharry/voicez-studio#8",
+      "target": "gh:user:google-labs-jules",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e201"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez",
+      "target": "gh:issue:halapenyoharry/voicez#9",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e202"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez#9",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e203"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/voicez",
+      "target": "gh:issue:halapenyoharry/voicez#6",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e204"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/voicez#6",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e205"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/TTS",
+      "target": "gh:repo:coqui-ai/TTS",
+      "directed": true,
+      "label": "forked_from",
+      "layer": "forked_from",
+      "attrs": {
+        "i2t:predicate": "forked_from",
+        "i2t:original-id": "e206"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/writing-evaluationz",
+      "target": "gh:issue:halapenyoharry/writing-evaluationz#7",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e207"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/writing-evaluationz#7",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e208"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/writing-evaluationz",
+      "target": "gh:issue:halapenyoharry/writing-evaluationz#6",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e209"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/writing-evaluationz#6",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e210"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/writing-evaluationz",
+      "target": "gh:issue:halapenyoharry/writing-evaluationz#5",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e211"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/writing-evaluationz#5",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e212"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/writing-evaluationz",
+      "target": "gh:issue:halapenyoharry/writing-evaluationz#4",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e213"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/writing-evaluationz#4",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e214"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/writing-evaluationz",
+      "target": "gh:issue:halapenyoharry/writing-evaluationz#3",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e215"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/writing-evaluationz#3",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e216"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/finderz",
+      "target": "gh:issue:halapenyoharry/finderz#1",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e217"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/finderz#1",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e218"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/browser-control-mcp",
+      "target": "gh:repo:eyalzh/browser-control-mcp",
+      "directed": true,
+      "label": "forked_from",
+      "layer": "forked_from",
+      "attrs": {
+        "i2t:predicate": "forked_from",
+        "i2t:original-id": "e219"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/the-post-dead",
+      "target": "gh:issue:halapenyoharry/the-post-dead#1",
+      "directed": true,
+      "label": "has_issue",
+      "layer": "has_issue",
+      "attrs": {
+        "i2t:predicate": "has_issue",
+        "i2t:original-id": "e220"
+      }
+    },
+    {
+      "source": "gh:issue:halapenyoharry/the-post-dead#1",
+      "target": "gh:user:halapenyoharry",
+      "directed": true,
+      "label": "authored_by",
+      "layer": "authored_by",
+      "attrs": {
+        "i2t:predicate": "authored_by",
+        "i2t:original-id": "e221"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/desktop",
+      "target": "gh:repo:zen-browser/desktop",
+      "directed": true,
+      "label": "forked_from",
+      "layer": "forked_from",
+      "attrs": {
+        "i2t:predicate": "forked_from",
+        "i2t:original-id": "e222"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/open-webui",
+      "target": "gh:repo:open-webui/open-webui",
+      "directed": true,
+      "label": "forked_from",
+      "layer": "forked_from",
+      "attrs": {
+        "i2t:predicate": "forked_from",
+        "i2t:original-id": "e223"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/n8n",
+      "target": "gh:repo:n8n-io/n8n",
+      "directed": true,
+      "label": "forked_from",
+      "layer": "forked_from",
+      "attrs": {
+        "i2t:predicate": "forked_from",
+        "i2t:original-id": "e224"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/OpenSuperWhisper",
+      "target": "gh:repo:Starmel/OpenSuperWhisper",
+      "directed": true,
+      "label": "forked_from",
+      "layer": "forked_from",
+      "attrs": {
+        "i2t:predicate": "forked_from",
+        "i2t:original-id": "e225"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/plugged.out",
+      "target": "gh:repo:VeriTeknik/pluggedin-mcp",
+      "directed": true,
+      "label": "forked_from",
+      "layer": "forked_from",
+      "attrs": {
+        "i2t:predicate": "forked_from",
+        "i2t:original-id": "e226"
+      }
+    },
+    {
+      "source": "gh:repo:halapenyoharry/SwiftBar",
+      "target": "gh:repo:swiftbar/SwiftBar",
+      "directed": true,
+      "label": "forked_from",
+      "layer": "forked_from",
+      "attrs": {
+        "i2t:predicate": "forked_from",
+        "i2t:original-id": "e227"
+      }
+    }
+  ]
+}

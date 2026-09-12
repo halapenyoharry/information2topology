@@ -1,0 +1,158 @@
+{
+  "repository_structures": {
+    "luanti-org/luanti": {
+      "type": "C++ Engine and Lua API",
+      "main_level_folders": [
+        ".github",
+        ".vscode",
+        "android",
+        "builtin",
+        "client",
+        "clientmods",
+        "cmake",
+        "doc",
+        "fastlane",
+        "fonts",
+        "games",
+        "irr",
+        "lib",
+        "misc",
+        "mods",
+        "po",
+        "src",
+        "textures",
+        "util",
+        "worlds"
+      ],
+      "main_level_files": [
+        ".clang-tidy",
+        ".dockerignore",
+        ".editorconfig",
+        ".envrc",
+        ".gitattributes",
+        ".gitignore",
+        ".gitlab-ci.yml",
+        ".luacheckrc",
+        ".mailmap",
+        "CMakeLists.txt",
+        "CMakePresets.json",
+        "CNAME",
+        "COPYING.LESSER",
+        "Dockerfile",
+        "LICENSE.txt",
+        "README.md",
+        "minetest.conf.example",
+        "shell.nix",
+        "vcpkg.json"
+      ]
+    },
+    "MovingBlocks/Terasology": {
+      "type": "Java Multi-Repo Engine Workspace",
+      "main_level_folders": [
+        ".github",
+        ".idea",
+        "build-logic",
+        "config",
+        "docs",
+        "docs-pre-merge",
+        "engine",
+        "engine-tests",
+        "facades",
+        "fileTemplates",
+        "gradle",
+        "libs",
+        "metas",
+        "modules",
+        "openvr_natives",
+        "subsystems",
+        "templates"
+      ],
+      "main_level_files": [
+        ".gitattributes",
+        ".gitignore",
+        ".gitpod.yml",
+        "Jenkinsfile",
+        "LICENSE",
+        "LICENSE_ARTWORK",
+        "NOTICE",
+        "README.md",
+        "build.gradle.kts",
+        "gitpod.dockerfile",
+        "gradlew",
+        "gradlew.bat",
+        "groovyw",
+        "groovyw.bat",
+        "settings.gradle.kts"
+      ]
+    },
+    "OpenMW/openmw": {
+      "type": "C++ RPG Engine Reimplementation",
+      "main_level_folders": [
+        ".github",
+        ".gitlab",
+        "CI",
+        "apps",
+        "cmake",
+        "components",
+        "docker",
+        "docs",
+        "extern",
+        "files",
+        "manual",
+        "scripts"
+      ],
+      "main_level_files": [
+        ".clang-format",
+        ".clang-tidy",
+        ".editorconfig",
+        ".git-blame-ignore-revs",
+        ".gitignore",
+        ".gitlab-ci.yml",
+        ".readthedocs.yaml",
+        ".resubmitted_merge_requests.txt",
+        "AUTHORS.md",
+        "CHANGELOG.md",
+        "CMakeLists.txt",
+        "CONTRIBUTING.md",
+        "LICENSE",
+        "README.md"
+      ]
+    },
+    "Unvanquished/Unvanquished": {
+      "type": "C++ FPS/RTS Engine Logic",
+      "main_level_folders": [
+        ".github",
+        ".urcheon",
+        "debian",
+        "dist",
+        "libs",
+        "macosx",
+        "pkg",
+        "src",
+        "tools"
+      ],
+      "main_level_files": [
+        ".appveyor.yml",
+        ".git-blame-ignore-revs",
+        ".gitattributes",
+        ".gitignore",
+        ".gitmodules",
+        "CMakeLists.txt",
+        "COPYING.txt",
+        "GPL.txt",
+        "README.md",
+        "azure-pipelines.yml",
+        "daemon",
+        "download-paks",
+        "lua.cmake",
+        "rmlui.cmake",
+        "src.cmake",
+        "update-version-number.py"
+      ],
+      "submodules": [
+        "daemon"
+      ],
+      "notes": "The 'daemon' entry in main_level_files is a git submodule (the Daemon engine) and appears as a file via the GitHub contents API."
+    }
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "metadata": {
+    "topothink-version": "0.1",
+    "adapter": "propgraph_to_hypergraph.py",
+    "source-meta": {
+      "tool": "merged",
+      "version": "1",
+      "sources": [
+        {
+          "tool": "dirgraph",
+          "version": "1",
+          "scanned_at": "2026-04-27T21:13:48+00:00",
+          "root": "/Users/harold/Projects",
+          "max_depth": 2,
+          "skip_dirs": [
+            ".cache",
+            ".git",
+            ".gradle",
+            ".idea",
+            ".mypy_cache",
+            ".next",
+            ".pytest_cache",
+            ".ruff_cache",
+            ".tox",
+            ".venv",
+            "DerivedData",
+            "Pods",
+            "__pycache__",
+            "bower_components",
+            "build",
+            "dist",
+            "node_modules",
+            "target",
+            "vendor",
+            "venv"
+          ],
+          "skip_extensions": [
+            ".7z",
+            ".a",
+            ".aac",
+            ".avi",
+            ".bin",
+            ".bmp",
+            ".bz2",
+            ".class",
+            ".dll",
+            ".dmg",
+            ".dylib",
+            ".eot",
+            ".exe",
+            ".flac",
+            ".gif",
+            ".gz",
+            ".heic",
+            ".ico",
+            ".iso",
+            ".jar",
+            ".jpeg",
+            ".jpg",
+            ".m4a",
+            ".mkv",
+            ".mov",
+            ".mp3",
+            ".mp4",
+            ".o",
+            ".ogg",
+            ".otf",
+            ".pdf",
+            ".pkg",
+            ".png",
+            ".pyc",
+            ".pyo",
+            ".rar",
+            ".so",
+            ".svg",
+            ".tar",
+            ".tgz",
+            ".tiff",
+            ".ttf",
+            ".wav",
+            ".webm",
+            ".webp",
+            ".woff",
+            ".woff2",
+            ".zip"
+          ],
+          "sources": {
+            "filesystem": true,
+            "git": true,
+            "spotlight": true,
+            "ports": true,
+            "github_remotes": true
+          }
+        },
+        {
+          "tool": "ghgraph",
+          "version": "1",
+          "scanned_at": "2026-04-27T21:13:25+00:00",
+          "viewer": "halapenyoharry",
+          "rate_limit": {
+            "remaining": 4819,
+            "limit": 5000,
+            "resetAt": "2026-04-27T21:20:25Z"
+          },
+          "sources": {
+            "github_graphql": true,
+            "include_prs": true,
+            "include_issues": true,
+            "per_repo_limit": 25
+          }
+        }
+      ],
+      "merged_at": "2026-04-28T01:00:02Z"
+    },
+    "i2t:relation_to_canonical": "predicate-layer",
+    "layer-predicate": "has_pr",
+    "layer-stats": {
+      "nodes": 11,
+      "edges": 7,
+      "incidences": 14
+    }
+  },
+  "nodes": [
+    {
+      "id": "gh:pr:halapenyoharry/qrystal#1",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "Initialize Rust project with iced GUI framework",
+        "gh:url": "https://github.com/halapenyoharry/qrystal/pull/1",
+        "gh:created_at": "2026-01-22T16:09:56Z",
+        "gh:updated_at": "2026-01-22T16:29:35Z",
+        "gh:is_draft": true,
+        "gh:base": "main",
+        "gh:head": "copilot/initialize-rust-project-qrystal"
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/FileCraft#2",
+      "attrs": {
+        "gh:number": 2,
+        "gh:title": "FileCraft v1.0 Implementation",
+        "gh:url": "https://github.com/halapenyoharry/FileCraft/pull/2",
+        "gh:created_at": "2026-02-07T02:13:22Z",
+        "gh:updated_at": "2026-02-07T02:22:49Z",
+        "gh:is_draft": false,
+        "gh:base": "main",
+        "gh:head": "filecraft-v1-12387711536544737823"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/voicez-studio",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/voicez-studio",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 255,
+        "gh:pushed_at": "2025-12-24T00:07:24Z",
+        "gh:created_at": "2025-12-15T20:10:44Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "JavaScript",
+        "gh:languages": [
+          "JavaScript",
+          "CSS",
+          "Python",
+          "Mermaid",
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 19,
+        "gh:open_issues": 19,
+        "gh:open_prs": 2
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/FileCraft#1",
+      "attrs": {
+        "gh:number": 1,
+        "gh:title": "Add AGENTS.md and setup.sh for Linux filesystem-to-Luanti voxel bridge",
+        "gh:url": "https://github.com/halapenyoharry/FileCraft/pull/1",
+        "gh:created_at": "2026-02-07T00:50:06Z",
+        "gh:updated_at": "2026-02-07T00:58:56Z",
+        "gh:is_draft": true,
+        "gh:base": "main",
+        "gh:head": "copilot/create-agents-md-and-setup-script"
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/collection#2",
+      "attrs": {
+        "gh:number": 2,
+        "gh:title": "feat: add configurable fountain experience",
+        "gh:url": "https://github.com/halapenyoharry/collection/pull/2",
+        "gh:created_at": "2026-04-17T17:07:29Z",
+        "gh:updated_at": "2026-04-17T17:09:44Z",
+        "gh:is_draft": false,
+        "gh:base": "main",
+        "gh:head": "feat/configurable-fountain-9982644659403180315"
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/qrystal#2",
+      "attrs": {
+        "gh:number": 2,
+        "gh:title": "Initialize Qrystal project and data model",
+        "gh:url": "https://github.com/halapenyoharry/qrystal/pull/2",
+        "gh:created_at": "2026-01-22T23:10:43Z",
+        "gh:updated_at": "2026-01-22T23:10:44Z",
+        "gh:is_draft": true,
+        "gh:base": "main",
+        "gh:head": "qrystal-init-6488732875441097037"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/FileCraft",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/FileCraft",
+        "gh:url": "https://github.com/halapenyoharry/FileCraft",
+        "gh:description": "minecraft for file managment",
+        "gh:is_private": true,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 21,
+        "gh:pushed_at": "2026-02-07T02:13:20Z",
+        "gh:created_at": "2026-02-07T00:50:02Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 1,
+        "gh:open_issues": 0,
+        "gh:open_prs": 2
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/voicez-studio#24",
+      "attrs": {
+        "gh:number": 24,
+        "gh:title": "AI SSML Syntax Fixer",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/pull/24",
+        "gh:created_at": "2025-12-24T00:07:26Z",
+        "gh:updated_at": "2025-12-24T00:07:28Z",
+        "gh:is_draft": false,
+        "gh:base": "main",
+        "gh:head": "feat-ssml-syntax-fixer-7141767097063412489"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/qrystal",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/qrystal",
+        "gh:url": "https://github.com/halapenyoharry/qrystal",
+        "gh:description": "user interaction with their data reimagined in rust based on iced for cosmic desktop.",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 52,
+        "gh:pushed_at": "2026-01-22T23:10:41Z",
+        "gh:created_at": "2026-01-22T16:09:51Z",
+        "gh:stargazers": 1,
+        "gh:forks": 0,
+        "gh:languages": [],
+        "gh:default_branch": "main",
+        "gh:commit_total": 2,
+        "gh:open_issues": 0,
+        "gh:open_prs": 2
+      }
+    },
+    {
+      "id": "gh:pr:halapenyoharry/voicez-studio#8",
+      "attrs": {
+        "gh:number": 8,
+        "gh:title": "Create Initial Studio UI",
+        "gh:url": "https://github.com/halapenyoharry/voicez-studio/pull/8",
+        "gh:created_at": "2025-12-21T22:38:29Z",
+        "gh:updated_at": "2025-12-21T22:38:30Z",
+        "gh:is_draft": false,
+        "gh:base": "main",
+        "gh:head": "feature-create-studio-interface-16072351901329507856"
+      }
+    },
+    {
+      "id": "gh:repo:halapenyoharry/collection",
+      "attrs": {
+        "gh:name_with_owner": "halapenyoharry/collection",
+        "gh:url": "https://github.com/halapenyoharry/collection",
+        "gh:description": "collection of negentropic explorations",
+        "gh:is_private": false,
+        "gh:is_fork": false,
+        "gh:is_archived": false,
+        "gh:disk_usage_kb": 23,
+        "gh:pushed_at": "2026-04-19T22:47:20Z",
+        "gh:created_at": "2026-04-17T16:28:41Z",
+        "gh:stargazers": 0,
+        "gh:forks": 0,
+        "gh:primary_language": "HTML",
+        "gh:languages": [
+          "HTML"
+        ],
+        "gh:default_branch": "main",
+        "gh:commit_total": 4,
+        "gh:open_issues": 0,
+        "gh:open_prs": 1
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:merged/3100",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e15"
+      }
+    },
+    {
+      "id": "edge:merged/3223",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e138"
+      }
+    },
+    {
+      "id": "edge:merged/3225",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e140"
+      }
+    },
+    {
+      "id": "edge:merged/3229",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e144"
+      }
+    },
+    {
+      "id": "edge:merged/3231",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e146"
+      }
+    },
+    {
+      "id": "edge:merged/3283",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e198"
+      }
+    },
+    {
+      "id": "edge:merged/3285",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "has_pr",
+        "i2t:original-id": "e200"
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:merged/3100",
+      "node": "gh:repo:halapenyoharry/collection",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3100",
+      "node": "gh:pr:halapenyoharry/collection#2",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3223",
+      "node": "gh:repo:halapenyoharry/FileCraft",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3223",
+      "node": "gh:pr:halapenyoharry/FileCraft#2",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3225",
+      "node": "gh:repo:halapenyoharry/FileCraft",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3225",
+      "node": "gh:pr:halapenyoharry/FileCraft#1",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3229",
+      "node": "gh:repo:halapenyoharry/qrystal",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3229",
+      "node": "gh:pr:halapenyoharry/qrystal#2",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3231",
+      "node": "gh:repo:halapenyoharry/qrystal",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3231",
+      "node": "gh:pr:halapenyoharry/qrystal#1",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3283",
+      "node": "gh:repo:halapenyoharry/voicez-studio",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3283",
+      "node": "gh:pr:halapenyoharry/voicez-studio#24",
+      "role": "target"
+    },
+    {
+      "edge": "edge:merged/3285",
+      "node": "gh:repo:halapenyoharry/voicez-studio",
+      "role": "source"
+    },
+    {
+      "edge": "edge:merged/3285",
+      "node": "gh:pr:halapenyoharry/voicez-studio#8",
+      "role": "target"
+    }
+  ]
+}

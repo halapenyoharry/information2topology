@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://halapenyoharry.github.io/i2t/hypergraph.topothink.schema.json",
+  "title": "TopoThink Hypergraph Format Schema (structural-only)",
+  "description": "Validates the closed structural commitments of the TopoThink hypergraph format. Vocabulary is intentionally unconstrained: any key may appear in any 'attrs' object. See hypergraph.topothink.spec.md for normative prose.",
+  "type": "object",
+  "required": ["nodes", "edges", "incidences"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "nodes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/node" }
+    },
+    "edges": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/edge" }
+    },
+    "incidences": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/incidence" }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "node": {
+      "type": "object",
+      "required": ["id"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Globally unique identifier. URI, URN, or content hash recommended; bare local IDs permitted but disable cross-document merging."
+        },
+        "attrs": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Open vocabulary. Any key may appear; URI-prefixed keys (e.g., schema:name) are recommended."
+        }
+      },
+      "additionalProperties": true
+    },
+    "edge": {
+      "type": "object",
+      "required": ["id"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "directed": {
+          "type": "boolean",
+          "description": "If true, incidences MUST distinguish role: source vs target."
+        },
+        "attrs": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "incidence": {
+      "type": "object",
+      "required": ["edge", "node"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional. When present, the incidence is reifiable — its id MAY also appear as a node's id, letting other edges reference this particular participation. Without an id, the incidence is position-identified within the incidences list and cannot be referenced by other entities."
+        },
+        "edge": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Must reference an id present in the edges list."
+        },
+        "node": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Must reference an id present in the nodes list."
+        },
+        "role": {
+          "type": "string",
+          "description": "Open vocabulary. Common values: 'source', 'target', 'member'. Required when the referenced edge has directed: true."
+        },
+        "attrs": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

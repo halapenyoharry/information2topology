@@ -1,0 +1,926 @@
+{
+  "metadata": {
+    "format": "normalized-dyadic",
+    "flavor": "dyadic-projection-from-hypergraph",
+    "i2t:relation_to_canonical": "dyadic-projection",
+    "originalCounts": {
+      "nodes": 47,
+      "edges": 11,
+      "incidences": 43
+    },
+    "source-metadata": {
+      "title": "Comprehensive Topology of Electronic Music Evolution (2000-2026)",
+      "description": "An exhaustive hypergraph mapping artists, tracks, labels, platforms, geographic hubs, and genre movements across three decades.",
+      "author": "Information to Topology Droid Architecture",
+      "timestamp": "2026-08-03T15:05:00Z"
+    }
+  },
+  "nodes": [
+    {
+      "id": "artist:jeff_mills",
+      "kind": "node",
+      "attrs": {
+        "name": "Jeff Mills",
+        "type": "Artist",
+        "origin": "Detroit, USA",
+        "active_since": 1988
+      },
+      "label": "Jeff Mills"
+    },
+    {
+      "id": "artist:robert_hood",
+      "kind": "node",
+      "attrs": {
+        "name": "Robert Hood",
+        "type": "Artist",
+        "origin": "Detroit, USA",
+        "active_since": 1989
+      },
+      "label": "Robert Hood"
+    },
+    {
+      "id": "artist:move_d",
+      "kind": "node",
+      "attrs": {
+        "name": "Move D",
+        "type": "Artist",
+        "origin": "Heidelberg, Germany",
+        "active_since": 1990
+      },
+      "label": "Move D"
+    },
+    {
+      "id": "artist:benjamin_brunn",
+      "kind": "node",
+      "attrs": {
+        "name": "Benjamin Brunn",
+        "type": "Artist",
+        "origin": "Hamburg, Germany",
+        "active_since": 2000
+      },
+      "label": "Benjamin Brunn"
+    },
+    {
+      "id": "artist:justice",
+      "kind": "node",
+      "attrs": {
+        "name": "Justice",
+        "type": "Artist",
+        "origin": "Paris, France",
+        "active_since": 2003
+      },
+      "label": "Justice"
+    },
+    {
+      "id": "artist:sebastian",
+      "kind": "node",
+      "attrs": {
+        "name": "SebastiAn",
+        "type": "Artist",
+        "origin": "Paris, France",
+        "active_since": 2005
+      },
+      "label": "SebastiAn"
+    },
+    {
+      "id": "artist:crookers",
+      "kind": "node",
+      "attrs": {
+        "name": "Crookers",
+        "type": "Artist",
+        "origin": "Milan, Italy",
+        "active_since": 2003
+      },
+      "label": "Crookers"
+    },
+    {
+      "id": "artist:skream",
+      "kind": "node",
+      "attrs": {
+        "name": "Skream",
+        "type": "Artist",
+        "origin": "Croydon, UK",
+        "active_since": 2001
+      },
+      "label": "Skream"
+    },
+    {
+      "id": "artist:burial",
+      "kind": "node",
+      "attrs": {
+        "name": "Burial",
+        "type": "Artist",
+        "origin": "London, UK",
+        "active_since": 2005
+      },
+      "label": "Burial"
+    },
+    {
+      "id": "artist:wiley",
+      "kind": "node",
+      "attrs": {
+        "name": "Wiley",
+        "type": "Artist",
+        "origin": "London, UK",
+        "active_since": 1997
+      },
+      "label": "Wiley"
+    },
+    {
+      "id": "artist:deadmau5",
+      "kind": "node",
+      "attrs": {
+        "name": "deadmau5",
+        "type": "Artist",
+        "origin": "Toronto, Canada",
+        "active_since": 1998
+      },
+      "label": "deadmau5"
+    },
+    {
+      "id": "artist:skrillex",
+      "kind": "node",
+      "attrs": {
+        "name": "Skrillex",
+        "type": "Artist",
+        "origin": "Los Angeles, USA",
+        "active_since": 2004
+      },
+      "label": "Skrillex"
+    },
+    {
+      "id": "artist:kavinsky",
+      "kind": "node",
+      "attrs": {
+        "name": "Kavinsky",
+        "type": "Artist",
+        "origin": "Paris, France",
+        "active_since": 2005
+      },
+      "label": "Kavinsky"
+    },
+    {
+      "id": "artist:toro_y_moi",
+      "kind": "node",
+      "attrs": {
+        "name": "Toro y Moi",
+        "type": "Artist",
+        "origin": "Columbia, USA",
+        "active_since": 2008
+      },
+      "label": "Toro y Moi"
+    },
+    {
+      "id": "artist:oneohtrix_point_never",
+      "kind": "node",
+      "attrs": {
+        "name": "Oneohtrix Point Never",
+        "type": "Artist",
+        "origin": "Boston, USA",
+        "active_since": 2007
+      },
+      "label": "Oneohtrix Point Never"
+    },
+    {
+      "id": "artist:macintosh_plus",
+      "kind": "node",
+      "attrs": {
+        "name": "Macintosh Plus",
+        "type": "Artist",
+        "origin": "Seattle, USA",
+        "active_since": 2011
+      },
+      "label": "Macintosh Plus"
+    },
+    {
+      "id": "artist:ag_cook",
+      "kind": "node",
+      "attrs": {
+        "name": "A.G. Cook",
+        "type": "Artist",
+        "origin": "London, UK",
+        "active_since": 2013
+      },
+      "label": "A.G. Cook"
+    },
+    {
+      "id": "artist:sophie",
+      "kind": "node",
+      "attrs": {
+        "name": "SOPHIE",
+        "type": "Artist",
+        "origin": "Glasgow, UK",
+        "active_since": 2013
+      },
+      "label": "SOPHIE"
+    },
+    {
+      "id": "artist:charli_xcx",
+      "kind": "node",
+      "attrs": {
+        "name": "Charli XCX",
+        "type": "Artist",
+        "origin": "Cambridge, UK",
+        "active_since": 2008
+      },
+      "label": "Charli XCX"
+    },
+    {
+      "id": "artist:100_gecs",
+      "kind": "node",
+      "attrs": {
+        "name": "100 gecs",
+        "type": "Artist",
+        "origin": "St. Louis, USA",
+        "active_since": 2015
+      },
+      "label": "100 gecs"
+    },
+    {
+      "id": "artist:arca",
+      "kind": "node",
+      "attrs": {
+        "name": "Arca",
+        "type": "Artist",
+        "origin": "Caracas, Venezuela",
+        "active_since": 2011
+      },
+      "label": "Arca"
+    },
+    {
+      "id": "artist:lotic",
+      "kind": "node",
+      "attrs": {
+        "name": "Lotic",
+        "type": "Artist",
+        "origin": "Houston, USA",
+        "active_since": 2011
+      },
+      "label": "Lotic"
+    },
+    {
+      "id": "artist:dj_rashad",
+      "kind": "node",
+      "attrs": {
+        "name": "DJ Rashad",
+        "type": "Artist",
+        "origin": "Chicago, USA",
+        "active_since": 1998
+      },
+      "label": "DJ Rashad"
+    },
+    {
+      "id": "artist:black_coffee",
+      "kind": "node",
+      "attrs": {
+        "name": "Black Coffee",
+        "type": "Artist",
+        "origin": "Durban, South Africa",
+        "active_since": 1994
+      },
+      "label": "Black Coffee"
+    },
+    {
+      "id": "artist:keinemusik",
+      "kind": "node",
+      "attrs": {
+        "name": "Keinemusik",
+        "type": "Artist",
+        "origin": "Berlin, Germany",
+        "active_since": 2009
+      },
+      "label": "Keinemusik"
+    },
+    {
+      "id": "artist:kabza_de_small",
+      "kind": "node",
+      "attrs": {
+        "name": "Kabza De Small",
+        "type": "Artist",
+        "origin": "eMalahleni, South Africa",
+        "active_since": 2009
+      },
+      "label": "Kabza De Small"
+    },
+    {
+      "id": "artist:jane_remover",
+      "kind": "node",
+      "attrs": {
+        "name": "Jane Remover",
+        "type": "Artist",
+        "origin": "Northern New Jersey, USA",
+        "active_since": 2020
+      },
+      "label": "Jane Remover"
+    },
+    {
+      "id": "track:taking_drugs",
+      "kind": "node",
+      "attrs": {
+        "name": "Taking Drugs?",
+        "type": "Track",
+        "release_year": 2004
+      },
+      "label": "Taking Drugs?"
+    },
+    {
+      "id": "track:velvet_paws",
+      "kind": "node",
+      "attrs": {
+        "name": "Velvet Paws",
+        "type": "Track",
+        "release_year": 2008
+      },
+      "label": "Velvet Paws"
+    },
+    {
+      "id": "track:we_are_your_friends",
+      "kind": "node",
+      "attrs": {
+        "name": "We Are Your Friends",
+        "type": "Track",
+        "release_year": 2006
+      },
+      "label": "We Are Your Friends"
+    },
+    {
+      "id": "track:day_n_nite_remix",
+      "kind": "node",
+      "attrs": {
+        "name": "Day 'n' Nite (Crookers Remix)",
+        "type": "Track",
+        "release_year": 2008
+      },
+      "label": "Day 'n' Nite (Crookers Remix)"
+    },
+    {
+      "id": "track:floral_shoppe",
+      "kind": "node",
+      "attrs": {
+        "name": "Floral Shoppe",
+        "type": "Track",
+        "release_year": 2011
+      },
+      "label": "Floral Shoppe"
+    },
+    {
+      "id": "track:beautiful",
+      "kind": "node",
+      "attrs": {
+        "name": "Beautiful",
+        "type": "Track",
+        "release_year": 2014
+      },
+      "label": "Beautiful"
+    },
+    {
+      "id": "track:vroom_vroom",
+      "kind": "node",
+      "attrs": {
+        "name": "Vroom Vroom",
+        "type": "Track",
+        "release_year": 2016
+      },
+      "label": "Vroom Vroom"
+    },
+    {
+      "id": "track:money_machine",
+      "kind": "node",
+      "attrs": {
+        "name": "Money Machine",
+        "type": "Track",
+        "release_year": 2019
+      },
+      "label": "Money Machine"
+    },
+    {
+      "id": "track:drive",
+      "kind": "node",
+      "attrs": {
+        "name": "Drive",
+        "type": "Track",
+        "release_year": 2018
+      },
+      "label": "Drive"
+    },
+    {
+      "id": "track:move",
+      "kind": "node",
+      "attrs": {
+        "name": "Move",
+        "type": "Track",
+        "release_year": 2022
+      },
+      "label": "Move"
+    },
+    {
+      "id": "label:ed_banger",
+      "kind": "node",
+      "attrs": {
+        "name": "Ed Banger Records",
+        "type": "Label",
+        "origin": "Paris, France",
+        "founded": 2003
+      },
+      "label": "Ed Banger Records"
+    },
+    {
+      "id": "label:kompakt",
+      "kind": "node",
+      "attrs": {
+        "name": "Kompakt",
+        "type": "Label",
+        "origin": "Cologne, Germany",
+        "founded": 1998
+      },
+      "label": "Kompakt"
+    },
+    {
+      "id": "label:hyperdub",
+      "kind": "node",
+      "attrs": {
+        "name": "Hyperdub",
+        "type": "Label",
+        "origin": "London, UK",
+        "founded": 2004
+      },
+      "label": "Hyperdub"
+    },
+    {
+      "id": "label:pc_music",
+      "kind": "node",
+      "attrs": {
+        "name": "PC Music",
+        "type": "Label",
+        "origin": "London, UK",
+        "founded": 2013
+      },
+      "label": "PC Music"
+    },
+    {
+      "id": "label:pan",
+      "kind": "node",
+      "attrs": {
+        "name": "PAN",
+        "type": "Label",
+        "origin": "Berlin, Germany",
+        "founded": 2008
+      },
+      "label": "PAN"
+    },
+    {
+      "id": "label:soulistic",
+      "kind": "node",
+      "attrs": {
+        "name": "Soulistic Music",
+        "type": "Label",
+        "origin": "Johannesburg, South Africa",
+        "founded": 2005
+      },
+      "label": "Soulistic Music"
+    },
+    {
+      "id": "platform:hypemachine",
+      "kind": "node",
+      "attrs": {
+        "name": "Hype Machine",
+        "type": "Platform",
+        "detail": "MP3 Blog Aggregator"
+      },
+      "label": "Hype Machine"
+    },
+    {
+      "id": "platform:soundcloud",
+      "kind": "node",
+      "attrs": {
+        "name": "SoundCloud",
+        "type": "Platform",
+        "detail": "Decentralized Hosting"
+      },
+      "label": "SoundCloud"
+    },
+    {
+      "id": "platform:spotify",
+      "kind": "node",
+      "attrs": {
+        "name": "Spotify",
+        "type": "Platform",
+        "detail": "Algorithmic Recommender"
+      },
+      "label": "Spotify"
+    },
+    {
+      "id": "platform:tiktok",
+      "kind": "node",
+      "attrs": {
+        "name": "TikTok",
+        "type": "Platform",
+        "detail": "Short-Form Video & Algorithmic Virality"
+      },
+      "label": "TikTok"
+    },
+    {
+      "id": "genre:minimal_techno",
+      "kind": "hyperedge",
+      "label": "Genre",
+      "attrs": {
+        "name": "Minimal Techno",
+        "type": "Genre",
+        "era": "2000-2010",
+        "i2t:category": "Containment"
+      }
+    },
+    {
+      "id": "genre:blog_house",
+      "kind": "hyperedge",
+      "label": "Genre",
+      "attrs": {
+        "name": "Blog House",
+        "type": "Genre",
+        "era": "2005-2010",
+        "i2t:category": "Containment"
+      }
+    },
+    {
+      "id": "genre:dubstep",
+      "kind": "hyperedge",
+      "label": "Genre",
+      "attrs": {
+        "name": "Dubstep",
+        "type": "Genre",
+        "era": "2000-2012",
+        "i2t:category": "Containment"
+      }
+    },
+    {
+      "id": "genre:vaporwave",
+      "kind": "hyperedge",
+      "label": "Genre",
+      "attrs": {
+        "name": "Vaporwave",
+        "type": "Genre",
+        "era": "2010-2016",
+        "i2t:category": "Reference"
+      }
+    },
+    {
+      "id": "genre:hyperpop",
+      "kind": "hyperedge",
+      "label": "Genre",
+      "attrs": {
+        "name": "Hyperpop",
+        "type": "Genre",
+        "era": "2013-present",
+        "i2t:category": "State Change"
+      }
+    },
+    {
+      "id": "genre:deconstructed_club",
+      "kind": "hyperedge",
+      "label": "Genre",
+      "attrs": {
+        "name": "Deconstructed Club",
+        "type": "Genre",
+        "era": "2013-present",
+        "i2t:category": "Interactivity"
+      }
+    },
+    {
+      "id": "genre:afro_house",
+      "kind": "hyperedge",
+      "label": "Genre",
+      "attrs": {
+        "name": "Afro House",
+        "type": "Genre",
+        "era": "2010-present",
+        "i2t:category": "Containment"
+      }
+    },
+    {
+      "id": "genre:amapiano",
+      "kind": "hyperedge",
+      "label": "Genre",
+      "attrs": {
+        "name": "Amapiano",
+        "type": "Genre",
+        "era": "2018-present",
+        "i2t:category": "Containment"
+      }
+    },
+    {
+      "id": "genre:dariacore",
+      "kind": "hyperedge",
+      "label": "Genre",
+      "attrs": {
+        "name": "Dariacore / Hyperflip",
+        "type": "Genre",
+        "era": "2021-present",
+        "i2t:category": "State Change"
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "artist:jeff_mills",
+      "target": "artist:robert_hood",
+      "directed": false,
+      "label": "Genre",
+      "layer": "Genre",
+      "source_role": "pioneer",
+      "target_role": "pioneer",
+      "attrs": {
+        "name": "Detroit Techno",
+        "type": "Genre",
+        "era": "1980s-present",
+        "i2t:category": "Containment"
+      }
+    },
+    {
+      "source": "genre:minimal_techno",
+      "target": "artist:move_d",
+      "directed": false,
+      "role": "innovator",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:minimal_techno",
+      "target": "artist:benjamin_brunn",
+      "directed": false,
+      "role": "collaborator",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:minimal_techno",
+      "target": "label:kompakt",
+      "directed": false,
+      "role": "hub",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:minimal_techno",
+      "target": "track:velvet_paws",
+      "directed": false,
+      "role": "canonical_artifact",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:blog_house",
+      "target": "artist:justice",
+      "directed": false,
+      "role": "pioneer",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:blog_house",
+      "target": "artist:sebastian",
+      "directed": false,
+      "role": "innovator",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:blog_house",
+      "target": "artist:crookers",
+      "directed": false,
+      "role": "crossover_bridge",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:blog_house",
+      "target": "label:ed_banger",
+      "directed": false,
+      "role": "hub",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:blog_house",
+      "target": "platform:hypemachine",
+      "directed": false,
+      "role": "distribution_infrastructure",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:blog_house",
+      "target": "track:we_are_your_friends",
+      "directed": false,
+      "role": "defining_artifact",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:blog_house",
+      "target": "track:day_n_nite_remix",
+      "directed": false,
+      "role": "crossover_artifact",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:dubstep",
+      "target": "artist:skream",
+      "directed": false,
+      "role": "pioneer",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:dubstep",
+      "target": "artist:burial",
+      "directed": false,
+      "role": "innovator",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:dubstep",
+      "target": "label:hyperdub",
+      "directed": false,
+      "role": "hub",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:vaporwave",
+      "target": "artist:oneohtrix_point_never",
+      "directed": false,
+      "role": "pioneer",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:vaporwave",
+      "target": "artist:macintosh_plus",
+      "directed": false,
+      "role": "codifier",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:vaporwave",
+      "target": "platform:soundcloud",
+      "directed": false,
+      "role": "distribution_infrastructure",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:vaporwave",
+      "target": "track:floral_shoppe",
+      "directed": false,
+      "role": "canonical_artifact",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:hyperpop",
+      "target": "artist:ag_cook",
+      "directed": false,
+      "role": "pioneer",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:hyperpop",
+      "target": "artist:sophie",
+      "directed": false,
+      "role": "innovator",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:hyperpop",
+      "target": "artist:charli_xcx",
+      "directed": false,
+      "role": "crossover_bridge",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:hyperpop",
+      "target": "artist:100_gecs",
+      "directed": false,
+      "role": "accelerator",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:hyperpop",
+      "target": "label:pc_music",
+      "directed": false,
+      "role": "hub",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:hyperpop",
+      "target": "track:beautiful",
+      "directed": false,
+      "role": "proto_artifact",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:hyperpop",
+      "target": "track:vroom_vroom",
+      "directed": false,
+      "role": "crossover_artifact",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:hyperpop",
+      "target": "track:money_machine",
+      "directed": false,
+      "role": "viral_artifact",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:deconstructed_club",
+      "target": "artist:arca",
+      "directed": false,
+      "role": "pioneer",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:deconstructed_club",
+      "target": "artist:lotic",
+      "directed": false,
+      "role": "innovator",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:deconstructed_club",
+      "target": "artist:sophie",
+      "directed": false,
+      "role": "crossover_bridge",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:deconstructed_club",
+      "target": "label:pan",
+      "directed": false,
+      "role": "hub",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:afro_house",
+      "target": "artist:black_coffee",
+      "directed": false,
+      "role": "pioneer",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:afro_house",
+      "target": "artist:keinemusik",
+      "directed": false,
+      "role": "global_distributor",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:afro_house",
+      "target": "label:soulistic",
+      "directed": false,
+      "role": "hub",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:afro_house",
+      "target": "track:drive",
+      "directed": false,
+      "role": "crossover_artifact",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:afro_house",
+      "target": "track:move",
+      "directed": false,
+      "role": "viral_artifact",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:amapiano",
+      "target": "artist:kabza_de_small",
+      "directed": false,
+      "role": "pioneer",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:dariacore",
+      "target": "artist:jane_remover",
+      "directed": false,
+      "role": "founder",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:dariacore",
+      "target": "platform:soundcloud",
+      "directed": false,
+      "role": "distribution_infrastructure",
+      "layer": "Genre"
+    },
+    {
+      "source": "genre:dariacore",
+      "target": "platform:tiktok",
+      "directed": false,
+      "role": "viral_catalyst",
+      "layer": "Genre"
+    },
+    {
+      "source": "platform:spotify",
+      "target": "genre:hyperpop",
+      "directed": true,
+      "label": "Structural_Influence",
+      "layer": "Structural_Influence",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "name": "Algorithmic Reification",
+        "type": "Structural_Influence",
+        "i2t:category": "Reference"
+      }
+    }
+  ]
+}

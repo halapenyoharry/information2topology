@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Claude Code tooling / local settings
+.claude/
+
+# Private data — unpublished novel (Elinor Jones) + home-network topology.
+# Excluded from the remote by default; remove this line deliberately if you
+# want it versioned in the private repo.
+data/private/
+
+# Local keys and credentials
+*.env
+.env*
+keys/
+
+
+# Local workspace isolation
+_local/
+*_backup/

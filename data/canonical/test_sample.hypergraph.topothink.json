@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "topothink-version": "0.1",
+    "title": "test_sample",
+    "source_file": "data/test_sample.txt",
+    "source_sha256": "dfed770121b28a017f8049e15973b154c913d3cba2ecc4be30bb44052e2b4852",
+    "extracted_at": "2026-09-12T20:15:37.734031+00:00",
+    "model_used": "nvidia/nemotron-3.5-lightning:free"
+  },
+  "nodes": [
+    {
+      "id": "harold_young",
+      "attrs": {
+        "exact_quote": "Harold Young designed the TopoThink engine.",
+        "label": "Harold Young",
+        "type": "Person"
+      }
+    },
+    {
+      "id": "topo_think_engine",
+      "attrs": {
+        "exact_quote": "The TopoThink engine contains four relational edge categories: Containment, State Change, Interactivity, and Reference.",
+        "label": "TopoThink engine",
+        "type": "Engine"
+      }
+    },
+    {
+      "id": "alice",
+      "attrs": {
+        "exact_quote": "Alice manages the Exoskeleton workstation, which imports the TopoThink engine at runtime to render multi-layer topological maps.",
+        "label": "Alice",
+        "type": "Person"
+      }
+    },
+    {
+      "id": "exoskeleton_workstation",
+      "attrs": {
+        "exact_quote": "Alice manages the Exoskeleton workstation, which imports the TopoThink engine at runtime to render multi-layer topological maps.",
+        "label": "Exoskeleton workstation",
+        "type": "Workstation"
+      }
+    },
+    {
+      "id": "open_tools_human_cognition",
+      "attrs": {
+        "exact_quote": "Alice is allied with Harold in building open tools for human cognition.",
+        "label": "open tools for human cognition",
+        "type": "Concept"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:0",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "designed",
+        "i2t:category": "reference",
+        "i2t:evidence": "Harold Young designed the TopoThink engine."
+      }
+    },
+    {
+      "id": "edge:1",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "manages",
+        "i2t:category": "reference",
+        "i2t:evidence": "Alice manages the Exoskeleton workstation, which imports the TopoThink engine at runtime to render multi-layer topological maps."
+      }
+    },
+    {
+      "id": "edge:2",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "imports",
+        "i2t:category": "reference",
+        "i2t:evidence": "which imports the TopoThink engine at runtime to render multi-layer topological maps."
+      }
+    },
+    {
+      "id": "edge:3",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "allied_with",
+        "i2t:category": "interactivity",
+        "i2t:evidence": "Alice is allied with Harold in building open tools for human cognition."
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:0",
+      "node": "harold_young",
+      "role": "source"
+    },
+    {
+      "edge": "edge:0",
+      "node": "topo_think_engine",
+      "role": "target"
+    },
+    {
+      "edge": "edge:1",
+      "node": "alice",
+      "role": "source"
+    },
+    {
+      "edge": "edge:1",
+      "node": "exoskeleton_workstation",
+      "role": "target"
+    },
+    {
+      "edge": "edge:2",
+      "node": "exoskeleton_workstation",
+      "role": "source"
+    },
+    {
+      "edge": "edge:2",
+      "node": "topo_think_engine",
+      "role": "target"
+    },
+    {
+      "edge": "edge:3",
+      "node": "alice",
+      "role": "source"
+    },
+    {
+      "edge": "edge:3",
+      "node": "harold_young",
+      "role": "target"
+    }
+  ]
+}

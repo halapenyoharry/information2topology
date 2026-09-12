@@ -1,0 +1,1522 @@
+{
+  "metadata": {
+    "format": "normalized-dyadic",
+    "flavor": "dyadic-projection-from-hypergraph",
+    "i2t:relation_to_canonical": "dyadic-projection",
+    "originalCounts": {
+      "nodes": 52,
+      "edges": 82,
+      "incidences": 164
+    },
+    "source-metadata": {
+      "topothink-version": "0.1",
+      "adapter": "instagraph_to_hypergraph.py",
+      "source-format": "instagraph",
+      "source-meta": {
+        "createdDate": "2026-04-28",
+        "lastUpdated": "2026-04-28",
+        "description": "Knowledge graph of Albert Camus's The Myth of Sisyphus: philosophers, works, concepts, archetypes, and the dialectical movement from the absurd through lucidity to revolt, freedom, and passion. Extracted from the source text by Claude (i2t project) following the schema convention from yoheinakajima/instagraph (entity types, relationship strings, color-coded). Source text: ~/Knowledge/rawtextMOS-camus.md.",
+        "source": "Albert Camus, The Myth of Sisyphus (1942 essay; this corpus also references The Plague (1947) and The Rebel (1951))",
+        "extractor": "claude (claude-opus-4-7), schema-compatible with yoheinakajima/instagraph"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "camus",
+      "kind": "node",
+      "attrs": {
+        "label": "Albert Camus",
+        "instagraph:type": "Philosopher",
+        "instagraph:color": "#F8C8DC",
+        "lifespan": "1913-1960",
+        "role": "author of the essay; the philosophical voice"
+      },
+      "label": "Albert Camus"
+    },
+    {
+      "id": "sartre",
+      "kind": "node",
+      "attrs": {
+        "label": "Jean-Paul Sartre",
+        "instagraph:type": "Philosopher",
+        "instagraph:color": "#F8C8DC",
+        "role": "contrasted with Camus; for Sartre absurdity precedes consciousness"
+      },
+      "label": "Jean-Paul Sartre"
+    },
+    {
+      "id": "kierkegaard",
+      "kind": "node",
+      "attrs": {
+        "label": "S\u00f8ren Kierkegaard",
+        "instagraph:type": "Philosopher",
+        "instagraph:color": "#F8C8DC",
+        "role": "discovers and lives the absurd, but performs the leap to faith"
+      },
+      "label": "S\u00f8ren Kierkegaard"
+    },
+    {
+      "id": "nietzsche",
+      "kind": "node",
+      "attrs": {
+        "label": "Friedrich Nietzsche",
+        "instagraph:type": "Philosopher",
+        "instagraph:color": "#F8C8DC",
+        "role": "post-God absurdist forerunner; influences Camus's notion of the absurd"
+      },
+      "label": "Friedrich Nietzsche"
+    },
+    {
+      "id": "heidegger",
+      "kind": "node",
+      "attrs": {
+        "label": "Martin Heidegger",
+        "instagraph:type": "Philosopher",
+        "instagraph:color": "#F8C8DC",
+        "role": "centers existence on anguish; consciousness of death"
+      },
+      "label": "Martin Heidegger"
+    },
+    {
+      "id": "jaspers",
+      "kind": "node",
+      "attrs": {
+        "label": "Karl Jaspers",
+        "instagraph:type": "Philosopher",
+        "instagraph:color": "#F8C8DC",
+        "role": "starts from failure of knowledge, leaps to transcendence"
+      },
+      "label": "Karl Jaspers"
+    },
+    {
+      "id": "shestov",
+      "kind": "node",
+      "attrs": {
+        "label": "Lev Shestov",
+        "instagraph:type": "Philosopher",
+        "instagraph:color": "#F8C8DC",
+        "role": "irrationalist; demonstrates rationalism stumbles on the irrational; leaps to God"
+      },
+      "label": "Lev Shestov"
+    },
+    {
+      "id": "husserl",
+      "kind": "node",
+      "attrs": {
+        "label": "Edmund Husserl",
+        "instagraph:type": "Philosopher",
+        "instagraph:color": "#F8C8DC",
+        "role": "founder of phenomenology; reinstates world's diversity, denies transcendent reason"
+      },
+      "label": "Edmund Husserl"
+    },
+    {
+      "id": "aristotle",
+      "kind": "node",
+      "attrs": {
+        "label": "Aristotle",
+        "instagraph:type": "Philosopher",
+        "instagraph:color": "#F8C8DC",
+        "role": "cited for the contradiction at the root of self-reflective thought"
+      },
+      "label": "Aristotle"
+    },
+    {
+      "id": "pascal",
+      "kind": "node",
+      "attrs": {
+        "label": "Blaise Pascal",
+        "instagraph:type": "Philosopher",
+        "instagraph:color": "#F8C8DC",
+        "role": "named diversion (eluding) as a structure of human evasion"
+      },
+      "label": "Blaise Pascal"
+    },
+    {
+      "id": "schopenhauer",
+      "kind": "node",
+      "attrs": {
+        "label": "Arthur Schopenhauer",
+        "instagraph:type": "Philosopher",
+        "instagraph:color": "#F8C8DC",
+        "role": "praised suicide while seated at a well-set table \u2014 Camus's example of un-lived philosophy"
+      },
+      "label": "Arthur Schopenhauer"
+    },
+    {
+      "id": "dostoevsky",
+      "kind": "node",
+      "attrs": {
+        "label": "Fyodor Dostoevsky",
+        "instagraph:type": "Writer",
+        "instagraph:color": "#F8D8C8",
+        "role": "creator of Kirilov, who carries suicide-as-logical-conclusion"
+      },
+      "label": "Fyodor Dostoevsky"
+    },
+    {
+      "id": "sophocles",
+      "kind": "node",
+      "attrs": {
+        "label": "Sophocles",
+        "instagraph:type": "Writer",
+        "instagraph:color": "#F8D8C8",
+        "role": "\u0152dipus is a model for the absurd victory through consciousness"
+      },
+      "label": "Sophocles"
+    },
+    {
+      "id": "homer",
+      "kind": "node",
+      "attrs": {
+        "label": "Homer",
+        "instagraph:type": "Writer",
+        "instagraph:color": "#F8D8C8",
+        "role": "preserves the Sisyphus myth; Sisyphus 'wisest of mortals'"
+      },
+      "label": "Homer"
+    },
+    {
+      "id": "myth_of_sisyphus",
+      "kind": "node",
+      "attrs": {
+        "label": "The Myth of Sisyphus",
+        "instagraph:type": "Work",
+        "instagraph:color": "#C8E0F8",
+        "year": 1942,
+        "role": "the essay; elucidates the absurd and refuses suicide"
+      },
+      "label": "The Myth of Sisyphus"
+    },
+    {
+      "id": "the_plague",
+      "kind": "node",
+      "attrs": {
+        "label": "The Plague",
+        "instagraph:type": "Work",
+        "instagraph:color": "#C8E0F8",
+        "year": 1947,
+        "role": "novel; the painful death of a child epitomizes the absurd"
+      },
+      "label": "The Plague"
+    },
+    {
+      "id": "the_rebel",
+      "kind": "node",
+      "attrs": {
+        "label": "The Rebel",
+        "instagraph:type": "Work",
+        "instagraph:color": "#C8E0F8",
+        "year": 1951,
+        "role": "extends revolt into political ethic; opposes totalitarianism"
+      },
+      "label": "The Rebel"
+    },
+    {
+      "id": "absurd",
+      "kind": "node",
+      "attrs": {
+        "label": "the Absurd",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "definition": "born of the confrontation between human longing for meaning and the silent, irrational world",
+        "centrality": "the central object of the essay"
+      },
+      "label": "the Absurd"
+    },
+    {
+      "id": "suicide",
+      "kind": "node",
+      "attrs": {
+        "label": "Suicide",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "Camus calls it 'the only truly serious philosophical problem'; ultimately rejected as a response to the absurd"
+      },
+      "label": "Suicide"
+    },
+    {
+      "id": "lucidity",
+      "kind": "node",
+      "attrs": {
+        "label": "Lucidity",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "definition": "clarity of mind that refuses comforting illusions and self-deception; Camus's analogue to anguish"
+      },
+      "label": "Lucidity"
+    },
+    {
+      "id": "revolt",
+      "kind": "node",
+      "attrs": {
+        "label": "Revolt",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "first consequence of the absurd: the conscious refusal to consent to it"
+      },
+      "label": "Revolt"
+    },
+    {
+      "id": "absurd_freedom",
+      "kind": "node",
+      "attrs": {
+        "label": "Absurd Freedom",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "second consequence: freedom from the illusion of metaphysical liberty; freedom of action without future"
+      },
+      "label": "Absurd Freedom"
+    },
+    {
+      "id": "passion",
+      "kind": "node",
+      "attrs": {
+        "label": "Passion",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "third consequence: maximizing quantity and intensity of conscious experience"
+      },
+      "label": "Passion"
+    },
+    {
+      "id": "hope",
+      "kind": "node",
+      "attrs": {
+        "label": "Hope",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the chief form of eluding; named as the third theme of the essay; rejected by absurd reasoning"
+      },
+      "label": "Hope"
+    },
+    {
+      "id": "death",
+      "kind": "node",
+      "attrs": {
+        "label": "Death",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the irreparable; the cruel mathematics that crowns the absurd"
+      },
+      "label": "Death"
+    },
+    {
+      "id": "consciousness",
+      "kind": "node",
+      "attrs": {
+        "label": "Consciousness",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "everything begins with consciousness; awakening from mechanical life inaugurates the absurd"
+      },
+      "label": "Consciousness"
+    },
+    {
+      "id": "reason",
+      "kind": "node",
+      "attrs": {
+        "label": "Reason",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the rationalist project; not negated absolutely, but shown to founder on the irrational"
+      },
+      "label": "Reason"
+    },
+    {
+      "id": "irrational",
+      "kind": "node",
+      "attrs": {
+        "label": "the Irrational",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the unreasonable silence of the world; one of the two terms of the absurd"
+      },
+      "label": "the Irrational"
+    },
+    {
+      "id": "nostalgia_for_unity",
+      "kind": "node",
+      "attrs": {
+        "label": "Nostalgia for Unity",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the human appetite for the absolute and for clarity; the other term of the absurd"
+      },
+      "label": "Nostalgia for Unity"
+    },
+    {
+      "id": "anguish",
+      "kind": "node",
+      "attrs": {
+        "label": "Anguish (Anxiety)",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "Heidegger's perpetual climate of the lucid mind; sibling concept to Camus's lucidity"
+      },
+      "label": "Anguish (Anxiety)"
+    },
+    {
+      "id": "leap",
+      "kind": "node",
+      "attrs": {
+        "label": "the Leap",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the existential move from absurd to faith / God / transcendence; Camus's name for the betrayal of the absurd"
+      },
+      "label": "the Leap"
+    },
+    {
+      "id": "philosophical_suicide",
+      "kind": "node",
+      "attrs": {
+        "label": "Philosophical Suicide",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "Camus's term for the leap: existential thought presupposes the absurd only to dispel it"
+      },
+      "label": "Philosophical Suicide"
+    },
+    {
+      "id": "eluding",
+      "kind": "node",
+      "attrs": {
+        "label": "Eluding (Diversion)",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "Pascalian; the pretense of a future, a meaning, or an other-life that masks the present condition"
+      },
+      "label": "Eluding (Diversion)"
+    },
+    {
+      "id": "quantity_over_quality",
+      "kind": "node",
+      "attrs": {
+        "label": "Quantity over Quality",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "Don Juan's ethic; substitute the most living for the best living"
+      },
+      "label": "Quantity over Quality"
+    },
+    {
+      "id": "transcendence",
+      "kind": "node",
+      "attrs": {
+        "label": "Transcendence",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "Jaspers's leap-target; what failure paradoxically reveals"
+      },
+      "label": "Transcendence"
+    },
+    {
+      "id": "god",
+      "kind": "node",
+      "attrs": {
+        "label": "God (the Absurd's terminus)",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "Shestov's leap-target; identified with the absurd itself in mystical readings; Camus's contested object"
+      },
+      "label": "God (the Absurd's terminus)"
+    },
+    {
+      "id": "the_confrontation",
+      "kind": "node",
+      "attrs": {
+        "label": "the Confrontation",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the unceasing struggle between human nostalgia and the silent world; the absurd is born of it, not in either term"
+      },
+      "label": "the Confrontation"
+    },
+    {
+      "id": "absurd_man",
+      "kind": "node",
+      "attrs": {
+        "label": "the Absurd Man",
+        "instagraph:type": "Archetype",
+        "instagraph:color": "#DCC8F8",
+        "role": "the figure who lives the absurd without the leap: lucid, revolting, free, passionate"
+      },
+      "label": "the Absurd Man"
+    },
+    {
+      "id": "absurd_hero",
+      "kind": "node",
+      "attrs": {
+        "label": "the Absurd Hero",
+        "instagraph:type": "Archetype",
+        "instagraph:color": "#DCC8F8",
+        "role": "the form taken by Sisyphus, \u0152dipus, Don Juan: superior to fate through consciousness"
+      },
+      "label": "the Absurd Hero"
+    },
+    {
+      "id": "don_juan",
+      "kind": "node",
+      "attrs": {
+        "label": "Don Juan",
+        "instagraph:type": "Archetype",
+        "instagraph:color": "#DCC8F8",
+        "role": "Kierkegaard's 'Don Juan of the understanding' figure; archetype of quantity-over-quality"
+      },
+      "label": "Don Juan"
+    },
+    {
+      "id": "oedipus",
+      "kind": "node",
+      "attrs": {
+        "label": "\u0152dipus",
+        "instagraph:type": "LiteraryFigure",
+        "instagraph:color": "#C8F8DC",
+        "source": "Sophocles",
+        "role": "concludes 'all is well'; ancient counterpart of the absurd victory"
+      },
+      "label": "\u0152dipus"
+    },
+    {
+      "id": "hamlet",
+      "kind": "node",
+      "attrs": {
+        "label": "Hamlet",
+        "instagraph:type": "LiteraryFigure",
+        "instagraph:color": "#C8F8DC",
+        "source": "Shakespeare",
+        "role": "'the time is out of joint' \u2014 quoted by Shestov as scaffold for hope, by Camus as evidence of the absurd"
+      },
+      "label": "Hamlet"
+    },
+    {
+      "id": "kirilov",
+      "kind": "node",
+      "attrs": {
+        "label": "Kirilov",
+        "instagraph:type": "LiteraryFigure",
+        "instagraph:color": "#C8F8DC",
+        "source": "Dostoevsky, Demons",
+        "role": "carried suicide as logical conclusion of refusing meaning to life"
+      },
+      "label": "Kirilov"
+    },
+    {
+      "id": "sisyphus",
+      "kind": "node",
+      "attrs": {
+        "label": "Sisyphus",
+        "instagraph:type": "MythologicalFigure",
+        "instagraph:color": "#F8C8B8",
+        "source": "Greek myth; Homer",
+        "role": "wisest of mortals; chained Death; defied the gods; condemned to roll the rock; the absurd hero"
+      },
+      "label": "Sisyphus"
+    },
+    {
+      "id": "pluto",
+      "kind": "node",
+      "attrs": {
+        "label": "Pluto",
+        "instagraph:type": "MythologicalFigure",
+        "instagraph:color": "#F8C8B8",
+        "role": "ruler of the underworld; condemned Sisyphus"
+      },
+      "label": "Pluto"
+    },
+    {
+      "id": "mercury",
+      "kind": "node",
+      "attrs": {
+        "label": "Mercury",
+        "instagraph:type": "MythologicalFigure",
+        "instagraph:color": "#F8C8B8",
+        "role": "seized Sisyphus and returned him to the underworld"
+      },
+      "label": "Mercury"
+    },
+    {
+      "id": "the_rock",
+      "kind": "node",
+      "attrs": {
+        "label": "the Rock",
+        "instagraph:type": "Object",
+        "instagraph:color": "#E8DCC0",
+        "role": "Sisyphus's burden; symbol of futile and hopeless labor; what the conscious hero is stronger than"
+      },
+      "label": "the Rock"
+    },
+    {
+      "id": "existentialism",
+      "kind": "node",
+      "attrs": {
+        "label": "Existentialism",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "the philosophical movement Camus is in dialogue with \u2014 and accuses of philosophical suicide"
+      },
+      "label": "Existentialism"
+    },
+    {
+      "id": "phenomenology",
+      "kind": "node",
+      "attrs": {
+        "label": "Phenomenology",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "Husserl's method; reinstates world's diversity; denies transcendent reason"
+      },
+      "label": "Phenomenology"
+    },
+    {
+      "id": "christianity",
+      "kind": "node",
+      "attrs": {
+        "label": "Christianity",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "the religious tradition Kierkegaard leaps into; one of the leap's named destinations"
+      },
+      "label": "Christianity"
+    },
+    {
+      "id": "totalitarianism",
+      "kind": "node",
+      "attrs": {
+        "label": "Totalitarianism",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "fascist or communist; named in The Rebel as the most horrifying enemy of revolt"
+      },
+      "label": "Totalitarianism"
+    },
+    {
+      "id": "bourgeois_morality",
+      "kind": "node",
+      "attrs": {
+        "label": "Bourgeois Morality",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "named in The Rebel as the more obvious enemy of lucid revolt"
+      },
+      "label": "Bourgeois Morality"
+    }
+  ],
+  "links": [
+    {
+      "source": "camus",
+      "target": "myth_of_sisyphus",
+      "directed": true,
+      "label": "wrote",
+      "layer": "wrote",
+      "attrs": {
+        "i2t:predicate": "wrote",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "the_plague",
+      "directed": true,
+      "label": "wrote",
+      "layer": "wrote",
+      "attrs": {
+        "i2t:predicate": "wrote",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "the_rebel",
+      "directed": true,
+      "label": "wrote",
+      "layer": "wrote",
+      "attrs": {
+        "i2t:predicate": "wrote",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "sophocles",
+      "target": "oedipus",
+      "directed": true,
+      "label": "created",
+      "layer": "created",
+      "attrs": {
+        "i2t:predicate": "created",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "homer",
+      "target": "sisyphus",
+      "directed": true,
+      "label": "preserved myth of",
+      "layer": "preserved myth of",
+      "attrs": {
+        "i2t:predicate": "preserved myth of",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "dostoevsky",
+      "target": "kirilov",
+      "directed": true,
+      "label": "created",
+      "layer": "created",
+      "attrs": {
+        "i2t:predicate": "created",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "myth_of_sisyphus",
+      "target": "absurd",
+      "directed": true,
+      "label": "elucidates",
+      "layer": "elucidates",
+      "attrs": {
+        "i2t:predicate": "elucidates",
+        "instagraph:color": "#666"
+      }
+    },
+    {
+      "source": "the_plague",
+      "target": "absurd",
+      "directed": true,
+      "label": "epitomizes",
+      "layer": "epitomizes",
+      "attrs": {
+        "i2t:predicate": "epitomizes",
+        "instagraph:color": "#666",
+        "via": "the painful death of a child"
+      }
+    },
+    {
+      "source": "the_rebel",
+      "target": "revolt",
+      "directed": true,
+      "label": "extends as political ethic",
+      "layer": "extends as political ethic",
+      "attrs": {
+        "i2t:predicate": "extends as political ethic",
+        "instagraph:color": "#666"
+      }
+    },
+    {
+      "source": "absurd",
+      "target": "the_confrontation",
+      "directed": true,
+      "label": "is born of",
+      "layer": "is born of",
+      "attrs": {
+        "i2t:predicate": "is born of",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "the_confrontation",
+      "target": "nostalgia_for_unity",
+      "directed": true,
+      "label": "involves",
+      "layer": "involves",
+      "attrs": {
+        "i2t:predicate": "involves",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "the_confrontation",
+      "target": "irrational",
+      "directed": true,
+      "label": "involves",
+      "layer": "involves",
+      "attrs": {
+        "i2t:predicate": "involves",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "absurd",
+      "target": "death",
+      "directed": true,
+      "label": "is bounded by",
+      "layer": "is bounded by",
+      "attrs": {
+        "i2t:predicate": "is bounded by",
+        "instagraph:color": "#222",
+        "note": "no absurd outside this world; ends with death"
+      }
+    },
+    {
+      "source": "absurd",
+      "target": "consciousness",
+      "directed": true,
+      "label": "requires",
+      "layer": "requires",
+      "attrs": {
+        "i2t:predicate": "requires",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "suicide",
+      "directed": true,
+      "label": "calls only truly serious philosophical problem",
+      "layer": "calls only truly serious philosophical problem",
+      "attrs": {
+        "i2t:predicate": "calls only truly serious philosophical problem",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "lucidity",
+      "directed": true,
+      "label": "advocates",
+      "layer": "advocates",
+      "attrs": {
+        "i2t:predicate": "advocates",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "revolt",
+      "directed": true,
+      "label": "advocates",
+      "layer": "advocates",
+      "attrs": {
+        "i2t:predicate": "advocates",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "absurd_freedom",
+      "directed": true,
+      "label": "advocates",
+      "layer": "advocates",
+      "attrs": {
+        "i2t:predicate": "advocates",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "passion",
+      "directed": true,
+      "label": "advocates",
+      "layer": "advocates",
+      "attrs": {
+        "i2t:predicate": "advocates",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "philosophical_suicide",
+      "directed": true,
+      "label": "rejects",
+      "layer": "rejects",
+      "attrs": {
+        "i2t:predicate": "rejects",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "suicide",
+      "directed": true,
+      "label": "rejects as solution to",
+      "layer": "rejects as solution to",
+      "attrs": {
+        "i2t:predicate": "rejects as solution to",
+        "instagraph:color": "#A00",
+        "object": "the absurd"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "hope",
+      "directed": true,
+      "label": "rejects as eluding",
+      "layer": "rejects as eluding",
+      "attrs": {
+        "i2t:predicate": "rejects as eluding",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "leap",
+      "directed": true,
+      "label": "rejects",
+      "layer": "rejects",
+      "attrs": {
+        "i2t:predicate": "rejects",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "lucidity",
+      "target": "absurd",
+      "directed": true,
+      "label": "reveals",
+      "layer": "reveals",
+      "attrs": {
+        "i2t:predicate": "reveals",
+        "instagraph:color": "#080"
+      }
+    },
+    {
+      "source": "lucidity",
+      "target": "revolt",
+      "directed": true,
+      "label": "yields",
+      "layer": "yields",
+      "attrs": {
+        "i2t:predicate": "yields",
+        "instagraph:color": "#080"
+      }
+    },
+    {
+      "source": "lucidity",
+      "target": "absurd_freedom",
+      "directed": true,
+      "label": "yields",
+      "layer": "yields",
+      "attrs": {
+        "i2t:predicate": "yields",
+        "instagraph:color": "#080"
+      }
+    },
+    {
+      "source": "lucidity",
+      "target": "passion",
+      "directed": true,
+      "label": "yields",
+      "layer": "yields",
+      "attrs": {
+        "i2t:predicate": "yields",
+        "instagraph:color": "#080"
+      }
+    },
+    {
+      "source": "absurd_man",
+      "target": "lucidity",
+      "directed": true,
+      "label": "embodies",
+      "layer": "embodies",
+      "attrs": {
+        "i2t:predicate": "embodies",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "absurd_man",
+      "target": "revolt",
+      "directed": true,
+      "label": "chooses",
+      "layer": "chooses",
+      "attrs": {
+        "i2t:predicate": "chooses",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "absurd_man",
+      "target": "absurd_freedom",
+      "directed": true,
+      "label": "chooses",
+      "layer": "chooses",
+      "attrs": {
+        "i2t:predicate": "chooses",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "absurd_man",
+      "target": "passion",
+      "directed": true,
+      "label": "chooses",
+      "layer": "chooses",
+      "attrs": {
+        "i2t:predicate": "chooses",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "absurd_man",
+      "target": "hope",
+      "directed": true,
+      "label": "rejects",
+      "layer": "rejects",
+      "attrs": {
+        "i2t:predicate": "rejects",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "absurd_man",
+      "target": "suicide",
+      "directed": true,
+      "label": "refuses",
+      "layer": "refuses",
+      "attrs": {
+        "i2t:predicate": "refuses",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "absurd_man",
+      "target": "leap",
+      "directed": true,
+      "label": "refuses",
+      "layer": "refuses",
+      "attrs": {
+        "i2t:predicate": "refuses",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "absurd_hero",
+      "target": "absurd_man",
+      "directed": true,
+      "label": "is form of",
+      "layer": "is form of",
+      "attrs": {
+        "i2t:predicate": "is form of",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "absurd_hero",
+      "target": "consciousness",
+      "directed": true,
+      "label": "is tragic through",
+      "layer": "is tragic through",
+      "attrs": {
+        "i2t:predicate": "is tragic through",
+        "instagraph:color": "#26A",
+        "note": "if not conscious, the labor is not tragic"
+      }
+    },
+    {
+      "source": "sisyphus",
+      "target": "absurd_hero",
+      "directed": true,
+      "label": "is",
+      "layer": "is",
+      "attrs": {
+        "i2t:predicate": "is",
+        "instagraph:color": "#C50"
+      }
+    },
+    {
+      "source": "sisyphus",
+      "target": "the_rock",
+      "directed": true,
+      "label": "rolls",
+      "layer": "rolls",
+      "attrs": {
+        "i2t:predicate": "rolls",
+        "instagraph:color": "#C50"
+      }
+    },
+    {
+      "source": "sisyphus",
+      "target": "pluto",
+      "directed": true,
+      "label": "condemned by",
+      "layer": "condemned by",
+      "attrs": {
+        "i2t:predicate": "condemned by",
+        "instagraph:color": "#C50"
+      }
+    },
+    {
+      "source": "sisyphus",
+      "target": "death",
+      "directed": true,
+      "label": "chained",
+      "layer": "chained",
+      "attrs": {
+        "i2t:predicate": "chained",
+        "instagraph:color": "#C50",
+        "note": "Pluto could not endure his deserted, silent empire"
+      }
+    },
+    {
+      "source": "mercury",
+      "target": "sisyphus",
+      "directed": true,
+      "label": "returned to underworld",
+      "layer": "returned to underworld",
+      "attrs": {
+        "i2t:predicate": "returned to underworld",
+        "instagraph:color": "#C50"
+      }
+    },
+    {
+      "source": "sisyphus",
+      "target": "lucidity",
+      "directed": true,
+      "label": "exemplifies",
+      "layer": "exemplifies",
+      "attrs": {
+        "i2t:predicate": "exemplifies",
+        "instagraph:color": "#26A",
+        "note": "the lucidity that was to be his torture also crowns his victory"
+      }
+    },
+    {
+      "source": "sisyphus",
+      "target": "passion",
+      "directed": true,
+      "label": "exemplifies",
+      "layer": "exemplifies",
+      "attrs": {
+        "i2t:predicate": "exemplifies",
+        "instagraph:color": "#26A",
+        "note": "his scorn of the gods, his hatred of death, and his passion for life"
+      }
+    },
+    {
+      "source": "don_juan",
+      "target": "quantity_over_quality",
+      "directed": true,
+      "label": "embodies",
+      "layer": "embodies",
+      "attrs": {
+        "i2t:predicate": "embodies",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "don_juan",
+      "target": "absurd_man",
+      "directed": true,
+      "label": "is form of",
+      "layer": "is form of",
+      "attrs": {
+        "i2t:predicate": "is form of",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "oedipus",
+      "target": "absurd_hero",
+      "directed": true,
+      "label": "is form of",
+      "layer": "is form of",
+      "attrs": {
+        "i2t:predicate": "is form of",
+        "instagraph:color": "#26A",
+        "note": "concludes 'all is well'"
+      }
+    },
+    {
+      "source": "kirilov",
+      "target": "suicide",
+      "directed": true,
+      "label": "carried as logical conclusion",
+      "layer": "carried as logical conclusion",
+      "attrs": {
+        "i2t:predicate": "carried as logical conclusion",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "hamlet",
+      "target": "absurd",
+      "directed": true,
+      "label": "voices",
+      "layer": "voices",
+      "attrs": {
+        "i2t:predicate": "voices",
+        "instagraph:color": "#26A",
+        "quote": "the time is out of joint"
+      }
+    },
+    {
+      "source": "kierkegaard",
+      "target": "absurd",
+      "directed": true,
+      "label": "discovers and lives",
+      "layer": "discovers and lives",
+      "attrs": {
+        "i2t:predicate": "discovers and lives",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "kierkegaard",
+      "target": "leap",
+      "directed": true,
+      "label": "performs",
+      "layer": "performs",
+      "attrs": {
+        "i2t:predicate": "performs",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "kierkegaard",
+      "target": "christianity",
+      "directed": true,
+      "label": "leaps to",
+      "layer": "leaps to",
+      "attrs": {
+        "i2t:predicate": "leaps to",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "kierkegaard",
+      "target": "don_juan",
+      "directed": true,
+      "label": "named (of the understanding)",
+      "layer": "named (of the understanding)",
+      "attrs": {
+        "i2t:predicate": "named (of the understanding)",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "jaspers",
+      "target": "leap",
+      "directed": true,
+      "label": "performs",
+      "layer": "performs",
+      "attrs": {
+        "i2t:predicate": "performs",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "jaspers",
+      "target": "transcendence",
+      "directed": true,
+      "label": "leaps to",
+      "layer": "leaps to",
+      "attrs": {
+        "i2t:predicate": "leaps to",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "shestov",
+      "target": "leap",
+      "directed": true,
+      "label": "performs",
+      "layer": "performs",
+      "attrs": {
+        "i2t:predicate": "performs",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "shestov",
+      "target": "god",
+      "directed": true,
+      "label": "leaps to",
+      "layer": "leaps to",
+      "attrs": {
+        "i2t:predicate": "leaps to",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "philosophical_suicide",
+      "target": "leap",
+      "directed": true,
+      "label": "is",
+      "layer": "is",
+      "attrs": {
+        "i2t:predicate": "is",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "kierkegaard",
+      "directed": true,
+      "label": "criticizes for the leap",
+      "layer": "criticizes for the leap",
+      "attrs": {
+        "i2t:predicate": "criticizes for the leap",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "jaspers",
+      "directed": true,
+      "label": "criticizes for the leap",
+      "layer": "criticizes for the leap",
+      "attrs": {
+        "i2t:predicate": "criticizes for the leap",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "shestov",
+      "directed": true,
+      "label": "criticizes for the leap",
+      "layer": "criticizes for the leap",
+      "attrs": {
+        "i2t:predicate": "criticizes for the leap",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "heidegger",
+      "target": "anguish",
+      "directed": true,
+      "label": "centers philosophy on",
+      "layer": "centers philosophy on",
+      "attrs": {
+        "i2t:predicate": "centers philosophy on",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "heidegger",
+      "target": "death",
+      "directed": true,
+      "label": "names as call of anxiety",
+      "layer": "names as call of anxiety",
+      "attrs": {
+        "i2t:predicate": "names as call of anxiety",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "heidegger",
+      "target": "consciousness",
+      "directed": true,
+      "label": "links to absurd",
+      "layer": "links to absurd",
+      "attrs": {
+        "i2t:predicate": "links to absurd",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "husserl",
+      "target": "phenomenology",
+      "directed": true,
+      "label": "founded",
+      "layer": "founded",
+      "attrs": {
+        "i2t:predicate": "founded",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "phenomenology",
+      "target": "reason",
+      "directed": true,
+      "label": "denies transcendent power of",
+      "layer": "denies transcendent power of",
+      "attrs": {
+        "i2t:predicate": "denies transcendent power of",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "aristotle",
+      "target": "reason",
+      "directed": true,
+      "label": "articulates contradiction at root of",
+      "layer": "articulates contradiction at root of",
+      "attrs": {
+        "i2t:predicate": "articulates contradiction at root of",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "pascal",
+      "target": "eluding",
+      "directed": true,
+      "label": "named (as diversion)",
+      "layer": "named (as diversion)",
+      "attrs": {
+        "i2t:predicate": "named (as diversion)",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "schopenhauer",
+      "target": "suicide",
+      "directed": true,
+      "label": "praised (without committing)",
+      "layer": "praised (without committing)",
+      "attrs": {
+        "i2t:predicate": "praised (without committing)",
+        "instagraph:color": "#444",
+        "note": "Camus's example of un-lived philosophy"
+      }
+    },
+    {
+      "source": "nietzsche",
+      "target": "camus",
+      "directed": true,
+      "label": "influenced",
+      "layer": "influenced",
+      "attrs": {
+        "i2t:predicate": "influenced",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "kierkegaard",
+      "target": "camus",
+      "directed": true,
+      "label": "influenced",
+      "layer": "influenced",
+      "attrs": {
+        "i2t:predicate": "influenced",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "camus",
+      "target": "sartre",
+      "directed": true,
+      "label": "differs from on the absurd",
+      "layer": "differs from on the absurd",
+      "attrs": {
+        "i2t:predicate": "differs from on the absurd",
+        "instagraph:color": "#444",
+        "note": "Sartre: absurdity precedes consciousness; Camus: absurd is the confrontation"
+      }
+    },
+    {
+      "source": "hope",
+      "target": "eluding",
+      "directed": true,
+      "label": "is form of",
+      "layer": "is form of",
+      "attrs": {
+        "i2t:predicate": "is form of",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "consciousness",
+      "target": "absurd",
+      "directed": true,
+      "label": "reveals",
+      "layer": "reveals",
+      "attrs": {
+        "i2t:predicate": "reveals",
+        "instagraph:color": "#080"
+      }
+    },
+    {
+      "source": "reason",
+      "target": "irrational",
+      "directed": true,
+      "label": "founders on",
+      "layer": "founders on",
+      "attrs": {
+        "i2t:predicate": "founders on",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "nostalgia_for_unity",
+      "target": "reason",
+      "directed": true,
+      "label": "drives",
+      "layer": "drives",
+      "attrs": {
+        "i2t:predicate": "drives",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "existentialism",
+      "target": "kierkegaard",
+      "directed": true,
+      "label": "includes",
+      "layer": "includes",
+      "attrs": {
+        "i2t:predicate": "includes",
+        "instagraph:color": "#999"
+      }
+    },
+    {
+      "source": "existentialism",
+      "target": "heidegger",
+      "directed": true,
+      "label": "includes",
+      "layer": "includes",
+      "attrs": {
+        "i2t:predicate": "includes",
+        "instagraph:color": "#999"
+      }
+    },
+    {
+      "source": "existentialism",
+      "target": "jaspers",
+      "directed": true,
+      "label": "includes",
+      "layer": "includes",
+      "attrs": {
+        "i2t:predicate": "includes",
+        "instagraph:color": "#999"
+      }
+    },
+    {
+      "source": "existentialism",
+      "target": "sartre",
+      "directed": true,
+      "label": "includes",
+      "layer": "includes",
+      "attrs": {
+        "i2t:predicate": "includes",
+        "instagraph:color": "#999"
+      }
+    },
+    {
+      "source": "existentialism",
+      "target": "philosophical_suicide",
+      "directed": true,
+      "label": "commits (per Camus)",
+      "layer": "commits (per Camus)",
+      "attrs": {
+        "i2t:predicate": "commits (per Camus)",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "the_rebel",
+      "target": "totalitarianism",
+      "directed": true,
+      "label": "opposes",
+      "layer": "opposes",
+      "attrs": {
+        "i2t:predicate": "opposes",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "the_rebel",
+      "target": "bourgeois_morality",
+      "directed": true,
+      "label": "opposes",
+      "layer": "opposes",
+      "attrs": {
+        "i2t:predicate": "opposes",
+        "instagraph:color": "#A00"
+      }
+    }
+  ]
+}

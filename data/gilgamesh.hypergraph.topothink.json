@@ -1,0 +1,1395 @@
+{
+  "metadata": {
+    "topothink-version": "0.1",
+    "adapter": "instagraph_to_hypergraph.py",
+    "source-format": "instagraph",
+    "source-meta": {
+      "createdDate": "2026-05-22",
+      "lastUpdated": "2026-05-22",
+      "description": "Knowledge graph of the Gilgamesh Epic extracted from the 1928 Campbell Thompson translation in cuneiform literary style. Captures the structural layout of the twelve cuneiform tablets, the principal deities, heroes, and humans, and reifies ten major narrative events as n-ary hyperedges. Every narrative edge carries a literal, completely unaltered cuneiform-translation text excerpt in its label field as empirical proof, preserving brackets, brackets-hyphen markers, and original em dashes.",
+      "source": "R. Campbell Thompson, The Epic of Gilgamish (1928 translation from cuneiform)",
+      "extractor": "Antigravity i2t agent, schema-compatible with yoheinakajima/instagraph + i2t hyperedge/reification extensions"
+    }
+  },
+  "nodes": [
+    {
+      "id": "gilgamesh_epic",
+      "attrs": {
+        "label": "The Epic of Gilgamish",
+        "instagraph:type": "Epic",
+        "instagraph:color": "#C8E0F8",
+        "translation": "1928 Campbell Thompson Translation",
+        "origin": "Ancient Mesopotamia",
+        "narrative_arc": "Quest for immortality and acceptance of human limits"
+      }
+    },
+    {
+      "id": "tablet_1",
+      "attrs": {
+        "label": "The First Tablet",
+        "instagraph:type": "Tablet",
+        "instagraph:color": "#C8E0F8",
+        "theme": "The tyranny of Gilgamesh, the creation of Enkidu, and his taming by Shamhat",
+        "column_count": 6
+      }
+    },
+    {
+      "id": "tablet_2",
+      "attrs": {
+        "label": "The Second Tablet",
+        "instagraph:type": "Tablet",
+        "instagraph:color": "#C8E0F8",
+        "theme": "Enkidu meets Gilgamesh in Erech, their grapple, and the birth of their friendship",
+        "column_count": 6
+      }
+    },
+    {
+      "id": "tablet_3",
+      "attrs": {
+        "label": "The Third Tablet",
+        "instagraph:type": "Tablet",
+        "instagraph:color": "#C8E0F8",
+        "theme": "Preparation for the journey to the Cedar Forest against Humbaba",
+        "column_count": 6
+      }
+    },
+    {
+      "id": "tablet_4",
+      "attrs": {
+        "label": "The Fourth Tablet",
+        "instagraph:type": "Tablet",
+        "instagraph:color": "#C8E0F8",
+        "theme": "The journey to the Cedar Forest, Enkidu's hesitation, and Gilgamesh's resolve",
+        "column_count": 6
+      }
+    },
+    {
+      "id": "tablet_5",
+      "attrs": {
+        "label": "The Fifth Tablet",
+        "instagraph:type": "Tablet",
+        "instagraph:color": "#C8E0F8",
+        "theme": "The battle with Humbaba the Fierce and his execution by the heroes",
+        "column_count": 6
+      }
+    },
+    {
+      "id": "tablet_6",
+      "attrs": {
+        "label": "The Sixth Tablet",
+        "instagraph:type": "Tablet",
+        "instagraph:color": "#C8E0F8",
+        "theme": "Ishtar's proposal, Gilgamesh's rejection, and the slaying of the Heavenly Bull",
+        "column_count": 6
+      }
+    },
+    {
+      "id": "tablet_7",
+      "attrs": {
+        "label": "The Seventh Tablet",
+        "instagraph:type": "Tablet",
+        "instagraph:color": "#C8E0F8",
+        "theme": "The divine council decrees Enkidu's death, Enkidu's illness, curses, and dreams",
+        "column_count": 6
+      }
+    },
+    {
+      "id": "tablet_8",
+      "attrs": {
+        "label": "The Eighth Tablet",
+        "instagraph:type": "Tablet",
+        "instagraph:color": "#C8E0F8",
+        "theme": "Gilgamesh's lamentation and the funeral rites for Enkidu",
+        "column_count": 6
+      }
+    },
+    {
+      "id": "tablet_9",
+      "attrs": {
+        "label": "The Ninth Tablet",
+        "instagraph:type": "Tablet",
+        "instagraph:color": "#C8E0F8",
+        "theme": "Gilgamesh's grief and his journey through the Mashu Mountains to find Uta-Napishtim",
+        "column_count": 6
+      }
+    },
+    {
+      "id": "tablet_10",
+      "attrs": {
+        "label": "The Tenth Tablet",
+        "instagraph:type": "Tablet",
+        "instagraph:color": "#C8E0F8",
+        "theme": "Meetings with Siduri the alewife, Ur-Shanabi the ferryman, and Uta-Napishtim",
+        "column_count": 6
+      }
+    },
+    {
+      "id": "tablet_11",
+      "attrs": {
+        "label": "The Eleventh Tablet",
+        "instagraph:type": "Tablet",
+        "instagraph:color": "#C8E0F8",
+        "theme": "The story of the Deluge, the quest for the plant of youth, and the return to Erech",
+        "column_count": 6
+      }
+    },
+    {
+      "id": "tablet_12",
+      "attrs": {
+        "label": "The Twelfth Tablet",
+        "instagraph:type": "Tablet",
+        "instagraph:color": "#C8E0F8",
+        "theme": "Enkidu goes to the underworld, returns as a ghost, and communions with Gilgamesh",
+        "column_count": 6
+      }
+    },
+    {
+      "id": "gilgamesh",
+      "attrs": {
+        "label": "Gilgamish",
+        "instagraph:type": "Hero-King",
+        "instagraph:color": "#F8C8DC",
+        "role": "King of Erech; son of Ninsun; two-thirds divine and one-third human",
+        "narrative_arc": "Learns mortality after his quest fails"
+      }
+    },
+    {
+      "id": "enkidu",
+      "attrs": {
+        "label": "Enkidu",
+        "instagraph:type": "Hero-Companion",
+        "instagraph:color": "#F8C8DC",
+        "role": "Created from clay by Aruru; wild man tamed by Shamhat; companion of Gilgamish",
+        "status": "Dies as a proxy punishment by the gods"
+      }
+    },
+    {
+      "id": "ishtar",
+      "attrs": {
+        "label": "Ishtar",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8B8",
+        "domain": "Goddess of love, fertility, and war",
+        "role": "Proposes to Gilgamish and is rejected, leading to the descent of the Heavenly Bull"
+      }
+    },
+    {
+      "id": "anu",
+      "attrs": {
+        "label": "Anu",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8B8",
+        "domain": "Sky god, father of the pantheon",
+        "role": "Gives ear to the wailing of Erech; commands Aruru to make a double for Gilgamish"
+      }
+    },
+    {
+      "id": "enlil",
+      "attrs": {
+        "label": "Enlil",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8B8",
+        "domain": "God of earth, wind, and air",
+        "role": "Appoints Humbaba to guard the Cedar Forest; decrees the deluge; grants Uta-Napishtim immortality"
+      }
+    },
+    {
+      "id": "ea",
+      "attrs": {
+        "label": "Ea",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8B8",
+        "domain": "God of water, wisdom, and creation",
+        "role": "Betrays the divine council's deluge decree to Uta-Napishtim via a reed-hut"
+      }
+    },
+    {
+      "id": "shamash",
+      "attrs": {
+        "label": "Shamash",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8B8",
+        "domain": "Sun god and judge of heaven",
+        "role": "Aids Gilgamish and Enkidu by sending winds against Humbaba"
+      }
+    },
+    {
+      "id": "aruru",
+      "attrs": {
+        "label": "Aruru",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8B8",
+        "domain": "Goddess of creation and mother-goddess",
+        "role": "Moulds Enkidu from clay on the desert to be Gilgamish's double"
+      }
+    },
+    {
+      "id": "ninsun",
+      "attrs": {
+        "label": "Ninsun",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8B8",
+        "domain": "Goddess of wisdom and wild cows",
+        "role": "Mother of Gilgamish; interprets his dreams and adopts Enkidu"
+      }
+    },
+    {
+      "id": "divine_bull",
+      "attrs": {
+        "label": "The Heavenly Bull",
+        "instagraph:type": "MythologicalCreature",
+        "instagraph:color": "#F8C8B8",
+        "role": "Sent by Ishtar to punish Erech; slain by Gilgamish and Enkidu"
+      }
+    },
+    {
+      "id": "humbaba",
+      "attrs": {
+        "label": "Humbaba",
+        "instagraph:type": "MythologicalCreature",
+        "instagraph:color": "#F8C8B8",
+        "role": "The fierce guardian of the Cedar Forest; slain by Gilgamish and Enkidu"
+      }
+    },
+    {
+      "id": "shamhat",
+      "attrs": {
+        "label": "Shamhat",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8D8C8",
+        "role": "The temple courtesan who seduces and tames Enkidu, teaching him humanity"
+      }
+    },
+    {
+      "id": "siduri",
+      "attrs": {
+        "label": "Siduri",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8D8C8",
+        "role": "The wise alewife who dwells by the edge of the sea; counsels Gilgamish to enjoy mortal life"
+      }
+    },
+    {
+      "id": "ur_shanabi",
+      "attrs": {
+        "label": "Ur-Shanabi",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8D8C8",
+        "role": "The ferryman of Uta-Napishtim; guides Gilgamish across the Waters of Death"
+      }
+    },
+    {
+      "id": "uta_napishtim",
+      "attrs": {
+        "label": "Uta-Napishtim",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8D8C8",
+        "role": "The survivor of the Great Deluge; granted immortality by the gods; tells Gilgamish the flood story"
+      }
+    },
+    {
+      "id": "uta_napishtim_wife",
+      "attrs": {
+        "label": "Uta-Napishtim's Wife",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8D8C8",
+        "role": "Bakes loaves of bread to measure Gilgamish's sleep; urges her husband to give Gilgamish a parting gift"
+      }
+    },
+    {
+      "id": "erech",
+      "attrs": {
+        "label": "Erech",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "The high-walled city ruled by Gilgamish"
+      }
+    },
+    {
+      "id": "cedar_forest",
+      "attrs": {
+        "label": "The Cedar Forest",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "The sacred realm guarded by Humbaba"
+      }
+    },
+    {
+      "id": "mashu_mountains",
+      "attrs": {
+        "label": "The Mashu Mountains",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "The twin peaks that guard the rising and setting sun"
+      }
+    },
+    {
+      "id": "creation_of_enkidu",
+      "attrs": {
+        "label": "Creation of Enkidu",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "narrative_context": "Tablet 1, the response to the wailing of Erech"
+      }
+    },
+    {
+      "id": "seduction_of_enkidu",
+      "attrs": {
+        "label": "Seduction of Enkidu",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "narrative_context": "Tablet 1, taming the wild man by Shamhat"
+      }
+    },
+    {
+      "id": "fight_at_erech",
+      "attrs": {
+        "label": "Fight at Erech",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "narrative_context": "Tablet 2, Enkidu bars the passage and grapples with Gilgamish"
+      }
+    },
+    {
+      "id": "slaying_of_humbaba",
+      "attrs": {
+        "label": "Slaying of Humbaba",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "narrative_context": "Tablet 5, the execution of the forest guardian"
+      }
+    },
+    {
+      "id": "ishtar_rebuff",
+      "attrs": {
+        "label": "Ishtar's Rebuff",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "narrative_context": "Tablet 6, Gilgamish rejects the goddess's proposal"
+      }
+    },
+    {
+      "id": "slaying_of_divine_bull",
+      "attrs": {
+        "label": "Slaying of the Divine Bull",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "narrative_context": "Tablet 6, slaying the bull sent to devastate Erech"
+      }
+    },
+    {
+      "id": "death_of_enkidu",
+      "attrs": {
+        "label": "Death of Enkidu",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "narrative_context": "Tablet 7/8, Enkidu's illness and death"
+      }
+    },
+    {
+      "id": "great_deluge",
+      "attrs": {
+        "label": "The Great Deluge",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "narrative_context": "Tablet 11, the story of the flood told by Uta-Napishtim"
+      }
+    },
+    {
+      "id": "plant_of_youth_quest",
+      "attrs": {
+        "label": "Quest for the Plant of Youth",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "narrative_context": "Tablet 11, diving for the plant and its loss to a serpent"
+      }
+    },
+    {
+      "id": "ghost_communion",
+      "attrs": {
+        "label": "Ghost Communion",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "narrative_context": "Tablet 12, Enkidu's shadow returns to speak with Gilgamish"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:instagraph/0",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/1",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/2",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/3",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/4",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/5",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/6",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/7",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/8",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/9",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/10",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/11",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/12",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "successor",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/13",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "successor",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/14",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "successor",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/15",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "successor",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/16",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "successor",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/17",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "successor",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/18",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "successor",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/19",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "successor",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/20",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "successor",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/21",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "successor",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/22",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "successor",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/23",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/24",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/25",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/26",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/27",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/28",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/29",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/30",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/31",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "edge:instagraph/32",
+      "directed": true,
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "id": "creation_of_enkidu",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "moulded_on_desert_as_warrior",
+        "label": "So when the goddess Aruru heard this, in her mind she imagined (Straightway, this) Concept of Anu, and, washing her hands, (then) Aruru Finger\u2019d some clay, on the desert she moulded (it): (thus) on the desert Enkidu made she, a warrior",
+        "instagraph:color": "#DCC8F8"
+      }
+    },
+    {
+      "id": "seduction_of_enkidu",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "tamed_wild_man_via_hetaera",
+        "label": "Six days, (aye) seven nights, with the courtesan-girl in his mating. Sated at length with her charms, he turn d his face to his cattle, O the gazelles, (how) they scamper\u2019d away, as soon as they saw him!",
+        "instagraph:color": "#DCC8F8"
+      }
+    },
+    {
+      "id": "fight_at_erech",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "grappled_and_snorted_like_bulls_in_highway",
+        "label": "Enkidu barr d up the door with his foot, (and) to Gilgamish entry\u2014 Would not concede: they grappled and snorted(?) like bulls, (and) the threshold Shatter\u2019d: the (very) wall quiver\u2019d as Gilgamish!, Enkidu grappled",
+        "instagraph:color": "#DCC8F8"
+      }
+    },
+    {
+      "id": "slaying_of_humbaba",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "o'erthrew_humbaba_and_beheaded",
+        "label": "Wherefore against Humbaba he raised mighty winds: (yea), a great wind... Seizing \"Humbaba\u2019 before and behind, so that nor to go forwards, Nor to go back was he able: and then Humbaba surrender\u2019d. ... they cut off the head of Humbaba.",
+        "instagraph:color": "#DCC8F8"
+      }
+    },
+    {
+      "id": "ishtar_rebuff",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "scorned_divine_marriage_proposal",
+        "label": "Lady Ishtar espieth the beauty of Gilgamish: (saith she), \u201cGilgamish, come, be a bridegroom... What, then, will be my advantage, supposing\u2019 I take thee in marriage? Thou 'rt but a back door \"not\" giving resistance to blast or to windstorm, Thou 'rt but a palace which dasheth the heroes \"within it to pieces\u2019",
+        "instagraph:color": "#DCC8F8"
+      }
+    },
+    {
+      "id": "slaying_of_divine_bull",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "slew_heavenly_bull_and_defied_ishtar",
+        "label": "(So), what time they the Bull of the Heavens had kili\u2019d, its heart they - removed, Unto the Sun-god they offer'd in sacrifice... Woe unto Gilgamish\u2014he who by killing the Bull of the Heavens, Made me lament. ... Wrenching the member from out of the Bull, he toss\u2019d (it) before her",
+        "instagraph:color": "#DCC8F8"
+      }
+    },
+    {
+      "id": "death_of_enkidu",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "bitter_weeping_and_terror_of_death",
+        "label": "Gilgamish bitterly wept for his comrade, (for) Enkidu, ranging Over the desert: \"I, too\u2014shall I not die like Enkidu also? Sorrow hath enter\u2019d my heart; I fear death as I range o\u2019er the desert, I will get hence on the road to the presence of Uta-Napishtim",
+        "instagraph:color": "#DCC8F8"
+      }
+    },
+    {
+      "id": "great_deluge",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "flood_destruction_and_ark_grounding",
+        "label": "Nin-igi-azag\u2014 tis Ea\u2014, (albeit) conspirator with them, Unto a reed-hut their counsel betray\u2019d he: \"O Reed-hut, O Reed-hut ! Wall, wall! Hearken, O Reed-hut, consider, O Wall! ... Six days, al se\u2019nnight the hurricane, deluge, (and) tempest continued",
+        "instagraph:color": "#DCC8F8"
+      }
+    },
+    {
+      "id": "plant_of_youth_quest",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "dived_for_plant_lost_to_serpent",
+        "label": "There is a plant like a thorn... Bound heavy stones \"on his feet?, which dragg\u2019d him down... a serpent who snuff'd the plant's fragrance... snatch\u2019d the plant... Then Gilgamish sate him, (and) burst into weeping.",
+        "instagraph:color": "#DCC8F8"
+      }
+    },
+    {
+      "id": "ghost_communion",
+      "directed": false,
+      "attrs": {
+        "i2t:predicate": "ghost_rose_and_communed_weeping",
+        "label": "Oped, then, a hole in the earth, and the spirit of Enkidu issued Forth from the earth like a wind. They embraced and..... Communed together, mourning. ... What I have seen of the laws of the Underworld, \u2014sit thee down weeping ! \u201d",
+        "instagraph:color": "#DCC8F8"
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:instagraph/0",
+      "node": "gilgamesh_epic",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/0",
+      "node": "tablet_1",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/1",
+      "node": "gilgamesh_epic",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/1",
+      "node": "tablet_2",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/2",
+      "node": "gilgamesh_epic",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/2",
+      "node": "tablet_3",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/3",
+      "node": "gilgamesh_epic",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/3",
+      "node": "tablet_4",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/4",
+      "node": "gilgamesh_epic",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/4",
+      "node": "tablet_5",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/5",
+      "node": "gilgamesh_epic",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/5",
+      "node": "tablet_6",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/6",
+      "node": "gilgamesh_epic",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/6",
+      "node": "tablet_7",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/7",
+      "node": "gilgamesh_epic",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/7",
+      "node": "tablet_8",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/8",
+      "node": "gilgamesh_epic",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/8",
+      "node": "tablet_9",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/9",
+      "node": "gilgamesh_epic",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/9",
+      "node": "tablet_10",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/10",
+      "node": "gilgamesh_epic",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/10",
+      "node": "tablet_11",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/11",
+      "node": "gilgamesh_epic",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/11",
+      "node": "tablet_12",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/12",
+      "node": "tablet_1",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/12",
+      "node": "tablet_2",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/13",
+      "node": "tablet_2",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/13",
+      "node": "tablet_3",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/14",
+      "node": "tablet_3",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/14",
+      "node": "tablet_4",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/15",
+      "node": "tablet_4",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/15",
+      "node": "tablet_5",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/16",
+      "node": "tablet_5",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/16",
+      "node": "tablet_6",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/17",
+      "node": "tablet_6",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/17",
+      "node": "tablet_7",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/18",
+      "node": "tablet_7",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/18",
+      "node": "tablet_8",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/19",
+      "node": "tablet_8",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/19",
+      "node": "tablet_9",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/20",
+      "node": "tablet_9",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/20",
+      "node": "tablet_10",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/21",
+      "node": "tablet_10",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/21",
+      "node": "tablet_11",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/22",
+      "node": "tablet_11",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/22",
+      "node": "tablet_12",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/23",
+      "node": "tablet_1",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/23",
+      "node": "creation_of_enkidu",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/24",
+      "node": "tablet_1",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/24",
+      "node": "seduction_of_enkidu",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/25",
+      "node": "tablet_2",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/25",
+      "node": "fight_at_erech",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/26",
+      "node": "tablet_5",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/26",
+      "node": "slaying_of_humbaba",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/27",
+      "node": "tablet_6",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/27",
+      "node": "ishtar_rebuff",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/28",
+      "node": "tablet_6",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/28",
+      "node": "slaying_of_divine_bull",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/29",
+      "node": "tablet_7",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/29",
+      "node": "death_of_enkidu",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/30",
+      "node": "tablet_11",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/30",
+      "node": "great_deluge",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/31",
+      "node": "tablet_11",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/31",
+      "node": "plant_of_youth_quest",
+      "role": "target"
+    },
+    {
+      "edge": "edge:instagraph/32",
+      "node": "tablet_12",
+      "role": "source"
+    },
+    {
+      "edge": "edge:instagraph/32",
+      "node": "ghost_communion",
+      "role": "target"
+    },
+    {
+      "edge": "creation_of_enkidu",
+      "node": "aruru",
+      "role": "creator",
+      "attrs": {
+        "method": "washing her hands, then Aruru Finger\u2019d some clay, on the desert she moulded (it)"
+      }
+    },
+    {
+      "edge": "creation_of_enkidu",
+      "node": "enkidu",
+      "role": "created",
+      "attrs": {
+        "appearance": "hair Sproutd luxuriant growth"
+      }
+    },
+    {
+      "edge": "creation_of_enkidu",
+      "node": "anu",
+      "role": "conceptual_origin",
+      "attrs": {
+        "form": "Concept of Anu"
+      }
+    },
+    {
+      "edge": "creation_of_enkidu",
+      "node": "tablet_1",
+      "role": "narrative_source"
+    },
+    {
+      "edge": "seduction_of_enkidu",
+      "node": "shamhat",
+      "role": "tamer",
+      "attrs": {
+        "comeliness": "girl, displaying her bosom, Shew\u2019d him her comeliness"
+      }
+    },
+    {
+      "edge": "seduction_of_enkidu",
+      "node": "enkidu",
+      "role": "tamed",
+      "attrs": {
+        "consequence": "Failed his knees, and he slack d in his running... wisdom"
+      }
+    },
+    {
+      "edge": "seduction_of_enkidu",
+      "node": "tablet_1",
+      "role": "narrative_source"
+    },
+    {
+      "edge": "fight_at_erech",
+      "node": "gilgamesh",
+      "role": "combatant_king",
+      "attrs": {
+        "rage": "Burgeon 'd his rage"
+      }
+    },
+    {
+      "edge": "fight_at_erech",
+      "node": "enkidu",
+      "role": "combatant_challenger",
+      "attrs": {
+        "action": "barr d up the door with his foot"
+      }
+    },
+    {
+      "edge": "fight_at_erech",
+      "node": "erech",
+      "role": "location",
+      "attrs": {
+        "combat_zone": "the street of broad-marketed Erech"
+      }
+    },
+    {
+      "edge": "fight_at_erech",
+      "node": "tablet_2",
+      "role": "narrative_source"
+    },
+    {
+      "edge": "slaying_of_humbaba",
+      "node": "gilgamesh",
+      "role": "slayer"
+    },
+    {
+      "edge": "slaying_of_humbaba",
+      "node": "enkidu",
+      "role": "slayer"
+    },
+    {
+      "edge": "slaying_of_humbaba",
+      "node": "humbaba",
+      "role": "slain",
+      "attrs": {
+        "fate": "they cut off the head of Humbaba"
+      }
+    },
+    {
+      "edge": "slaying_of_humbaba",
+      "node": "shamash",
+      "role": "divine_helper",
+      "attrs": {
+        "aid": "raised mighty winds: (yea), a great wind"
+      }
+    },
+    {
+      "edge": "slaying_of_humbaba",
+      "node": "cedar_forest",
+      "role": "location"
+    },
+    {
+      "edge": "slaying_of_humbaba",
+      "node": "tablet_5",
+      "role": "narrative_source"
+    },
+    {
+      "edge": "ishtar_rebuff",
+      "node": "gilgamesh",
+      "role": "rebuffer",
+      "attrs": {
+        "scorn": "unfolded endless list of her husbands"
+      }
+    },
+    {
+      "edge": "ishtar_rebuff",
+      "node": "ishtar",
+      "role": "rebuffed",
+      "attrs": {
+        "invitation": "come, be a bridegroom"
+      }
+    },
+    {
+      "edge": "ishtar_rebuff",
+      "node": "tablet_6",
+      "role": "narrative_source"
+    },
+    {
+      "edge": "slaying_of_divine_bull",
+      "node": "gilgamesh",
+      "role": "slayer"
+    },
+    {
+      "edge": "slaying_of_divine_bull",
+      "node": "enkidu",
+      "role": "slayer",
+      "attrs": {
+        "insult": "Wrenching the member from out of the Bull, he toss\u2019d (it) before her"
+      }
+    },
+    {
+      "edge": "slaying_of_divine_bull",
+      "node": "divine_bull",
+      "role": "slain",
+      "attrs": {
+        "fight": "Seized on the Heavenly Bull by \u2018his\u2019 horns"
+      }
+    },
+    {
+      "edge": "slaying_of_divine_bull",
+      "node": "ishtar",
+      "role": "mourner",
+      "attrs": {
+        "wail": "mounted Ishtar (the crest of) the ramparts of Erech"
+      }
+    },
+    {
+      "edge": "slaying_of_divine_bull",
+      "node": "shamash",
+      "role": "recipient_of_sacrifice",
+      "attrs": {
+        "offering": "its heart they removed, Unto the Sun-god they offer'd"
+      }
+    },
+    {
+      "edge": "slaying_of_divine_bull",
+      "node": "tablet_6",
+      "role": "narrative_source"
+    },
+    {
+      "edge": "death_of_enkidu",
+      "node": "gilgamesh",
+      "role": "mourner",
+      "attrs": {
+        "dread": "Sorrow hath enter\u2019d my heart; I fear death"
+      }
+    },
+    {
+      "edge": "death_of_enkidu",
+      "node": "enkidu",
+      "role": "deceased",
+      "attrs": {
+        "death": "die like Enkidu also"
+      }
+    },
+    {
+      "edge": "death_of_enkidu",
+      "node": "tablet_7",
+      "role": "narrative_source"
+    },
+    {
+      "edge": "death_of_enkidu",
+      "node": "tablet_8",
+      "role": "narrative_source"
+    },
+    {
+      "edge": "great_deluge",
+      "node": "uta_napishtim",
+      "role": "survivor",
+      "attrs": {
+        "vessel": "pull down, (and) fashion a vessel"
+      }
+    },
+    {
+      "edge": "great_deluge",
+      "node": "ea",
+      "role": "divine_warning_voice",
+      "attrs": {
+        "revelation": "conspirator with them, Unto a reed-hut their counsel betray\u2019d"
+      }
+    },
+    {
+      "edge": "great_deluge",
+      "node": "enlil",
+      "role": "divine_destroyer",
+      "attrs": {
+        "action": "brought on a deluge"
+      }
+    },
+    {
+      "edge": "great_deluge",
+      "node": "anu",
+      "role": "divine_council_head"
+    },
+    {
+      "edge": "great_deluge",
+      "node": "tablet_11",
+      "role": "narrative_source"
+    },
+    {
+      "edge": "plant_of_youth_quest",
+      "node": "gilgamesh",
+      "role": "seeker",
+      "attrs": {
+        "loss": "Then Gilgamish sate him, (and) burst into weeping"
+      }
+    },
+    {
+      "edge": "plant_of_youth_quest",
+      "node": "uta_napishtim",
+      "role": "revealer",
+      "attrs": {
+        "secret": "reveal thee a hidden matter"
+      }
+    },
+    {
+      "edge": "plant_of_youth_quest",
+      "node": "ur_shanabi",
+      "role": "witness"
+    },
+    {
+      "edge": "plant_of_youth_quest",
+      "node": "tablet_11",
+      "role": "narrative_source"
+    },
+    {
+      "edge": "ghost_communion",
+      "node": "gilgamesh",
+      "role": "inquirer"
+    },
+    {
+      "edge": "ghost_communion",
+      "node": "enkidu",
+      "role": "ghost",
+      "attrs": {
+        "wisdom": "spirit of Enkidu issued Forth like a wind"
+      }
+    },
+    {
+      "edge": "ghost_communion",
+      "node": "ea",
+      "role": "divine_intercessor",
+      "attrs": {
+        "plea": "Spake he: O Nergal... Ope now, a hole"
+      }
+    },
+    {
+      "edge": "ghost_communion",
+      "node": "tablet_12",
+      "role": "narrative_source"
+    }
+  ]
+}

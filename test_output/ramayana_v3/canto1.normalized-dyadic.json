@@ -1,0 +1,2542 @@
+{
+  "metadata": {
+    "format": "normalized-dyadic",
+    "flavor": "dyadic-projection-from-hypergraph",
+    "i2t:relation_to_canonical": "dyadic-projection",
+    "originalCounts": {
+      "nodes": 72,
+      "edges": 102,
+      "incidences": 206
+    },
+    "source-metadata": {
+      "topothink-version": "0.1",
+      "adapter": "instagraph_to_hypergraph.py",
+      "source-format": "instagraph",
+      "source-meta": {
+        "extractor_model": "qwen2.5-coder:32b-instruct-q4_K_M",
+        "extracted_via": "text_to_hypergraph_via_ollama.py",
+        "local_ai": true
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "nara",
+      "kind": "node",
+      "attrs": {
+        "label": "N\u00e1rad",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "N\u00e1rad",
+        "source_line": 1,
+        "source_char_offset": 9
+      },
+      "label": "N\u00e1rad"
+    },
+    {
+      "id": "om",
+      "kind": "node",
+      "attrs": {
+        "label": "OM",
+        "instagraph:type": "Mantra",
+        "instagraph:color": "#DCC8F8",
+        "exact_quote": "OM",
+        "source_line": 4,
+        "source_char_offset": 21
+      },
+      "label": "OM"
+    },
+    {
+      "id": "valmiki",
+      "kind": "node",
+      "attrs": {
+        "label": "V\u00e1lm\u00edki",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "The good V\u00e1lm\u00edki, first and best",
+        "source_line": 10,
+        "source_char_offset": 173
+      },
+      "label": "V\u00e1lm\u00edki"
+    },
+    {
+      "id": "rama",
+      "kind": "node",
+      "attrs": {
+        "label": "R\u00e1ma",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Known to the world by R\u00e1ma\u2019s name:",
+        "source_line": 43,
+        "source_char_offset": 1372
+      },
+      "label": "R\u00e1ma"
+    },
+    {
+      "id": "ikshvaku_line",
+      "kind": "node",
+      "attrs": {
+        "label": "Ikshv\u00e1ku's line",
+        "instagraph:type": "Lineage",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "From old Ikshv\u00e1ku\u2019s(15) line he came,",
+        "source_line": 42,
+        "source_char_offset": 1334
+      },
+      "label": "Ikshv\u00e1ku's line"
+    },
+    {
+      "id": "vedas",
+      "kind": "node",
+      "attrs": {
+        "label": "Vedas",
+        "instagraph:type": "Text",
+        "instagraph:color": "#F8F0C8",
+        "exact_quote": "Well has he studied o\u2019er and o\u2019er the Vedas(18)and their kindred lore."
+      },
+      "label": "Vedas"
+    },
+    {
+      "id": "queen_kausalya",
+      "kind": "node",
+      "attrs": {
+        "label": "Queen Kau\u015baly\u00e1",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "The joy of Queen Kau\u015baly\u00e1\u2019s(20)heart,",
+        "source_line": 88,
+        "source_char_offset": 2977
+      },
+      "label": "Queen Kau\u015baly\u00e1"
+    },
+    {
+      "id": "vishnu",
+      "kind": "node",
+      "attrs": {
+        "label": "Vish\u1e47u",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "With Indra,(11) Vish\u1e47u,(12)",
+        "source_line": 31,
+        "source_char_offset": 933
+      },
+      "label": "Vish\u1e47u"
+    },
+    {
+      "id": "lord_of_night",
+      "kind": "node",
+      "attrs": {
+        "label": "Lord of Night",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Lovely as the Lord of Night;(22)",
+        "source_line": 93,
+        "source_char_offset": 3155
+      },
+      "label": "Lord of Night"
+    },
+    {
+      "id": "lord_of_gold",
+      "kind": "node",
+      "attrs": {
+        "label": "Lord of Gold",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "In bounty like the Lord of Gold,(23)",
+        "source_line": 96,
+        "source_char_offset": 3263
+      },
+      "label": "Lord of Gold"
+    },
+    {
+      "id": "justice",
+      "kind": "node",
+      "attrs": {
+        "label": "Justice",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "exact_quote": "And Justice self in human mould.",
+        "source_line": 97,
+        "source_char_offset": 3300
+      },
+      "label": "Justice"
+    },
+    {
+      "id": "dasharatha",
+      "kind": "node",
+      "attrs": {
+        "label": "King Da\u015baratha",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "King Da\u015baratha(24)",
+        "source_line": 101,
+        "source_char_offset": 3403
+      },
+      "label": "King Da\u015baratha"
+    },
+    {
+      "id": "kaikeyi",
+      "kind": "node",
+      "attrs": {
+        "label": "Kaikey\u00ed",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Kaikey\u00ed, youngest queen",
+        "source_line": 103,
+        "source_char_offset": 3479
+      },
+      "label": "Kaikey\u00ed"
+    },
+    {
+      "id": "regent_heir",
+      "kind": "node",
+      "attrs": {
+        "label": "Regent Heir",
+        "instagraph:type": "Role",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "His kingdom as the Regent Heir",
+        "source_line": 102,
+        "source_char_offset": 3438
+      },
+      "label": "Regent Heir"
+    },
+    {
+      "id": "promise_gifts",
+      "kind": "edge-as-node",
+      "attrs": {
+        "label": "Promise of Gifts",
+        "instagraph:type": "Event",
+        "instagraph:color": "#DCC8F8",
+        "exact_quote": "Two gifts he promised long ago",
+        "source_line": 108,
+        "source_char_offset": 3639
+      },
+      "label": "Promise of Gifts"
+    },
+    {
+      "id": "lakshmana",
+      "kind": "node",
+      "attrs": {
+        "label": "Lakshma\u1e47",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Then Lakshma\u1e47\u2019s truth was nobly shown,",
+        "source_line": 116,
+        "source_char_offset": 3876
+      },
+      "label": "Lakshma\u1e47"
+    },
+    {
+      "id": "sita",
+      "kind": "node",
+      "attrs": {
+        "label": "S\u00edt\u00e1",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "And S\u00edt\u00e1, R\u00e1ma\u2019s darling wife,",
+        "source_line": 120,
+        "source_char_offset": 4024
+      },
+      "label": "S\u00edt\u00e1"
+    },
+    {
+      "id": "janaka",
+      "kind": "node",
+      "attrs": {
+        "label": "Janak",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Of Janak\u2019s royal lineage sprung",
+        "source_line": 124,
+        "source_char_offset": 4149
+      },
+      "label": "Janak"
+    },
+    {
+      "id": "rohini",
+      "kind": "node",
+      "attrs": {
+        "label": "Rohi\u1e47\u00ed",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Like Rohi\u1e47\u00ed",
+        "source_line": 126,
+        "source_char_offset": 4231
+      },
+      "label": "Rohi\u1e47\u00ed"
+    },
+    {
+      "id": "moon",
+      "kind": "node",
+      "attrs": {
+        "label": "Moon",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Rejoicing with the Moon to be.(25)",
+        "source_line": 127,
+        "source_char_offset": 4243
+      },
+      "label": "Moon"
+    },
+    {
+      "id": "sringavera",
+      "kind": "node",
+      "attrs": {
+        "label": "\u015aringavera",
+        "instagraph:type": "Place",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "At \u015aringavera\u2019s pleasant town",
+        "source_line": 131,
+        "source_char_offset": 4377
+      },
+      "label": "\u015aringavera"
+    },
+    {
+      "id": "ganga",
+      "kind": "node",
+      "attrs": {
+        "label": "Gang\u00e1",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Where Gang\u00e1\u2019s holy waters flow",
+        "source_line": 132,
+        "source_char_offset": 4408
+      },
+      "label": "Gang\u00e1"
+    },
+    {
+      "id": "guha",
+      "kind": "node",
+      "attrs": {
+        "label": "Guha",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Guha, Nish\u00e1das\u2019 king,",
+        "source_line": 134,
+        "source_char_offset": 4472
+      },
+      "label": "Guha"
+    },
+    {
+      "id": "nishadas",
+      "kind": "node",
+      "attrs": {
+        "label": "Nish\u00e1das",
+        "instagraph:type": "Group",
+        "instagraph:color": "#E0E0E0",
+        "exact_quote": "Nish\u00e1das\u2019 king",
+        "source_line": 134,
+        "source_char_offset": 4478
+      },
+      "label": "Nish\u00e1das"
+    },
+    {
+      "id": "bharadvaja",
+      "kind": "node",
+      "attrs": {
+        "label": "Bharadv\u00e1ja",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "As Bharadv\u00e1ja bade them,",
+        "source_line": 138,
+        "source_char_offset": 4619
+      },
+      "label": "Bharadv\u00e1ja"
+    },
+    {
+      "id": "chitrakuta",
+      "kind": "node",
+      "attrs": {
+        "label": "Chitrak\u00fa\u1e6da",
+        "instagraph:type": "Place",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "They came to Chitrak\u00fa\u1e6da\u2019s hill.",
+        "source_line": 139,
+        "source_char_offset": 4649
+      },
+      "label": "Chitrak\u00fa\u1e6da"
+    },
+    {
+      "id": "meru",
+      "kind": "node",
+      "attrs": {
+        "label": "Meru",
+        "instagraph:type": "Place",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "As Meru\u2019s(27) sacred peaks",
+        "source_line": 146,
+        "source_char_offset": 4892
+      },
+      "label": "Meru"
+    },
+    {
+      "id": "shiva",
+      "kind": "node",
+      "attrs": {
+        "label": "\u015aiva",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "\u015aiva\u2019s(28) self between",
+        "source_line": 148,
+        "source_char_offset": 4978
+      },
+      "label": "\u015aiva"
+    },
+    {
+      "id": "beauty_queen",
+      "kind": "node",
+      "attrs": {
+        "label": "Beauty\u2019s Queen",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Beauty\u2019s Queen",
+        "source_line": 149,
+        "source_char_offset": 5023
+      },
+      "label": "Beauty\u2019s Queen"
+    },
+    {
+      "id": "aged_king",
+      "kind": "node",
+      "attrs": {
+        "label": "Aged King",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "The aged king for R\u00e1ma pined",
+        "source_line": 151,
+        "source_char_offset": 5042
+      },
+      "label": "Aged King"
+    },
+    {
+      "id": "bharat",
+      "kind": "node",
+      "attrs": {
+        "label": "Bharat",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Bharat, his son, refused to reign",
+        "source_line": 153,
+        "source_char_offset": 5110
+      },
+      "label": "Bharat"
+    },
+    {
+      "id": "twice_born_train",
+      "kind": "node",
+      "attrs": {
+        "label": "Twice-born Train",
+        "instagraph:type": "Group",
+        "instagraph:color": "#E0E0E0",
+        "exact_quote": "Though urged by all the twice-born(29) train",
+        "source_line": 154,
+        "source_char_offset": 5145
+      },
+      "label": "Twice-born Train"
+    },
+    {
+      "id": "ayodhya",
+      "kind": "node",
+      "attrs": {
+        "label": "Ayodhy\u00e1",
+        "instagraph:type": "Place",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "Nor in Ayodhy\u00e1 would he stay",
+        "source_line": 166,
+        "source_char_offset": 5573
+      },
+      "label": "Ayodhy\u00e1"
+    },
+    {
+      "id": "nandigr\u00e1ma",
+      "kind": "node",
+      "attrs": {
+        "label": "Nandigr\u00e1ma",
+        "instagraph:type": "Place",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "But turned to Nandigr\u00e1ma, where",
+        "source_line": 167,
+        "source_char_offset": 5603
+      },
+      "label": "Nandigr\u00e1ma"
+    },
+    {
+      "id": "sandals",
+      "kind": "node",
+      "attrs": {
+        "label": "Sandals",
+        "instagraph:type": "Object",
+        "instagraph:color": "#E0E0E0",
+        "exact_quote": "He placed his sandals(30) in his hand",
+        "source_line": 161,
+        "source_char_offset": 5394
+      },
+      "label": "Sandals"
+    },
+    {
+      "id": "viradha",
+      "kind": "node",
+      "attrs": {
+        "label": "Vir\u00e1dha",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Vir\u00e1dha, giant fiend",
+        "source_line": 178,
+        "source_char_offset": 5924
+      },
+      "label": "Vir\u00e1dha"
+    },
+    {
+      "id": "agastya",
+      "kind": "node",
+      "attrs": {
+        "label": "Agastya",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Agastya\u2019s friendship knew",
+        "source_line": 179,
+        "source_char_offset": 5964
+      },
+      "label": "Agastya"
+    },
+    {
+      "id": "indra",
+      "kind": "node",
+      "attrs": {
+        "label": "Indra",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "bow of Indra, heavenly lord",
+        "source_line": 181,
+        "source_char_offset": 6033
+      },
+      "label": "Indra"
+    },
+    {
+      "id": "dandaka_forest",
+      "kind": "node",
+      "attrs": {
+        "label": "Da\u1e47\u1e0dak\u00e1\u2019s primeval wood",
+        "instagraph:type": "Place",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "Of Da\u1e47\u1e0dak\u00e1\u2019s primeval wood",
+        "source_line": 177,
+        "source_char_offset": 5896
+      },
+      "label": "Da\u1e47\u1e0dak\u00e1\u2019s primeval wood"
+    },
+    {
+      "id": "surpanakha",
+      "kind": "node",
+      "attrs": {
+        "label": "\u015a\u00farpa\u1e47akh\u00e1",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "\u015a\u00farpa\u1e47akh\u00e1\u2019s face",
+        "source_line": 191,
+        "source_char_offset": 6398
+      },
+      "label": "\u015a\u00farpa\u1e47akh\u00e1"
+    },
+    {
+      "id": "tripura",
+      "kind": "node",
+      "attrs": {
+        "label": "The monster of the triple head",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "The monster of the triple head",
+        "source_line": 196,
+        "source_char_offset": 6557
+      },
+      "label": "The monster of the triple head"
+    },
+    {
+      "id": "dushana",
+      "kind": "node",
+      "attrs": {
+        "label": "D\u00fasha\u1e47",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "And D\u00fasha\u1e47 to the contest sped",
+        "source_line": 197,
+        "source_char_offset": 6589
+      },
+      "label": "D\u00fasha\u1e47"
+    },
+    {
+      "id": "ravana",
+      "kind": "node",
+      "attrs": {
+        "label": "R\u00e1va\u1e47",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Where R\u00e1va\u1e47 held his royal sway.",
+        "source_line": 281,
+        "source_char_offset": 9382
+      },
+      "label": "R\u00e1va\u1e47"
+    },
+    {
+      "id": "maricha",
+      "kind": "node",
+      "attrs": {
+        "label": "M\u00e1r\u00edcha",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "He bade the fiend M\u00e1r\u00edcha aid",
+        "source_line": 205,
+        "source_char_offset": 6836
+      },
+      "label": "M\u00e1r\u00edcha"
+    },
+    {
+      "id": "jatayu",
+      "kind": "node",
+      "attrs": {
+        "label": "Ja\u1e6d\u00e1yu",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "The son of Raghu(32) came and found Ja\u1e6d\u00e1yu slain upon the ground.",
+        "source_line": 217,
+        "source_char_offset": 7238
+      },
+      "label": "Ja\u1e6d\u00e1yu"
+    },
+    {
+      "id": "kabandha",
+      "kind": "node",
+      "attrs": {
+        "label": "Kabandha",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "A hideous giant then he saw, Kabandha named, a shape of awe.",
+        "source_line": 225,
+        "source_char_offset": 7516
+      },
+      "label": "Kabandha"
+    },
+    {
+      "id": "hanuman",
+      "kind": "node",
+      "attrs": {
+        "label": "Hanum\u00e1n",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "And there the steadfast friendship won Of Hanum\u00e1n the Wind-God\u2019s son."
+      },
+      "label": "Hanum\u00e1n"
+    },
+    {
+      "id": "sugriva",
+      "kind": "node",
+      "attrs": {
+        "label": "Sugr\u00edva",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "To great Sugr\u00edva, V\u00e1nar chief,",
+        "source_line": 238,
+        "source_char_offset": 7954
+      },
+      "label": "Sugr\u00edva"
+    },
+    {
+      "id": "bali",
+      "kind": "node",
+      "attrs": {
+        "label": "B\u00e1li",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "His hate of B\u00e1li for the wrong",
+        "source_line": 243,
+        "source_char_offset": 8115
+      },
+      "label": "B\u00e1li"
+    },
+    {
+      "id": "kishkindha",
+      "kind": "node",
+      "attrs": {
+        "label": "Kishkindh\u00e1",
+        "instagraph:type": "Place",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "With his new champion by his side To vast Kishkindh\u00e1\u2019s cave he hied."
+      },
+      "label": "Kishkindh\u00e1"
+    },
+    {
+      "id": "pampa",
+      "kind": "node",
+      "attrs": {
+        "label": "Pamp\u00e1",
+        "instagraph:type": "Place",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "By counsel of this saintly dame To Pamp\u00e1\u2019s pleasant flood he came,"
+      },
+      "label": "Pamp\u00e1"
+    },
+    {
+      "id": "bali_corpse",
+      "kind": "node",
+      "attrs": {
+        "label": "Corpse of B\u00e1li",
+        "instagraph:type": "Object",
+        "instagraph:color": "#E0E0E0",
+        "exact_quote": "The prostrate corse of mountain size",
+        "source_line": 251,
+        "source_char_offset": 8381
+      },
+      "label": "Corpse of B\u00e1li"
+    },
+    {
+      "id": "envoys",
+      "kind": "node",
+      "attrs": {
+        "label": "Envoys",
+        "instagraph:type": "Group",
+        "instagraph:color": "#E0E0E0",
+        "exact_quote": "Then speedy envoys hurried forth Eastward and westward, south and north,",
+        "source_line": 271,
+        "source_char_offset": 9063
+      },
+      "label": "Envoys"
+    },
+    {
+      "id": "sampati",
+      "kind": "node",
+      "attrs": {
+        "label": "Samp\u00e1ti",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Then by Samp\u00e1ti\u2019s counsel led,",
+        "source_line": 276,
+        "source_char_offset": 9205
+      },
+      "label": "Samp\u00e1ti"
+    },
+    {
+      "id": "lanka",
+      "kind": "node",
+      "attrs": {
+        "label": "Lank\u00e1",
+        "instagraph:type": "Place",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "To Lank\u00e1\u2019s(35) town he urged his way,",
+        "source_line": 280,
+        "source_char_offset": 9344
+      },
+      "label": "Lank\u00e1"
+    },
+    {
+      "id": "ashoka_tree",
+      "kind": "node",
+      "attrs": {
+        "label": "A\u015boka Tree",
+        "instagraph:type": "Place",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "There pensive \u2019neath A\u015boka(36) boughs",
+        "source_line": 282,
+        "source_char_offset": 9415
+      },
+      "label": "A\u015boka Tree"
+    },
+    {
+      "id": "ring",
+      "kind": "node",
+      "attrs": {
+        "label": "Ring",
+        "instagraph:type": "Object",
+        "instagraph:color": "#E0E0E0",
+        "exact_quote": "He gave the hapless girl a ring,",
+        "source_line": 284,
+        "source_char_offset": 9488
+      },
+      "label": "Ring"
+    },
+    {
+      "id": "brahma",
+      "kind": "node",
+      "attrs": {
+        "label": "Brahm\u00e1",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Which Brahm\u00e1(37) had pronounced of yore,",
+        "source_line": 294,
+        "source_char_offset": 9844
+      },
+      "label": "Brahm\u00e1"
+    },
+    {
+      "id": "aksha",
+      "kind": "node",
+      "attrs": {
+        "label": "Aksha",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Crushed youthful Aksha on the field,",
+        "source_line": 290,
+        "source_char_offset": 9698
+      },
+      "label": "Aksha"
+    },
+    {
+      "id": "rivers_king",
+      "kind": "node",
+      "attrs": {
+        "label": "Rivers\u2019 King",
+        "instagraph:type": "Deity",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "The Rivers\u2019 King(38)",
+        "source_line": 305,
+        "source_char_offset": 10212
+      },
+      "label": "Rivers\u2019 King"
+    },
+    {
+      "id": "nala",
+      "kind": "node",
+      "attrs": {
+        "label": "Nala",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "A bridge was thrown by Nala o\u2019er",
+        "source_line": 307,
+        "source_char_offset": 10260
+      },
+      "label": "Nala"
+    },
+    {
+      "id": "vibhishana",
+      "kind": "node",
+      "attrs": {
+        "label": "Vibhisha\u1e47",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Vibhisha\u1e47 there was left to reign",
+        "source_line": 311,
+        "source_char_offset": 10406
+      },
+      "label": "Vibhisha\u1e47"
+    },
+    {
+      "id": "golden_age",
+      "kind": "node",
+      "attrs": {
+        "label": "Golden Age",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "exact_quote": "The Golden Age(40) had come again",
+        "source_line": 347,
+        "source_char_offset": 11688
+      },
+      "label": "Golden Age"
+    },
+    {
+      "id": "princely_scion",
+      "kind": "node",
+      "attrs": {
+        "label": "Princely Scion",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "Shall many a princely scion spring.",
+        "source_line": 351,
+        "source_char_offset": 11799
+      },
+      "label": "Princely Scion"
+    },
+    {
+      "id": "brahma_world",
+      "kind": "node",
+      "attrs": {
+        "label": "Brahm\u00e1\u2019s World",
+        "instagraph:type": "Place",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "To Brahm\u00e1\u2019s world shall go at last.",
+        "source_line": 355,
+        "source_char_offset": 11946
+      },
+      "label": "Brahm\u00e1\u2019s World"
+    },
+    {
+      "id": "scriptures",
+      "kind": "node",
+      "attrs": {
+        "label": "Scriptures",
+        "instagraph:type": "Text",
+        "instagraph:color": "#F8F0C8",
+        "exact_quote": "Good as the Scriptures, he shall be",
+        "source_line": 359,
+        "source_char_offset": 12053
+      },
+      "label": "Scriptures"
+    },
+    {
+      "id": "heavens",
+      "kind": "node",
+      "attrs": {
+        "label": "Heavens",
+        "instagraph:type": "Place",
+        "instagraph:color": "#F8C8B8",
+        "exact_quote": "the heavens shall gain.",
+        "source_line": 362,
+        "source_char_offset": 12172
+      },
+      "label": "Heavens"
+    },
+    {
+      "id": "eloquence",
+      "kind": "node",
+      "attrs": {
+        "label": "Eloquence",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "exact_quote": "The highest praise for eloquence.",
+        "source_line": 364,
+        "source_char_offset": 12233
+      },
+      "label": "Eloquence"
+    },
+    {
+      "id": "warrior",
+      "kind": "node",
+      "attrs": {
+        "label": "Warrior",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "The warrior, o\u2019er the land shall reign,",
+        "source_line": 365,
+        "source_char_offset": 12267
+      },
+      "label": "Warrior"
+    },
+    {
+      "id": "merchant",
+      "kind": "node",
+      "attrs": {
+        "label": "Merchant",
+        "instagraph:type": "Character",
+        "instagraph:color": "#F8C8DC",
+        "exact_quote": "The merchant, luck in trade obtain;",
+        "source_line": 366,
+        "source_char_offset": 12307
+      },
+      "label": "Merchant"
+    },
+    {
+      "id": "\u015b\u00fadras",
+      "kind": "node",
+      "attrs": {
+        "label": "\u015a\u00fadras",
+        "instagraph:type": "Group",
+        "instagraph:color": "#E0E0E0",
+        "exact_quote": "\u015a\u00fadras listening(42) ne\u2019er shall fail",
+        "source_line": 367,
+        "source_char_offset": 12347
+      },
+      "label": "\u015a\u00fadras"
+    },
+    {
+      "id": "advantage",
+      "kind": "node",
+      "attrs": {
+        "label": "Advantage",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "exact_quote": "To reap advantage from the tale.(43)",
+        "source_line": 368,
+        "source_char_offset": 12385
+      },
+      "label": "Advantage"
+    },
+    {
+      "id": "rama_cottage_event",
+      "kind": "hyperedge",
+      "label": "builds_and_lives_in",
+      "attrs": {
+        "i2t:predicate": "builds_and_lives_in",
+        "label": "And R\u00e1ma there, with Lakshma\u1e47\u2019s aid, A pleasant little cottage made, And spent his days with S\u00edt\u00e1, dressed In coat of bark and deerskin vest.(26)",
+        "instagraph:color": "#A00"
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "nara",
+      "target": "om",
+      "directed": true,
+      "label": "OM.",
+      "layer": "invokes",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "invokes",
+        "label": "OM.",
+        "instagraph:color": "#26A",
+        "source_line": 4,
+        "source_char_offset": 21
+      }
+    },
+    {
+      "source": "valmiki",
+      "target": "nara",
+      "directed": true,
+      "label": "The good V\u00e1lm\u00edki, first and best Of hermit saints, these words addressed:",
+      "layer": "speaker_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "speaker_of",
+        "label": "The good V\u00e1lm\u00edki, first and best Of hermit saints, these words addressed:",
+        "instagraph:color": "#26A",
+        "source_line": 10,
+        "source_char_offset": 173
+      }
+    },
+    {
+      "source": "valmiki",
+      "target": "rama",
+      "directed": true,
+      "label": "Who is the best of princes, he Who loves his people\u2019s good to see?",
+      "layer": "asks_about",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "asks_about",
+        "label": "Who is the best of princes, he Who loves his people\u2019s good to see?",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "nara",
+      "target": "rama",
+      "directed": true,
+      "label": "From old Ikshv\u00e1ku\u2019s(15) line he came, Known to the world by R\u00e1ma\u2019s name:",
+      "layer": "introduces",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "introduces",
+        "label": "From old Ikshv\u00e1ku\u2019s(15) line he came, Known to the world by R\u00e1ma\u2019s name:",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "vedas",
+      "directed": true,
+      "label": "Well has he studied o\u2019er and o\u2019er The Vedas(18)and their kindred lore.",
+      "layer": "studies",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "studies",
+        "label": "Well has he studied o\u2019er and o\u2019er The Vedas(18)and their kindred lore.",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "queen_kausalya",
+      "directed": true,
+      "label": "The joy of Queen Kau\u015baly\u00e1\u2019s(20)heart, In every virtue he has part:",
+      "layer": "joy_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "joy_of",
+        "label": "The joy of Queen Kau\u015baly\u00e1\u2019s(20)heart, In every virtue he has part:",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "vishnu",
+      "directed": false,
+      "label": "The peer of Vish\u1e47u\u2019s power and might,",
+      "layer": "peer_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "peer_of",
+        "label": "The peer of Vish\u1e47u\u2019s power and might,",
+        "instagraph:color": "#26A",
+        "source_line": 92,
+        "source_char_offset": 3113
+      }
+    },
+    {
+      "source": "rama",
+      "target": "lord_of_night",
+      "directed": true,
+      "label": "Lovely as the Lord of Night;(22)",
+      "layer": "lovely_as",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "lovely_as",
+        "label": "Lovely as the Lord of Night;(22)",
+        "instagraph:color": "#26A",
+        "source_line": 93,
+        "source_char_offset": 3155
+      }
+    },
+    {
+      "source": "rama",
+      "target": "lord_of_gold",
+      "directed": true,
+      "label": "In bounty like the Lord of Gold,(23)",
+      "layer": "bountiful_like",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "bountiful_like",
+        "label": "In bounty like the Lord of Gold,(23)",
+        "instagraph:color": "#26A",
+        "source_line": 96,
+        "source_char_offset": 3263
+      }
+    },
+    {
+      "source": "rama",
+      "target": "justice",
+      "directed": true,
+      "label": "And Justice self in human mould.",
+      "layer": "embodies",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "embodies",
+        "label": "And Justice self in human mould.",
+        "instagraph:color": "#26A",
+        "source_line": 97,
+        "source_char_offset": 3300
+      }
+    },
+    {
+      "source": "dasharatha",
+      "target": "rama",
+      "directed": true,
+      "label": "With him, his best and eldest son, By all his princely virtues won King Da\u015baratha(24) willed to share His kingdom as the Regent Heir.",
+      "layer": "designates_as_regent_heir",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "designates_as_regent_heir",
+        "label": "With him, his best and eldest son, By all his princely virtues won King Da\u015baratha(24) willed to share His kingdom as the Regent Heir.",
+        "instagraph:color": "#888",
+        "source_line": 99,
+        "source_char_offset": 3336
+      }
+    },
+    {
+      "source": "kaikeyi",
+      "target": "dasharatha",
+      "directed": true,
+      "label": "She bade the hapless king bestow Two gifts he promised long ago, That R\u00e1ma to the woods should flee, And that her child the heir should be.",
+      "layer": "demands_gifts",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "demands_gifts",
+        "label": "She bade the hapless king bestow Two gifts he promised long ago, That R\u00e1ma to the woods should flee, And that her child the heir should be.",
+        "instagraph:color": "#888",
+        "source_line": 107,
+        "source_char_offset": 3606
+      }
+    },
+    {
+      "source": "promise_gifts",
+      "target": "dasharatha",
+      "directed": true,
+      "role": "promisor",
+      "layer": "promises"
+    },
+    {
+      "source": "promise_gifts",
+      "target": "kaikeyi",
+      "directed": true,
+      "role": "recipient",
+      "layer": "promises"
+    },
+    {
+      "source": "dasharatha",
+      "target": "rama",
+      "directed": true,
+      "label": "By chains of duty firmly tied, The wretched king perforce complied.",
+      "layer": "commands",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "commands",
+        "label": "By chains of duty firmly tied, The wretched king perforce complied.",
+        "instagraph:color": "#888",
+        "source_line": 112,
+        "source_char_offset": 3749
+      }
+    },
+    {
+      "source": "rama",
+      "target": "kaikeyi",
+      "directed": true,
+      "label": "R\u00e1ma, to please Kaikey\u00ed went Obedient forth to banishment.",
+      "layer": "obeys",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "obeys",
+        "label": "R\u00e1ma, to please Kaikey\u00ed went Obedient forth to banishment.",
+        "instagraph:color": "#888",
+        "source_line": 114,
+        "source_char_offset": 3817
+      }
+    },
+    {
+      "source": "lakshmana",
+      "target": "rama",
+      "directed": true,
+      "label": "Then Lakshma\u1e47\u2019s truth was nobly shown, Then were his love and courage known, When for his brother\u2019s sake he dared All perils, and his exile shared.",
+      "layer": "supports",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "supports",
+        "label": "Then Lakshma\u1e47\u2019s truth was nobly shown, Then were his love and courage known, When for his brother\u2019s sake he dared All perils, and his exile shared.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "sita",
+      "target": "rama",
+      "directed": true,
+      "label": "And S\u00edt\u00e1, R\u00e1ma\u2019s darling wife, Loved even as he loved his life, Whom happy marks combined to bless, A miracle of loveliness, Of Janak\u2019s royal lineage sprung, Most excellent of women, clung To her dear lord, like Rohi\u1e47\u00ed Rejoicing with the Moon to be.(25)",
+      "layer": "spouse_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "spouse_of",
+        "label": "And S\u00edt\u00e1, R\u00e1ma\u2019s darling wife, Loved even as he loved his life, Whom happy marks combined to bless, A miracle of loveliness, Of Janak\u2019s royal lineage sprung, Most excellent of women, clung To her dear lord, like Rohi\u1e47\u00ed Rejoicing with the Moon to be.(25)",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "janaka",
+      "target": "sita",
+      "directed": true,
+      "label": "Of Janak\u2019s royal lineage sprung",
+      "layer": "father_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "father_of",
+        "label": "Of Janak\u2019s royal lineage sprung",
+        "instagraph:color": "#888",
+        "source_line": 124,
+        "source_char_offset": 4149
+      }
+    },
+    {
+      "source": "rohini",
+      "target": "moon",
+      "directed": true,
+      "label": "Like Rohi\u1e47\u00ed Rejoicing with the Moon to be.(25)",
+      "layer": "rejoices_with",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "rejoices_with",
+        "label": "Like Rohi\u1e47\u00ed Rejoicing with the Moon to be.(25)",
+        "instagraph:color": "#888",
+        "source_line": 126,
+        "source_char_offset": 4231
+      }
+    },
+    {
+      "source": "dasharatha",
+      "target": "rama",
+      "directed": true,
+      "label": "The King and people, sad of mood, The hero\u2019s car awhile pursued.",
+      "layer": "follows",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "follows",
+        "label": "The King and people, sad of mood, The hero\u2019s car awhile pursued.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "sringavera",
+      "directed": true,
+      "label": "At \u015aringavera\u2019s pleasant town, Where Gang\u00e1\u2019s holy waters flow, He bade his driver turn and go.",
+      "layer": "arrives_at",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "arrives_at",
+        "label": "At \u015aringavera\u2019s pleasant town, Where Gang\u00e1\u2019s holy waters flow, He bade his driver turn and go.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "guha",
+      "directed": true,
+      "label": "Guha, Nish\u00e1das\u2019 king, he met, And on the farther bank was set.",
+      "layer": "meets",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "meets",
+        "label": "Guha, Nish\u00e1das\u2019 king, he met, And on the farther bank was set.",
+        "instagraph:color": "#888",
+        "source_line": 134,
+        "source_char_offset": 4472
+      }
+    },
+    {
+      "source": "nishadas",
+      "target": "guha",
+      "directed": true,
+      "label": "Guha, Nish\u00e1das\u2019 king, he met, And on the farther bank was set.",
+      "layer": "has_king",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "has_king",
+        "label": "Guha, Nish\u00e1das\u2019 king, he met, And on the farther bank was set.",
+        "instagraph:color": "#888",
+        "source_line": 134,
+        "source_char_offset": 4472
+      }
+    },
+    {
+      "source": "rama",
+      "target": "bharadvaja",
+      "directed": true,
+      "label": "As Bharadv\u00e1ja bade them, till They came to Chitrak\u00fa\u1e6da\u2019s hill.",
+      "layer": "follows_advice_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "follows_advice_of",
+        "label": "As Bharadv\u00e1ja bade them, till They came to Chitrak\u00fa\u1e6da\u2019s hill.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "chitrakuta",
+      "directed": true,
+      "label": "They came to Chitrak\u00fa\u1e6da\u2019s hill.",
+      "layer": "arrives_at",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "arrives_at",
+        "label": "They came to Chitrak\u00fa\u1e6da\u2019s hill.",
+        "instagraph:color": "#888",
+        "source_line": 139,
+        "source_char_offset": 4649
+      }
+    },
+    {
+      "source": "rama_cottage_event",
+      "target": "rama",
+      "directed": true,
+      "role": "builder",
+      "layer": "builds_and_lives_in"
+    },
+    {
+      "source": "rama_cottage_event",
+      "target": "lakshmana",
+      "directed": true,
+      "role": "assistant",
+      "layer": "builds_and_lives_in"
+    },
+    {
+      "source": "rama_cottage_event",
+      "target": "sita",
+      "directed": true,
+      "role": "spouse",
+      "layer": "builds_and_lives_in"
+    },
+    {
+      "source": "rama_cottage_event",
+      "target": "chitrakuta",
+      "directed": true,
+      "role": "location",
+      "layer": "builds_and_lives_in"
+    },
+    {
+      "source": "chitrakuta",
+      "target": "meru",
+      "directed": false,
+      "label": "And Chitrak\u00fa\u1e6da grew to be As bright with those illustrious three As Meru\u2019s(27) sacred peaks that shine With glory, when the Gods recline Beneath them: \u015aiva\u2019s(28) self between The Lord of Gold and Beauty\u2019s Queen.",
+      "layer": "compares_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "compares_to",
+        "label": "And Chitrak\u00fa\u1e6da grew to be As bright with those illustrious three As Meru\u2019s(27) sacred peaks that shine With glory, when the Gods recline Beneath them: \u015aiva\u2019s(28) self between The Lord of Gold and Beauty\u2019s Queen.",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "chitrakuta",
+      "target": "shiva",
+      "directed": false,
+      "label": "\u015aiva\u2019s(28) self between The Lord of Gold and Beauty\u2019s Queen.",
+      "layer": "located_between",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "located_between",
+        "label": "\u015aiva\u2019s(28) self between The Lord of Gold and Beauty\u2019s Queen.",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "chitrakuta",
+      "target": "lord_of_gold",
+      "directed": false,
+      "label": "\u015aiva\u2019s(28) self between The Lord of Gold and Beauty\u2019s Queen.",
+      "layer": "located_between",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "located_between",
+        "label": "\u015aiva\u2019s(28) self between The Lord of Gold and Beauty\u2019s Queen.",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "chitrakuta",
+      "target": "beauty_queen",
+      "directed": false,
+      "label": "\u015aiva\u2019s(28) self between The Lord of Gold and Beauty\u2019s Queen.",
+      "layer": "located_between",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "located_between",
+        "label": "\u015aiva\u2019s(28) self between The Lord of Gold and Beauty\u2019s Queen.",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "aged_king",
+      "target": "rama",
+      "directed": true,
+      "label": "The aged king for R\u00e1ma pined",
+      "layer": "pines_for",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "pines_for",
+        "label": "The aged king for R\u00e1ma pined",
+        "instagraph:color": "#888",
+        "source_line": 151,
+        "source_char_offset": 5042
+      }
+    },
+    {
+      "source": "bharat",
+      "target": "rama",
+      "directed": true,
+      "label": "Bharat, his son, refused to reign",
+      "layer": "refuses_to_reign_for",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "refuses_to_reign_for",
+        "label": "Bharat, his son, refused to reign",
+        "instagraph:color": "#888",
+        "source_line": 153,
+        "source_char_offset": 5110
+      }
+    },
+    {
+      "source": "bharat",
+      "target": "twice_born_train",
+      "directed": true,
+      "label": "Though urged by all the twice-born(29) train",
+      "layer": "urged_by",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "urged_by",
+        "label": "Though urged by all the twice-born(29) train",
+        "instagraph:color": "#888",
+        "source_line": 154,
+        "source_char_offset": 5145
+      }
+    },
+    {
+      "source": "bharat",
+      "target": "rama",
+      "directed": true,
+      "label": "Forth to the woods he fared to meet\nHis brother, fell before his feet,\nAnd cried, \u201cThy claim all men allow:\nO come, our lord and king be thou.\u201d",
+      "layer": "meets_and_pleads_with",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "meets_and_pleads_with",
+        "label": "Forth to the woods he fared to meet\nHis brother, fell before his feet,\nAnd cried, \u201cThy claim all men allow:\nO come, our lord and king be thou.\u201d",
+        "instagraph:color": "#888",
+        "source_line": 155,
+        "source_char_offset": 5191
+      }
+    },
+    {
+      "source": "rama",
+      "target": "bharat",
+      "directed": true,
+      "label": "He placed his sandals(30) in his hand\nA pledge that he would rule the land:\nAnd bade his brother turn again.",
+      "layer": "gives_sandals_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "gives_sandals_to",
+        "label": "He placed his sandals(30) in his hand\nA pledge that he would rule the land:\nAnd bade his brother turn again.",
+        "instagraph:color": "#888",
+        "source_line": 161,
+        "source_char_offset": 5394
+      }
+    },
+    {
+      "source": "bharat",
+      "target": "sandals",
+      "directed": true,
+      "label": "Then Bharat, finding prayer was vain,\nThe sandals took and went away;",
+      "layer": "takes",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "takes",
+        "label": "Then Bharat, finding prayer was vain,\nThe sandals took and went away;",
+        "instagraph:color": "#888",
+        "source_line": 164,
+        "source_char_offset": 5503
+      }
+    },
+    {
+      "source": "bharat",
+      "target": "ayodhya",
+      "directed": true,
+      "label": "Nor in Ayodhy\u00e1 would he stay.",
+      "layer": "leaves",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "leaves",
+        "label": "Nor in Ayodhy\u00e1 would he stay.",
+        "instagraph:color": "#888",
+        "source_line": 166,
+        "source_char_offset": 5573
+      }
+    },
+    {
+      "source": "bharat",
+      "target": "nandigr\u00e1ma",
+      "directed": true,
+      "label": "But turned to Nandigr\u00e1ma, where\nHe ruled the realm with watchful care,",
+      "layer": "rules_in",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "rules_in",
+        "label": "But turned to Nandigr\u00e1ma, where\nHe ruled the realm with watchful care,",
+        "instagraph:color": "#888",
+        "source_line": 167,
+        "source_char_offset": 5603
+      }
+    },
+    {
+      "source": "bharat",
+      "target": "rama",
+      "directed": true,
+      "label": "Still longing eagerly to learn\nTidings of R\u00e1ma\u2019s safe return.",
+      "layer": "longs_for_return_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "longs_for_return_of",
+        "label": "Still longing eagerly to learn\nTidings of R\u00e1ma\u2019s safe return.",
+        "instagraph:color": "#888",
+        "source_line": 169,
+        "source_char_offset": 5674
+      }
+    },
+    {
+      "source": "rama",
+      "target": "dandaka_forest",
+      "directed": true,
+      "label": "Fared R\u00e1ma ever onward till Beneath the shady trees he stood",
+      "layer": "traveled_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "traveled_to",
+        "label": "Fared R\u00e1ma ever onward till Beneath the shady trees he stood",
+        "instagraph:color": "#26A",
+        "source_line": 175,
+        "source_char_offset": 5835
+      }
+    },
+    {
+      "source": "rama",
+      "target": "viradha",
+      "directed": true,
+      "label": "Vir\u00e1dha, giant fiend, he slew",
+      "layer": "defeated",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "defeated",
+        "label": "Vir\u00e1dha, giant fiend, he slew",
+        "instagraph:color": "#26A",
+        "source_line": 178,
+        "source_char_offset": 5924
+      }
+    },
+    {
+      "source": "rama",
+      "target": "agastya",
+      "directed": true,
+      "label": "And then Agastya\u2019s friendship knew",
+      "layer": "met",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "met",
+        "label": "And then Agastya\u2019s friendship knew",
+        "instagraph:color": "#26A",
+        "source_line": 179,
+        "source_char_offset": 5955
+      }
+    },
+    {
+      "source": "agastya",
+      "target": "rama",
+      "directed": true,
+      "label": "Counselled by him he gained the sword And bow of Indra, heavenly lord",
+      "layer": "counseled",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "counseled",
+        "label": "Counselled by him he gained the sword And bow of Indra, heavenly lord",
+        "instagraph:color": "#26A",
+        "source_line": 180,
+        "source_char_offset": 5991
+      }
+    },
+    {
+      "source": "rama",
+      "target": "surpanakha",
+      "directed": true,
+      "label": "And R\u00e1ma\u2019s falchion left its trace Deep cut on \u015a\u00farpa\u1e47akh\u00e1\u2019s face",
+      "layer": "injured",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "injured",
+        "label": "And R\u00e1ma\u2019s falchion left its trace Deep cut on \u015a\u00farpa\u1e47akh\u00e1\u2019s face",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "surpanakha",
+      "target": "tripura",
+      "directed": true,
+      "label": "Their sister\u2019s cries the giants heard. And vengeance in each bosom stirred: The monster of the triple head.",
+      "layer": "sister_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "sister_of",
+        "label": "Their sister\u2019s cries the giants heard. And vengeance in each bosom stirred: The monster of the triple head.",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "surpanakha",
+      "target": "dushana",
+      "directed": true,
+      "label": "And D\u00fasha\u1e47 to the contest sped",
+      "layer": "sister_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "sister_of",
+        "label": "And D\u00fasha\u1e47 to the contest sped",
+        "instagraph:color": "#26A",
+        "source_line": 197,
+        "source_char_offset": 6589
+      }
+    },
+    {
+      "source": "rama",
+      "target": "tripura",
+      "directed": true,
+      "label": "But they and myriad fiends beside Beneath the might of R\u00e1ma died.",
+      "layer": "defeated",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "defeated",
+        "label": "But they and myriad fiends beside Beneath the might of R\u00e1ma died.",
+        "instagraph:color": "#26A",
+        "source_line": 198,
+        "source_char_offset": 6621
+      }
+    },
+    {
+      "source": "rama",
+      "target": "dushana",
+      "directed": true,
+      "label": "But they and myriad fiends beside Beneath the might of R\u00e1ma died.",
+      "layer": "defeated",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "defeated",
+        "label": "But they and myriad fiends beside Beneath the might of R\u00e1ma died.",
+        "instagraph:color": "#26A",
+        "source_line": 198,
+        "source_char_offset": 6621
+      }
+    },
+    {
+      "source": "ravana",
+      "target": "maricha",
+      "directed": true,
+      "label": "He bade the fiend M\u00e1r\u00edcha aid The vengeful plot his fury laid.",
+      "layer": "commands",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "commands",
+        "label": "He bade the fiend M\u00e1r\u00edcha aid The vengeful plot his fury laid.",
+        "instagraph:color": "#888",
+        "source_line": 205,
+        "source_char_offset": 6836
+      }
+    },
+    {
+      "source": "maricha",
+      "target": "ravana",
+      "directed": true,
+      "label": "In vain the wise M\u00e1r\u00edcha tried To turn him from his course aside:",
+      "layer": "advises_against",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "advises_against",
+        "label": "In vain the wise M\u00e1r\u00edcha tried To turn him from his course aside:",
+        "instagraph:color": "#888",
+        "source_line": 207,
+        "source_char_offset": 6899
+      }
+    },
+    {
+      "source": "maricha",
+      "target": "rama",
+      "directed": true,
+      "label": "There, by M\u00e1r\u00edcha\u2019s magic art, He wiled the princely youths apart, The vulture(31) slew, and bore away The wife of R\u00e1ma as his prey.",
+      "layer": "deceives",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "deceives",
+        "label": "There, by M\u00e1r\u00edcha\u2019s magic art, He wiled the princely youths apart, The vulture(31) slew, and bore away The wife of R\u00e1ma as his prey.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "jatayu",
+      "directed": true,
+      "label": "The son of Raghu(32) came and found Ja\u1e6d\u00e1yu slain upon the ground.",
+      "layer": "finds",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "finds",
+        "label": "The son of Raghu(32) came and found Ja\u1e6d\u00e1yu slain upon the ground.",
+        "instagraph:color": "#888",
+        "source_line": 217,
+        "source_char_offset": 7238
+      }
+    },
+    {
+      "source": "rama",
+      "target": "kabandha",
+      "directed": true,
+      "label": "A hideous giant then he saw, Kabandha named, a shape of awe. The monstrous fiend he smote and slew, And in the flame the body threw;",
+      "layer": "kills",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "kills",
+        "label": "A hideous giant then he saw, Kabandha named, a shape of awe. The monstrous fiend he smote and slew, And in the flame the body threw;",
+        "instagraph:color": "#888",
+        "source_line": 225,
+        "source_char_offset": 7516
+      }
+    },
+    {
+      "source": "kabandha",
+      "target": "rama",
+      "directed": true,
+      "label": "When straight from out the funeral flame In lovely form Kabandha came, And bade him seek in his distress A wise and holy hermitess.",
+      "layer": "advises",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "advises",
+        "label": "When straight from out the funeral flame In lovely form Kabandha came, And bade him seek in his distress A wise and holy hermitess.",
+        "instagraph:color": "#888",
+        "source_line": 229,
+        "source_char_offset": 7649
+      }
+    },
+    {
+      "source": "rama",
+      "target": "hanuman",
+      "directed": true,
+      "label": "And there the steadfast friendship won Of Hanum\u00e1n the Wind-God\u2019s son.",
+      "layer": "forms_friendship_with",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "forms_friendship_with",
+        "label": "And there the steadfast friendship won Of Hanum\u00e1n the Wind-God\u2019s son.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "sugriva",
+      "directed": true,
+      "label": "Counselled by him he told his grief To great Sugr\u00edva, V\u00e1nar chief, Who, knowing all the tale, before The sacred flame alliance swore.",
+      "layer": "forms_alliance_with",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "forms_alliance_with",
+        "label": "Counselled by him he told his grief To great Sugr\u00edva, V\u00e1nar chief, Who, knowing all the tale, before The sacred flame alliance swore.",
+        "instagraph:color": "#888",
+        "source_line": 237,
+        "source_char_offset": 7918
+      }
+    },
+    {
+      "source": "sugriva",
+      "target": "rama",
+      "directed": true,
+      "label": "Sugr\u00edva to his new-found friend Told his own story to the end:",
+      "layer": "tells_story_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "tells_story_to",
+        "label": "Sugr\u00edva to his new-found friend Told his own story to the end:",
+        "instagraph:color": "#888",
+        "source_line": 241,
+        "source_char_offset": 8052
+      }
+    },
+    {
+      "source": "sugriva",
+      "target": "bali",
+      "directed": true,
+      "label": "His hate of B\u00e1li for the wrong And insult he had borne so long.",
+      "layer": "hates",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "hates",
+        "label": "His hate of B\u00e1li for the wrong And insult he had borne so long.",
+        "instagraph:color": "#888",
+        "source_line": 243,
+        "source_char_offset": 8115
+      }
+    },
+    {
+      "source": "rama",
+      "target": "bali_corpse",
+      "directed": true,
+      "label": "One shaft from R\u00e1ma\u2019s deadly bow The monarch in the dust laid low.",
+      "layer": "kills",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "kills",
+        "label": "One shaft from R\u00e1ma\u2019s deadly bow The monarch in the dust laid low.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "sugriva",
+      "directed": true,
+      "label": "Then R\u00e1ma bade Sugr\u00edva reign In place of royal B\u00e1li slain.",
+      "layer": "appoints_as_king",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "appoints_as_king",
+        "label": "Then R\u00e1ma bade Sugr\u00edva reign In place of royal B\u00e1li slain.",
+        "instagraph:color": "#888",
+        "source_line": 269,
+        "source_char_offset": 9004
+      }
+    },
+    {
+      "source": "rama",
+      "target": "envoys",
+      "directed": true,
+      "label": "Then speedy envoys hurried forth Eastward and westward, south and north, Commanded by the grateful king Tidings of R\u00e1ma\u2019s spouse to bring.",
+      "layer": "sends",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "sends",
+        "label": "Then speedy envoys hurried forth Eastward and westward, south and north, Commanded by the grateful king Tidings of R\u00e1ma\u2019s spouse to bring.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "sampati",
+      "target": "hanuman",
+      "directed": true,
+      "label": "Then by Samp\u00e1ti\u2019s counsel led, Brave Hanum\u00e1n, who mocked at dread, Sprang at one wild tremendous leap Two hundred leagues across the deep.",
+      "layer": "counselled",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "counselled",
+        "label": "Then by Samp\u00e1ti\u2019s counsel led, Brave Hanum\u00e1n, who mocked at dread, Sprang at one wild tremendous leap Two hundred leagues across the deep.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "hanuman",
+      "target": "lanka",
+      "directed": true,
+      "label": "To Lank\u00e1\u2019s(35) town he urged his way, Where R\u00e1va\u1e47 held his royal sway.",
+      "layer": "travelled_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "travelled_to",
+        "label": "To Lank\u00e1\u2019s(35) town he urged his way, Where R\u00e1va\u1e47 held his royal sway.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "hanuman",
+      "target": "sita",
+      "directed": true,
+      "label": "There pensive \u2019neath A\u015boka(36) boughs He found poor S\u00edt\u00e1, R\u00e1ma\u2019s spouse.",
+      "layer": "found",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "found",
+        "label": "There pensive \u2019neath A\u015boka(36) boughs He found poor S\u00edt\u00e1, R\u00e1ma\u2019s spouse.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "hanuman",
+      "target": "ring",
+      "directed": true,
+      "label": "He gave the hapless girl a ring, A token from her lord and king.",
+      "layer": "gave",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "gave",
+        "label": "He gave the hapless girl a ring, A token from her lord and king.",
+        "instagraph:color": "#888",
+        "source_line": 284,
+        "source_char_offset": 9488
+      }
+    },
+    {
+      "source": "sita",
+      "target": "ring",
+      "directed": true,
+      "label": "A pledge from her fair hand he bore;",
+      "layer": "bore",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "bore",
+        "label": "A pledge from her fair hand he bore;",
+        "instagraph:color": "#888",
+        "source_line": 286,
+        "source_char_offset": 9553
+      }
+    },
+    {
+      "source": "hanuman",
+      "target": "lanka",
+      "directed": true,
+      "label": "Then battered down the garden door.",
+      "layer": "attacked",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "attacked",
+        "label": "Then battered down the garden door.",
+        "instagraph:color": "#888",
+        "source_line": 287,
+        "source_char_offset": 9590
+      }
+    },
+    {
+      "source": "hanuman",
+      "target": "captains_of_the_host",
+      "directed": true,
+      "label": "Five captains of the host he slew, Seven sons of councillors o\u2019erthrew;",
+      "layer": "slew",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "slew",
+        "label": "Five captains of the host he slew, Seven sons of councillors o\u2019erthrew;",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "hanuman",
+      "target": "aksha",
+      "directed": true,
+      "label": "Crushed youthful Aksha on the field,",
+      "layer": "crushed",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "crushed",
+        "label": "Crushed youthful Aksha on the field,",
+        "instagraph:color": "#888",
+        "source_line": 290,
+        "source_char_offset": 9698
+      }
+    },
+    {
+      "source": "hanuman",
+      "target": "captors",
+      "directed": true,
+      "label": "Then to his captors chose to yield.",
+      "layer": "yielded_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "yielded_to",
+        "label": "Then to his captors chose to yield.",
+        "instagraph:color": "#888",
+        "source_line": 291,
+        "source_char_offset": 9735
+      }
+    },
+    {
+      "source": "hanuman",
+      "target": "brahma",
+      "directed": true,
+      "label": "But honouring the high decree Which Brahm\u00e1(37) had pronounced of yore, He calmly all their insults bore.",
+      "layer": "honoured_decrees_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "honoured_decrees_of",
+        "label": "But honouring the high decree Which Brahm\u00e1(37) had pronounced of yore, He calmly all their insults bore.",
+        "instagraph:color": "#888",
+        "source_line": 293,
+        "source_char_offset": 9814
+      }
+    },
+    {
+      "source": "hanuman",
+      "target": "lanka",
+      "directed": true,
+      "label": "The town he burnt with hostile flame,",
+      "layer": "burnt",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "burnt",
+        "label": "The town he burnt with hostile flame,",
+        "instagraph:color": "#888",
+        "source_line": 296,
+        "source_char_offset": 9919
+      }
+    },
+    {
+      "source": "hanuman",
+      "target": "sita",
+      "directed": true,
+      "label": "And spoke again with R\u00e1ma\u2019s dame,",
+      "layer": "spoke_with",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "spoke_with",
+        "label": "And spoke again with R\u00e1ma\u2019s dame,",
+        "instagraph:color": "#888",
+        "source_line": 297,
+        "source_char_offset": 9957
+      }
+    },
+    {
+      "source": "hanuman",
+      "target": "rama",
+      "directed": true,
+      "label": "Then swiftly back to R\u00e1ma flew With tidings of the interview.",
+      "layer": "flew_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "flew_to",
+        "label": "Then swiftly back to R\u00e1ma flew With tidings of the interview.",
+        "instagraph:color": "#888",
+        "source_line": 298,
+        "source_char_offset": 9991
+      }
+    },
+    {
+      "source": "sugriva",
+      "target": "rama",
+      "directed": true,
+      "label": "Then with Sugr\u00edva for his guide,",
+      "layer": "guide_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "guide_of",
+        "label": "Then with Sugr\u00edva for his guide,",
+        "instagraph:color": "#888",
+        "source_line": 301,
+        "source_char_offset": 10056
+      }
+    },
+    {
+      "source": "rama",
+      "target": "ocean_side",
+      "directed": true,
+      "label": "Came R\u00e1ma to the ocean side.",
+      "layer": "arrived_at",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "arrived_at",
+        "label": "Came R\u00e1ma to the ocean side.",
+        "instagraph:color": "#222",
+        "source_line": 302,
+        "source_char_offset": 10089
+      }
+    },
+    {
+      "source": "rama",
+      "target": "rivers_king",
+      "directed": true,
+      "label": "He smote the sea with shafts as bright As sunbeams in their summer height, And quick appeared the Rivers\u2019 King(38) Obedient to the summoning.",
+      "layer": "summoned",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "summoned",
+        "label": "He smote the sea with shafts as bright As sunbeams in their summer height, And quick appeared the Rivers\u2019 King(38) Obedient to the summoning.",
+        "instagraph:color": "#26A",
+        "source_line": 303,
+        "source_char_offset": 10118
+      }
+    },
+    {
+      "source": "nala",
+      "target": "bridge",
+      "directed": true,
+      "label": "A bridge was thrown by Nala o\u2019er The narrow sea from shore to shore.(39)",
+      "layer": "built",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "built",
+        "label": "A bridge was thrown by Nala o\u2019er The narrow sea from shore to shore.(39)",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "lanka",
+      "directed": true,
+      "label": "They crossed to Lank\u00e1\u2019s golden town, Where R\u00e1ma\u2019s hand smote R\u00e1va\u1e47 down.",
+      "layer": "crossed_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "crossed_to",
+        "label": "They crossed to Lank\u00e1\u2019s golden town, Where R\u00e1ma\u2019s hand smote R\u00e1va\u1e47 down.",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "vibhishana",
+      "target": "lanka",
+      "directed": true,
+      "label": "Vibhisha\u1e47 there was left to reign Over his brother\u2019s wide domain.",
+      "layer": "reigned_over",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "reigned_over",
+        "label": "Vibhisha\u1e47 there was left to reign Over his brother\u2019s wide domain.",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "sita",
+      "target": "rama",
+      "directed": true,
+      "label": "To meet her husband S\u00edt\u00e1 came;",
+      "layer": "met_with",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "met_with",
+        "label": "To meet her husband S\u00edt\u00e1 came;",
+        "instagraph:color": "#888",
+        "source_line": 313,
+        "source_char_offset": 10472
+      }
+    },
+    {
+      "source": "rama",
+      "target": "sita",
+      "directed": true,
+      "label": "But R\u00e1ma, stung with ire and shame, With bitter words his wife addressed Before the crowd that round her pressed.",
+      "layer": "addressed",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "addressed",
+        "label": "But R\u00e1ma, stung with ire and shame, With bitter words his wife addressed Before the crowd that round her pressed.",
+        "instagraph:color": "#222",
+        "source_line": 314,
+        "source_char_offset": 10503
+      }
+    },
+    {
+      "source": "sita",
+      "target": "fire",
+      "directed": true,
+      "label": "But S\u00edt\u00e1, touched with noble ire, Gave her fair body to the fire.",
+      "layer": "offered_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "offered_to",
+        "label": "But S\u00edt\u00e1, touched with noble ire, Gave her fair body to the fire.",
+        "instagraph:color": "#26A",
+        "source_line": 317,
+        "source_char_offset": 10617
+      }
+    },
+    {
+      "source": "wind_god",
+      "target": "sita",
+      "directed": true,
+      "label": "Then straight the God of Wind appeared, And words from heaven her honour cleared.",
+      "layer": "cleared_honour_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "cleared_honour_of",
+        "label": "Then straight the God of Wind appeared, And words from heaven her honour cleared.",
+        "instagraph:color": "#888",
+        "source_line": 319,
+        "source_char_offset": 10683
+      }
+    },
+    {
+      "source": "rama",
+      "target": "sita",
+      "directed": true,
+      "label": "And R\u00e1ma clasped his wife again, Uninjured, pure from spot and stain, Obedient to the Lord of Fire And the high mandate of his sire.",
+      "layer": "clasped_again",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "clasped_again",
+        "label": "And R\u00e1ma clasped his wife again, Uninjured, pure from spot and stain, Obedient to the Lord of Fire And the high mandate of his sire.",
+        "instagraph:color": "#222",
+        "source_line": 321,
+        "source_char_offset": 10765
+      }
+    },
+    {
+      "source": "heavenly_gods",
+      "target": "rama",
+      "directed": true,
+      "label": "Led by the Lord who rules the sky, The Gods and heavenly saints drew nigh, And honoured him with worthy meed, Rejoicing in each glorious deed.",
+      "layer": "honoured",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "honoured",
+        "label": "Led by the Lord who rules the sky, The Gods and heavenly saints drew nigh, And honoured him with worthy meed, Rejoicing in each glorious deed.",
+        "instagraph:color": "#26A",
+        "source_line": 325,
+        "source_char_offset": 10898
+      }
+    },
+    {
+      "source": "rama",
+      "target": "chieftains",
+      "directed": true,
+      "label": "By grace of Heaven he raised to life The chieftains slain in mortal strife;",
+      "layer": "raised_to_life",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "raised_to_life",
+        "label": "By grace of Heaven he raised to life The chieftains slain in mortal strife;",
+        "instagraph:color": "#888",
+        "source_line": 331,
+        "source_char_offset": 11113
+      }
+    },
+    {
+      "source": "rama",
+      "target": "magic_chariot",
+      "directed": true,
+      "label": "Then in the magic chariot through The clouds to Nandigr\u00e1ma flew.",
+      "layer": "flew_in",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "flew_in",
+        "label": "Then in the magic chariot through The clouds to Nandigr\u00e1ma flew.",
+        "instagraph:color": "#222",
+        "source_line": 333,
+        "source_char_offset": 11189
+      }
+    },
+    {
+      "source": "rama",
+      "target": "nandigrama",
+      "directed": true,
+      "label": "Met by his faithful brothers there, He loosed his votive coil of hair:",
+      "layer": "met_with",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "met_with",
+        "label": "Met by his faithful brothers there, He loosed his votive coil of hair:",
+        "instagraph:color": "#26A",
+        "source_line": 335,
+        "source_char_offset": 11254
+      }
+    },
+    {
+      "source": "rama",
+      "target": "ayodhya",
+      "directed": true,
+      "label": "Thence fair Ayodhy\u00e1\u2019s town he gained, And o\u2019er his father\u2019s kingdom reigned.",
+      "layer": "gained_and_reigned_over",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "gained_and_reigned_over",
+        "label": "Thence fair Ayodhy\u00e1\u2019s town he gained, And o\u2019er his father\u2019s kingdom reigned.",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "people",
+      "directed": true,
+      "label": "Disease or famine ne\u2019er oppressed His happy people, richly blest With all the joys of ample wealth, Of sweet content and perfect health.",
+      "layer": "blessed_with",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "blessed_with",
+        "label": "Disease or famine ne\u2019er oppressed His happy people, richly blest With all the joys of ample wealth, Of sweet content and perfect health.",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "people",
+      "directed": true,
+      "label": "No widow mourned her well-loved mate, No sire his son\u2019s untimely fate.",
+      "layer": "protected_from",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "protected_from",
+        "label": "No widow mourned her well-loved mate, No sire his son\u2019s untimely fate.",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "people",
+      "directed": true,
+      "label": "They feared not storm or robber\u2019s hand; No fire or flood laid waste the land:",
+      "layer": "protected_from",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "protected_from",
+        "label": "They feared not storm or robber\u2019s hand; No fire or flood laid waste the land:",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "golden_age",
+      "target": "rama_reign",
+      "directed": true,
+      "label": "The Golden Age(40) had come again To bless the days of R\u00e1ma\u2019s reign.",
+      "layer": "blessed_during",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "blessed_during",
+        "label": "The Golden Age(40) had come again To bless the days of R\u00e1ma\u2019s reign.",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "rama",
+      "target": "princely_scion",
+      "directed": true,
+      "label": "Shall many a princely scion spring.",
+      "layer": "ancestor_of",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "ancestor_of",
+        "label": "Shall many a princely scion spring.",
+        "instagraph:color": "#888",
+        "source_line": 351,
+        "source_char_offset": 11799
+      }
+    },
+    {
+      "source": "rama",
+      "target": "brahma_world",
+      "directed": true,
+      "label": "To Brahm\u00e1\u2019s world shall go at last.",
+      "layer": "goes_to_afterlife",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "goes_to_afterlife",
+        "label": "To Brahm\u00e1\u2019s world shall go at last.",
+        "instagraph:color": "#222",
+        "source_line": 355,
+        "source_char_offset": 11946
+      }
+    },
+    {
+      "source": "reader_of_rama_deeds",
+      "target": "scriptures",
+      "directed": false,
+      "label": "Good as the Scriptures, he shall be",
+      "layer": "equivalent_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "equivalent_to",
+        "label": "Good as the Scriptures, he shall be",
+        "instagraph:color": "#26A",
+        "source_line": 359,
+        "source_char_offset": 12053
+      }
+    },
+    {
+      "source": "reader_of_rama_deeds",
+      "target": "heavens",
+      "directed": true,
+      "label": "Whoever reads the saving strain, With all his kin the heavens shall gain.",
+      "layer": "gains_access_to",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "gains_access_to",
+        "label": "Whoever reads the saving strain, With all his kin the heavens shall gain.",
+        "instagraph:color": "#26A",
+        "source_line": 361,
+        "source_char_offset": 12122
+      }
+    },
+    {
+      "source": "brahmans_who_read",
+      "target": "eloquence",
+      "directed": true,
+      "label": "Br\u00e1hmans who read shall gather hence The highest praise for eloquence.",
+      "layer": "receives_praise_for",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "receives_praise_for",
+        "label": "Br\u00e1hmans who read shall gather hence The highest praise for eloquence.",
+        "instagraph:color": "#26A",
+        "source_line": 363,
+        "source_char_offset": 12196
+      }
+    },
+    {
+      "source": "warrior_who_reads",
+      "target": "land_reign",
+      "directed": true,
+      "label": "The warrior, o\u2019er the land shall reign,",
+      "layer": "gains_power_over",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "gains_power_over",
+        "label": "The warrior, o\u2019er the land shall reign,",
+        "instagraph:color": "#26A",
+        "source_line": 365,
+        "source_char_offset": 12267
+      }
+    },
+    {
+      "source": "merchant_who_reads",
+      "target": "trade_luck",
+      "directed": true,
+      "label": "The merchant, luck in trade obtain;",
+      "layer": "receives_blessing_for",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "receives_blessing_for",
+        "label": "The merchant, luck in trade obtain;",
+        "instagraph:color": "#26A",
+        "source_line": 366,
+        "source_char_offset": 12307
+      }
+    },
+    {
+      "source": "\u015b\u00fadras_who_listen",
+      "target": "advantage",
+      "directed": true,
+      "label": "\u015a\u00fadras listening(42) ne\u2019er shall fail To reap advantage from the tale.(43)",
+      "layer": "receives_benefit_from",
+      "source_role": "source",
+      "target_role": "target",
+      "attrs": {
+        "i2t:predicate": "receives_benefit_from",
+        "label": "\u015a\u00fadras listening(42) ne\u2019er shall fail To reap advantage from the tale.(43)",
+        "instagraph:color": "#26A"
+      }
+    }
+  ]
+}

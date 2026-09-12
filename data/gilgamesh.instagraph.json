@@ -1,0 +1,229 @@
+{
+  "metadata": {
+    "createdDate": "2026-05-22",
+    "lastUpdated": "2026-05-22",
+    "description": "Knowledge graph of the Gilgamesh Epic extracted from the 1928 Campbell Thompson translation in cuneiform literary style. Captures the structural layout of the twelve cuneiform tablets, the principal deities, heroes, and humans, and reifies ten major narrative events as n-ary hyperedges. Every narrative edge carries a literal, completely unaltered cuneiform-translation text excerpt in its label field as empirical proof, preserving brackets, brackets-hyphen markers, and original em dashes.",
+    "source": "R. Campbell Thompson, The Epic of Gilgamish (1928 translation from cuneiform)",
+    "extractor": "Antigravity i2t agent, schema-compatible with yoheinakajima/instagraph + i2t hyperedge/reification extensions"
+  },
+  "nodes": [
+    {"id": "gilgamesh_epic", "label": "The Epic of Gilgamish", "type": "Epic", "color": "#C8E0F8", "properties": {"translation": "1928 Campbell Thompson Translation", "origin": "Ancient Mesopotamia", "narrative_arc": "Quest for immortality and acceptance of human limits"}},
+    {"id": "tablet_1", "label": "The First Tablet", "type": "Tablet", "color": "#C8E0F8", "properties": {"theme": "The tyranny of Gilgamesh, the creation of Enkidu, and his taming by Shamhat", "column_count": 6}},
+    {"id": "tablet_2", "label": "The Second Tablet", "type": "Tablet", "color": "#C8E0F8", "properties": {"theme": "Enkidu meets Gilgamesh in Erech, their grapple, and the birth of their friendship", "column_count": 6}},
+    {"id": "tablet_3", "label": "The Third Tablet", "type": "Tablet", "color": "#C8E0F8", "properties": {"theme": "Preparation for the journey to the Cedar Forest against Humbaba", "column_count": 6}},
+    {"id": "tablet_4", "label": "The Fourth Tablet", "type": "Tablet", "color": "#C8E0F8", "properties": {"theme": "The journey to the Cedar Forest, Enkidu's hesitation, and Gilgamesh's resolve", "column_count": 6}},
+    {"id": "tablet_5", "label": "The Fifth Tablet", "type": "Tablet", "color": "#C8E0F8", "properties": {"theme": "The battle with Humbaba the Fierce and his execution by the heroes", "column_count": 6}},
+    {"id": "tablet_6", "label": "The Sixth Tablet", "type": "Tablet", "color": "#C8E0F8", "properties": {"theme": "Ishtar's proposal, Gilgamesh's rejection, and the slaying of the Heavenly Bull", "column_count": 6}},
+    {"id": "tablet_7", "label": "The Seventh Tablet", "type": "Tablet", "color": "#C8E0F8", "properties": {"theme": "The divine council decrees Enkidu's death, Enkidu's illness, curses, and dreams", "column_count": 6}},
+    {"id": "tablet_8", "label": "The Eighth Tablet", "type": "Tablet", "color": "#C8E0F8", "properties": {"theme": "Gilgamesh's lamentation and the funeral rites for Enkidu", "column_count": 6}},
+    {"id": "tablet_9", "label": "The Ninth Tablet", "type": "Tablet", "color": "#C8E0F8", "properties": {"theme": "Gilgamesh's grief and his journey through the Mashu Mountains to find Uta-Napishtim", "column_count": 6}},
+    {"id": "tablet_10", "label": "The Tenth Tablet", "type": "Tablet", "color": "#C8E0F8", "properties": {"theme": "Meetings with Siduri the alewife, Ur-Shanabi the ferryman, and Uta-Napishtim", "column_count": 6}},
+    {"id": "tablet_11", "label": "The Eleventh Tablet", "type": "Tablet", "color": "#C8E0F8", "properties": {"theme": "The story of the Deluge, the quest for the plant of youth, and the return to Erech", "column_count": 6}},
+    {"id": "tablet_12", "label": "The Twelfth Tablet", "type": "Tablet", "color": "#C8E0F8", "properties": {"theme": "Enkidu goes to the underworld, returns as a ghost, and communions with Gilgamesh", "column_count": 6}},
+    
+    {"id": "gilgamesh", "label": "Gilgamish", "type": "Hero-King", "color": "#F8C8DC", "properties": {"role": "King of Erech; son of Ninsun; two-thirds divine and one-third human", "narrative_arc": "Learns mortality after his quest fails"}},
+    {"id": "enkidu", "label": "Enkidu", "type": "Hero-Companion", "color": "#F8C8DC", "properties": {"role": "Created from clay by Aruru; wild man tamed by Shamhat; companion of Gilgamish", "status": "Dies as a proxy punishment by the gods"}},
+    
+    {"id": "ishtar", "label": "Ishtar", "type": "Deity", "color": "#F8C8B8", "properties": {"domain": "Goddess of love, fertility, and war", "role": "Proposes to Gilgamish and is rejected, leading to the descent of the Heavenly Bull"}},
+    {"id": "anu", "label": "Anu", "type": "Deity", "color": "#F8C8B8", "properties": {"domain": "Sky god, father of the pantheon", "role": "Gives ear to the wailing of Erech; commands Aruru to make a double for Gilgamish"}},
+    {"id": "enlil", "label": "Enlil", "type": "Deity", "color": "#F8C8B8", "properties": {"domain": "God of earth, wind, and air", "role": "Appoints Humbaba to guard the Cedar Forest; decrees the deluge; grants Uta-Napishtim immortality"}},
+    {"id": "ea", "label": "Ea", "type": "Deity", "color": "#F8C8B8", "properties": {"domain": "God of water, wisdom, and creation", "role": "Betrays the divine council's deluge decree to Uta-Napishtim via a reed-hut"}},
+    {"id": "shamash", "label": "Shamash", "type": "Deity", "color": "#F8C8B8", "properties": {"domain": "Sun god and judge of heaven", "role": "Aids Gilgamish and Enkidu by sending winds against Humbaba"}},
+    {"id": "aruru", "label": "Aruru", "type": "Deity", "color": "#F8C8B8", "properties": {"domain": "Goddess of creation and mother-goddess", "role": "Moulds Enkidu from clay on the desert to be Gilgamish's double"}},
+    {"id": "ninsun", "label": "Ninsun", "type": "Deity", "color": "#F8C8B8", "properties": {"domain": "Goddess of wisdom and wild cows", "role": "Mother of Gilgamish; interprets his dreams and adopts Enkidu"}},
+    {"id": "divine_bull", "label": "The Heavenly Bull", "type": "MythologicalCreature", "color": "#F8C8B8", "properties": {"role": "Sent by Ishtar to punish Erech; slain by Gilgamish and Enkidu"}},
+    {"id": "humbaba", "label": "Humbaba", "type": "MythologicalCreature", "color": "#F8C8B8", "properties": {"role": "The fierce guardian of the Cedar Forest; slain by Gilgamish and Enkidu"}},
+    
+    {"id": "shamhat", "label": "Shamhat", "type": "Character", "color": "#F8D8C8", "properties": {"role": "The temple courtesan who seduces and tames Enkidu, teaching him humanity"}},
+    {"id": "siduri", "label": "Siduri", "type": "Character", "color": "#F8D8C8", "properties": {"role": "The wise alewife who dwells by the edge of the sea; counsels Gilgamish to enjoy mortal life"}},
+    {"id": "ur_shanabi", "label": "Ur-Shanabi", "type": "Character", "color": "#F8D8C8", "properties": {"role": "The ferryman of Uta-Napishtim; guides Gilgamish across the Waters of Death"}},
+    {"id": "uta_napishtim", "label": "Uta-Napishtim", "type": "Character", "color": "#F8D8C8", "properties": {"role": "The survivor of the Great Deluge; granted immortality by the gods; tells Gilgamish the flood story"}},
+    {"id": "uta_napishtim_wife", "label": "Uta-Napishtim's Wife", "type": "Character", "color": "#F8D8C8", "properties": {"role": "Bakes loaves of bread to measure Gilgamish's sleep; urges her husband to give Gilgamish a parting gift"}},
+    
+    {"id": "erech", "label": "Erech", "type": "Place", "color": "#C8F8DC", "properties": {"role": "The high-walled city ruled by Gilgamish"}},
+    {"id": "cedar_forest", "label": "The Cedar Forest", "type": "Place", "color": "#C8F8DC", "properties": {"role": "The sacred realm guarded by Humbaba"}},
+    {"id": "mashu_mountains", "label": "The Mashu Mountains", "type": "Place", "color": "#C8F8DC", "properties": {"role": "The twin peaks that guard the rising and setting sun"}},
+    
+    {"id": "creation_of_enkidu", "label": "Creation of Enkidu", "type": "ReifiedEvent", "color": "#DCC8F8", "properties": {"narrative_context": "Tablet 1, the response to the wailing of Erech"}},
+    {"id": "seduction_of_enkidu", "label": "Seduction of Enkidu", "type": "ReifiedEvent", "color": "#DCC8F8", "properties": {"narrative_context": "Tablet 1, taming the wild man by Shamhat"}},
+    {"id": "fight_at_erech", "label": "Fight at Erech", "type": "ReifiedEvent", "color": "#DCC8F8", "properties": {"narrative_context": "Tablet 2, Enkidu bars the passage and grapples with Gilgamish"}},
+    {"id": "slaying_of_humbaba", "label": "Slaying of Humbaba", "type": "ReifiedEvent", "color": "#DCC8F8", "properties": {"narrative_context": "Tablet 5, the execution of the forest guardian"}},
+    {"id": "ishtar_rebuff", "label": "Ishtar's Rebuff", "type": "ReifiedEvent", "color": "#DCC8F8", "properties": {"narrative_context": "Tablet 6, Gilgamish rejects the goddess's proposal"}},
+    {"id": "slaying_of_divine_bull", "label": "Slaying of the Divine Bull", "type": "ReifiedEvent", "color": "#DCC8F8", "properties": {"narrative_context": "Tablet 6, slaying the bull sent to devastate Erech"}},
+    {"id": "death_of_enkidu", "label": "Death of Enkidu", "type": "ReifiedEvent", "color": "#DCC8F8", "properties": {"narrative_context": "Tablet 7/8, Enkidu's illness and death"}},
+    {"id": "great_deluge", "label": "The Great Deluge", "type": "ReifiedEvent", "color": "#DCC8F8", "properties": {"narrative_context": "Tablet 11, the story of the flood told by Uta-Napishtim"}},
+    {"id": "plant_of_youth_quest", "label": "Quest for the Plant of Youth", "type": "ReifiedEvent", "color": "#DCC8F8", "properties": {"narrative_context": "Tablet 11, diving for the plant and its loss to a serpent"}},
+    {"id": "ghost_communion", "label": "Ghost Communion", "type": "ReifiedEvent", "color": "#DCC8F8", "properties": {"narrative_context": "Tablet 12, Enkidu's shadow returns to speak with Gilgamish"}}
+  ],
+  "edges": [
+    {"from": "gilgamesh_epic", "to": "tablet_1", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "gilgamesh_epic", "to": "tablet_2", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "gilgamesh_epic", "to": "tablet_3", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "gilgamesh_epic", "to": "tablet_4", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "gilgamesh_epic", "to": "tablet_5", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "gilgamesh_epic", "to": "tablet_6", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "gilgamesh_epic", "to": "tablet_7", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "gilgamesh_epic", "to": "tablet_8", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "gilgamesh_epic", "to": "tablet_9", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "gilgamesh_epic", "to": "tablet_10", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "gilgamesh_epic", "to": "tablet_11", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "gilgamesh_epic", "to": "tablet_12", "relationship": "contains", "direction": "directed", "color": "#888"},
+
+    {"from": "tablet_1", "to": "tablet_2", "relationship": "successor", "direction": "directed", "color": "#888"},
+    {"from": "tablet_2", "to": "tablet_3", "relationship": "successor", "direction": "directed", "color": "#888"},
+    {"from": "tablet_3", "to": "tablet_4", "relationship": "successor", "direction": "directed", "color": "#888"},
+    {"from": "tablet_4", "to": "tablet_5", "relationship": "successor", "direction": "directed", "color": "#888"},
+    {"from": "tablet_5", "to": "tablet_6", "relationship": "successor", "direction": "directed", "color": "#888"},
+    {"from": "tablet_6", "to": "tablet_7", "relationship": "successor", "direction": "directed", "color": "#888"},
+    {"from": "tablet_7", "to": "tablet_8", "relationship": "successor", "direction": "directed", "color": "#888"},
+    {"from": "tablet_8", "to": "tablet_9", "relationship": "successor", "direction": "directed", "color": "#888"},
+    {"from": "tablet_9", "to": "tablet_10", "relationship": "successor", "direction": "directed", "color": "#888"},
+    {"from": "tablet_10", "to": "tablet_11", "relationship": "successor", "direction": "directed", "color": "#888"},
+    {"from": "tablet_11", "to": "tablet_12", "relationship": "successor", "direction": "directed", "color": "#888"},
+
+    {"from": "tablet_1", "to": "creation_of_enkidu", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "tablet_1", "to": "seduction_of_enkidu", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "tablet_2", "to": "fight_at_erech", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "tablet_5", "to": "slaying_of_humbaba", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "tablet_6", "to": "ishtar_rebuff", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "tablet_6", "to": "slaying_of_divine_bull", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "tablet_7", "to": "death_of_enkidu", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "tablet_11", "to": "great_deluge", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "tablet_11", "to": "plant_of_youth_quest", "relationship": "contains", "direction": "directed", "color": "#888"},
+    {"from": "tablet_12", "to": "ghost_communion", "relationship": "contains", "direction": "directed", "color": "#888"},
+
+    {
+      "id": "creation_of_enkidu",
+      "members": [
+        {"node": "aruru", "role": "creator", "attrs": {"method": "washing her hands, then Aruru Finger’d some clay, on the desert she moulded (it)"}},
+        {"node": "enkidu", "role": "created", "attrs": {"appearance": "hair Sproutd luxuriant growth"}},
+        {"node": "anu", "role": "conceptual_origin", "attrs": {"form": "Concept of Anu"}},
+        {"node": "tablet_1", "role": "narrative_source"}
+      ],
+      "relationship": "moulded_on_desert_as_warrior",
+      "label": "So when the goddess Aruru heard this, in her mind she imagined (Straightway, this) Concept of Anu, and, washing her hands, (then) Aruru Finger’d some clay, on the desert she moulded (it): (thus) on the desert Enkidu made she, a warrior",
+      "direction": "undirected",
+      "color": "#DCC8F8"
+    },
+    {
+      "id": "seduction_of_enkidu",
+      "members": [
+        {"node": "shamhat", "role": "tamer", "attrs": {"comeliness": "girl, displaying her bosom, Shew’d him her comeliness"}},
+        {"node": "enkidu", "role": "tamed", "attrs": {"consequence": "Failed his knees, and he slack d in his running... wisdom"}},
+        {"node": "tablet_1", "role": "narrative_source"}
+      ],
+      "relationship": "tamed_wild_man_via_hetaera",
+      "label": "Six days, (aye) seven nights, with the courtesan-girl in his mating. Sated at length with her charms, he turn d his face to his cattle, O the gazelles, (how) they scamper’d away, as soon as they saw him!",
+      "direction": "undirected",
+      "color": "#DCC8F8"
+    },
+    {
+      "id": "fight_at_erech",
+      "members": [
+        {"node": "gilgamesh", "role": "combatant_king", "attrs": {"rage": "Burgeon 'd his rage"}},
+        {"node": "enkidu", "role": "combatant_challenger", "attrs": {"action": "barr d up the door with his foot"}},
+        {"node": "erech", "role": "location", "attrs": {"combat_zone": "the street of broad-marketed Erech"}},
+        {"node": "tablet_2", "role": "narrative_source"}
+      ],
+      "relationship": "grappled_and_snorted_like_bulls_in_highway",
+      "label": "Enkidu barr d up the door with his foot, (and) to Gilgamish entry— Would not concede: they grappled and snorted(?) like bulls, (and) the threshold Shatter’d: the (very) wall quiver’d as Gilgamish!, Enkidu grappled",
+      "direction": "undirected",
+      "color": "#DCC8F8"
+    },
+    {
+      "id": "slaying_of_humbaba",
+      "members": [
+        {"node": "gilgamesh", "role": "slayer"},
+        {"node": "enkidu", "role": "slayer"},
+        {"node": "humbaba", "role": "slain", "attrs": {"fate": "they cut off the head of Humbaba"}},
+        {"node": "shamash", "role": "divine_helper", "attrs": {"aid": "raised mighty winds: (yea), a great wind"}},
+        {"node": "cedar_forest", "role": "location"},
+        {"node": "tablet_5", "role": "narrative_source"}
+      ],
+      "relationship": "o'erthrew_humbaba_and_beheaded",
+      "label": "Wherefore against Humbaba he raised mighty winds: (yea), a great wind... Seizing \"Humbaba’ before and behind, so that nor to go forwards, Nor to go back was he able: and then Humbaba surrender’d. ... they cut off the head of Humbaba.",
+      "direction": "undirected",
+      "color": "#DCC8F8"
+    },
+    {
+      "id": "ishtar_rebuff",
+      "members": [
+        {"node": "gilgamesh", "role": "rebuffer", "attrs": {"scorn": "unfolded endless list of her husbands"}},
+        {"node": "ishtar", "role": "rebuffed", "attrs": {"invitation": "come, be a bridegroom"}},
+        {"node": "tablet_6", "role": "narrative_source"}
+      ],
+      "relationship": "scorned_divine_marriage_proposal",
+      "label": "Lady Ishtar espieth the beauty of Gilgamish: (saith she), “Gilgamish, come, be a bridegroom... What, then, will be my advantage, supposing’ I take thee in marriage? Thou 'rt but a back door \"not\" giving resistance to blast or to windstorm, Thou 'rt but a palace which dasheth the heroes \"within it to pieces’",
+      "direction": "undirected",
+      "color": "#DCC8F8"
+    },
+    {
+      "id": "slaying_of_divine_bull",
+      "members": [
+        {"node": "gilgamesh", "role": "slayer"},
+        {"node": "enkidu", "role": "slayer", "attrs": {"insult": "Wrenching the member from out of the Bull, he toss’d (it) before her"}},
+        {"node": "divine_bull", "role": "slain", "attrs": {"fight": "Seized on the Heavenly Bull by ‘his’ horns"}},
+        {"node": "ishtar", "role": "mourner", "attrs": {"wail": "mounted Ishtar (the crest of) the ramparts of Erech"}},
+        {"node": "shamash", "role": "recipient_of_sacrifice", "attrs": {"offering": "its heart they removed, Unto the Sun-god they offer'd"}},
+        {"node": "tablet_6", "role": "narrative_source"}
+      ],
+      "relationship": "slew_heavenly_bull_and_defied_ishtar",
+      "label": "(So), what time they the Bull of the Heavens had kili’d, its heart they - removed, Unto the Sun-god they offer'd in sacrifice... Woe unto Gilgamish—he who by killing the Bull of the Heavens, Made me lament. ... Wrenching the member from out of the Bull, he toss’d (it) before her",
+      "direction": "undirected",
+      "color": "#DCC8F8"
+    },
+    {
+      "id": "death_of_enkidu",
+      "members": [
+        {"node": "gilgamesh", "role": "mourner", "attrs": {"dread": "Sorrow hath enter’d my heart; I fear death"}},
+        {"node": "enkidu", "role": "deceased", "attrs": {"death": "die like Enkidu also"}},
+        {"node": "tablet_7", "role": "narrative_source"},
+        {"node": "tablet_8", "role": "narrative_source"}
+      ],
+      "relationship": "bitter_weeping_and_terror_of_death",
+      "label": "Gilgamish bitterly wept for his comrade, (for) Enkidu, ranging Over the desert: \"I, too—shall I not die like Enkidu also? Sorrow hath enter’d my heart; I fear death as I range o’er the desert, I will get hence on the road to the presence of Uta-Napishtim",
+      "direction": "undirected",
+      "color": "#DCC8F8"
+    },
+    {
+      "id": "great_deluge",
+      "members": [
+        {"node": "uta_napishtim", "role": "survivor", "attrs": {"vessel": "pull down, (and) fashion a vessel"}},
+        {"node": "ea", "role": "divine_warning_voice", "attrs": {"revelation": "conspirator with them, Unto a reed-hut their counsel betray’d"}},
+        {"node": "enlil", "role": "divine_destroyer", "attrs": {"action": "brought on a deluge"}},
+        {"node": "anu", "role": "divine_council_head"},
+        {"node": "tablet_11", "role": "narrative_source"}
+      ],
+      "relationship": "flood_destruction_and_ark_grounding",
+      "label": "Nin-igi-azag— tis Ea—, (albeit) conspirator with them, Unto a reed-hut their counsel betray’d he: \"O Reed-hut, O Reed-hut ! Wall, wall! Hearken, O Reed-hut, consider, O Wall! ... Six days, al se’nnight the hurricane, deluge, (and) tempest continued",
+      "direction": "undirected",
+      "color": "#DCC8F8"
+    },
+    {
+      "id": "plant_of_youth_quest",
+      "members": [
+        {"node": "gilgamesh", "role": "seeker", "attrs": {"loss": "Then Gilgamish sate him, (and) burst into weeping"}},
+        {"node": "uta_napishtim", "role": "revealer", "attrs": {"secret": "reveal thee a hidden matter"}},
+        {"node": "ur_shanabi", "role": "witness"},
+        {"node": "tablet_11", "role": "narrative_source"}
+      ],
+      "relationship": "dived_for_plant_lost_to_serpent",
+      "label": "There is a plant like a thorn... Bound heavy stones \"on his feet?, which dragg’d him down... a serpent who snuff'd the plant's fragrance... snatch’d the plant... Then Gilgamish sate him, (and) burst into weeping.",
+      "direction": "undirected",
+      "color": "#DCC8F8"
+    },
+    {
+      "id": "ghost_communion",
+      "members": [
+        {"node": "gilgamesh", "role": "inquirer"},
+        {"node": "enkidu", "role": "ghost", "attrs": {"wisdom": "spirit of Enkidu issued Forth like a wind"}},
+        {"node": "ea", "role": "divine_intercessor", "attrs": {"plea": "Spake he: O Nergal... Ope now, a hole"}},
+        {"node": "tablet_12", "role": "narrative_source"}
+      ],
+      "relationship": "ghost_rose_and_communed_weeping",
+      "label": "Oped, then, a hole in the earth, and the spirit of Enkidu issued Forth from the earth like a wind. They embraced and..... Communed together, mourning. ... What I have seen of the laws of the Underworld, —sit thee down weeping ! ”",
+      "direction": "undirected",
+      "color": "#DCC8F8"
+    }
+  ]
+}

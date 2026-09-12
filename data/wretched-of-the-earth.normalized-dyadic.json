@@ -1,0 +1,2436 @@
+{
+  "metadata": {
+    "format": "normalized-dyadic",
+    "flavor": "dyadic-projection-from-hypergraph",
+    "i2t:relation_to_canonical": "dyadic-projection",
+    "originalCounts": {
+      "nodes": 82,
+      "edges": 111,
+      "incidences": 240
+    },
+    "source-metadata": {
+      "topothink-version": "0.1",
+      "adapter": "instagraph_to_hypergraph.py",
+      "source-format": "instagraph",
+      "source-meta": {
+        "createdDate": "2026-04-28",
+        "lastUpdated": "2026-04-28",
+        "description": "Knowledge graph of Frantz Fanon's The Wretched of the Earth (1961). Captures the conceptual structure (colonial Manichaeism, decolonizing violence, national consciousness and its pitfalls, n\u00e9gritude critique, mental disorders as colonial symptom), the figures Fanon engages with (Sartre, Bhabha, Marx, C\u00e9saire, the racist colonial-medicine school of Porot/Carothers), and four of the patient case studies from chapter V as reified n-ary events. Extracted from the 2004 Richard Philcox translation by Claude (i2t project) following the InstaGraph schema with the project's two extensions: edges may use `members` for n-ary hyperedges, and edges may carry an explicit `id` matching a node id for reification. Source text: ~/Knowledge/The Wretched Of The Earth.pdf (404 pages, extracted via pdftotext).",
+        "source": "Frantz Fanon, The Wretched of the Earth (1961, Philcox tr. 2004); foreword by Homi K. Bhabha; preface by Jean-Paul Sartre",
+        "extractor": "claude (claude-opus-4-7), schema-compatible with yoheinakajima/instagraph + i2t hyperedge/reification extensions"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "fanon",
+      "kind": "node",
+      "attrs": {
+        "label": "Frantz Fanon",
+        "instagraph:type": "Theorist",
+        "instagraph:color": "#F8C8DC",
+        "lifespan": "1925-1961",
+        "born": "Martinique",
+        "role": "author of the book; psychiatrist; FLN militant; the philosophical-political voice"
+      },
+      "label": "Frantz Fanon"
+    },
+    {
+      "id": "sartre",
+      "kind": "node",
+      "attrs": {
+        "label": "Jean-Paul Sartre",
+        "instagraph:type": "Theorist",
+        "instagraph:color": "#F8C8DC",
+        "role": "wrote the 1961 preface; existentialist interlocutor; endorses Fanon's call for revolutionary violence"
+      },
+      "label": "Jean-Paul Sartre"
+    },
+    {
+      "id": "bhabha",
+      "kind": "node",
+      "attrs": {
+        "label": "Homi K. Bhabha",
+        "instagraph:type": "Theorist",
+        "instagraph:color": "#F8C8DC",
+        "role": "wrote the 2004 foreword 'Framing Fanon'; postcolonial theorist re-introducing Fanon"
+      },
+      "label": "Homi K. Bhabha"
+    },
+    {
+      "id": "cesaire",
+      "kind": "node",
+      "attrs": {
+        "label": "Aim\u00e9 C\u00e9saire",
+        "instagraph:type": "Theorist",
+        "instagraph:color": "#F8C8DC",
+        "role": "Martinican poet; co-founder of negritude; Fanon's teacher"
+      },
+      "label": "Aim\u00e9 C\u00e9saire"
+    },
+    {
+      "id": "senghor",
+      "kind": "node",
+      "attrs": {
+        "label": "L\u00e9opold S\u00e9dar Senghor",
+        "instagraph:type": "Theorist",
+        "instagraph:color": "#F8C8DC",
+        "role": "Senegalese poet/politician; co-founder of negritude"
+      },
+      "label": "L\u00e9opold S\u00e9dar Senghor"
+    },
+    {
+      "id": "marx",
+      "kind": "node",
+      "attrs": {
+        "label": "Karl Marx",
+        "instagraph:type": "Theorist",
+        "instagraph:color": "#F8C8DC",
+        "role": "Fanon stretches Marx for the colonial context \u2014 race functions as class infrastructure"
+      },
+      "label": "Karl Marx"
+    },
+    {
+      "id": "lenin",
+      "kind": "node",
+      "attrs": {
+        "label": "V.I. Lenin",
+        "instagraph:type": "Theorist",
+        "instagraph:color": "#F8C8DC",
+        "role": "theorist of revolution Fanon engages with"
+      },
+      "label": "V.I. Lenin"
+    },
+    {
+      "id": "freud",
+      "kind": "node",
+      "attrs": {
+        "label": "Sigmund Freud",
+        "instagraph:type": "Theorist",
+        "instagraph:color": "#F8C8DC",
+        "role": "Fanon invokes 'Mourning and Melancholia' for case 3 analysis"
+      },
+      "label": "Sigmund Freud"
+    },
+    {
+      "id": "de_beauvoir",
+      "kind": "node",
+      "attrs": {
+        "label": "Simone de Beauvoir",
+        "instagraph:type": "Theorist",
+        "instagraph:color": "#F8C8DC",
+        "role": "friend; witness to Fanon's last days; quoted in foreword"
+      },
+      "label": "Simone de Beauvoir"
+    },
+    {
+      "id": "biko",
+      "kind": "node",
+      "attrs": {
+        "label": "Steve Biko",
+        "instagraph:type": "Theorist",
+        "instagraph:color": "#F8C8DC",
+        "role": "South African anti-apartheid; Bhabha invokes him as one heir to Fanon"
+      },
+      "label": "Steve Biko"
+    },
+    {
+      "id": "de_gaulle",
+      "kind": "node",
+      "attrs": {
+        "label": "Charles de Gaulle",
+        "instagraph:type": "ColonialOfficial",
+        "instagraph:color": "#F8C8DC",
+        "role": "French president; quoted speaking of 'yellow multitudes' as colonial vocabulary"
+      },
+      "label": "Charles de Gaulle"
+    },
+    {
+      "id": "mauriac",
+      "kind": "node",
+      "attrs": {
+        "label": "Fran\u00e7ois Mauriac",
+        "instagraph:type": "ColonialOfficial",
+        "instagraph:color": "#F8C8DC",
+        "role": "French writer; quoted speaking of 'black, brown, and yellow hordes'"
+      },
+      "label": "Fran\u00e7ois Mauriac"
+    },
+    {
+      "id": "meyer",
+      "kind": "node",
+      "attrs": {
+        "label": "Monsieur Meyer",
+        "instagraph:type": "ColonialOfficial",
+        "instagraph:color": "#F8C8DC",
+        "role": "French Assembly speaker who said the Republic should not be 'defiled' by the Algerian people"
+      },
+      "label": "Monsieur Meyer"
+    },
+    {
+      "id": "porot",
+      "kind": "node",
+      "attrs": {
+        "label": "Antoine Porot",
+        "instagraph:type": "ColonialMedic",
+        "instagraph:color": "#F8C8DC",
+        "role": "Algiers School of Psychiatry founder; built the 'doctrine of primitivism' Fanon dismantles"
+      },
+      "label": "Antoine Porot"
+    },
+    {
+      "id": "sutter",
+      "kind": "node",
+      "attrs": {
+        "label": "Sutter",
+        "instagraph:type": "ColonialMedic",
+        "instagraph:color": "#F8C8DC",
+        "role": "Porot's student; co-author of the 1939 paper claiming Algerians are diencephalon-governed"
+      },
+      "label": "Sutter"
+    },
+    {
+      "id": "carothers",
+      "kind": "node",
+      "attrs": {
+        "label": "Dr. Carothers",
+        "instagraph:type": "ColonialMedic",
+        "instagraph:color": "#F8C8DC",
+        "role": "WHO 'international expert' who claimed the normal African is a lobotomized European; 'analyzed' the Mau-Mau revolt as frustration complex"
+      },
+      "label": "Dr. Carothers"
+    },
+    {
+      "id": "baruk",
+      "kind": "node",
+      "attrs": {
+        "label": "Baruk",
+        "instagraph:type": "ColonialMedic",
+        "instagraph:color": "#F8C8DC",
+        "role": "psychiatrist whose hysteria report Porot used as platform"
+      },
+      "label": "Baruk"
+    },
+    {
+      "id": "josie_fanon",
+      "kind": "node",
+      "attrs": {
+        "label": "Josie Fanon",
+        "instagraph:type": "Person",
+        "instagraph:color": "#F8C8DC",
+        "role": "Fanon's wife; read him reviews of Wretched on his deathbed"
+      },
+      "label": "Josie Fanon"
+    },
+    {
+      "id": "wretched_book",
+      "kind": "node",
+      "attrs": {
+        "label": "The Wretched of the Earth",
+        "instagraph:type": "Work",
+        "instagraph:color": "#C8E0F8",
+        "year": 1961,
+        "role": "the book itself; reified \u2014 Sartre prefaces it, Bhabha forewords it, the French police seized it on the day Fanon died"
+      },
+      "label": "The Wretched of the Earth"
+    },
+    {
+      "id": "black_skin",
+      "kind": "node",
+      "attrs": {
+        "label": "Black Skin, White Masks",
+        "instagraph:type": "Work",
+        "instagraph:color": "#C8E0F8",
+        "year": 1952,
+        "role": "Fanon's earlier work on the psychic violence of colonial racism in metropolitan France"
+      },
+      "label": "Black Skin, White Masks"
+    },
+    {
+      "id": "sartre_preface",
+      "kind": "node",
+      "attrs": {
+        "label": "Sartre's Preface (1961)",
+        "instagraph:type": "Work",
+        "instagraph:color": "#C8E0F8",
+        "role": "the preface that radicalized European reception; reified \u2014 Bhabha discusses it"
+      },
+      "label": "Sartre's Preface (1961)"
+    },
+    {
+      "id": "bhabha_foreword",
+      "kind": "node",
+      "attrs": {
+        "label": "Bhabha's Foreword 'Framing Fanon' (2004)",
+        "instagraph:type": "Work",
+        "instagraph:color": "#C8E0F8",
+        "role": "frame around the Philcox retranslation; reads Fanon for the post-Bandung-collapse era"
+      },
+      "label": "Bhabha's Foreword 'Framing Fanon' (2004)"
+    },
+    {
+      "id": "mourning_and_melancholia",
+      "kind": "node",
+      "attrs": {
+        "label": "Mourning and Melancholia",
+        "instagraph:type": "Work",
+        "instagraph:color": "#C8E0F8",
+        "role": "Freud's essay on guilt-after-loss; Fanon invokes it analyzing case 3"
+      },
+      "label": "Mourning and Melancholia"
+    },
+    {
+      "id": "force_of_circumstance",
+      "kind": "node",
+      "attrs": {
+        "label": "The Force of Circumstance",
+        "instagraph:type": "Work",
+        "instagraph:color": "#C8E0F8",
+        "role": "Beauvoir's memoir; quoted by Bhabha for Fanon's 'tuned antennae' remark"
+      },
+      "label": "The Force of Circumstance"
+    },
+    {
+      "id": "porot_doctrine",
+      "kind": "node",
+      "attrs": {
+        "label": "Porot's doctrine of primitivism",
+        "instagraph:type": "ReifiedClaim",
+        "instagraph:color": "#C8E0F8",
+        "role": "the racist scientific edifice claiming North Africans are biologically diencephalon-governed; reified \u2014 Fanon attacks it as a node"
+      },
+      "label": "Porot's doctrine of primitivism"
+    },
+    {
+      "id": "carothers_doctrine",
+      "kind": "node",
+      "attrs": {
+        "label": "Carothers's 'lobotomized European' claim",
+        "instagraph:type": "ReifiedClaim",
+        "instagraph:color": "#C8E0F8",
+        "role": "WHO-endorsed claim that the normal African resembles a lobotomized European; reified"
+      },
+      "label": "Carothers's 'lobotomized European' claim"
+    },
+    {
+      "id": "decolonization",
+      "kind": "node",
+      "attrs": {
+        "label": "Decolonization",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the central process the book theorizes; described as necessarily violent because colonialism was"
+      },
+      "label": "Decolonization"
+    },
+    {
+      "id": "violence",
+      "kind": "node",
+      "attrs": {
+        "label": "Violence (revolutionary)",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "Fanon's controversial thesis: anticolonial violence is not optional moral excess but the structurally necessary means by which the colonized re-becomes a person"
+      },
+      "label": "Violence (revolutionary)"
+    },
+    {
+      "id": "colonial_manichaeism",
+      "kind": "node",
+      "attrs": {
+        "label": "Colonial Manichaeism",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the colonial world is divided into two mutually exclusive sectors with no possible mediation"
+      },
+      "label": "Colonial Manichaeism"
+    },
+    {
+      "id": "compartmentalized_world",
+      "kind": "node",
+      "attrs": {
+        "label": "the Compartmentalized World",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the spatial form Manichaeism takes \u2014 colonist sector vs native sector, with police and army at the boundary"
+      },
+      "label": "the Compartmentalized World"
+    },
+    {
+      "id": "colonist_sector",
+      "kind": "node",
+      "attrs": {
+        "label": "the Colonist's Sector",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "stone, steel, paved roads, full bellies, white folks; built to last"
+      },
+      "label": "the Colonist's Sector"
+    },
+    {
+      "id": "native_sector",
+      "kind": "node",
+      "attrs": {
+        "label": "the Native's Sector",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "shanty town, Medina, reservation; famished, prostrate, on its knees"
+      },
+      "label": "the Native's Sector"
+    },
+    {
+      "id": "national_consciousness",
+      "kind": "node",
+      "attrs": {
+        "label": "National Consciousness",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the political-cultural awakening that organizes the struggle; chapter III subjects it to critique"
+      },
+      "label": "National Consciousness"
+    },
+    {
+      "id": "national_bourgeoisie",
+      "kind": "node",
+      "attrs": {
+        "label": "the National Bourgeoisie",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the comprador class that inherits colonial structures and reproduces them; the 'pitfall' of national consciousness"
+      },
+      "label": "the National Bourgeoisie"
+    },
+    {
+      "id": "peasantry",
+      "kind": "node",
+      "attrs": {
+        "label": "the Peasantry",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "Fanon's revolutionary class \u2014 the peasants outside the colonial wage system"
+      },
+      "label": "the Peasantry"
+    },
+    {
+      "id": "lumpenproletariat",
+      "kind": "node",
+      "attrs": {
+        "label": "the Lumpenproletariat",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the displaced rural-to-urban poor; Fanon (against orthodoxy) sees them as revolutionary potential"
+      },
+      "label": "the Lumpenproletariat"
+    },
+    {
+      "id": "spontaneity",
+      "kind": "node",
+      "attrs": {
+        "label": "Spontaneity",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the revolt's initial energy; chapter II names both its strength and its weakness when not organized"
+      },
+      "label": "Spontaneity"
+    },
+    {
+      "id": "national_culture",
+      "kind": "node",
+      "attrs": {
+        "label": "National Culture",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "chapter IV: culture rebuilt through and after the liberation struggle, not retrieved as static heritage"
+      },
+      "label": "National Culture"
+    },
+    {
+      "id": "negritude",
+      "kind": "node",
+      "attrs": {
+        "label": "N\u00e9gritude",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "C\u00e9saire/Senghor's affirmative-blackness movement; Fanon is sympathetic but critiques it as continental rather than national, hence trapped in the colonial frame"
+      },
+      "label": "N\u00e9gritude"
+    },
+    {
+      "id": "colonized_intellectual",
+      "kind": "node",
+      "attrs": {
+        "label": "the Colonized Intellectual",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the figure who must journey deep into the people to find legitimate ground"
+      },
+      "label": "the Colonized Intellectual"
+    },
+    {
+      "id": "new_man",
+      "kind": "node",
+      "attrs": {
+        "label": "the New Man",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the post-colonial human \u2014 to be built, not waited on; the conclusion's call"
+      },
+      "label": "the New Man"
+    },
+    {
+      "id": "universal_humanism",
+      "kind": "node",
+      "attrs": {
+        "label": "Universal Humanism (false)",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the European invocation Fanon rejects; built on Manichaean exclusion in practice"
+      },
+      "label": "Universal Humanism (false)"
+    },
+    {
+      "id": "mental_disorders_as_symptom",
+      "kind": "node",
+      "attrs": {
+        "label": "Mental Disorders as Colonial Symptom",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "chapter V's thesis: psychiatric pathology in colonial subjects is not individual but a social-political wound"
+      },
+      "label": "Mental Disorders as Colonial Symptom"
+    },
+    {
+      "id": "pacification",
+      "kind": "node",
+      "attrs": {
+        "label": "Pacification (as euphemism)",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the colonial vocabulary's name for ongoing violence; one of 'discipline, tame, subdue, pacify'"
+      },
+      "label": "Pacification (as euphemism)"
+    },
+    {
+      "id": "dehumanization",
+      "kind": "node",
+      "attrs": {
+        "label": "Dehumanization",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the Manichaean reduction of the colonized to animal \u2014 'zoological terms' in colonial discourse"
+      },
+      "label": "Dehumanization"
+    },
+    {
+      "id": "eschatological_reversal",
+      "kind": "node",
+      "attrs": {
+        "label": "'The Last Shall Be the First'",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "Fanon's borrowed apocalyptic register; Bhabha names the 'religiosity' of his revolutionary wrath"
+      },
+      "label": "'The Last Shall Be the First'"
+    },
+    {
+      "id": "third_world",
+      "kind": "node",
+      "attrs": {
+        "label": "the Third World",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "the collective political subject Fanon addresses \u2014 meant to start a 'new history of man'"
+      },
+      "label": "the Third World"
+    },
+    {
+      "id": "marxist_analysis_stretched",
+      "kind": "node",
+      "attrs": {
+        "label": "Marxist Analysis (stretched for colonial context)",
+        "instagraph:type": "Concept",
+        "instagraph:color": "#F8F0C8",
+        "role": "Fanon's amendment: in the colonies, race functions as class \u2014 economic infrastructure IS racial superstructure"
+      },
+      "label": "Marxist Analysis (stretched for colonial context)"
+    },
+    {
+      "id": "fln",
+      "kind": "node",
+      "attrs": {
+        "label": "Front de Lib\u00e9ration Nationale (FLN)",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "Algerian liberation organization; political wing"
+      },
+      "label": "Front de Lib\u00e9ration Nationale (FLN)"
+    },
+    {
+      "id": "aln",
+      "kind": "node",
+      "attrs": {
+        "label": "Arm\u00e9e de Lib\u00e9ration Nationale (ALN)",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "FLN's military wing; treats fighters wounded in combat (case 2's S\u2014\u2014 is rescued by ALN soldiers)"
+      },
+      "label": "Arm\u00e9e de Lib\u00e9ration Nationale (ALN)"
+    },
+    {
+      "id": "french_army",
+      "kind": "node",
+      "attrs": {
+        "label": "the French Army (in Algeria)",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "occupation force; agent of pacification, torture, and massacre"
+      },
+      "label": "the French Army (in Algeria)"
+    },
+    {
+      "id": "colonialism",
+      "kind": "node",
+      "attrs": {
+        "label": "Colonialism (the system)",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "the system itself, distinguished from any particular colonial state \u2014 the structure being theorized"
+      },
+      "label": "Colonialism (the system)"
+    },
+    {
+      "id": "colonial_christianity",
+      "kind": "node",
+      "attrs": {
+        "label": "Colonial Christianity",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "the Church in the colonies \u2014 'a foreigners' Church'; missionizing as alienation-vector"
+      },
+      "label": "Colonial Christianity"
+    },
+    {
+      "id": "arab_league",
+      "kind": "node",
+      "attrs": {
+        "label": "the Arab League",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "the supra-national Arab cultural-political body; Fanon contrasts its national heterogeneity with negritude's continental unity"
+      },
+      "label": "the Arab League"
+    },
+    {
+      "id": "negritude_movement",
+      "kind": "node",
+      "attrs": {
+        "label": "the N\u00e9gritude Movement",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "the literary-political movement (C\u00e9saire, Senghor, Birago Diop, Hampat\u00e9 Ba) producing 'black voices'"
+      },
+      "label": "the N\u00e9gritude Movement"
+    },
+    {
+      "id": "algiers_school",
+      "kind": "node",
+      "attrs": {
+        "label": "the Algiers School of Psychiatry",
+        "instagraph:type": "Movement",
+        "instagraph:color": "#E0E0E0",
+        "role": "Porot, Sutter, et al.; produced the colonial neuropsychiatric doctrine Fanon dismantles"
+      },
+      "label": "the Algiers School of Psychiatry"
+    },
+    {
+      "id": "algeria",
+      "kind": "node",
+      "attrs": {
+        "label": "Algeria",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "the war's site; Fanon's adopted home"
+      },
+      "label": "Algeria"
+    },
+    {
+      "id": "algiers",
+      "kind": "node",
+      "attrs": {
+        "label": "Algiers",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "the city; site of Porot's school and many of the case studies"
+      },
+      "label": "Algiers"
+    },
+    {
+      "id": "constantine_region",
+      "kind": "node",
+      "attrs": {
+        "label": "the Constantine Region",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "rural Algeria; site of Case 2's massacred douar"
+      },
+      "label": "the Constantine Region"
+    },
+    {
+      "id": "france",
+      "kind": "node",
+      "attrs": {
+        "label": "France (metropolitan)",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "the metropole; the colonist's referenced home"
+      },
+      "label": "France (metropolitan)"
+    },
+    {
+      "id": "martinique",
+      "kind": "node",
+      "attrs": {
+        "label": "Martinique",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "Fanon's birthplace; C\u00e9saire's home; first site of his analysis of colonial racism"
+      },
+      "label": "Martinique"
+    },
+    {
+      "id": "kenya",
+      "kind": "node",
+      "attrs": {
+        "label": "Kenya",
+        "instagraph:type": "Place",
+        "instagraph:color": "#C8F8DC",
+        "role": "site of the Mau-Mau revolt Carothers tried to pathologize"
+      },
+      "label": "Kenya"
+    },
+    {
+      "id": "patient_b",
+      "kind": "node",
+      "attrs": {
+        "label": "B\u2014\u2014 (case I.1)",
+        "instagraph:type": "Patient",
+        "instagraph:color": "#F8D8C8",
+        "role": "26-year-old former taxi driver, FLN militant since age 18; presents with impotence and migraines after wife's rape"
+      },
+      "label": "B\u2014\u2014 (case I.1)"
+    },
+    {
+      "id": "patient_b_wife",
+      "kind": "node",
+      "attrs": {
+        "label": "B\u2014\u2014's wife",
+        "instagraph:type": "Person",
+        "instagraph:color": "#F8D8C8",
+        "role": "raped by French soldiers during interrogation about her husband's whereabouts; 'a tenacious woman who was prepared to accept anything rather than give up her husband'"
+      },
+      "label": "B\u2014\u2014's wife"
+    },
+    {
+      "id": "patient_b_daughter",
+      "kind": "node",
+      "attrs": {
+        "label": "B\u2014\u2014's daughter",
+        "instagraph:type": "Person",
+        "instagraph:color": "#F8D8C8",
+        "role": "twenty-month-old at time of incident; B\u2014\u2014 develops impulse to tear up her photo"
+      },
+      "label": "B\u2014\u2014's daughter"
+    },
+    {
+      "id": "patient_s",
+      "kind": "node",
+      "attrs": {
+        "label": "S\u2014\u2014 (case I.2)",
+        "instagraph:type": "Patient",
+        "instagraph:color": "#F8D8C8",
+        "role": "37-year-old fellah, Constantine douar; presents with random homicidal impulses after surviving point-blank-range mass execution"
+      },
+      "label": "S\u2014\u2014 (case I.2)"
+    },
+    {
+      "id": "french_officer_helicopter",
+      "kind": "node",
+      "attrs": {
+        "label": "the French Officer (case I.2)",
+        "instagraph:type": "Person",
+        "instagraph:color": "#F8D8C8",
+        "role": "arrived by helicopter; declared 'There's too much fuss over this douar; destroy it!'; ordered the massacre"
+      },
+      "label": "the French Officer (case I.2)"
+    },
+    {
+      "id": "patient_d",
+      "kind": "node",
+      "attrs": {
+        "label": "D\u2014\u2014 (case I.3)",
+        "instagraph:type": "Patient",
+        "instagraph:color": "#F8D8C8",
+        "role": "19-year-old former student, ALN fighter; presents with depression, hallucinations, and attempted suicide after killing a settler's wife"
+      },
+      "label": "D\u2014\u2014 (case I.3)"
+    },
+    {
+      "id": "patient_d_mother",
+      "kind": "node",
+      "attrs": {
+        "label": "D\u2014\u2014's mother",
+        "instagraph:type": "Person",
+        "instagraph:color": "#F8D8C8",
+        "role": "killed at point-blank range by a French soldier; D\u2014\u2014's primary attachment"
+      },
+      "label": "D\u2014\u2014's mother"
+    },
+    {
+      "id": "settlers_wife",
+      "kind": "node",
+      "attrs": {
+        "label": "the Settler's Wife (case I.3)",
+        "instagraph:type": "Person",
+        "instagraph:color": "#F8D8C8",
+        "role": "killed by D\u2014\u2014 in her home; 'I've got children'; appears in his hallucinations as bloodless, multiplied, demanding her blood back"
+      },
+      "label": "the Settler's Wife (case I.3)"
+    },
+    {
+      "id": "patient_a",
+      "kind": "node",
+      "attrs": {
+        "label": "A\u2014\u2014 (case I.4)",
+        "instagraph:type": "Patient",
+        "instagraph:color": "#F8D8C8",
+        "role": "28-year-old European police officer; transferred to anti-FLN brigade; presents with auditory hallucinations of his torture victims' screams"
+      },
+      "label": "A\u2014\u2014 (case I.4)"
+    },
+    {
+      "id": "as_torture_victims",
+      "kind": "node",
+      "attrs": {
+        "label": "A\u2014\u2014's torture victims (collective)",
+        "instagraph:type": "Person",
+        "instagraph:color": "#F8D8C8",
+        "role": "interrogated, beaten, suspended, near-drowned, electrocuted, in some cases killed at police headquarters"
+      },
+      "label": "A\u2014\u2014's torture victims (collective)"
+    },
+    {
+      "id": "patient_d_commander",
+      "kind": "node",
+      "attrs": {
+        "label": "D\u2014\u2014's commander",
+        "instagraph:type": "Person",
+        "instagraph:color": "#F8D8C8",
+        "role": "disarmed D\u2014\u2014 after the killing; ordered him to leave; later interrogated him about it"
+      },
+      "label": "D\u2014\u2014's commander"
+    },
+    {
+      "id": "case_b_event",
+      "kind": "edge-as-node",
+      "attrs": {
+        "label": "the rape of B\u2014\u2014's wife (case I.1 event)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "n-ary reified event; the originating violence; 'It was the rape of a tenacious woman who was prepared to accept anything rather than give up her husband. And that husband was me.'"
+      },
+      "label": "the rape of B\u2014\u2014's wife (case I.1 event)"
+    },
+    {
+      "id": "case_s_event",
+      "kind": "edge-as-node",
+      "attrs": {
+        "label": "the destruction of S\u2014\u2014's douar (case I.2 event)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "n-ary reified event; 29 men killed at point-blank range, houses burned, women driven back with rifle butts; S\u2014\u2014 wounded in thigh and arm"
+      },
+      "label": "the destruction of S\u2014\u2014's douar (case I.2 event)"
+    },
+    {
+      "id": "case_d_event",
+      "kind": "edge-as-node",
+      "attrs": {
+        "label": "D\u2014\u2014's killing of the settler's wife (case I.3 event)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "n-ary reified event; ALN raid on a known-violent settler's estate; the wife alone in the house; D\u2014\u2014's mind on his murdered mother; the kill, the disarming, the interrogation"
+      },
+      "label": "D\u2014\u2014's killing of the settler's wife (case I.3 event)"
+    },
+    {
+      "id": "case_a_event",
+      "kind": "edge-as-node",
+      "attrs": {
+        "label": "A\u2014\u2014's torture sessions (case I.4 event)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "n-ary reified event; the police-headquarters interrogation regime \u2014 punches, suspension, bathtub, electricity; A\u2014\u2014 graduates from amusement to permanent auditory haunting"
+      },
+      "label": "A\u2014\u2014's torture sessions (case I.4 event)"
+    },
+    {
+      "id": "algerian_war",
+      "kind": "edge-as-node",
+      "attrs": {
+        "label": "the Algerian War of Independence (1954-1962)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "the encompassing war; the whole book is its theory; n-ary participants include FLN, ALN, French Army, Algerian people, France, settlers"
+      },
+      "label": "the Algerian War of Independence (1954-1962)"
+    },
+    {
+      "id": "bandung_conference",
+      "kind": "node",
+      "attrs": {
+        "label": "the Bandung Conference (1955)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "founding moment of nonalignment; Bhabha names it as the dream now in question"
+      },
+      "label": "the Bandung Conference (1955)"
+    },
+    {
+      "id": "setif_massacre",
+      "kind": "node",
+      "attrs": {
+        "label": "the S\u00e9tif Massacre (1945)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "French repression of Algerian VE-day demonstration; one of colonial violence's pre-war reference points"
+      },
+      "label": "the S\u00e9tif Massacre (1945)"
+    },
+    {
+      "id": "fanon_death",
+      "kind": "edge-as-node",
+      "attrs": {
+        "label": "Fanon's death (Dec 6, 1961)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "leukemia; treated at NIH Bethesda under nom-de-guerre 'Ibrahim Fanon'; French police seized the book in Paris that same day"
+      },
+      "label": "Fanon's death (Dec 6, 1961)"
+    },
+    {
+      "id": "mau_mau_revolt",
+      "kind": "node",
+      "attrs": {
+        "label": "the Mau-Mau Revolt (Kenya)",
+        "instagraph:type": "ReifiedEvent",
+        "instagraph:color": "#DCC8F8",
+        "role": "Kenyan anti-colonial revolt; Carothers diagnosed it as a 'frustration complex'"
+      },
+      "label": "the Mau-Mau Revolt (Kenya)"
+    }
+  ],
+  "links": [
+    {
+      "source": "fanon",
+      "target": "wretched_book",
+      "directed": true,
+      "label": "wrote",
+      "layer": "wrote",
+      "attrs": {
+        "i2t:predicate": "wrote",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "black_skin",
+      "directed": true,
+      "label": "wrote",
+      "layer": "wrote",
+      "attrs": {
+        "i2t:predicate": "wrote",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "sartre",
+      "target": "sartre_preface",
+      "directed": true,
+      "label": "wrote",
+      "layer": "wrote",
+      "attrs": {
+        "i2t:predicate": "wrote",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "bhabha",
+      "target": "bhabha_foreword",
+      "directed": true,
+      "label": "wrote",
+      "layer": "wrote",
+      "attrs": {
+        "i2t:predicate": "wrote",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "freud",
+      "target": "mourning_and_melancholia",
+      "directed": true,
+      "label": "wrote",
+      "layer": "wrote",
+      "attrs": {
+        "i2t:predicate": "wrote",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "de_beauvoir",
+      "target": "force_of_circumstance",
+      "directed": true,
+      "label": "wrote",
+      "layer": "wrote",
+      "attrs": {
+        "i2t:predicate": "wrote",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "porot",
+      "target": "porot_doctrine",
+      "directed": true,
+      "label": "authored",
+      "layer": "authored",
+      "attrs": {
+        "i2t:predicate": "authored",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "sutter",
+      "target": "porot_doctrine",
+      "directed": true,
+      "label": "co-authored",
+      "layer": "co-authored",
+      "attrs": {
+        "i2t:predicate": "co-authored",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "carothers",
+      "target": "carothers_doctrine",
+      "directed": true,
+      "label": "authored",
+      "layer": "authored",
+      "attrs": {
+        "i2t:predicate": "authored",
+        "instagraph:color": "#888"
+      }
+    },
+    {
+      "source": "sartre_preface",
+      "target": "wretched_book",
+      "directed": true,
+      "label": "prefaces",
+      "layer": "prefaces",
+      "attrs": {
+        "i2t:predicate": "prefaces",
+        "instagraph:color": "#666"
+      }
+    },
+    {
+      "source": "bhabha_foreword",
+      "target": "wretched_book",
+      "directed": true,
+      "label": "forewords",
+      "layer": "forewords",
+      "attrs": {
+        "i2t:predicate": "forewords",
+        "instagraph:color": "#666"
+      }
+    },
+    {
+      "source": "bhabha_foreword",
+      "target": "sartre_preface",
+      "directed": true,
+      "label": "discusses",
+      "layer": "discusses",
+      "attrs": {
+        "i2t:predicate": "discusses",
+        "instagraph:color": "#666"
+      }
+    },
+    {
+      "source": "bhabha_foreword",
+      "target": "fanon_death",
+      "directed": true,
+      "label": "opens with the story of",
+      "layer": "opens with the story of",
+      "attrs": {
+        "i2t:predicate": "opens with the story of",
+        "instagraph:color": "#666"
+      }
+    },
+    {
+      "source": "bhabha",
+      "target": "biko",
+      "directed": true,
+      "label": "invokes as Fanon's heir",
+      "layer": "invokes as Fanon's heir",
+      "attrs": {
+        "i2t:predicate": "invokes as Fanon's heir",
+        "instagraph:color": "#666"
+      }
+    },
+    {
+      "source": "bhabha",
+      "target": "bandung_conference",
+      "directed": true,
+      "label": "names as the dream now in question",
+      "layer": "names as the dream now in question",
+      "attrs": {
+        "i2t:predicate": "names as the dream now in question",
+        "instagraph:color": "#666"
+      }
+    },
+    {
+      "source": "bhabha",
+      "target": "force_of_circumstance",
+      "directed": true,
+      "label": "quotes from",
+      "layer": "quotes from",
+      "attrs": {
+        "i2t:predicate": "quotes from",
+        "instagraph:color": "#666"
+      }
+    },
+    {
+      "source": "wretched_book",
+      "target": "decolonization",
+      "directed": true,
+      "label": "theorizes",
+      "layer": "theorizes",
+      "attrs": {
+        "i2t:predicate": "theorizes",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "wretched_book",
+      "target": "violence",
+      "directed": true,
+      "label": "centers",
+      "layer": "centers",
+      "attrs": {
+        "i2t:predicate": "centers",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "wretched_book",
+      "target": "colonial_manichaeism",
+      "directed": true,
+      "label": "diagnoses",
+      "layer": "diagnoses",
+      "attrs": {
+        "i2t:predicate": "diagnoses",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "wretched_book",
+      "target": "national_consciousness",
+      "directed": true,
+      "label": "subjects to critique",
+      "layer": "subjects to critique",
+      "attrs": {
+        "i2t:predicate": "subjects to critique",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "wretched_book",
+      "target": "national_culture",
+      "directed": true,
+      "label": "theorizes",
+      "layer": "theorizes",
+      "attrs": {
+        "i2t:predicate": "theorizes",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "wretched_book",
+      "target": "mental_disorders_as_symptom",
+      "directed": true,
+      "label": "documents in chapter V",
+      "layer": "documents in chapter V",
+      "attrs": {
+        "i2t:predicate": "documents in chapter V",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "wretched_book",
+      "target": "third_world",
+      "directed": true,
+      "label": "addresses",
+      "layer": "addresses",
+      "attrs": {
+        "i2t:predicate": "addresses",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "violence",
+      "directed": true,
+      "label": "endorses (as anti-colonial necessity)",
+      "layer": "endorses (as anti-colonial necessity)",
+      "attrs": {
+        "i2t:predicate": "endorses (as anti-colonial necessity)",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "decolonization",
+      "directed": true,
+      "label": "theorizes",
+      "layer": "theorizes",
+      "attrs": {
+        "i2t:predicate": "theorizes",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "peasantry",
+      "directed": true,
+      "label": "names as revolutionary class",
+      "layer": "names as revolutionary class",
+      "attrs": {
+        "i2t:predicate": "names as revolutionary class",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "lumpenproletariat",
+      "directed": true,
+      "label": "names as revolutionary potential",
+      "layer": "names as revolutionary potential",
+      "attrs": {
+        "i2t:predicate": "names as revolutionary potential",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "national_bourgeoisie",
+      "directed": true,
+      "label": "critiques",
+      "layer": "critiques",
+      "attrs": {
+        "i2t:predicate": "critiques",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "negritude",
+      "directed": true,
+      "label": "critiques (as continental, not national)",
+      "layer": "critiques (as continental, not national)",
+      "attrs": {
+        "i2t:predicate": "critiques (as continental, not national)",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "universal_humanism",
+      "directed": true,
+      "label": "rejects",
+      "layer": "rejects",
+      "attrs": {
+        "i2t:predicate": "rejects",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "porot_doctrine",
+      "directed": true,
+      "label": "demolishes",
+      "layer": "demolishes",
+      "attrs": {
+        "i2t:predicate": "demolishes",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "carothers_doctrine",
+      "directed": true,
+      "label": "demolishes",
+      "layer": "demolishes",
+      "attrs": {
+        "i2t:predicate": "demolishes",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "marxist_analysis_stretched",
+      "directed": true,
+      "label": "introduces (race as class infrastructure)",
+      "layer": "introduces (race as class infrastructure)",
+      "attrs": {
+        "i2t:predicate": "introduces (race as class infrastructure)",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "new_man",
+      "directed": true,
+      "label": "calls for the construction of",
+      "layer": "calls for the construction of",
+      "attrs": {
+        "i2t:predicate": "calls for the construction of",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "colonized_intellectual",
+      "directed": true,
+      "label": "names the role of",
+      "layer": "names the role of",
+      "attrs": {
+        "i2t:predicate": "names the role of",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "spontaneity",
+      "directed": true,
+      "label": "analyzes (strength and weakness of)",
+      "layer": "analyzes (strength and weakness of)",
+      "attrs": {
+        "i2t:predicate": "analyzes (strength and weakness of)",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "marx",
+      "target": "marxist_analysis_stretched",
+      "directed": true,
+      "label": "originates (before stretching)",
+      "layer": "originates (before stretching)",
+      "attrs": {
+        "i2t:predicate": "originates (before stretching)",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "freud",
+      "target": "patient_d",
+      "directed": true,
+      "label": "case-3 invokes via Mourning and Melancholia",
+      "layer": "case-3 invokes via Mourning and Melancholia",
+      "attrs": {
+        "i2t:predicate": "case-3 invokes via Mourning and Melancholia",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "colonial_manichaeism",
+      "target": "compartmentalized_world",
+      "directed": true,
+      "label": "manifests as",
+      "layer": "manifests as",
+      "attrs": {
+        "i2t:predicate": "manifests as",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "compartmentalized_world",
+      "target": "colonist_sector",
+      "directed": true,
+      "label": "contains",
+      "layer": "contains",
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "compartmentalized_world",
+      "target": "native_sector",
+      "directed": true,
+      "label": "contains",
+      "layer": "contains",
+      "attrs": {
+        "i2t:predicate": "contains",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "colonist_sector",
+      "target": "native_sector",
+      "directed": false,
+      "label": "mutually excludes",
+      "layer": "mutually excludes",
+      "attrs": {
+        "i2t:predicate": "mutually excludes",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "colonial_manichaeism",
+      "target": "dehumanization",
+      "directed": true,
+      "label": "produces",
+      "layer": "produces",
+      "attrs": {
+        "i2t:predicate": "produces",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "dehumanization",
+      "target": "violence",
+      "directed": true,
+      "label": "warrants (Fanon's logic)",
+      "layer": "warrants (Fanon's logic)",
+      "attrs": {
+        "i2t:predicate": "warrants (Fanon's logic)",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "national_consciousness",
+      "target": "national_bourgeoisie",
+      "directed": true,
+      "label": "captured by (the pitfall)",
+      "layer": "captured by (the pitfall)",
+      "attrs": {
+        "i2t:predicate": "captured by (the pitfall)",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "national_consciousness",
+      "target": "national_culture",
+      "directed": true,
+      "label": "must transcend toward",
+      "layer": "must transcend toward",
+      "attrs": {
+        "i2t:predicate": "must transcend toward",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "negritude_movement",
+      "target": "negritude",
+      "directed": true,
+      "label": "produces",
+      "layer": "produces",
+      "attrs": {
+        "i2t:predicate": "produces",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "negritude",
+      "target": "colonial_manichaeism",
+      "directed": true,
+      "label": "trapped within (per Fanon)",
+      "layer": "trapped within (per Fanon)",
+      "attrs": {
+        "i2t:predicate": "trapped within (per Fanon)",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "cesaire",
+      "target": "negritude_movement",
+      "directed": true,
+      "label": "co-founded",
+      "layer": "co-founded",
+      "attrs": {
+        "i2t:predicate": "co-founded",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "senghor",
+      "target": "negritude_movement",
+      "directed": true,
+      "label": "co-founded",
+      "layer": "co-founded",
+      "attrs": {
+        "i2t:predicate": "co-founded",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "cesaire",
+      "target": "fanon",
+      "directed": true,
+      "label": "taught (in Martinique)",
+      "layer": "taught (in Martinique)",
+      "attrs": {
+        "i2t:predicate": "taught (in Martinique)",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "porot_doctrine",
+      "target": "dehumanization",
+      "directed": true,
+      "label": "scientifically justifies",
+      "layer": "scientifically justifies",
+      "attrs": {
+        "i2t:predicate": "scientifically justifies",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "carothers_doctrine",
+      "target": "dehumanization",
+      "directed": true,
+      "label": "scientifically justifies",
+      "layer": "scientifically justifies",
+      "attrs": {
+        "i2t:predicate": "scientifically justifies",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "carothers",
+      "target": "mau_mau_revolt",
+      "directed": true,
+      "label": "pathologized as 'frustration complex'",
+      "layer": "pathologized as 'frustration complex'",
+      "attrs": {
+        "i2t:predicate": "pathologized as 'frustration complex'",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "porot",
+      "target": "algiers_school",
+      "directed": true,
+      "label": "founded",
+      "layer": "founded",
+      "attrs": {
+        "i2t:predicate": "founded",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "algiers_school",
+      "target": "porot_doctrine",
+      "directed": true,
+      "label": "promulgated",
+      "layer": "promulgated",
+      "attrs": {
+        "i2t:predicate": "promulgated",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "porot_doctrine",
+      "target": "baruk",
+      "directed": true,
+      "label": "built on Baruk's hysteria report at",
+      "layer": "built on Baruk's hysteria report at",
+      "attrs": {
+        "i2t:predicate": "built on Baruk's hysteria report at",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "colonialism",
+      "target": "colonial_manichaeism",
+      "directed": true,
+      "label": "structured by",
+      "layer": "structured by",
+      "attrs": {
+        "i2t:predicate": "structured by",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "colonialism",
+      "target": "violence",
+      "directed": true,
+      "label": "originates (as ongoing colonial violence)",
+      "layer": "originates (as ongoing colonial violence)",
+      "attrs": {
+        "i2t:predicate": "originates (as ongoing colonial violence)",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "colonialism",
+      "target": "colonial_christianity",
+      "directed": true,
+      "label": "deploys",
+      "layer": "deploys",
+      "attrs": {
+        "i2t:predicate": "deploys",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "colonial_christianity",
+      "target": "dehumanization",
+      "directed": true,
+      "label": "abets ('Christianity which roots out heresy')",
+      "layer": "abets ('Christianity which roots out heresy')",
+      "attrs": {
+        "i2t:predicate": "abets ('Christianity which roots out heresy')",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "colonialism",
+      "target": "pacification",
+      "directed": true,
+      "label": "named (in colonial vocabulary)",
+      "layer": "named (in colonial vocabulary)",
+      "attrs": {
+        "i2t:predicate": "named (in colonial vocabulary)",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "de_gaulle",
+      "target": "dehumanization",
+      "directed": true,
+      "label": "speaks ('yellow multitudes')",
+      "layer": "speaks ('yellow multitudes')",
+      "attrs": {
+        "i2t:predicate": "speaks ('yellow multitudes')",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "mauriac",
+      "target": "dehumanization",
+      "directed": true,
+      "label": "speaks ('hordes')",
+      "layer": "speaks ('hordes')",
+      "attrs": {
+        "i2t:predicate": "speaks ('hordes')",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "meyer",
+      "target": "dehumanization",
+      "directed": true,
+      "label": "speaks ('defile the Republic')",
+      "layer": "speaks ('defile the Republic')",
+      "attrs": {
+        "i2t:predicate": "speaks ('defile the Republic')",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "fln",
+      "target": "algerian_war",
+      "directed": true,
+      "label": "leads",
+      "layer": "leads",
+      "attrs": {
+        "i2t:predicate": "leads",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "aln",
+      "target": "fln",
+      "directed": true,
+      "label": "is military wing of",
+      "layer": "is military wing of",
+      "attrs": {
+        "i2t:predicate": "is military wing of",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "french_army",
+      "target": "algerian_war",
+      "directed": true,
+      "label": "is occupying force in",
+      "layer": "is occupying force in",
+      "attrs": {
+        "i2t:predicate": "is occupying force in",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "algerian_war",
+      "target": "violence",
+      "directed": true,
+      "label": "instantiates (mutual)",
+      "layer": "instantiates (mutual)",
+      "attrs": {
+        "i2t:predicate": "instantiates (mutual)",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "algerian_war",
+      "target": "mental_disorders_as_symptom",
+      "directed": true,
+      "label": "produces (per Fanon)",
+      "layer": "produces (per Fanon)",
+      "attrs": {
+        "i2t:predicate": "produces (per Fanon)",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "fln",
+      "directed": true,
+      "label": "is militant of",
+      "layer": "is militant of",
+      "attrs": {
+        "i2t:predicate": "is militant of",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "algeria",
+      "directed": true,
+      "label": "lives and works in",
+      "layer": "lives and works in",
+      "attrs": {
+        "i2t:predicate": "lives and works in",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "martinique",
+      "directed": true,
+      "label": "born in",
+      "layer": "born in",
+      "attrs": {
+        "i2t:predicate": "born in",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "patient_b",
+      "directed": true,
+      "label": "treats (clinician role)",
+      "layer": "treats (clinician role)",
+      "attrs": {
+        "i2t:predicate": "treats (clinician role)",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "patient_s",
+      "directed": true,
+      "label": "treats",
+      "layer": "treats",
+      "attrs": {
+        "i2t:predicate": "treats",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "patient_d",
+      "directed": true,
+      "label": "treats",
+      "layer": "treats",
+      "attrs": {
+        "i2t:predicate": "treats",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "patient_a",
+      "directed": true,
+      "label": "treats",
+      "layer": "treats",
+      "attrs": {
+        "i2t:predicate": "treats",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "patient_b",
+      "target": "fln",
+      "directed": true,
+      "label": "is militant of",
+      "layer": "is militant of",
+      "attrs": {
+        "i2t:predicate": "is militant of",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "patient_b",
+      "target": "patient_b_wife",
+      "directed": false,
+      "label": "married to",
+      "layer": "married to",
+      "attrs": {
+        "i2t:predicate": "married to",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "patient_b",
+      "target": "patient_b_daughter",
+      "directed": true,
+      "label": "father of",
+      "layer": "father of",
+      "attrs": {
+        "i2t:predicate": "father of",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "patient_s",
+      "target": "constantine_region",
+      "directed": true,
+      "label": "from douar in",
+      "layer": "from douar in",
+      "attrs": {
+        "i2t:predicate": "from douar in",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "patient_d",
+      "target": "aln",
+      "directed": true,
+      "label": "fighter in",
+      "layer": "fighter in",
+      "attrs": {
+        "i2t:predicate": "fighter in",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "patient_d",
+      "target": "patient_d_mother",
+      "directed": true,
+      "label": "son of",
+      "layer": "son of",
+      "attrs": {
+        "i2t:predicate": "son of",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "patient_a",
+      "target": "french_army",
+      "directed": true,
+      "label": "transferred to anti-FLN brigade of",
+      "layer": "transferred to anti-FLN brigade of",
+      "attrs": {
+        "i2t:predicate": "transferred to anti-FLN brigade of",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "case_b_event",
+      "directed": true,
+      "label": "documents",
+      "layer": "documents",
+      "attrs": {
+        "i2t:predicate": "documents",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "case_s_event",
+      "directed": true,
+      "label": "documents",
+      "layer": "documents",
+      "attrs": {
+        "i2t:predicate": "documents",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "case_d_event",
+      "directed": true,
+      "label": "documents",
+      "layer": "documents",
+      "attrs": {
+        "i2t:predicate": "documents",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "case_a_event",
+      "directed": true,
+      "label": "documents",
+      "layer": "documents",
+      "attrs": {
+        "i2t:predicate": "documents",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "case_b_event",
+      "target": "mental_disorders_as_symptom",
+      "directed": true,
+      "label": "instantiates",
+      "layer": "instantiates",
+      "attrs": {
+        "i2t:predicate": "instantiates",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "case_s_event",
+      "target": "mental_disorders_as_symptom",
+      "directed": true,
+      "label": "instantiates",
+      "layer": "instantiates",
+      "attrs": {
+        "i2t:predicate": "instantiates",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "case_d_event",
+      "target": "mental_disorders_as_symptom",
+      "directed": true,
+      "label": "instantiates",
+      "layer": "instantiates",
+      "attrs": {
+        "i2t:predicate": "instantiates",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "case_a_event",
+      "target": "mental_disorders_as_symptom",
+      "directed": true,
+      "label": "instantiates",
+      "layer": "instantiates",
+      "attrs": {
+        "i2t:predicate": "instantiates",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "case_b_event",
+      "target": "algerian_war",
+      "directed": true,
+      "label": "occurs within",
+      "layer": "occurs within",
+      "attrs": {
+        "i2t:predicate": "occurs within",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "case_s_event",
+      "target": "algerian_war",
+      "directed": true,
+      "label": "occurs within",
+      "layer": "occurs within",
+      "attrs": {
+        "i2t:predicate": "occurs within",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "case_d_event",
+      "target": "algerian_war",
+      "directed": true,
+      "label": "occurs within",
+      "layer": "occurs within",
+      "attrs": {
+        "i2t:predicate": "occurs within",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "case_a_event",
+      "target": "algerian_war",
+      "directed": true,
+      "label": "occurs within",
+      "layer": "occurs within",
+      "attrs": {
+        "i2t:predicate": "occurs within",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "case_b_event",
+      "target": "patient_b_wife",
+      "directed": false,
+      "role": "victim",
+      "layer": "raped_during_interrogation_to_punish_silence",
+      "attrs": {
+        "duration_held": "over a week",
+        "raped_on": "third day of interrogation",
+        "rape_count": 2,
+        "interrogation_target": "name of any FLN militant"
+      }
+    },
+    {
+      "source": "case_b_event",
+      "target": "french_army",
+      "directed": false,
+      "role": "perpetrating_institution",
+      "layer": "raped_during_interrogation_to_punish_silence",
+      "attrs": {
+        "location": "B's family home",
+        "second_rape_in_presence_of_others": true,
+        "deception_quote": "If you ever see that bastard your husband again, don't you forget to tell him what we did to you"
+      }
+    },
+    {
+      "source": "case_b_event",
+      "target": "patient_b",
+      "directed": false,
+      "role": "absent_target_of_interrogation",
+      "layer": "raped_during_interrogation_to_punish_silence",
+      "attrs": {
+        "underground_status": true,
+        "discovery_trigger": "abandoned taxi with 2 machine gun magazines",
+        "operational_role": "FLN urban-commando driver"
+      }
+    },
+    {
+      "source": "case_b_event",
+      "target": "fln",
+      "directed": false,
+      "role": "context",
+      "layer": "raped_during_interrogation_to_punish_silence",
+      "attrs": {
+        "phase": "urban guerrilla campaign",
+        "husband_assignment": "driving commandos to attack points"
+      }
+    },
+    {
+      "source": "case_b_event",
+      "target": "algerian_war",
+      "directed": false,
+      "role": "setting",
+      "layer": "raped_during_interrogation_to_punish_silence",
+      "attrs": {
+        "approximate_year": "1957"
+      }
+    },
+    {
+      "source": "case_s_event",
+      "target": "patient_s",
+      "directed": false,
+      "role": "survivor",
+      "layer": "village_destroyed_29_men_executed_at_point_blank",
+      "attrs": {
+        "wounds": [
+          "right thigh through-and-through",
+          "left arm humerus fracture"
+        ],
+        "rescued_by": "ALN forces",
+        "consciousness": "fainted, regained mid-rescue"
+      }
+    },
+    {
+      "source": "case_s_event",
+      "target": "french_officer_helicopter",
+      "directed": false,
+      "role": "ordering_perpetrator",
+      "layer": "village_destroyed_29_men_executed_at_point_blank",
+      "attrs": {
+        "arrival_method": "helicopter",
+        "order_quote": "There's too much fuss over this douar; destroy it!"
+      }
+    },
+    {
+      "source": "case_s_event",
+      "target": "french_army",
+      "directed": false,
+      "role": "executing_institution",
+      "layer": "village_destroyed_29_men_executed_at_point_blank",
+      "attrs": {
+        "method": "point-blank execution at neighboring wadi",
+        "ancillary_acts": [
+          "burned houses",
+          "drove women back with rifle butts"
+        ]
+      }
+    },
+    {
+      "source": "case_s_event",
+      "target": "constantine_region",
+      "directed": false,
+      "role": "location",
+      "layer": "village_destroyed_29_men_executed_at_point_blank",
+      "attrs": {
+        "time": "early 1958",
+        "site_type": "douar (rural village)"
+      }
+    },
+    {
+      "source": "case_s_event",
+      "target": "algerian_war",
+      "directed": false,
+      "role": "setting",
+      "layer": "village_destroyed_29_men_executed_at_point_blank",
+      "attrs": {
+        "casualties_in_event": 29
+      }
+    },
+    {
+      "source": "case_d_event",
+      "target": "patient_d",
+      "directed": false,
+      "role": "killer",
+      "layer": "killed_settler_wife_while_briefly_psychotic_grieving_murdered_mother",
+      "attrs": {
+        "age": 19,
+        "occupation": "former student, ALN fighter",
+        "weapon": "knife",
+        "mental_state": "thinking of murdered mother"
+      }
+    },
+    {
+      "source": "case_d_event",
+      "target": "settlers_wife",
+      "directed": false,
+      "role": "victim",
+      "layer": "killed_settler_wife_while_briefly_psychotic_grieving_murdered_mother",
+      "attrs": {
+        "last_words": "Please... don't kill me... I've got children",
+        "killed_in": "her armchair"
+      }
+    },
+    {
+      "source": "case_d_event",
+      "target": "patient_d_mother",
+      "directed": false,
+      "role": "displaced_object_of_grief",
+      "layer": "killed_settler_wife_while_briefly_psychotic_grieving_murdered_mother",
+      "attrs": {
+        "death": "killed at point-blank range by French soldier",
+        "relation": "patient's adored mother",
+        "presence": "haunts patient via the killed woman in dreams"
+      }
+    },
+    {
+      "source": "case_d_event",
+      "target": "patient_d_commander",
+      "directed": false,
+      "role": "witness_then_disarmer",
+      "layer": "killed_settler_wife_while_briefly_psychotic_grieving_murdered_mother",
+      "attrs": {
+        "action": "disarmed patient and ordered him to leave"
+      }
+    },
+    {
+      "source": "case_d_event",
+      "target": "aln",
+      "directed": false,
+      "role": "operational_context",
+      "layer": "killed_settler_wife_while_briefly_psychotic_grieving_murdered_mother",
+      "attrs": {
+        "mission_target": "the husband, a settler who had killed two Algerian civilians"
+      }
+    },
+    {
+      "source": "case_d_event",
+      "target": "algerian_war",
+      "directed": false,
+      "role": "setting",
+      "layer": "killed_settler_wife_while_briefly_psychotic_grieving_murdered_mother"
+    },
+    {
+      "source": "case_a_event",
+      "target": "patient_a",
+      "directed": false,
+      "role": "interrogator_torturer",
+      "layer": "tortured_FLN_suspects_at_police_headquarters_until_screams_became_inescapable",
+      "attrs": {
+        "age": 28,
+        "marital_status": "married, undergoing fertility treatment",
+        "psychic_evolution": "amusement \u2192 unease \u2192 permanent auditory haunting",
+        "coping_behaviors": [
+          "closes shutters",
+          "stuffs cotton in ears",
+          "plays radio at night"
+        ]
+      }
+    },
+    {
+      "source": "case_a_event",
+      "target": "as_torture_victims",
+      "directed": false,
+      "role": "tortured",
+      "layer": "tortured_FLN_suspects_at_police_headquarters_until_screams_became_inescapable",
+      "attrs": {
+        "techniques": [
+          "punching",
+          "suspension by wrists",
+          "bathtub",
+          "electricity"
+        ],
+        "voice_stages_distinguishable": 4,
+        "outcomes": [
+          "confession",
+          "death at HQ",
+          "stoic silence"
+        ]
+      }
+    },
+    {
+      "source": "case_a_event",
+      "target": "french_army",
+      "directed": false,
+      "role": "employing_institution",
+      "layer": "tortured_FLN_suspects_at_police_headquarters_until_screams_became_inescapable",
+      "attrs": {
+        "unit": "anti-FLN brigade",
+        "rationale_quote": "What we want is information"
+      }
+    },
+    {
+      "source": "case_a_event",
+      "target": "algiers",
+      "directed": false,
+      "role": "location",
+      "layer": "tortured_FLN_suspects_at_police_headquarters_until_screams_became_inescapable",
+      "attrs": {
+        "site": "police headquarters"
+      }
+    },
+    {
+      "source": "case_a_event",
+      "target": "algerian_war",
+      "directed": false,
+      "role": "setting",
+      "layer": "tortured_FLN_suspects_at_police_headquarters_until_screams_became_inescapable"
+    },
+    {
+      "source": "algerian_war",
+      "target": "fln",
+      "directed": false,
+      "role": "liberation_political_wing",
+      "layer": "war_of_independence_1954_1962",
+      "attrs": {
+        "function": "political leadership and organization"
+      }
+    },
+    {
+      "source": "algerian_war",
+      "target": "aln",
+      "directed": false,
+      "role": "liberation_military_wing",
+      "layer": "war_of_independence_1954_1962",
+      "attrs": {
+        "function": "armed combat operations"
+      }
+    },
+    {
+      "source": "algerian_war",
+      "target": "french_army",
+      "directed": false,
+      "role": "occupying_force",
+      "layer": "war_of_independence_1954_1962",
+      "attrs": {
+        "function": "pacification, internment, torture"
+      }
+    },
+    {
+      "source": "algerian_war",
+      "target": "france",
+      "directed": false,
+      "role": "metropolitan_state",
+      "layer": "war_of_independence_1954_1962",
+      "attrs": {
+        "function": "colonial sovereign; financial and political backer"
+      }
+    },
+    {
+      "source": "algerian_war",
+      "target": "algeria",
+      "directed": false,
+      "role": "battlefield",
+      "layer": "war_of_independence_1954_1962",
+      "attrs": {
+        "timespan": "1954-1962"
+      }
+    },
+    {
+      "source": "fanon_death",
+      "target": "fanon",
+      "directed": false,
+      "role": "died",
+      "layer": "died_of_leukemia_in_Bethesda_Dec_6_1961",
+      "attrs": {
+        "cause": "leukemia",
+        "location": "NIH Bethesda, Maryland",
+        "nom_de_guerre": "Ibrahim Fanon",
+        "date": "1961-12-06",
+        "transit": "via Rome where he met Sartre but could not speak"
+      }
+    },
+    {
+      "source": "fanon_death",
+      "target": "wretched_book",
+      "directed": false,
+      "role": "seized_by_french_police_same_day",
+      "layer": "died_of_leukemia_in_Bethesda_Dec_6_1961",
+      "attrs": {
+        "action": "seized from Paris bookshops",
+        "date": "1961-12-06"
+      }
+    },
+    {
+      "source": "fanon_death",
+      "target": "josie_fanon",
+      "directed": false,
+      "role": "wife_present",
+      "layer": "died_of_leukemia_in_Bethesda_Dec_6_1961",
+      "attrs": {
+        "action": "read him the early reviews of the book"
+      }
+    },
+    {
+      "source": "fanon_death",
+      "target": "de_beauvoir",
+      "directed": false,
+      "role": "saw_photograph_in_paris_for_weeks",
+      "layer": "died_of_leukemia_in_Bethesda_Dec_6_1961",
+      "attrs": {
+        "observation_locations": [
+          "Jeune Afrique cover",
+          "Maspero bookstore window"
+        ],
+        "duration": "a couple of weeks"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "wretched_book",
+      "directed": true,
+      "label": "wrote in feverish spurt April-July 1961",
+      "layer": "wrote in feverish spurt April-July 1961",
+      "attrs": {
+        "i2t:predicate": "wrote in feverish spurt April-July 1961",
+        "instagraph:color": "#666"
+      }
+    },
+    {
+      "source": "fanon",
+      "target": "fanon_death",
+      "directed": true,
+      "label": "subject of",
+      "layer": "subject of",
+      "attrs": {
+        "i2t:predicate": "subject of",
+        "instagraph:color": "#26A"
+      }
+    },
+    {
+      "source": "fanon_death",
+      "target": "wretched_book",
+      "directed": true,
+      "label": "completed just before",
+      "layer": "completed just before",
+      "attrs": {
+        "i2t:predicate": "completed just before",
+        "instagraph:color": "#666"
+      }
+    },
+    {
+      "source": "wretched_book",
+      "target": "eschatological_reversal",
+      "directed": true,
+      "label": "carries the rhetorical register of",
+      "layer": "carries the rhetorical register of",
+      "attrs": {
+        "i2t:predicate": "carries the rhetorical register of",
+        "instagraph:color": "#222"
+      }
+    },
+    {
+      "source": "colonialism",
+      "target": "algeria",
+      "directed": true,
+      "label": "imposed on",
+      "layer": "imposed on",
+      "attrs": {
+        "i2t:predicate": "imposed on",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "colonialism",
+      "target": "kenya",
+      "directed": true,
+      "label": "imposed on",
+      "layer": "imposed on",
+      "attrs": {
+        "i2t:predicate": "imposed on",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "colonialism",
+      "target": "martinique",
+      "directed": true,
+      "label": "imposed on",
+      "layer": "imposed on",
+      "attrs": {
+        "i2t:predicate": "imposed on",
+        "instagraph:color": "#A00"
+      }
+    },
+    {
+      "source": "france",
+      "target": "colonialism",
+      "directed": true,
+      "label": "metropolitan agent of",
+      "layer": "metropolitan agent of",
+      "attrs": {
+        "i2t:predicate": "metropolitan agent of",
+        "instagraph:color": "#444"
+      }
+    },
+    {
+      "source": "arab_league",
+      "target": "negritude",
+      "directed": false,
+      "label": "contrasted with (as supra-national but heterogeneous)",
+      "layer": "contrasted with (as supra-national but heterogeneous)",
+      "attrs": {
+        "i2t:predicate": "contrasted with (as supra-national but heterogeneous)",
+        "instagraph:color": "#444"
+      }
+    }
+  ]
+}
