@@ -125,8 +125,8 @@ The canonical hypergraph is **one source of truth, many projections**. The viewe
 
 | Collaborator | Format |
 |---|---|
-| Claude / GPT-4 / large-context strong-schema models | `*.hypergraph.topothink.json` |
-| Gemma 3/4, Llama, smaller open models (7B–30B) | `*.normalized-dyadic.json` |
+| Large-context reasoning models | `*.hypergraph.topothink.json` |
+| Local open-weights models (7B–30B) | `*.normalized-dyadic.json` |
 | D3 / Cytoscape / Sigma / react-force-graph | `*.normalized-dyadic.json` |
 | InstaGraph-native tooling | `*.instagraph.json` |
 
@@ -142,7 +142,7 @@ The split is about **indirection tolerance**, not capability ceiling.
 
 | Script | Reads | Writes |
 |---|---|---|
-| `text_to_hypergraph_via_llm.py` | Any prose | InstaGraph JSON via Claude (uses [`prompts/text_to_topothink_hypergraph.md`](prompts/text_to_topothink_hypergraph.md)) |
+| `text_to_hypergraph_via_llm.py` | Any prose | InstaGraph JSON via reasoning models (uses [`prompts/text_to_topothink_hypergraph.md`](prompts/text_to_topothink_hypergraph.md)) |
 | `instagraph_to_hypergraph.py` | InstaGraph JSON (yoheinakajima schema + i2t extensions) | Canonical hypergraph |
 | `propgraph_to_hypergraph.py` | Property-graph JSON (dirgraph / ghgraph shape) | Canonical hypergraph |
 | `manuscript_to_hypergraph.py` | Novel manuscript (markdown chapters) | Canonical hypergraph (two-layer: paragraphs + entities) |
