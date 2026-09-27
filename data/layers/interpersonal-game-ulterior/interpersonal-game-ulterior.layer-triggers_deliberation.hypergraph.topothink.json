@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "title": "The Ulterior Game: Corner and the Cautious Believer",
+    "methodology": "i2t-v1.4.0",
+    "target_runtime": "exoskeleton",
+    "source_document": "data/source/interpersonal-game-ulterior-transaction.md",
+    "i2t:relation_to_canonical": "predicate-layer",
+    "layer-predicate": "triggers_deliberation",
+    "layer-stats": {
+      "nodes": 2,
+      "edges": 1,
+      "incidences": 2
+    }
+  },
+  "nodes": [
+    {
+      "id": "state:cautious_rationalization",
+      "kind": "node",
+      "label": "State: Cautious Rationalization & Suppression",
+      "attrs": {
+        "system_type": "state"
+      }
+    },
+    {
+      "id": "state:covert_testing",
+      "kind": "node",
+      "label": "State: Ambiguous Friction / Covert Test",
+      "attrs": {
+        "system_type": "state"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:state_change:caution_to_rationalization",
+      "attrs": {
+        "i2t:category": "state_change",
+        "i2t:predicate": "triggers_deliberation",
+        "i2t:relation_to_canonical": "token-dag",
+        "i2t:evidence": "The cautious believer interprets the initiator's hesitation or sudden withdrawal not as a covert test, but as a rational call for greater caution and deeper accommodation."
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:state_change:caution_to_rationalization",
+      "node": "state:covert_testing",
+      "role": "input_stimulus"
+    },
+    {
+      "edge": "edge:state_change:caution_to_rationalization",
+      "node": "state:cautious_rationalization",
+      "role": "resulting_state"
+    }
+  ]
+}

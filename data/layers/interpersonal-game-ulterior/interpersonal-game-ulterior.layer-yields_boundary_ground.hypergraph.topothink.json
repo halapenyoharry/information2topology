@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "The Ulterior Game: Corner and the Cautious Believer",
+    "methodology": "i2t-v1.4.0",
+    "target_runtime": "exoskeleton",
+    "source_document": "data/source/interpersonal-game-ulterior-transaction.md",
+    "i2t:relation_to_canonical": "predicate-layer",
+    "layer-predicate": "yields_boundary_ground",
+    "layer-stats": {
+      "nodes": 3,
+      "edges": 1,
+      "incidences": 3
+    }
+  },
+  "nodes": [
+    {
+      "id": "state:cautious_rationalization",
+      "kind": "node",
+      "label": "State: Cautious Rationalization & Suppression",
+      "attrs": {
+        "system_type": "state"
+      }
+    },
+    {
+      "id": "state:boundary_concession",
+      "kind": "node",
+      "label": "State: Micro-Boundary Concession",
+      "attrs": {
+        "system_type": "state"
+      }
+    },
+    {
+      "id": "stock:cognitive_exhaustion",
+      "kind": "node",
+      "label": "Cognitive Exhaustion & Eroded Self-Trust",
+      "attrs": {
+        "system_type": "stock",
+        "units": "dissonance_index"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:state_change:rationalization_to_concession",
+      "attrs": {
+        "i2t:category": "state_change",
+        "i2t:predicate": "yields_boundary_ground",
+        "i2t:relation_to_canonical": "token-dag",
+        "i2t:evidence": "Step 2: The Cautious Accommodation. Believing that carefulness will de-escalate tension, the believer suppresses their own immediate reaction, rationalizes the initiator's behavior, and concedes ground."
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:state_change:rationalization_to_concession",
+      "node": "state:cautious_rationalization",
+      "role": "deliberation"
+    },
+    {
+      "edge": "edge:state_change:rationalization_to_concession",
+      "node": "state:boundary_concession",
+      "role": "action"
+    },
+    {
+      "edge": "edge:state_change:rationalization_to_concession",
+      "node": "stock:cognitive_exhaustion",
+      "role": "inflow_sink"
+    }
+  ]
+}

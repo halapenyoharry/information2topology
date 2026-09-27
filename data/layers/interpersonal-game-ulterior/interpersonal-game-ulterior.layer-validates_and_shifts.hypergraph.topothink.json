@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "The Ulterior Game: Corner and the Cautious Believer",
+    "methodology": "i2t-v1.4.0",
+    "target_runtime": "exoskeleton",
+    "source_document": "data/source/interpersonal-game-ulterior-transaction.md",
+    "i2t:relation_to_canonical": "predicate-layer",
+    "layer-predicate": "validates_and_shifts",
+    "layer-stats": {
+      "nodes": 3,
+      "edges": 1,
+      "incidences": 3
+    }
+  },
+  "nodes": [
+    {
+      "id": "state:shifting_baseline",
+      "kind": "node",
+      "label": "State: Shifting Goalpost / New Baseline",
+      "attrs": {
+        "system_type": "state"
+      }
+    },
+    {
+      "id": "stock:moral_asymmetry",
+      "kind": "node",
+      "label": "Moral Asymmetry & Indebtedness",
+      "attrs": {
+        "system_type": "stock",
+        "units": "obligation_units"
+      }
+    },
+    {
+      "id": "state:boundary_concession",
+      "kind": "node",
+      "label": "State: Micro-Boundary Concession",
+      "attrs": {
+        "system_type": "state"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:state_change:concession_drives_goalpost_shift",
+      "attrs": {
+        "i2t:category": "state_change",
+        "i2t:predicate": "validates_and_shifts",
+        "i2t:relation_to_canonical": "token-dag",
+        "i2t:evidence": "Step 3: The Shifting Baseline. The concession does not resolve the tension; instead, it validates the initiator's unconscious suspicion... The goalpost moves: the accommodation that was sufficient yesterday becomes the bare minimum today."
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:state_change:concession_drives_goalpost_shift",
+      "node": "state:boundary_concession",
+      "role": "trigger"
+    },
+    {
+      "edge": "edge:state_change:concession_drives_goalpost_shift",
+      "node": "state:shifting_baseline",
+      "role": "new_equilibrium"
+    },
+    {
+      "edge": "edge:state_change:concession_drives_goalpost_shift",
+      "node": "stock:moral_asymmetry",
+      "role": "inflow_sink"
+    }
+  ]
+}

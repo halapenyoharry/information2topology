@@ -1,0 +1,207 @@
+{
+  "$schema": "https://topothink.org/schema/v1.0.0/hypergraph.json",
+  "metadata": {
+    "title": "The Ulterior Game: Corner and the Cautious Believer",
+    "methodology": "i2t-v1.4.0",
+    "target_runtime": "exoskeleton",
+    "source_document": "data/source/interpersonal-game-ulterior-transaction.md"
+  },
+  "nodes": [
+    {
+      "id": "subsystem:relational_dyad",
+      "kind": "node",
+      "label": "Interpersonal Relational Dyad",
+      "attrs": {
+        "system_type": "subsystem_boundary"
+      }
+    },
+    {
+      "id": "agent:initiator",
+      "kind": "node",
+      "label": "Initiator (Covert Hidden Agenda)",
+      "attrs": {
+        "system_type": "agent",
+        "psychological_role": "fear_driven_controller"
+      }
+    },
+    {
+      "id": "agent:cautious_believer",
+      "kind": "node",
+      "label": "Cautious Believer (Prudence Hook)",
+      "attrs": {
+        "system_type": "agent",
+        "psychological_role": "conscientious_accommodator"
+      }
+    },
+    {
+      "id": "stock:moral_asymmetry",
+      "kind": "node",
+      "label": "Moral Asymmetry & Indebtedness",
+      "attrs": {
+        "system_type": "stock",
+        "units": "obligation_units"
+      }
+    },
+    {
+      "id": "stock:cognitive_exhaustion",
+      "kind": "node",
+      "label": "Cognitive Exhaustion & Eroded Self-Trust",
+      "attrs": {
+        "system_type": "stock",
+        "units": "dissonance_index"
+      }
+    },
+    {
+      "id": "state:covert_testing",
+      "kind": "node",
+      "label": "State: Ambiguous Friction / Covert Test",
+      "attrs": {
+        "system_type": "state"
+      }
+    },
+    {
+      "id": "state:cautious_rationalization",
+      "kind": "node",
+      "label": "State: Cautious Rationalization & Suppression",
+      "attrs": {
+        "system_type": "state"
+      }
+    },
+    {
+      "id": "state:boundary_concession",
+      "kind": "node",
+      "label": "State: Micro-Boundary Concession",
+      "attrs": {
+        "system_type": "state"
+      }
+    },
+    {
+      "id": "state:shifting_baseline",
+      "kind": "node",
+      "label": "State: Shifting Goalpost / New Baseline",
+      "attrs": {
+        "system_type": "state"
+      }
+    },
+    {
+      "id": "state:double_bind_corner",
+      "kind": "node",
+      "label": "State: The Double-Bind Corner",
+      "attrs": {
+        "system_type": "state"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:containment:dyad_boundary",
+      "attrs": {
+        "i2t:category": "containment",
+        "i2t:predicate": "contains",
+        "i2t:evidence": "Every game operates on two distinct communicative levels simultaneously... within the interpersonal relation."
+      }
+    },
+    {
+      "id": "edge:reference:overt_narrative_appeal",
+      "attrs": {
+        "i2t:category": "reference",
+        "i2t:predicate": "appeals_to_prudence",
+        "i2t:evidence": "The initiator presents a posture of delicate vulnerability: 'I have been wounded before; I move slowly and require complete emotional safety.' This overt message appeals directly to the cautious believer's self-image."
+      }
+    },
+    {
+      "id": "edge:interactivity:covert_friction_deployment",
+      "attrs": {
+        "i2t:category": "interactivity",
+        "i2t:predicate": "deploys_covert_test",
+        "i2t:evidence": "Step 1: The Covert Test. The initiator introduces an ambiguous friction, an unspoken demand, or an emotional withdrawal, cloaked in the language of distress."
+      }
+    },
+    {
+      "id": "edge:state_change:caution_to_rationalization",
+      "attrs": {
+        "i2t:category": "state_change",
+        "i2t:predicate": "triggers_deliberation",
+        "i2t:relation_to_canonical": "token-dag",
+        "i2t:evidence": "The cautious believer interprets the initiator's hesitation or sudden withdrawal not as a covert test, but as a rational call for greater caution and deeper accommodation."
+      }
+    },
+    {
+      "id": "edge:state_change:rationalization_to_concession",
+      "attrs": {
+        "i2t:category": "state_change",
+        "i2t:predicate": "yields_boundary_ground",
+        "i2t:relation_to_canonical": "token-dag",
+        "i2t:evidence": "Step 2: The Cautious Accommodation. Believing that carefulness will de-escalate tension, the believer suppresses their own immediate reaction, rationalizes the initiator's behavior, and concedes ground."
+      }
+    },
+    {
+      "id": "edge:state_change:concession_drives_goalpost_shift",
+      "attrs": {
+        "i2t:category": "state_change",
+        "i2t:predicate": "validates_and_shifts",
+        "i2t:relation_to_canonical": "token-dag",
+        "i2t:evidence": "Step 3: The Shifting Baseline. The concession does not resolve the tension; instead, it validates the initiator's unconscious suspicion... The goalpost moves: the accommodation that was sufficient yesterday becomes the bare minimum today."
+      }
+    },
+    {
+      "id": "edge:state_change:baseline_escalates_to_corner",
+      "attrs": {
+        "i2t:category": "state_change",
+        "i2t:predicate": "enforces_corner",
+        "i2t:relation_to_canonical": "token-dag",
+        "i2t:evidence": "Step 4: The Double-Bind Corner. Eventually, the believer attempts to set a gentle, cautious boundary. The initiator immediately pivots: 'You claim to care, but your hesitation proves you are just like everyone else.'"
+      }
+    },
+    {
+      "id": "edge:state_change:reinforcing_game_loop",
+      "attrs": {
+        "i2t:category": "state_change",
+        "i2t:predicate": "restarts_insatiable_cycle",
+        "i2t:relation_to_canonical": "type-quotient",
+        "i2t:evidence": "The trap lies in this: the initiator's demand for reassurance is structurally insatiable because its root is an unconscious fear of exposure... tests must become harder to feel real."
+      }
+    },
+    {
+      "id": "edge:interactivity:asymmetric_payoff_extraction",
+      "attrs": {
+        "i2t:category": "interactivity",
+        "i2t:predicate": "extracts_psychological_payoff",
+        "i2t:evidence": "The payoff of the game is psychological stabilization for the initiator at the expense of cognitive exhaustion for the believer."
+      }
+    }
+  ],
+  "incidences": [
+    { "edge": "edge:containment:dyad_boundary", "node": "subsystem:relational_dyad", "role": "container" },
+    { "edge": "edge:containment:dyad_boundary", "node": "agent:initiator", "role": "contained" },
+    { "edge": "edge:containment:dyad_boundary", "node": "agent:cautious_believer", "role": "contained" },
+    { "edge": "edge:containment:dyad_boundary", "node": "stock:moral_asymmetry", "role": "contained" },
+    { "edge": "edge:containment:dyad_boundary", "node": "stock:cognitive_exhaustion", "role": "contained" },
+
+    { "edge": "edge:reference:overt_narrative_appeal", "node": "agent:initiator", "role": "overt_speaker" },
+    { "edge": "edge:reference:overt_narrative_appeal", "node": "agent:cautious_believer", "role": "intended_audience" },
+
+    { "edge": "edge:interactivity:covert_friction_deployment", "node": "agent:initiator", "role": "initiator_tester" },
+    { "edge": "edge:interactivity:covert_friction_deployment", "node": "state:covert_testing", "role": "generated_stimulus" },
+
+    { "edge": "edge:state_change:caution_to_rationalization", "node": "state:covert_testing", "role": "input_stimulus" },
+    { "edge": "edge:state_change:caution_to_rationalization", "node": "state:cautious_rationalization", "role": "resulting_state" },
+
+    { "edge": "edge:state_change:rationalization_to_concession", "node": "state:cautious_rationalization", "role": "deliberation" },
+    { "edge": "edge:state_change:rationalization_to_concession", "node": "state:boundary_concession", "role": "action" },
+    { "edge": "edge:state_change:rationalization_to_concession", "node": "stock:cognitive_exhaustion", "role": "inflow_sink" },
+
+    { "edge": "edge:state_change:concession_drives_goalpost_shift", "node": "state:boundary_concession", "role": "trigger" },
+    { "edge": "edge:state_change:concession_drives_goalpost_shift", "node": "state:shifting_baseline", "role": "new_equilibrium" },
+    { "edge": "edge:state_change:concession_drives_goalpost_shift", "node": "stock:moral_asymmetry", "role": "inflow_sink" },
+
+    { "edge": "edge:state_change:baseline_escalates_to_corner", "node": "state:shifting_baseline", "role": "prior_state" },
+    { "edge": "edge:state_change:baseline_escalates_to_corner", "node": "state:double_bind_corner", "role": "enforced_corner" },
+
+    { "edge": "edge:state_change:reinforcing_game_loop", "node": "state:double_bind_corner", "role": "source_state" },
+    { "edge": "edge:state_change:reinforcing_game_loop", "node": "state:covert_testing", "role": "target_state", "attrs": { "loop_polarity": "reinforcing_escalation" } },
+
+    { "edge": "edge:interactivity:asymmetric_payoff_extraction", "node": "agent:initiator", "role": "stabilized_beneficiary" },
+    { "edge": "edge:interactivity:asymmetric_payoff_extraction", "node": "agent:cautious_believer", "role": "exhausted_hostage" }
+  ]
+}

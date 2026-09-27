@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "title": "The Ulterior Game: Corner and the Cautious Believer",
+    "methodology": "i2t-v1.4.0",
+    "target_runtime": "exoskeleton",
+    "source_document": "data/source/interpersonal-game-ulterior-transaction.md",
+    "i2t:relation_to_canonical": "predicate-layer",
+    "layer-predicate": "restarts_insatiable_cycle",
+    "layer-stats": {
+      "nodes": 2,
+      "edges": 1,
+      "incidences": 2
+    }
+  },
+  "nodes": [
+    {
+      "id": "state:covert_testing",
+      "kind": "node",
+      "label": "State: Ambiguous Friction / Covert Test",
+      "attrs": {
+        "system_type": "state"
+      }
+    },
+    {
+      "id": "state:double_bind_corner",
+      "kind": "node",
+      "label": "State: The Double-Bind Corner",
+      "attrs": {
+        "system_type": "state"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:state_change:reinforcing_game_loop",
+      "attrs": {
+        "i2t:category": "state_change",
+        "i2t:predicate": "restarts_insatiable_cycle",
+        "i2t:relation_to_canonical": "type-quotient",
+        "i2t:evidence": "The trap lies in this: the initiator's demand for reassurance is structurally insatiable because its root is an unconscious fear of exposure... tests must become harder to feel real."
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:state_change:reinforcing_game_loop",
+      "node": "state:double_bind_corner",
+      "role": "source_state"
+    },
+    {
+      "edge": "edge:state_change:reinforcing_game_loop",
+      "node": "state:covert_testing",
+      "role": "target_state",
+      "attrs": {
+        "loop_polarity": "reinforcing_escalation"
+      }
+    }
+  ]
+}

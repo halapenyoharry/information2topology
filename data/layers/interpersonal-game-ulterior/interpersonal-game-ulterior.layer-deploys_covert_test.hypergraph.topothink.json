@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "title": "The Ulterior Game: Corner and the Cautious Believer",
+    "methodology": "i2t-v1.4.0",
+    "target_runtime": "exoskeleton",
+    "source_document": "data/source/interpersonal-game-ulterior-transaction.md",
+    "i2t:relation_to_canonical": "predicate-layer",
+    "layer-predicate": "deploys_covert_test",
+    "layer-stats": {
+      "nodes": 2,
+      "edges": 1,
+      "incidences": 2
+    }
+  },
+  "nodes": [
+    {
+      "id": "agent:initiator",
+      "kind": "node",
+      "label": "Initiator (Covert Hidden Agenda)",
+      "attrs": {
+        "system_type": "agent",
+        "psychological_role": "fear_driven_controller"
+      }
+    },
+    {
+      "id": "state:covert_testing",
+      "kind": "node",
+      "label": "State: Ambiguous Friction / Covert Test",
+      "attrs": {
+        "system_type": "state"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:interactivity:covert_friction_deployment",
+      "attrs": {
+        "i2t:category": "interactivity",
+        "i2t:predicate": "deploys_covert_test",
+        "i2t:evidence": "Step 1: The Covert Test. The initiator introduces an ambiguous friction, an unspoken demand, or an emotional withdrawal, cloaked in the language of distress."
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:interactivity:covert_friction_deployment",
+      "node": "agent:initiator",
+      "role": "initiator_tester"
+    },
+    {
+      "edge": "edge:interactivity:covert_friction_deployment",
+      "node": "state:covert_testing",
+      "role": "generated_stimulus"
+    }
+  ]
+}

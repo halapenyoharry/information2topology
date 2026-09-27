@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "title": "The Ulterior Game: Corner and the Cautious Believer",
+    "methodology": "i2t-v1.4.0",
+    "target_runtime": "exoskeleton",
+    "source_document": "data/source/interpersonal-game-ulterior-transaction.md",
+    "i2t:relation_to_canonical": "predicate-layer",
+    "layer-predicate": "enforces_corner",
+    "layer-stats": {
+      "nodes": 2,
+      "edges": 1,
+      "incidences": 2
+    }
+  },
+  "nodes": [
+    {
+      "id": "state:shifting_baseline",
+      "kind": "node",
+      "label": "State: Shifting Goalpost / New Baseline",
+      "attrs": {
+        "system_type": "state"
+      }
+    },
+    {
+      "id": "state:double_bind_corner",
+      "kind": "node",
+      "label": "State: The Double-Bind Corner",
+      "attrs": {
+        "system_type": "state"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:state_change:baseline_escalates_to_corner",
+      "attrs": {
+        "i2t:category": "state_change",
+        "i2t:predicate": "enforces_corner",
+        "i2t:relation_to_canonical": "token-dag",
+        "i2t:evidence": "Step 4: The Double-Bind Corner. Eventually, the believer attempts to set a gentle, cautious boundary. The initiator immediately pivots: 'You claim to care, but your hesitation proves you are just like everyone else.'"
+      }
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "edge:state_change:baseline_escalates_to_corner",
+      "node": "state:shifting_baseline",
+      "role": "prior_state"
+    },
+    {
+      "edge": "edge:state_change:baseline_escalates_to_corner",
+      "node": "state:double_bind_corner",
+      "role": "enforced_corner"
+    }
+  ]
+}
