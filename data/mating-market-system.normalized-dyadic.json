@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "format": "normalized-dyadic",
+    "flavor": "dyadic-projection-from-hypergraph",
+    "i2t:relation_to_canonical": "dyadic-projection",
+    "originalCounts": {
+      "nodes": 7,
+      "edges": 5,
+      "incidences": 15
+    },
+    "source-metadata": {
+      "title": "Strategic Resource Extraction & Negotiation in Mating Markets",
+      "methodology": "i2t-v1.4.0",
+      "target_runtime": "exoskeleton"
+    }
+  },
+  "nodes": [
+    {
+      "id": "subsystem:mating_market_environment",
+      "kind": "node",
+      "attrs": {
+        "system_type": "subsystem_boundary",
+        "domain": "mating_market"
+      }
+    },
+    {
+      "id": "stock:erotic_capital",
+      "kind": "node",
+      "attrs": {
+        "system_type": "stock",
+        "units": "leverage_index"
+      }
+    },
+    {
+      "id": "stock:male_resource_pool",
+      "kind": "node",
+      "attrs": {
+        "system_type": "stock",
+        "units": "financial_capital"
+      }
+    },
+    {
+      "id": "agent:extractor",
+      "kind": "node",
+      "attrs": {
+        "system_type": "agent",
+        "strategy": "vetting_or_rinsing"
+      }
+    },
+    {
+      "id": "agent:suitor",
+      "kind": "node",
+      "attrs": {
+        "system_type": "agent",
+        "strategy": "investment_vs_defense"
+      }
+    },
+    {
+      "id": "flow:vetting_extraction_rate",
+      "kind": "node",
+      "attrs": {
+        "system_type": "inflow"
+      }
+    },
+    {
+      "id": "flow:defensive_screening_rate",
+      "kind": "node",
+      "attrs": {
+        "system_type": "outflow"
+      }
+    },
+    {
+      "id": "edge:containment:market_boundary",
+      "kind": "hyperedge",
+      "label": "contains",
+      "attrs": {
+        "i2t:category": "containment",
+        "i2t:predicate": "contains",
+        "i2t:evidence": "All actors, resource stocks, and extraction interactions operate within the bounded digital mating market environment."
+      }
+    },
+    {
+      "id": "edge:state_change:R1_tactical_escalation",
+      "kind": "hyperedge",
+      "label": "drives_coevolutionary_race",
+      "attrs": {
+        "i2t:category": "state_change",
+        "i2t:predicate": "drives_coevolutionary_race",
+        "i2t:relation_to_canonical": "type-quotient",
+        "i2t:evidence": "Tactical success in resource extraction amplifies female erotic leverage, driving sophisticated counter-detection and enhanced extraction masks."
+      }
+    },
+    {
+      "id": "edge:state_change:B1_defensive_balancing",
+      "kind": "hyperedge",
+      "label": "balances_extraction_losses",
+      "attrs": {
+        "i2t:category": "state_change",
+        "i2t:predicate": "balances_extraction_losses",
+        "i2t:relation_to_canonical": "type-quotient",
+        "i2t:evidence": "High extraction rates deplete male resource pools and trigger suitor skepticism, leading to 50/50 demands, transactional screening, or market exit."
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "edge:containment:market_boundary",
+      "target": "subsystem:mating_market_environment",
+      "directed": true,
+      "role": "container",
+      "layer": "contains"
+    },
+    {
+      "source": "edge:containment:market_boundary",
+      "target": "stock:erotic_capital",
+      "directed": true,
+      "role": "contained",
+      "layer": "contains"
+    },
+    {
+      "source": "edge:containment:market_boundary",
+      "target": "stock:male_resource_pool",
+      "directed": true,
+      "role": "contained",
+      "layer": "contains"
+    },
+    {
+      "source": "edge:containment:market_boundary",
+      "target": "agent:extractor",
+      "directed": true,
+      "role": "contained",
+      "layer": "contains"
+    },
+    {
+      "source": "edge:containment:market_boundary",
+      "target": "agent:suitor",
+      "directed": true,
+      "role": "contained",
+      "layer": "contains"
+    },
+    {
+      "source": "agent:extractor",
+      "target": "agent:suitor",
+      "directed": true,
+      "label": "couples_in_negotiation",
+      "layer": "couples_in_negotiation",
+      "source_role": "negotiator_female",
+      "target_role": "negotiator_male",
+      "attrs": {
+        "i2t:category": "interactivity",
+        "i2t:predicate": "couples_in_negotiation",
+        "i2t:evidence": "Extractors deploy structured vetting filters while suitors negotiate access and offer financial resource commitments."
+      }
+    },
+    {
+      "source": "edge:state_change:R1_tactical_escalation",
+      "target": "stock:erotic_capital",
+      "directed": true,
+      "role": "source_stock",
+      "layer": "drives_coevolutionary_race"
+    },
+    {
+      "source": "edge:state_change:R1_tactical_escalation",
+      "target": "flow:vetting_extraction_rate",
+      "directed": true,
+      "role": "driver",
+      "layer": "drives_coevolutionary_race"
+    },
+    {
+      "source": "edge:state_change:R1_tactical_escalation",
+      "target": "stock:erotic_capital",
+      "directed": true,
+      "role": "target_stock",
+      "layer": "drives_coevolutionary_race",
+      "attrs": {
+        "loop_polarity": "reinforcing"
+      }
+    },
+    {
+      "source": "edge:state_change:B1_defensive_balancing",
+      "target": "stock:male_resource_pool",
+      "directed": true,
+      "role": "source_stock",
+      "layer": "balances_extraction_losses"
+    },
+    {
+      "source": "edge:state_change:B1_defensive_balancing",
+      "target": "flow:defensive_screening_rate",
+      "directed": true,
+      "role": "driver",
+      "layer": "balances_extraction_losses"
+    },
+    {
+      "source": "edge:state_change:B1_defensive_balancing",
+      "target": "stock:male_resource_pool",
+      "directed": true,
+      "role": "target_stock",
+      "layer": "balances_extraction_losses",
+      "attrs": {
+        "loop_polarity": "balancing"
+      }
+    },
+    {
+      "source": "subsystem:mating_market_environment",
+      "target": "agent:suitor",
+      "directed": true,
+      "label": "informs_market_asymmetry",
+      "layer": "informs_market_asymmetry",
+      "source_role": "observed_context",
+      "target_role": "observer",
+      "attrs": {
+        "i2t:category": "reference",
+        "i2t:predicate": "informs_market_asymmetry",
+        "i2t:evidence": "Platform demographics (e.g. 4:1 male-to-female ratio on Tinder) passively signal structural asymmetry without altering node identities."
+      }
+    }
+  ]
+}
