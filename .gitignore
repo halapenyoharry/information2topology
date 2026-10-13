@@ -19,3 +19,7 @@ keys/
 # Local workspace isolation
 _local/
 *_backup/
+
+# Python bytecode
+__pycache__/
+*.pyc

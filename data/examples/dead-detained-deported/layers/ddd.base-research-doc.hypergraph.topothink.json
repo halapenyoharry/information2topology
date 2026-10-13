@@ -1,0 +1,5252 @@
+{
+  "metadata": {
+    "topothink-version": "0.1",
+    "title": "Dead, Detained, Deported — base layer (research document)",
+    "i2t:relation_to_canonical": "predicate-layer",
+    "source_file": "/Users/harold/Projects/DeadDetainedDeported.website/_research/ICE Detention Data and APIs.md",
+    "extracted_at": "2026-10-04T17:54:07.408081+00:00",
+    "extraction_method": "manual transcription (Claude-assisted), editorial-discipline evidence quotes",
+    "source_sha256": "a8bfadfdd763b3baca140a77d995bacfba1db3b1cf17aaa8c36959b70c584a3b"
+  },
+  "nodes": [
+    {
+      "id": "source:ddd-research-doc",
+      "attrs": {
+        "schema:name": "DeadDetainedDeported research compilation",
+        "ddd:note": "Local research document synthesizing the cited public sources.",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:ice-death-reporting",
+      "attrs": {
+        "schema:name": "ICE Detainee Death Reporting index",
+        "schema:url": "https://www.ice.gov/detain/detainee-death-reporting",
+        "ddd:note": "Official ledger of deaths in physical ICE custody; statutory 90-day reporting.",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:trac",
+      "attrs": {
+        "schema:name": "Transactional Records Access Clearinghouse (TRAC)",
+        "schema:url": "https://trac.syr.edu",
+        "ddd:note": "Monthly detention census, ADP, facility profiles, court backlogs; 30-60 day lag.",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:deportation-data-project",
+      "attrs": {
+        "schema:name": "Deportation Data Project (UC Berkeley & UCLA)",
+        "schema:url": "https://deportationdata.org",
+        "ddd:note": "Raw ICE arrest logs, book-in microdata, transfers, flight manifests; CSV/Parquet.",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:courtlistener-recap",
+      "attrs": {
+        "schema:name": "CourtListener / RECAP (Free Law Project)",
+        "schema:url": "https://www.courtlistener.com",
+        "ddd:note": "Federal dockets, TRO filings, habeas petitions; REST API and webhooks; real-time.",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:freedom-for-immigrants",
+      "attrs": {
+        "schema:name": "Freedom for Immigrants Detention Database",
+        "schema:url": "https://www.freedomforimmigrants.org/map",
+        "ddd:note": "Facility conditions, solitary abuse, geocoded detention sites; crowdsourced.",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:third-country-deportation-watch",
+      "attrs": {
+        "schema:name": "Third Country Deportation Watch",
+        "schema:url": "https://www.thirdcountrydeportationwatch.org/el-salvador",
+        "ddd:note": "Transferred noncitizens, third-country facilities, post-removal deaths.",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:uscri-tcd-tracker",
+      "attrs": {
+        "schema:name": "USCRI Third Country Deportations Tracker",
+        "schema:url": "https://refugees.org/tcdtracker/",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:hrw-deported-to-danger",
+      "attrs": {
+        "schema:name": "HRW, Deported to Danger (2020)",
+        "schema:url": "https://www.hrw.org/report/2020/02/05/deported-danger/united-states-deportation-policies-expose-salvadorans-death-and",
+        "ddd:note": "Verified 138 killings of deported Salvadorans; 70+ torture/assault/disappearance cases.",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:mother-jones-uncounted",
+      "attrs": {
+        "schema:name": "Mother Jones, The Deaths ICE Doesn't Count (2026-08)",
+        "schema:url": "https://www.motherjones.com/politics/2026/08/the-deaths-ice-doesnt-count/",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:ap-locator-purge",
+      "attrs": {
+        "schema:name": "AP Exclusive: ICE hides locations of detainees with final removal orders",
+        "schema:url": "https://apnews.com/article/ice-detainee-locator-disappear-removal-orders-c3329a70bce424879bc5880b286c019c",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:ccr-wgeid-petition",
+      "attrs": {
+        "schema:name": "CCR press release: coalition petition to UN WGEID",
+        "schema:url": "https://ccrjustice.org/home/press-center/press-releases/immigrant-rights-coalition-urges-united-nations-intervene-after-ice",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:vera-detention-data",
+      "attrs": {
+        "schema:name": "Vera Institute, Ten Things We Know from the Latest ICE Detention Data (2026-08)",
+        "schema:url": "https://www.vera.org/publications/ten-things-we-know-from-the-latest-ice-detention-data-august-2026",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:phr-aclu-audits",
+      "attrs": {
+        "schema:name": "PHR / ACLU clinical oversight evaluations; American Oversight, Deadly Failures",
+        "schema:url": "https://americanoversight.org/reports-and-features/deadly-failures-preventable-deaths-in-u-s-immigration-detention/",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:guardian-invisibilized",
+      "attrs": {
+        "schema:name": "Guardian interactive: Gone in 90 seconds (2026-09-28)",
+        "schema:url": "https://www.theguardian.com/us-news/ng-interactive/2026/sep/28/ice-us-immigration-new-tactics",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:amnesty-whistles-guns",
+      "attrs": {
+        "schema:name": "Amnesty International, We Had Whistles They Had Guns (2026-09)",
+        "schema:url": "https://www.amnestyusa.org/wp-content/uploads/2026/09/We-Had-Whistles-They-Had-Guns-Human-Rights-Violations-in-U.S.-Immigration-Enforcement-Operations-and-the-Case-to-Abolish-ICE_Amnesty-International-report.pdf",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:odls",
+      "attrs": {
+        "schema:name": "ICE Online Detainee Locator System (ODLS)",
+        "schema:url": "https://locator.ice.gov",
+        "ddd:note": "Manual search only (A-Number+country, or name+DOB+country); CAPTCHA; no API.",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "source:ice-directives",
+      "attrs": {
+        "schema:name": "ICE Policy Directives 11003.6 / 11003.7",
+        "schema:url": "https://www.ice.gov/doclib/foia/policy/11003.7.pdf",
+        "ddd:node_type": "source"
+      }
+    },
+    {
+      "id": "org:ice",
+      "attrs": {
+        "schema:name": "U.S. Immigration and Customs Enforcement (ICE)",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:ero",
+      "attrs": {
+        "schema:name": "Enforcement and Removal Operations (ERO)",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:opr",
+      "attrs": {
+        "schema:name": "Office of Professional Responsibility (OPR)",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:ihsc",
+      "attrs": {
+        "schema:name": "ICE Health Service Corps (IHSC)",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:hsi",
+      "attrs": {
+        "schema:name": "Homeland Security Investigations (HSI)",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:dhs",
+      "attrs": {
+        "schema:name": "Department of Homeland Security (DHS)",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:geo-group",
+      "attrs": {
+        "schema:name": "GEO Group",
+        "ddd:node_type": "organization",
+        "ddd:sector": "private corrections"
+      }
+    },
+    {
+      "id": "org:corecivic",
+      "attrs": {
+        "schema:name": "CoreCivic",
+        "ddd:node_type": "organization",
+        "ddd:sector": "private corrections"
+      }
+    },
+    {
+      "id": "org:usms",
+      "attrs": {
+        "schema:name": "U.S. Marshals Service (USMS)",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:ccr",
+      "attrs": {
+        "schema:name": "Center for Constitutional Rights (CCR)",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:aclu",
+      "attrs": {
+        "schema:name": "American Civil Liberties Union (ACLU)",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:amnesty",
+      "attrs": {
+        "schema:name": "Amnesty International",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:rfk-human-rights",
+      "attrs": {
+        "schema:name": "Robert F. Kennedy Human Rights",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:raices",
+      "attrs": {
+        "schema:name": "RAICES",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:hrw",
+      "attrs": {
+        "schema:name": "Human Rights Watch (HRW)",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:phr",
+      "attrs": {
+        "schema:name": "Physicians for Human Rights (PHR)",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "org:un-wgeid",
+      "attrs": {
+        "schema:name": "UN Working Group on Enforced or Involuntary Disappearances (WGEID)",
+        "ddd:node_type": "organization",
+        "ddd:chair": "Grazyna Baranowska"
+      }
+    },
+    {
+      "id": "org:scotus",
+      "attrs": {
+        "schema:name": "Supreme Court of the United States",
+        "ddd:node_type": "organization"
+      }
+    },
+    {
+      "id": "system:ice-detention-network",
+      "attrs": {
+        "schema:name": "U.S. immigration detention network",
+        "ddd:node_type": "system",
+        "ddd:description": "Distributed network of federal processing centers, privately managed facilities, and county jails."
+      }
+    },
+    {
+      "id": "system:odls",
+      "attrs": {
+        "schema:name": "Online Detainee Locator System (ODLS)",
+        "ddd:node_type": "system",
+        "schema:url": "https://locator.ice.gov"
+      }
+    },
+    {
+      "id": "registry:ice-death-ledger",
+      "attrs": {
+        "schema:name": "ICE Detainee Death Reporting ledger",
+        "ddd:node_type": "registry",
+        "schema:url": "https://www.ice.gov/detain/detainee-death-reporting"
+      }
+    },
+    {
+      "id": "facility:camp-east-montana",
+      "attrs": {
+        "schema:name": "Camp East Montana",
+        "ddd:node_type": "facility",
+        "ddd:location": "El Paso, TX"
+      }
+    },
+    {
+      "id": "facility:merit-health-natchez",
+      "attrs": {
+        "schema:name": "Merit Health Natchez",
+        "ddd:node_type": "facility",
+        "ddd:location": "Natchez, MS",
+        "ddd:kind": "hospital"
+      }
+    },
+    {
+      "id": "facility:aurora-detention-center",
+      "attrs": {
+        "schema:name": "Aurora Detention Center",
+        "ddd:node_type": "facility",
+        "ddd:location": "Aurora, CO"
+      }
+    },
+    {
+      "id": "facility:stewart-detention-center",
+      "attrs": {
+        "schema:name": "Stewart Detention Center",
+        "ddd:node_type": "facility",
+        "ddd:location": "Lumpkin, GA"
+      }
+    },
+    {
+      "id": "facility:cecot",
+      "attrs": {
+        "schema:name": "Center for the Confinement of Terrorism (CECOT)",
+        "ddd:node_type": "facility",
+        "ddd:location": "El Salvador",
+        "ddd:kind": "third-country mega-prison"
+      }
+    },
+    {
+      "id": "country:united-states",
+      "attrs": {
+        "schema:name": "United States",
+        "ddd:node_type": "country"
+      }
+    },
+    {
+      "id": "country:el-salvador",
+      "attrs": {
+        "schema:name": "El Salvador",
+        "ddd:node_type": "country"
+      }
+    },
+    {
+      "id": "country:uzbekistan",
+      "attrs": {
+        "schema:name": "Uzbekistan",
+        "ddd:node_type": "country"
+      }
+    },
+    {
+      "id": "country:venezuela",
+      "attrs": {
+        "schema:name": "Venezuela",
+        "ddd:node_type": "country"
+      }
+    },
+    {
+      "id": "country:haiti",
+      "attrs": {
+        "schema:name": "Haiti",
+        "ddd:node_type": "country"
+      }
+    },
+    {
+      "id": "country:cuba",
+      "attrs": {
+        "schema:name": "Cuba",
+        "ddd:node_type": "country"
+      }
+    },
+    {
+      "id": "law:dhs-appropriations-2018",
+      "attrs": {
+        "schema:name": "DHS Appropriations Act of 2018",
+        "ddd:node_type": "legal_instrument"
+      }
+    },
+    {
+      "id": "law:ice-directive-11003",
+      "attrs": {
+        "schema:name": "ICE Policy Directives 11003.6 / 11003.7",
+        "ddd:node_type": "legal_instrument"
+      }
+    },
+    {
+      "id": "law:8usc1231b3",
+      "attrs": {
+        "schema:name": "8 U.S.C. § 1231(b)(3) (withholding of removal)",
+        "ddd:node_type": "legal_instrument"
+      }
+    },
+    {
+      "id": "law:cat-8cfr1208-16c",
+      "attrs": {
+        "schema:name": "Convention Against Torture, 8 C.F.R. § 1208.16(c)",
+        "ddd:node_type": "legal_instrument"
+      }
+    },
+    {
+      "id": "law:28usc2241",
+      "attrs": {
+        "schema:name": "28 U.S.C. § 2241 (habeas corpus)",
+        "ddd:node_type": "legal_instrument"
+      }
+    },
+    {
+      "id": "law:privacy-act-foia-exemptions",
+      "attrs": {
+        "schema:name": "Privacy Act of 1974; FOIA exemptions 5 U.S.C. § 552(b)(6), (b)(7)(C)",
+        "ddd:node_type": "legal_instrument"
+      }
+    },
+    {
+      "id": "law:icppced",
+      "attrs": {
+        "schema:name": "International Convention for the Protection of All Persons from Enforced Disappearance",
+        "ddd:node_type": "legal_instrument"
+      }
+    },
+    {
+      "id": "case:jgg-v-trump",
+      "attrs": {
+        "schema:name": "J.G.G. v. Trump",
+        "ddd:node_type": "court_case"
+      }
+    },
+    {
+      "id": "case:dvd-v-dhs",
+      "attrs": {
+        "schema:name": "D.V.D. v. DHS",
+        "ddd:node_type": "court_case"
+      }
+    },
+    {
+      "id": "case:abrego-garcia",
+      "attrs": {
+        "schema:name": "Abrego Garcia litigation (USCA4 25-1345)",
+        "ddd:node_type": "court_case"
+      }
+    },
+    {
+      "id": "cohort:final-order-concealed",
+      "attrs": {
+        "schema:name": "Detainees with final removal orders concealed from ODLS",
+        "ddd:node_type": "cohort",
+        "ddd:approx_size": 16000,
+        "ddd:share_of_detained_population": "~30%"
+      }
+    },
+    {
+      "id": "cohort:cecot-venezuelans",
+      "attrs": {
+        "schema:name": "Venezuelan nationals transferred to CECOT",
+        "ddd:node_type": "cohort",
+        "ddd:approx_size": 252
+      }
+    },
+    {
+      "id": "person:wei-lianyong",
+      "attrs": {
+        "schema:name": "Wei, Lianyong"
+      }
+    },
+    {
+      "id": "event:death/wei-lianyong-2026-08-23",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:lopez-cornejo-edwin",
+      "attrs": {
+        "schema:name": "Lopez Cornejo, Edwin"
+      }
+    },
+    {
+      "id": "event:death/lopez-cornejo-edwin-2026-08-01",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:arenas-silva-jesus-manuel",
+      "attrs": {
+        "schema:name": "Arenas Silva, Jesus Manuel"
+      }
+    },
+    {
+      "id": "event:death/arenas-silva-jesus-manuel-2026-07-13",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:florian-adrian",
+      "attrs": {
+        "schema:name": "Florian, Adrian"
+      }
+    },
+    {
+      "id": "event:death/florian-adrian-2026-06-24",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:alcorta-rodriguez-felix",
+      "attrs": {
+        "schema:name": "Alcorta-Rodriguez, Felix"
+      }
+    },
+    {
+      "id": "event:death/alcorta-rodriguez-felix-2026-06-19",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:artmeladze-mamuka",
+      "attrs": {
+        "schema:name": "Artmeladze, Mamuka"
+      }
+    },
+    {
+      "id": "event:death/artmeladze-mamuka-2026-06-04",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:adan-gonzalez-denny",
+      "attrs": {
+        "schema:name": "Adan Gonzalez, Denny"
+      }
+    },
+    {
+      "id": "event:death/adan-gonzalez-denny-2026-04-28",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:carbonell-betancourt-aled",
+      "attrs": {
+        "schema:name": "Carbonell Betancourt, Aled"
+      }
+    },
+    {
+      "id": "event:death/carbonell-betancourt-aled-2026-04-12",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:cabrera-clemente-alejandro",
+      "attrs": {
+        "schema:name": "Cabrera Clemente, Alejandro"
+      }
+    },
+    {
+      "id": "event:death/cabrera-clemente-alejandro-2026-04-11",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:bui-tuan-van",
+      "attrs": {
+        "schema:name": "Bui, Tuan Van"
+      }
+    },
+    {
+      "id": "event:death/bui-tuan-van-2026-04-01",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:ramos-solano-jose-guadalupe",
+      "attrs": {
+        "schema:name": "Ramos Solano, Jose Guadalupe"
+      }
+    },
+    {
+      "id": "event:death/ramos-solano-jose-guadalupe-2026-03-25",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:perez-jimenez-royer",
+      "attrs": {
+        "schema:name": "Perez Jimenez, Royer"
+      }
+    },
+    {
+      "id": "event:death/perez-jimenez-royer-2026-03-16",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:paktiawal-mohammad-nazeer",
+      "attrs": {
+        "schema:name": "Paktiawal, Mohammad Nazeer"
+      }
+    },
+    {
+      "id": "event:death/paktiawal-mohammad-nazeer-2026-03-14",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:damas-emmanuel",
+      "attrs": {
+        "schema:name": "Damas, Emmanuel"
+      }
+    },
+    {
+      "id": "event:death/damas-emmanuel-2026-03-02",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:najafabadi-pejman-karshenas",
+      "attrs": {
+        "schema:name": "Najafabadi, Pejman Karshenas"
+      }
+    },
+    {
+      "id": "event:death/najafabadi-pejman-karshenas-2026-03-01",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:gutierrez-reyes-alberto",
+      "attrs": {
+        "schema:name": "Gutierrez Reyes, Alberto"
+      }
+    },
+    {
+      "id": "event:death/gutierrez-reyes-alberto-2026-02-27",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:garcia-hernandez-jairo",
+      "attrs": {
+        "schema:name": "Garcia Hernandez, Jairo"
+      }
+    },
+    {
+      "id": "event:death/garcia-hernandez-jairo-2026-02-16",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:sim-lorth",
+      "attrs": {
+        "schema:name": "Sim, Lorth"
+      }
+    },
+    {
+      "id": "event:death/sim-lorth-2026-02-16",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:diaz-victor-manuel",
+      "attrs": {
+        "schema:name": "Diaz, Victor Manuel"
+      }
+    },
+    {
+      "id": "event:death/diaz-victor-manuel-2026-01-14",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:sanchez-dominguez-heber",
+      "attrs": {
+        "schema:name": "Sanchez Dominguez, Heber"
+      }
+    },
+    {
+      "id": "event:death/sanchez-dominguez-heber-2026-01-14",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:la-parady",
+      "attrs": {
+        "schema:name": "La, Parady"
+      }
+    },
+    {
+      "id": "event:death/la-parady-2026-01-09",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:yanez-cruz-luis",
+      "attrs": {
+        "schema:name": "Yanez Cruz, Luis"
+      }
+    },
+    {
+      "id": "event:death/yanez-cruz-luis-2026-01-06",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:nunez-caceres-luis",
+      "attrs": {
+        "schema:name": "Nunez Caceres, Luis"
+      }
+    },
+    {
+      "id": "event:death/nunez-caceres-luis-2026-01-05",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:lunas-campos-geraldo",
+      "attrs": {
+        "schema:name": "Lunas Campos, Geraldo"
+      }
+    },
+    {
+      "id": "event:death/lunas-campos-geraldo-2026-01-03",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:gantchev-nenko-stanev",
+      "attrs": {
+        "schema:name": "Gantchev, Nenko Stanev"
+      }
+    },
+    {
+      "id": "event:death/gantchev-nenko-stanev-2025-12-15",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:francisco-rodriguez-delvin",
+      "attrs": {
+        "schema:name": "Francisco Rodriguez, Delvin"
+      }
+    },
+    {
+      "id": "event:death/francisco-rodriguez-delvin-2025-12-14",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:abdulkadir-fouad-saeed",
+      "attrs": {
+        "schema:name": "Abdulkadir, Fouad Saeed"
+      }
+    },
+    {
+      "id": "event:death/abdulkadir-fouad-saeed-2025-12-14",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:brutus-jean-wilson",
+      "attrs": {
+        "schema:name": "Brutus, Jean Wilson"
+      }
+    },
+    {
+      "id": "event:death/brutus-jean-wilson-2025-12-12",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:sachiwani-shiraz-fateh-ali",
+      "attrs": {
+        "schema:name": "Sachiwani, Shiraz Fateh Ali"
+      }
+    },
+    {
+      "id": "event:death/sachiwani-shiraz-fateh-ali-2025-12-06",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:montejo-pete-sumalo",
+      "attrs": {
+        "schema:name": "Montejo, Pete Sumalo"
+      }
+    },
+    {
+      "id": "event:death/montejo-pete-sumalo-2025-12-05",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:gaspar-andres-francisco",
+      "attrs": {
+        "schema:name": "Gaspar-Andres, Francisco"
+      }
+    },
+    {
+      "id": "event:death/gaspar-andres-francisco-2025-12-03",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:wong-kai-yin",
+      "attrs": {
+        "schema:name": "Wong, Kai Yin"
+      }
+    },
+    {
+      "id": "event:death/wong-kai-yin-2025-10-25",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:garcia-aviles-gabriel",
+      "attrs": {
+        "schema:name": "Garcia-Aviles, Gabriel"
+      }
+    },
+    {
+      "id": "event:death/garcia-aviles-gabriel-2025-10-23",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:castro-rivera-jose",
+      "attrs": {
+        "schema:name": "Castro Rivera, Jose"
+      }
+    },
+    {
+      "id": "event:death/castro-rivera-jose-2025-10-23",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:saleh-hasan-ali-moh-d",
+      "attrs": {
+        "schema:name": "Saleh, Hasan Ali Moh'd"
+      }
+    },
+    {
+      "id": "event:death/saleh-hasan-ali-moh-d-2025-10-11",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:cruz-silva-leo",
+      "attrs": {
+        "schema:name": "Cruz-Silva, Leo"
+      }
+    },
+    {
+      "id": "event:death/cruz-silva-leo-2025-10-04",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:garcia-hernandez-miguel-angel",
+      "attrs": {
+        "schema:name": "Garcia Hernandez, Miguel Angel"
+      }
+    },
+    {
+      "id": "event:death/garcia-hernandez-miguel-angel-2025-09-30",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:xie-huabing",
+      "attrs": {
+        "schema:name": "Xie, Huabing"
+      }
+    },
+    {
+      "id": "event:death/xie-huabing-2025-09-29",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:guzman-fuentes-norlan",
+      "attrs": {
+        "schema:name": "Guzman Fuentes, Norlan"
+      }
+    },
+    {
+      "id": "event:death/guzman-fuentes-norlan-2025-09-24",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:ayala-uribe-ismael",
+      "attrs": {
+        "schema:name": "Ayala Uribe, Ismael"
+      }
+    },
+    {
+      "id": "event:death/ayala-uribe-ismael-2025-09-22",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:reyes-banegas",
+      "attrs": {
+        "schema:name": "Reyes, Banegas"
+      }
+    },
+    {
+      "id": "event:death/reyes-banegas-2025-09-18",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:villegas-gonzalez-silverio",
+      "attrs": {
+        "schema:name": "Villegas Gonzalez, Silverio"
+      }
+    },
+    {
+      "id": "event:death/villegas-gonzalez-silverio-2025-09-12",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:duarte-rascon-oscar",
+      "attrs": {
+        "schema:name": "Duarte Rascon, Oscar"
+      }
+    },
+    {
+      "id": "event:death/duarte-rascon-oscar-2025-09-08",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:batrez-vargas-lorenzo-antonio",
+      "attrs": {
+        "schema:name": "Batrez Vargas, Lorenzo Antonio"
+      }
+    },
+    {
+      "id": "event:death/batrez-vargas-lorenzo-antonio-2025-08-31",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:ge-chaofeng",
+      "attrs": {
+        "schema:name": "Ge, Chaofeng"
+      }
+    },
+    {
+      "id": "event:death/ge-chaofeng-2025-08-05",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:phan-tien-xuan",
+      "attrs": {
+        "schema:name": "Phan, Tien Xuan"
+      }
+    },
+    {
+      "id": "event:death/phan-tien-xuan-2025-07-19",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:perez-isidro",
+      "attrs": {
+        "schema:name": "Perez, Isidro"
+      }
+    },
+    {
+      "id": "event:death/perez-isidro-2025-06-26",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:noviello-johnny",
+      "attrs": {
+        "schema:name": "Noviello, Johnny"
+      }
+    },
+    {
+      "id": "event:death/noviello-johnny-2025-06-23",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:molina-veya-jesus",
+      "attrs": {
+        "schema:name": "Molina-Veya, Jesus"
+      }
+    },
+    {
+      "id": "event:death/molina-veya-jesus-2025-06-07",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:avelleneda-delgado-abelardo",
+      "attrs": {
+        "schema:name": "Avelleneda-Delgado, Abelardo"
+      }
+    },
+    {
+      "id": "event:death/avelleneda-delgado-abelardo-2025-05-05",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:blaise-marie-ange",
+      "attrs": {
+        "schema:name": "Blaise, Marie Ange"
+      }
+    },
+    {
+      "id": "event:death/blaise-marie-ange-2025-04-25",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:nguyen-nhon-ngoc",
+      "attrs": {
+        "schema:name": "Nguyen, Nhon Ngoc"
+      }
+    },
+    {
+      "id": "event:death/nguyen-nhon-ngoc-2025-04-16",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:rayo-garzon-brayan",
+      "attrs": {
+        "schema:name": "Rayo-Garzon, Brayan"
+      }
+    },
+    {
+      "id": "event:death/rayo-garzon-brayan-2025-04-08",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:tineo-martinez-juan-alexis",
+      "attrs": {
+        "schema:name": "Tineo Martinez, Juan Alexis"
+      }
+    },
+    {
+      "id": "event:death/tineo-martinez-juan-alexis-2025-02-23",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:chernyak-maksym",
+      "attrs": {
+        "schema:name": "Chernyak, Maksym"
+      }
+    },
+    {
+      "id": "event:death/chernyak-maksym-2025-02-20",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:dejene-serawit-gezahegn",
+      "attrs": {
+        "schema:name": "Dejene, Serawit Gezahegn"
+      }
+    },
+    {
+      "id": "event:death/dejene-serawit-gezahegn-2025-01-29",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:ruiz-guillen-genry",
+      "attrs": {
+        "schema:name": "Ruiz Guillen, Genry"
+      }
+    },
+    {
+      "id": "event:death/ruiz-guillen-genry-2025-01-23",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:amechand-ramesh",
+      "attrs": {
+        "schema:name": "Amechand, Ramesh"
+      }
+    },
+    {
+      "id": "event:death/amechand-ramesh-2024-12-16",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:kataria-pankaj-karan-singh",
+      "attrs": {
+        "schema:name": "Kataria, Pankaj Karan Singh"
+      }
+    },
+    {
+      "id": "event:death/kataria-pankaj-karan-singh-2024-11-01",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:sanchez-castro-jose-manuel",
+      "attrs": {
+        "schema:name": "Sanchez-Castro, Jose Manuel"
+      }
+    },
+    {
+      "id": "event:death/sanchez-castro-jose-manuel-2024-10-27",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:bamaca-zacarias-brendy-yohana",
+      "attrs": {
+        "schema:name": "Bamaca-Zacarias, Brendy Yohana"
+      }
+    },
+    {
+      "id": "event:death/bamaca-zacarias-brendy-yohana-2024-09-07",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:quintana-jhon-benavides",
+      "attrs": {
+        "schema:name": "Quintana, Jhon Benavides"
+      }
+    },
+    {
+      "id": "event:death/quintana-jhon-benavides-2024-06-15",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:boror-urla-hugo-roberto",
+      "attrs": {
+        "schema:name": "Boror-Urla, Hugo Roberto"
+      }
+    },
+    {
+      "id": "event:death/boror-urla-hugo-roberto-2024-05-22",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:dennis-cambric",
+      "attrs": {
+        "schema:name": "Dennis, Cambric"
+      }
+    },
+    {
+      "id": "event:death/dennis-cambric-2024-05-22",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:farias-farias-edixon-del-jesus",
+      "attrs": {
+        "schema:name": "Farias-Farias, Edixon Del Jesus"
+      }
+    },
+    {
+      "id": "event:death/farias-farias-edixon-del-jesus-2024-04-18",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:singh-jaspal",
+      "attrs": {
+        "schema:name": "Singh, Jaspal"
+      }
+    },
+    {
+      "id": "event:death/singh-jaspal-2024-04-15",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:daniel-charles-leo",
+      "attrs": {
+        "schema:name": "Daniel, Charles Leo"
+      }
+    },
+    {
+      "id": "event:death/daniel-charles-leo-2024-03-07",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:ba-ousmane",
+      "attrs": {
+        "schema:name": "Ba, Ousmane"
+      }
+    },
+    {
+      "id": "event:death/ba-ousmane-2024-02-23",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:okpu-frankline",
+      "attrs": {
+        "schema:name": "Okpu, Frankline"
+      }
+    },
+    {
+      "id": "event:death/okpu-frankline-2023-12-06",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:juan-francisco-carlos",
+      "attrs": {
+        "schema:name": "Juan Francisco, Carlos"
+      }
+    },
+    {
+      "id": "event:death/juan-francisco-carlos-2023-12-04",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:shrestha-subash",
+      "attrs": {
+        "schema:name": "Shrestha, Subash"
+      }
+    },
+    {
+      "id": "event:death/shrestha-subash-2023-11-13",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:chirino-peralta-julio-cesar",
+      "attrs": {
+        "schema:name": "Chirino Peralta, Julio Cesar"
+      }
+    },
+    {
+      "id": "event:death/chirino-peralta-julio-cesar-2023-10-08",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:melvin-ariel-calero-mendoza",
+      "attrs": {
+        "schema:name": "Melvin Ariel Calero Mendoza"
+      }
+    },
+    {
+      "id": "event:death/melvin-ariel-calero-mendoza-2022-10",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:salvador-rosales-vargas",
+      "attrs": {
+        "schema:name": "Salvador Rosales-Vargas"
+      }
+    },
+    {
+      "id": "event:death/salvador-rosales-vargas-2023-04",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:cristian-dumitrascu",
+      "attrs": {
+        "schema:name": "Cristian Dumitrascu"
+      }
+    },
+    {
+      "id": "event:death/cristian-dumitrascu-2023-03",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:kesley-vial",
+      "attrs": {
+        "schema:name": "Kesley Vial"
+      }
+    },
+    {
+      "id": "event:death/kesley-vial-2022-08",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:benjamin-gonzalez-soto",
+      "attrs": {
+        "schema:name": "Benjamin Gonzalez-Soto"
+      }
+    },
+    {
+      "id": "event:death/benjamin-gonzalez-soto-2022-07",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:pablo-sanchez-gotopo",
+      "attrs": {
+        "schema:name": "Pablo Sanchez-Gotopo"
+      }
+    },
+    {
+      "id": "event:death/pablo-sanchez-gotopo-2021-10",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:elba-maria-centeno-briones",
+      "attrs": {
+        "schema:name": "Elba Maria Centeno-Briones"
+      }
+    },
+    {
+      "id": "event:death/elba-maria-centeno-briones-2021-08",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:diego-fernando-gallego-agudelo",
+      "attrs": {
+        "schema:name": "Diego Fernando Gallego-Agudelo"
+      }
+    },
+    {
+      "id": "event:death/diego-fernando-gallego-agudelo-2021-03",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:jesse-dean",
+      "attrs": {
+        "schema:name": "Jesse Dean"
+      }
+    },
+    {
+      "id": "event:death/jesse-dean-2021-02",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:felipe-montes",
+      "attrs": {
+        "schema:name": "Felipe Montes"
+      }
+    },
+    {
+      "id": "event:death/felipe-montes-2021-01",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:anthony-jones",
+      "attrs": {
+        "schema:name": "Anthony Jones"
+      }
+    },
+    {
+      "id": "event:death/anthony-jones-2020-12",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:james-tomas-hill",
+      "attrs": {
+        "schema:name": "James Tomas Hill"
+      }
+    },
+    {
+      "id": "event:death/james-tomas-hill-2020-08",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:luis-sanchez-perez",
+      "attrs": {
+        "schema:name": "Luis Sanchez-Perez"
+      }
+    },
+    {
+      "id": "event:death/luis-sanchez-perez-2020-07",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:carlos-ernesto-escobar-mejia",
+      "attrs": {
+        "schema:name": "Carlos Ernesto Escobar-Mejia"
+      }
+    },
+    {
+      "id": "event:death/carlos-ernesto-escobar-mejia-2020-05",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:efrain-romero-de-la-rosa",
+      "attrs": {
+        "schema:name": "Efrain Romero De La Rosa"
+      }
+    },
+    {
+      "id": "event:death/efrain-romero-de-la-rosa-2018-07",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:roxana-hernandez",
+      "attrs": {
+        "schema:name": "Roxana Hernandez"
+      }
+    },
+    {
+      "id": "event:death/roxana-hernandez-2018-05",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:prisciliano-trejo-ricano",
+      "attrs": {
+        "schema:name": "Prisciliano Trejo Ricano"
+      }
+    },
+    {
+      "id": "event:death/prisciliano-trejo-ricano-undated",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:randall-gamboa-esquivel",
+      "attrs": {
+        "schema:name": "Randall Gamboa Esquivel"
+      }
+    },
+    {
+      "id": "event:death/randall-gamboa-esquivel-undated",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:renee-nicole-good",
+      "attrs": {
+        "schema:name": "Renee Nicole Good"
+      }
+    },
+    {
+      "id": "event:death/renee-nicole-good-undated",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:kamyar-samimi",
+      "attrs": {
+        "schema:name": "Kamyar Samimi"
+      }
+    },
+    {
+      "id": "event:death/kamyar-samimi-undated",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:jean-jimenez",
+      "attrs": {
+        "schema:name": "Jean Jimenez"
+      }
+    },
+    {
+      "id": "event:death/jean-jimenez-undated",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:carlos-alberto-garay",
+      "attrs": {
+        "schema:name": "Carlos Alberto Garay",
+        "ddd:age_at_death": "43"
+      }
+    },
+    {
+      "id": "event:death/carlos-alberto-garay-undated",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:mario-enrique-sandoval-gomez",
+      "attrs": {
+        "schema:name": "Mario Enrique Sandoval Gomez",
+        "ddd:age_at_death": "~30"
+      }
+    },
+    {
+      "id": "event:death/mario-enrique-sandoval-gomez-2017-06-29",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:tommy-eduardo-paiz",
+      "attrs": {
+        "schema:name": "Tommy Eduardo Paiz",
+        "ddd:age_at_death": "41"
+      }
+    },
+    {
+      "id": "event:death/tommy-eduardo-paiz-2018-08-04",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:nicolas-p",
+      "attrs": {
+        "schema:name": "Nicolas P.",
+        "ddd:age_at_death": "25"
+      }
+    },
+    {
+      "id": "event:death/nicolas-p-undated",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:javier-surname-withheld",
+      "attrs": {
+        "schema:name": "Javier (surname withheld)"
+      }
+    },
+    {
+      "id": "event:death/javier-surname-withheld-undated",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "event:odls-purge-2026-09-15",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "event:wgeid-petition-2026-09",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "event:salvadoran-pipeline",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "person:kilmar-armando-abrego-garcia",
+      "attrs": {
+        "schema:name": "Kilmar Armando Abrego Garcia",
+        "ddd:node_type": "person"
+      }
+    },
+    {
+      "id": "event:abrego-garcia-removal",
+      "attrs": {
+        "i2t:reified": true
+      }
+    },
+    {
+      "id": "edge:third-country-volume",
+      "attrs": {
+        "i2t:reified": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "event:death/wei-lianyong-2026-08-23",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-08-23",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/lopez-cornejo-edwin-2026-08-01",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-08-01",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/arenas-silva-jesus-manuel-2026-07-13",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-07-13",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/florian-adrian-2026-06-24",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-06-24",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/alcorta-rodriguez-felix-2026-06-19",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-06-19",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/artmeladze-mamuka-2026-06-04",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Hospitalized in Louisiana; official cause pending autopsy",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-06-04",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Hospitalized in Louisiana; official cause pending autopsy"
+      }
+    },
+    {
+      "id": "event:death/adan-gonzalez-denny-2026-04-28",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-04-28",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/carbonell-betancourt-aled-2026-04-12",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-04-12",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/cabrera-clemente-alejandro-2026-04-11",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-04-11",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/bui-tuan-van-2026-04-01",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-04-01",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/ramos-solano-jose-guadalupe-2026-03-25",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-03-25",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/perez-jimenez-royer-2026-03-16",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-03-16",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/paktiawal-mohammad-nazeer-2026-03-14",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-03-14",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/damas-emmanuel-2026-03-02",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-03-02",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/najafabadi-pejman-karshenas-2026-03-01",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-03-01",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/gutierrez-reyes-alberto-2026-02-27",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-02-27",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/garcia-hernandez-jairo-2026-02-16",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-02-16",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/sim-lorth-2026-02-16",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-02-16",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/diaz-victor-manuel-2026-01-14",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Found unconscious at Camp East Montana, El Paso, TX",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-01-14",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Found unconscious at Camp East Montana, El Paso, TX"
+      }
+    },
+    {
+      "id": "event:death/sanchez-dominguez-heber-2026-01-14",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-01-14",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/la-parady-2026-01-09",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-01-09",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/yanez-cruz-luis-2026-01-06",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-01-06",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/nunez-caceres-luis-2026-01-05",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-01-05",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/lunas-campos-geraldo-2026-01-03",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2026-01-03",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/gantchev-nenko-stanev-2025-12-15",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-12-15",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/francisco-rodriguez-delvin-2025-12-14",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Pronounced brain dead at Merit Health Natchez, MS",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-12-14",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Pronounced brain dead at Merit Health Natchez, MS"
+      }
+    },
+    {
+      "id": "event:death/abdulkadir-fouad-saeed-2025-12-14",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-12-14",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/brutus-jean-wilson-2025-12-12",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-12-12",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/sachiwani-shiraz-fateh-ali-2025-12-06",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-12-06",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/montejo-pete-sumalo-2025-12-05",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-12-05",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/gaspar-andres-francisco-2025-12-03",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-12-03",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/wong-kai-yin-2025-10-25",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-10-25",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/garcia-aviles-gabriel-2025-10-23",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-10-23",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/castro-rivera-jose-2025-10-23",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-10-23",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/saleh-hasan-ali-moh-d-2025-10-11",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-10-11",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/cruz-silva-leo-2025-10-04",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-10-04",
+        "ddd:fiscal_year": "FY2026",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/garcia-hernandez-miguel-angel-2025-09-30",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-09-30",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/xie-huabing-2025-09-29",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-09-29",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/guzman-fuentes-norlan-2025-09-24",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-09-24",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/ayala-uribe-ismael-2025-09-22",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-09-22",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/reyes-banegas-2025-09-18",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-09-18",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/villegas-gonzalez-silverio-2025-09-12",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-09-12",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/duarte-rascon-oscar-2025-09-08",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-09-08",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/batrez-vargas-lorenzo-antonio-2025-08-31",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-08-31",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/ge-chaofeng-2025-08-05",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-08-05",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/phan-tien-xuan-2025-07-19",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-07-19",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/perez-isidro-2025-06-26",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-06-26",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/noviello-johnny-2025-06-23",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-06-23",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/molina-veya-jesus-2025-06-07",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-06-07",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/avelleneda-delgado-abelardo-2025-05-05",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-05-05",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/blaise-marie-ange-2025-04-25",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-04-25",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/nguyen-nhon-ngoc-2025-04-16",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-04-16",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/rayo-garzon-brayan-2025-04-08",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-04-08",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/tineo-martinez-juan-alexis-2025-02-23",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-02-23",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/chernyak-maksym-2025-02-20",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-02-20",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/dejene-serawit-gezahegn-2025-01-29",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-01-29",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/ruiz-guillen-genry-2025-01-23",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2025-01-23",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/amechand-ramesh-2024-12-16",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2024-12-16",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/kataria-pankaj-karan-singh-2024-11-01",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2024-11-01",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/sanchez-castro-jose-manuel-2024-10-27",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2024-10-27",
+        "ddd:fiscal_year": "FY2025",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/bamaca-zacarias-brendy-yohana-2024-09-07",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2024-09-07",
+        "ddd:fiscal_year": "FY2024",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/quintana-jhon-benavides-2024-06-15",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2024-06-15",
+        "ddd:fiscal_year": "FY2024",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/boror-urla-hugo-roberto-2024-05-22",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2024-05-22",
+        "ddd:fiscal_year": "FY2024",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/dennis-cambric-2024-05-22",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2024-05-22",
+        "ddd:fiscal_year": "FY2024",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/farias-farias-edixon-del-jesus-2024-04-18",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2024-04-18",
+        "ddd:fiscal_year": "FY2024",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/singh-jaspal-2024-04-15",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2024-04-15",
+        "ddd:fiscal_year": "FY2024",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/daniel-charles-leo-2024-03-07",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2024-03-07",
+        "ddd:fiscal_year": "FY2024",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/ba-ousmane-2024-02-23",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2024-02-23",
+        "ddd:fiscal_year": "FY2024",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/okpu-frankline-2023-12-06",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2023-12-06",
+        "ddd:fiscal_year": "FY2024",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/juan-francisco-carlos-2023-12-04",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2023-12-04",
+        "ddd:fiscal_year": "FY2024",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/shrestha-subash-2023-11-13",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2023-11-13",
+        "ddd:fiscal_year": "FY2024",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/chirino-peralta-julio-cesar-2023-10-08",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented on official ICE custodial death ledger.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2023-10-08",
+        "ddd:fiscal_year": "FY2024",
+        "ddd:ledger_status": "official"
+      }
+    },
+    {
+      "id": "event:death/melvin-ariel-calero-mendoza-2022-10",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Melvin Ariel Calero Mendoza (2022-10).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2022-10",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/salvador-rosales-vargas-2023-04",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Salvador Rosales-Vargas (2023-04).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2023-04",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/cristian-dumitrascu-2023-03",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Cristian Dumitrascu (2023-03).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2023-03",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/kesley-vial-2022-08",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Kesley Vial (2022-08).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2022-08",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/benjamin-gonzalez-soto-2022-07",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Benjamin Gonzalez-Soto (2022-07).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2022-07",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/pablo-sanchez-gotopo-2021-10",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Pablo Sanchez-Gotopo (2021-10).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2021-10",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/elba-maria-centeno-briones-2021-08",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Elba Maria Centeno-Briones (2021-08).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2021-08",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/diego-fernando-gallego-agudelo-2021-03",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Diego Fernando Gallego-Agudelo (2021-03).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2021-03",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/jesse-dean-2021-02",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Jesse Dean (2021-02).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2021-02",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/felipe-montes-2021-01",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Felipe Montes (2021-01).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2021-01",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/anthony-jones-2020-12",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Anthony Jones (2020-12).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2020-12",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/james-tomas-hill-2020-08",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included James Tomas Hill (2020-08).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2020-08",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/luis-sanchez-perez-2020-07",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Luis Sanchez-Perez (2020-07).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2020-07",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/carlos-ernesto-escobar-mejia-2020-05",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Carlos Ernesto Escobar-Mejia (2020-05).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2020-05",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/efrain-romero-de-la-rosa-2018-07",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Efrain Romero De La Rosa (2018-07).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2018-07",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "event:death/roxana-hernandez-2018-05",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Between FY 2018 and FY 2023, confirmed custodial fatalities included Roxana Hernandez (2018-05).",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2018-05",
+        "ddd:ledger_status": "official",
+        "ddd:circumstances": "Confirmed custodial fatality, FY2018–FY2023 historical cohort."
+      }
+    },
+    {
+      "id": "edge:ledger-membership",
+      "attrs": {
+        "i2t:predicate": "documents_death",
+        "i2t:category": "containment",
+        "i2t:evidence": "The following register details deceased individuals documented on ICE's official Detainee Death Reporting ledger from Fiscal Year 2024 through late Fiscal Year 2026.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ]
+      }
+    },
+    {
+      "id": "event:death/prisciliano-trejo-ricano-undated",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Documented instances include Prisciliano Trejo Ricano, who died in a medical facility days after custodial release.",
+        "dcterms:source": [
+          "source:mother-jones-uncounted",
+          "source:ddd-research-doc"
+        ],
+        "ddd:ledger_status": "excluded-post-release",
+        "ddd:circumstances": "Died in a medical facility days after custodial release."
+      }
+    },
+    {
+      "id": "event:death/randall-gamboa-esquivel-undated",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "...individuals removed from the United States who died immediately upon landing in their country of origin, such as Randall Gamboa Esquivel.",
+        "dcterms:source": [
+          "source:mother-jones-uncounted",
+          "source:ddd-research-doc"
+        ],
+        "ddd:ledger_status": "excluded-post-release",
+        "ddd:circumstances": "Removed from the United States; died immediately upon landing in country of origin."
+      }
+    },
+    {
+      "id": "edge:registry-exclusion-post-release",
+      "attrs": {
+        "i2t:predicate": "excludes_death",
+        "i2t:category": "reference",
+        "i2t:evidence": "Because these individuals are technically classified as released from physical custody at the time death is pronounced, ICE systematically excludes them from its public Detainee Death Reporting registry.",
+        "dcterms:source": [
+          "source:mother-jones-uncounted",
+          "source:ddd-research-doc"
+        ],
+        "ddd:exclusion_mechanism": "humanitarian parole / bond release shortly before death"
+      }
+    },
+    {
+      "id": "event:death/renee-nicole-good-undated",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Incidents such as the fatal shooting of Renee Nicole Good during an enforcement operation in Minneapolis fall outside custodial registries entirely.",
+        "dcterms:source": [
+          "source:amnesty-whistles-guns",
+          "source:ddd-research-doc"
+        ],
+        "ddd:ledger_status": "excluded-enforcement-op",
+        "ddd:circumstances": "Fatal shooting during an enforcement operation in Minneapolis."
+      }
+    },
+    {
+      "id": "edge:registry-exclusion-enforcement-ops",
+      "attrs": {
+        "i2t:predicate": "excludes_death",
+        "i2t:category": "reference",
+        "i2t:evidence": "Official mortality metrics exclude lethal force encounters occurring during community arrest operations, street sweeps, and residential entries executed by ERO and HSI personnel.",
+        "dcterms:source": [
+          "source:amnesty-whistles-guns",
+          "source:ddd-research-doc"
+        ],
+        "ddd:exclusion_mechanism": "lethal force outside custody; handled as police shooting investigations"
+      }
+    },
+    {
+      "id": "event:death/kamyar-samimi-undated",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Clinical audits reveal patterns of abrupt medication discontinuation, such as the case of Kamyar Samimi, who died after medical personnel at the Aurora Detention Center halted prescribed opioid agonist treatment.",
+        "dcterms:source": [
+          "source:phr-aclu-audits",
+          "source:ddd-research-doc"
+        ],
+        "ddd:ledger_status": "audit-documented",
+        "ddd:circumstances": "Died after medical personnel halted prescribed opioid agonist treatment."
+      }
+    },
+    {
+      "id": "event:death/jean-jimenez-undated",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "...severe psychiatric neglect resulting in suicide, as in the death of Jean Jimenez at Stewart Detention Center following prolonged solitary isolation.",
+        "dcterms:source": [
+          "source:phr-aclu-audits",
+          "source:ddd-research-doc"
+        ],
+        "ddd:ledger_status": "audit-documented",
+        "ddd:circumstances": "Suicide following prolonged solitary isolation."
+      }
+    },
+    {
+      "id": "edge:phr-aclu-mortality-finding",
+      "attrs": {
+        "i2t:predicate": "attributes_deaths_to",
+        "i2t:category": "reference",
+        "i2t:evidence": "Clinical oversight evaluations coordinated by Physicians for Human Rights (PHR) and the ACLU indicate that these deaths are frequently attributable to chronic failures in correctional healthcare administration.",
+        "dcterms:source": [
+          "source:phr-aclu-audits",
+          "source:ddd-research-doc"
+        ]
+      }
+    },
+    {
+      "id": "event:death/carlos-alberto-garay-undated",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Intercepted in Usulutan while driving his vehicle; shot multiple times by gang members several months after deportation following unheeded extortion threats.",
+        "dcterms:source": [
+          "source:hrw-deported-to-danger",
+          "source:ddd-research-doc"
+        ],
+        "ddd:ledger_status": "post-removal",
+        "ddd:circumstances": "Intercepted in Usulutan while driving his vehicle; shot multiple times by gang members several months after deportation following unheeded extortion threats."
+      }
+    },
+    {
+      "id": "event:death/mario-enrique-sandoval-gomez-2017-06-29",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Assassinated inside his residence on June 29, 2017, by attackers posing as law enforcement; had lived in the U.S. and possessed no gang ties.",
+        "dcterms:source": [
+          "source:hrw-deported-to-danger",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2017-06-29",
+        "ddd:ledger_status": "post-removal",
+        "ddd:circumstances": "Assassinated inside his residence on June 29, 2017, by attackers posing as law enforcement; had lived in the U.S. and possessed no gang ties."
+      }
+    },
+    {
+      "id": "event:death/tommy-eduardo-paiz-2018-08-04",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Employed in a San Salvador call center post-removal; abducted while visiting family in La Libertad on August 4, 2018; beaten, handcuffed, and shot.",
+        "dcterms:source": [
+          "source:hrw-deported-to-danger",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date_of_death": "2018-08-04",
+        "ddd:ledger_status": "post-removal",
+        "ddd:circumstances": "Employed in a San Salvador call center post-removal; abducted while visiting family in La Libertad on August 4, 2018; beaten, handcuffed, and shot."
+      }
+    },
+    {
+      "id": "event:death/nicolas-p-undated",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Fled to the U.S. after surviving a shooting in 2015; deported in 2017 and executed inside his family home at 9:30 p.m. on the day of his return.",
+        "dcterms:source": [
+          "source:hrw-deported-to-danger",
+          "source:ddd-research-doc"
+        ],
+        "ddd:ledger_status": "post-removal",
+        "ddd:circumstances": "Fled to the U.S. after surviving a shooting in 2015; deported in 2017 and executed inside his family home at 9:30 p.m. on the day of his return."
+      }
+    },
+    {
+      "id": "event:death/javier-surname-withheld-undated",
+      "attrs": {
+        "i2t:predicate": "died",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Targeted and executed four months after deportation at his family's residence after gang members identified his non-gang artistic tattoos.",
+        "dcterms:source": [
+          "source:hrw-deported-to-danger",
+          "source:ddd-research-doc"
+        ],
+        "ddd:ledger_status": "post-removal",
+        "ddd:circumstances": "Targeted and executed four months after deportation at his family's residence after gang members identified his non-gang artistic tattoos."
+      }
+    },
+    {
+      "id": "edge:hrw-deported-to-danger-findings",
+      "attrs": {
+        "i2t:predicate": "verified_post_removal_harm",
+        "i2t:category": "reference",
+        "i2t:evidence": "Investigations conducted by Human Rights Watch under the 'Deported to Danger' project verified 138 killings of Salvadorans deported from the United States, along with more than 70 cases of torture, sexual assault, and enforced disappearance occurring shortly after arrival.",
+        "dcterms:source": [
+          "source:hrw-deported-to-danger",
+          "source:ddd-research-doc"
+        ],
+        "ddd:verified_killings": 138,
+        "ddd:torture_assault_disappearance_cases": "70+"
+      }
+    },
+    {
+      "id": "edge:monitoring-ceases-at-border",
+      "attrs": {
+        "i2t:predicate": "monitoring_ceases_upon",
+        "i2t:category": "reference",
+        "i2t:evidence": "When noncitizens are removed from the United States, official domestic monitoring ceases at the border.",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      }
+    },
+    {
+      "id": "edge:ledger-mandated-by",
+      "attrs": {
+        "i2t:predicate": "mandates",
+        "i2t:category": "reference",
+        "i2t:evidence": "Federal tracking of deaths in immigration custody is formally regulated under the DHS Appropriations Act of 2018, which requires ICE to publish reports regarding in-custody deaths within 90 days of occurrence.",
+        "dcterms:source": [
+          "source:ice-directives",
+          "source:ddd-research-doc"
+        ],
+        "ddd:reporting_deadline_days": 90
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:directive-escalation-timeline",
+      "attrs": {
+        "i2t:predicate": "defines_protocol_for",
+        "i2t:category": "reference",
+        "i2t:evidence": "The relevant Field Office Director must issue notifications within 12 hours to senior leadership in ERO and OPR; an interim notice must be published within two business days, followed by Mortality Review Reports by IHSC and OPR Detainee Death Reviews, with toxicology and autopsy records finalized within 60 to 180 days.",
+        "dcterms:source": [
+          "source:ice-directives",
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:ledger-maintained-by",
+      "attrs": {
+        "i2t:predicate": "maintained_by",
+        "i2t:category": "reference",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:odls-operated-by",
+      "attrs": {
+        "i2t:predicate": "operated_by",
+        "i2t:category": "reference",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:ero-part-of-ice",
+      "attrs": {
+        "i2t:predicate": "component_of",
+        "i2t:category": "containment",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:opr-part-of-ice",
+      "attrs": {
+        "i2t:predicate": "component_of",
+        "i2t:category": "containment",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:ihsc-part-of-ice",
+      "attrs": {
+        "i2t:predicate": "component_of",
+        "i2t:category": "containment",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:hsi-part-of-ice",
+      "attrs": {
+        "i2t:predicate": "component_of",
+        "i2t:category": "containment",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:ice-part-of-dhs",
+      "attrs": {
+        "i2t:predicate": "component_of",
+        "i2t:category": "containment",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:facility-count-discrepancy",
+      "attrs": {
+        "i2t:predicate": "obscures_facilities",
+        "i2t:category": "reference",
+        "i2t:evidence": "Physical custody is distributed across 469 facilities nationwide... Crucially, ICE's public directory lists only 208 centers, obscuring more than 260 municipal lockups, county jails, and transit staging facilities from standard visibility.",
+        "dcterms:source": [
+          "source:vera-detention-data",
+          "source:ddd-research-doc"
+        ],
+        "ddd:active_facilities": 469,
+        "ddd:publicly_listed": 208,
+        "ddd:obscured": "260+"
+      }
+    },
+    {
+      "id": "edge:network-operators",
+      "attrs": {
+        "i2t:predicate": "operated_through",
+        "i2t:category": "interactivity",
+        "i2t:evidence": "...dedicated Contract Detention Facilities (CDFs) operated by private corrections entities like GEO Group and CoreCivic, Intergovernmental Service Agreements (IGSAs) with local sheriffs, and U.S. Marshals Service (USMS) inter-agency arrangements.",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ],
+        "ddd:contract_types": [
+          "CDF",
+          "IGSA",
+          "USMS"
+        ]
+      }
+    },
+    {
+      "id": "edge:cecot-in-el-salvador",
+      "attrs": {
+        "i2t:predicate": "located_in",
+        "i2t:category": "containment",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:aurora-operated-by-geo",
+      "attrs": {
+        "i2t:predicate": "operated_by",
+        "i2t:category": "reference",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:stewart-operated-by-corecivic",
+      "attrs": {
+        "i2t:predicate": "operated_by",
+        "i2t:category": "reference",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "event:odls-purge-2026-09-15",
+      "attrs": {
+        "i2t:predicate": "concealed_from_locator",
+        "i2t:category": "state_change",
+        "i2t:evidence": "On September 15, 2026, ICE modified the public search protocol of its Online Detainee Locator System. Without public notice or formal administrative rulemaking, the agency removed from ODLS search returns all individuals who have received a final order of removal from an immigration judge. This automated filter affected approximately 16,000 currently incarcerated individuals—nearly 30% of the entire national detained population.",
+        "dcterms:source": [
+          "source:ap-locator-purge",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date": "2026-09-15",
+        "ddd:affected_population": 16000
+      }
+    },
+    {
+      "id": "edge:purge-undermines-due-process",
+      "attrs": {
+        "i2t:predicate": "obstructs",
+        "i2t:category": "interactivity",
+        "i2t:evidence": "Even after an immigration judge issues a final removal order, noncitizens retain constitutional and statutory rights to file emergency motions to reopen, seek judicial stays of removal, or petition federal district courts for writs of habeas corpus under 28 U.S.C. § 2241. By concealing the physical location of detainees... ICE effectively prevents legal counsel and families from serving legal papers, obtaining signatures, or filing emergency pleadings before expulsion.",
+        "dcterms:source": [
+          "source:ap-locator-purge",
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "event:wgeid-petition-2026-09",
+      "attrs": {
+        "i2t:predicate": "petitioned",
+        "i2t:category": "interactivity",
+        "i2t:evidence": "In late September 2026, a legal coalition of more than 30 organizations filed an emergency petition with the UN Working Group on Enforced or Involuntary Disappearances... asserting that detaining noncitizens while refusing to disclose their physical location constitutes an enforced disappearance under the International Convention for the Protection of All Persons from Enforced Disappearance.",
+        "dcterms:source": [
+          "source:ccr-wgeid-petition",
+          "source:ddd-research-doc"
+        ],
+        "ddd:date": "2026-09",
+        "ddd:coalition_size": "30+ organizations"
+      }
+    },
+    {
+      "id": "edge:redaction-authorized-by",
+      "attrs": {
+        "i2t:predicate": "authorizes_redaction",
+        "i2t:category": "reference",
+        "i2t:evidence": "Under the Privacy Act of 1974 and federal FOIA exemptions (specifically 5 U.S.C. § 552(b)(6) and (b)(7)(C)), ICE routinely redacts names and Alien Numbers from public microdata releases.",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "event:salvadoran-pipeline",
+      "attrs": {
+        "i2t:predicate": "transferred_to_third_country_custody",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Commencing under diplomatic arrangements in March 2025, noncitizens—including roughly 252 Venezuelan nationals and dozens of others—were transferred directly into the custodial authority of El Salvador and incarcerated within high-security facilities, including CECOT.",
+        "dcterms:source": [
+          "source:third-country-deportation-watch",
+          "source:uscri-tcd-tracker",
+          "source:ddd-research-doc"
+        ],
+        "ddd:start_date": "2025-03",
+        "ddd:documented_conditions": "23.5-hour solitary confinement in unlit cells"
+      }
+    },
+    {
+      "id": "edge:cecot-litigation-documents-conditions",
+      "attrs": {
+        "i2t:predicate": "documents_conditions_at",
+        "i2t:category": "reference",
+        "i2t:evidence": "Federal litigation, including J.G.G. v. Trump and D.V.D. v. DHS, demonstrated that detainees were subjected to 23.5-hour solitary confinement in unlit cells.",
+        "dcterms:source": [
+          "source:third-country-deportation-watch",
+          "source:ddd-research-doc"
+        ]
+      }
+    },
+    {
+      "id": "event:abrego-garcia-removal",
+      "attrs": {
+        "i2t:predicate": "deported_in_violation_of_order",
+        "i2t:category": "state_change",
+        "i2t:evidence": "In the case of Kilmar Armando Abrego Garcia, federal courts documented that ICE deported the individual to Salvadoran imprisonment in direct violation of a federal judge's withholding order.",
+        "dcterms:source": [
+          "source:third-country-deportation-watch",
+          "source:ddd-research-doc"
+        ]
+      }
+    },
+    {
+      "id": "edge:third-country-circumvents-protections",
+      "attrs": {
+        "i2t:predicate": "circumvents",
+        "i2t:category": "interactivity",
+        "i2t:evidence": "To circumvent these legal bars, federal enforcement agencies executed third-country agreements that allow noncitizens to be expelled to foreign partner jurisdictions with which they have no ties.",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ]
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:third-country-volume",
+      "attrs": {
+        "i2t:predicate": "expelled_under_third_country_instruments",
+        "i2t:category": "state_change",
+        "i2t:evidence": "Over a twelve-month period through late 2026, more than 23,000 noncitizens were expelled under these third-country instruments... including expulsions of third-country nationals to Uzbekistan and multiple African jurisdictions.",
+        "dcterms:source": [
+          "source:uscri-tcd-tracker",
+          "source:ddd-research-doc"
+        ],
+        "ddd:expelled_12mo_through_late_2026": "23,000+"
+      }
+    },
+    {
+      "id": "edge:scotus-permits-removals",
+      "attrs": {
+        "i2t:predicate": "permitted_continuation_of",
+        "i2t:category": "interactivity",
+        "i2t:evidence": "While federal courts issued injunctions halting transfers to specific third countries, the Supreme Court permitted removals to continue in late September 2026 while litigation proceeds on the merits.",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ],
+        "ddd:date": "2026-09"
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:metric/adp-2026-mid",
+      "attrs": {
+        "i2t:predicate": "measured_at",
+        "i2t:category": "reference",
+        "i2t:evidence": "The daily detained population climbed past 65,000 individuals by mid-2026, surpassing the previous historical record of approximately 50,000 to 55,000 set in August 2019.",
+        "dcterms:source": [
+          "source:vera-detention-data",
+          "source:trac",
+          "source:ddd-research-doc"
+        ],
+        "ddd:metric": "average_daily_population",
+        "ddd:value": 65000,
+        "ddd:as_of": "2026-06",
+        "ddd:baseline": "~20,000 (late 2021); ~50,000-55,000 (2019-08)",
+        "ddd:beds_target": 110000
+      }
+    },
+    {
+      "id": "edge:metric/bookins-cumulative",
+      "attrs": {
+        "i2t:predicate": "measured_at",
+        "i2t:category": "reference",
+        "i2t:evidence": "Cumulative book-ins across the expanded enforcement apparatus reached 591,385, with July 2026 logging more than 46,000 admissions in a single month.",
+        "dcterms:source": [
+          "source:deportation-data-project",
+          "source:ddd-research-doc"
+        ],
+        "ddd:metric": "cumulative_book_ins",
+        "ddd:value": 591385,
+        "ddd:monthly_peak": "46,000+ (2026-07)",
+        "ddd:baseline": "~23,000/month (2025-05)"
+      }
+    },
+    {
+      "id": "edge:metric/noncriminal-share",
+      "attrs": {
+        "i2t:predicate": "measured_at",
+        "i2t:category": "reference",
+        "i2t:evidence": "Microdata analyzed by TRAC and the Deportation Data Project confirms that nearly three-quarters of all detained noncitizens have no criminal record (73.6% non-criminal, 48,377 of 65,735).",
+        "dcterms:source": [
+          "source:trac",
+          "source:deportation-data-project",
+          "source:ddd-research-doc"
+        ],
+        "ddd:metric": "noncriminal_share",
+        "ddd:value": "73.6%",
+        "ddd:numerator": 48377,
+        "ddd:denominator": 65735
+      }
+    },
+    {
+      "id": "edge:metric/sixty-day-release-collapse",
+      "attrs": {
+        "i2t:predicate": "measured_at",
+        "i2t:category": "reference",
+        "i2t:evidence": "Under intensified detention policies, 60-day release rates plummeted from 35% to less than 7%.",
+        "dcterms:source": [
+          "source:trac",
+          "source:ddd-research-doc"
+        ],
+        "ddd:metric": "released_within_60_days",
+        "ddd:value": "<7%",
+        "ddd:baseline": "~35%"
+      }
+    },
+    {
+      "id": "edge:metric/interior-arrests-multiplier",
+      "attrs": {
+        "i2t:predicate": "measured_at",
+        "i2t:category": "reference",
+        "i2t:evidence": "Interior arrests multiplied by a factor of 11 as agents targeted individuals outside courthouses, at mandatory check-in appointments, and in public settings.",
+        "dcterms:source": [
+          "source:guardian-invisibilized",
+          "source:deportation-data-project",
+          "source:ddd-research-doc"
+        ],
+        "ddd:metric": "interior_arrest_multiplier",
+        "ddd:value": "11x"
+      }
+    },
+    {
+      "id": "edge:metric/mortality-2025",
+      "attrs": {
+        "i2t:predicate": "measured_at",
+        "i2t:category": "reference",
+        "i2t:evidence": "While the agency recorded over 170 deaths across the combined period between 2003 and 2025, custodial deaths exceeded 32 individuals in 2025 alone.",
+        "dcterms:source": [
+          "source:ice-death-reporting",
+          "source:ddd-research-doc"
+        ],
+        "ddd:metric": "custodial_deaths",
+        "ddd:value_2025": "32+",
+        "ddd:value_2003_2025": "170+"
+      }
+    },
+    {
+      "id": "edge:metric/demographic-targeting",
+      "attrs": {
+        "i2t:predicate": "measured_at",
+        "i2t:category": "reference",
+        "i2t:evidence": "Recent enforcement has disproportionately targeted Haitian immigrants—following the administrative termination of Temporary Protected Status—alongside Venezuelan, Cuban, and African nationals.",
+        "dcterms:source": [
+          "source:vera-detention-data",
+          "source:ddd-research-doc"
+        ],
+        "ddd:metric": "disproportionately_targeted_nationalities",
+        "ddd:value": [
+          "Haiti",
+          "Venezuela",
+          "Cuba",
+          "African nations"
+        ]
+      }
+    },
+    {
+      "id": "edge:tracks/ice-death-reporting",
+      "attrs": {
+        "i2t:predicate": "tracks",
+        "i2t:category": "reference",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ],
+        "ddd:coverage_note": "Detainees who die while in official physical ICE detention; excludes deaths post-release or during street-level operations."
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:tracks/trac",
+      "attrs": {
+        "i2t:predicate": "tracks",
+        "i2t:category": "reference",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ],
+        "ddd:coverage_note": "Monthly detention census, average daily population, facility criminal profiles, court backlogs; 30-60 day lag."
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:tracks/deportation-data-project",
+      "attrs": {
+        "i2t:predicate": "tracks",
+        "i2t:category": "reference",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ],
+        "ddd:coverage_note": "Raw ICE arrest logs, detention book-in microdata, facility transfers, deportation flight manifests; quarterly to semi-annual releases following court orders."
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:tracks/courtlistener-recap",
+      "attrs": {
+        "i2t:predicate": "tracks",
+        "i2t:category": "reference",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ],
+        "ddd:coverage_note": "Federal district court dockets, emergency TRO filings, habeas petitions; real-time indexing, limited to detainees who secure representation."
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:tracks/freedom-for-immigrants",
+      "attrs": {
+        "i2t:predicate": "tracks",
+        "i2t:category": "reference",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ],
+        "ddd:coverage_note": "Facility conditions, solitary confinement abuse, geographic coordinates of detention sites; crowdsourced and visitation-dependent."
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:tracks/third-country-deportation-watch",
+      "attrs": {
+        "i2t:predicate": "tracks",
+        "i2t:category": "reference",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ],
+        "ddd:coverage_note": "Transferred noncitizens, third-country facilities, post-removal violent deaths; investigative cadence, no continuous census."
+      },
+      "directed": true
+    },
+    {
+      "id": "edge:tracks/odls",
+      "attrs": {
+        "i2t:predicate": "tracks",
+        "i2t:category": "reference",
+        "dcterms:source": [
+          "source:ddd-research-doc"
+        ],
+        "ddd:coverage_note": "Manual locator; post-2026-09-15 deliberately returns empty records for final-order detainees."
+      },
+      "directed": true
+    }
+  ],
+  "incidences": [
+    {
+      "edge": "event:death/wei-lianyong-2026-08-23",
+      "node": "person:wei-lianyong",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/lopez-cornejo-edwin-2026-08-01",
+      "node": "person:lopez-cornejo-edwin",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/arenas-silva-jesus-manuel-2026-07-13",
+      "node": "person:arenas-silva-jesus-manuel",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/florian-adrian-2026-06-24",
+      "node": "person:florian-adrian",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/alcorta-rodriguez-felix-2026-06-19",
+      "node": "person:alcorta-rodriguez-felix",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/artmeladze-mamuka-2026-06-04",
+      "node": "person:artmeladze-mamuka",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/adan-gonzalez-denny-2026-04-28",
+      "node": "person:adan-gonzalez-denny",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/carbonell-betancourt-aled-2026-04-12",
+      "node": "person:carbonell-betancourt-aled",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/cabrera-clemente-alejandro-2026-04-11",
+      "node": "person:cabrera-clemente-alejandro",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/bui-tuan-van-2026-04-01",
+      "node": "person:bui-tuan-van",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/ramos-solano-jose-guadalupe-2026-03-25",
+      "node": "person:ramos-solano-jose-guadalupe",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/perez-jimenez-royer-2026-03-16",
+      "node": "person:perez-jimenez-royer",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/paktiawal-mohammad-nazeer-2026-03-14",
+      "node": "person:paktiawal-mohammad-nazeer",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/damas-emmanuel-2026-03-02",
+      "node": "person:damas-emmanuel",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/najafabadi-pejman-karshenas-2026-03-01",
+      "node": "person:najafabadi-pejman-karshenas",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/gutierrez-reyes-alberto-2026-02-27",
+      "node": "person:gutierrez-reyes-alberto",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/garcia-hernandez-jairo-2026-02-16",
+      "node": "person:garcia-hernandez-jairo",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/sim-lorth-2026-02-16",
+      "node": "person:sim-lorth",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/diaz-victor-manuel-2026-01-14",
+      "node": "person:diaz-victor-manuel",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/diaz-victor-manuel-2026-01-14",
+      "node": "facility:camp-east-montana",
+      "role": "custodial_site"
+    },
+    {
+      "edge": "event:death/sanchez-dominguez-heber-2026-01-14",
+      "node": "person:sanchez-dominguez-heber",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/la-parady-2026-01-09",
+      "node": "person:la-parady",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/yanez-cruz-luis-2026-01-06",
+      "node": "person:yanez-cruz-luis",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/nunez-caceres-luis-2026-01-05",
+      "node": "person:nunez-caceres-luis",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/lunas-campos-geraldo-2026-01-03",
+      "node": "person:lunas-campos-geraldo",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/gantchev-nenko-stanev-2025-12-15",
+      "node": "person:gantchev-nenko-stanev",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/francisco-rodriguez-delvin-2025-12-14",
+      "node": "person:francisco-rodriguez-delvin",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/francisco-rodriguez-delvin-2025-12-14",
+      "node": "facility:merit-health-natchez",
+      "role": "custodial_site"
+    },
+    {
+      "edge": "event:death/abdulkadir-fouad-saeed-2025-12-14",
+      "node": "person:abdulkadir-fouad-saeed",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/brutus-jean-wilson-2025-12-12",
+      "node": "person:brutus-jean-wilson",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/sachiwani-shiraz-fateh-ali-2025-12-06",
+      "node": "person:sachiwani-shiraz-fateh-ali",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/montejo-pete-sumalo-2025-12-05",
+      "node": "person:montejo-pete-sumalo",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/gaspar-andres-francisco-2025-12-03",
+      "node": "person:gaspar-andres-francisco",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/wong-kai-yin-2025-10-25",
+      "node": "person:wong-kai-yin",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/garcia-aviles-gabriel-2025-10-23",
+      "node": "person:garcia-aviles-gabriel",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/castro-rivera-jose-2025-10-23",
+      "node": "person:castro-rivera-jose",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/saleh-hasan-ali-moh-d-2025-10-11",
+      "node": "person:saleh-hasan-ali-moh-d",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/cruz-silva-leo-2025-10-04",
+      "node": "person:cruz-silva-leo",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/garcia-hernandez-miguel-angel-2025-09-30",
+      "node": "person:garcia-hernandez-miguel-angel",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/xie-huabing-2025-09-29",
+      "node": "person:xie-huabing",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/guzman-fuentes-norlan-2025-09-24",
+      "node": "person:guzman-fuentes-norlan",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/ayala-uribe-ismael-2025-09-22",
+      "node": "person:ayala-uribe-ismael",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/reyes-banegas-2025-09-18",
+      "node": "person:reyes-banegas",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/villegas-gonzalez-silverio-2025-09-12",
+      "node": "person:villegas-gonzalez-silverio",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/duarte-rascon-oscar-2025-09-08",
+      "node": "person:duarte-rascon-oscar",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/batrez-vargas-lorenzo-antonio-2025-08-31",
+      "node": "person:batrez-vargas-lorenzo-antonio",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/ge-chaofeng-2025-08-05",
+      "node": "person:ge-chaofeng",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/phan-tien-xuan-2025-07-19",
+      "node": "person:phan-tien-xuan",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/perez-isidro-2025-06-26",
+      "node": "person:perez-isidro",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/noviello-johnny-2025-06-23",
+      "node": "person:noviello-johnny",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/molina-veya-jesus-2025-06-07",
+      "node": "person:molina-veya-jesus",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/avelleneda-delgado-abelardo-2025-05-05",
+      "node": "person:avelleneda-delgado-abelardo",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/blaise-marie-ange-2025-04-25",
+      "node": "person:blaise-marie-ange",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/nguyen-nhon-ngoc-2025-04-16",
+      "node": "person:nguyen-nhon-ngoc",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/rayo-garzon-brayan-2025-04-08",
+      "node": "person:rayo-garzon-brayan",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/tineo-martinez-juan-alexis-2025-02-23",
+      "node": "person:tineo-martinez-juan-alexis",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/chernyak-maksym-2025-02-20",
+      "node": "person:chernyak-maksym",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/dejene-serawit-gezahegn-2025-01-29",
+      "node": "person:dejene-serawit-gezahegn",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/ruiz-guillen-genry-2025-01-23",
+      "node": "person:ruiz-guillen-genry",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/amechand-ramesh-2024-12-16",
+      "node": "person:amechand-ramesh",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/kataria-pankaj-karan-singh-2024-11-01",
+      "node": "person:kataria-pankaj-karan-singh",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/sanchez-castro-jose-manuel-2024-10-27",
+      "node": "person:sanchez-castro-jose-manuel",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/bamaca-zacarias-brendy-yohana-2024-09-07",
+      "node": "person:bamaca-zacarias-brendy-yohana",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/quintana-jhon-benavides-2024-06-15",
+      "node": "person:quintana-jhon-benavides",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/boror-urla-hugo-roberto-2024-05-22",
+      "node": "person:boror-urla-hugo-roberto",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/dennis-cambric-2024-05-22",
+      "node": "person:dennis-cambric",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/farias-farias-edixon-del-jesus-2024-04-18",
+      "node": "person:farias-farias-edixon-del-jesus",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/singh-jaspal-2024-04-15",
+      "node": "person:singh-jaspal",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/daniel-charles-leo-2024-03-07",
+      "node": "person:daniel-charles-leo",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/ba-ousmane-2024-02-23",
+      "node": "person:ba-ousmane",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/okpu-frankline-2023-12-06",
+      "node": "person:okpu-frankline",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/juan-francisco-carlos-2023-12-04",
+      "node": "person:juan-francisco-carlos",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/shrestha-subash-2023-11-13",
+      "node": "person:shrestha-subash",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/chirino-peralta-julio-cesar-2023-10-08",
+      "node": "person:chirino-peralta-julio-cesar",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/melvin-ariel-calero-mendoza-2022-10",
+      "node": "person:melvin-ariel-calero-mendoza",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/salvador-rosales-vargas-2023-04",
+      "node": "person:salvador-rosales-vargas",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/cristian-dumitrascu-2023-03",
+      "node": "person:cristian-dumitrascu",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/kesley-vial-2022-08",
+      "node": "person:kesley-vial",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/benjamin-gonzalez-soto-2022-07",
+      "node": "person:benjamin-gonzalez-soto",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/pablo-sanchez-gotopo-2021-10",
+      "node": "person:pablo-sanchez-gotopo",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/elba-maria-centeno-briones-2021-08",
+      "node": "person:elba-maria-centeno-briones",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/diego-fernando-gallego-agudelo-2021-03",
+      "node": "person:diego-fernando-gallego-agudelo",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/jesse-dean-2021-02",
+      "node": "person:jesse-dean",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/felipe-montes-2021-01",
+      "node": "person:felipe-montes",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/anthony-jones-2020-12",
+      "node": "person:anthony-jones",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/james-tomas-hill-2020-08",
+      "node": "person:james-tomas-hill",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/luis-sanchez-perez-2020-07",
+      "node": "person:luis-sanchez-perez",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/carlos-ernesto-escobar-mejia-2020-05",
+      "node": "person:carlos-ernesto-escobar-mejia",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/efrain-romero-de-la-rosa-2018-07",
+      "node": "person:efrain-romero-de-la-rosa",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/roxana-hernandez-2018-05",
+      "node": "person:roxana-hernandez",
+      "role": "deceased"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "registry:ice-death-ledger",
+      "role": "registry"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/wei-lianyong-2026-08-23",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/lopez-cornejo-edwin-2026-08-01",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/arenas-silva-jesus-manuel-2026-07-13",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/florian-adrian-2026-06-24",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/alcorta-rodriguez-felix-2026-06-19",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/artmeladze-mamuka-2026-06-04",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/adan-gonzalez-denny-2026-04-28",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/carbonell-betancourt-aled-2026-04-12",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/cabrera-clemente-alejandro-2026-04-11",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/bui-tuan-van-2026-04-01",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/ramos-solano-jose-guadalupe-2026-03-25",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/perez-jimenez-royer-2026-03-16",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/paktiawal-mohammad-nazeer-2026-03-14",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/damas-emmanuel-2026-03-02",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/najafabadi-pejman-karshenas-2026-03-01",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/gutierrez-reyes-alberto-2026-02-27",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/garcia-hernandez-jairo-2026-02-16",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/sim-lorth-2026-02-16",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/diaz-victor-manuel-2026-01-14",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/sanchez-dominguez-heber-2026-01-14",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/la-parady-2026-01-09",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/yanez-cruz-luis-2026-01-06",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/nunez-caceres-luis-2026-01-05",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/lunas-campos-geraldo-2026-01-03",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/gantchev-nenko-stanev-2025-12-15",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/francisco-rodriguez-delvin-2025-12-14",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/abdulkadir-fouad-saeed-2025-12-14",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/brutus-jean-wilson-2025-12-12",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/sachiwani-shiraz-fateh-ali-2025-12-06",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/montejo-pete-sumalo-2025-12-05",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/gaspar-andres-francisco-2025-12-03",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/wong-kai-yin-2025-10-25",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/garcia-aviles-gabriel-2025-10-23",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/castro-rivera-jose-2025-10-23",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/saleh-hasan-ali-moh-d-2025-10-11",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/cruz-silva-leo-2025-10-04",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/garcia-hernandez-miguel-angel-2025-09-30",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/xie-huabing-2025-09-29",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/guzman-fuentes-norlan-2025-09-24",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/ayala-uribe-ismael-2025-09-22",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/reyes-banegas-2025-09-18",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/villegas-gonzalez-silverio-2025-09-12",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/duarte-rascon-oscar-2025-09-08",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/batrez-vargas-lorenzo-antonio-2025-08-31",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/ge-chaofeng-2025-08-05",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/phan-tien-xuan-2025-07-19",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/perez-isidro-2025-06-26",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/noviello-johnny-2025-06-23",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/molina-veya-jesus-2025-06-07",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/avelleneda-delgado-abelardo-2025-05-05",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/blaise-marie-ange-2025-04-25",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/nguyen-nhon-ngoc-2025-04-16",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/rayo-garzon-brayan-2025-04-08",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/tineo-martinez-juan-alexis-2025-02-23",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/chernyak-maksym-2025-02-20",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/dejene-serawit-gezahegn-2025-01-29",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/ruiz-guillen-genry-2025-01-23",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/amechand-ramesh-2024-12-16",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/kataria-pankaj-karan-singh-2024-11-01",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/sanchez-castro-jose-manuel-2024-10-27",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/bamaca-zacarias-brendy-yohana-2024-09-07",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/quintana-jhon-benavides-2024-06-15",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/boror-urla-hugo-roberto-2024-05-22",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/dennis-cambric-2024-05-22",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/farias-farias-edixon-del-jesus-2024-04-18",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/singh-jaspal-2024-04-15",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/daniel-charles-leo-2024-03-07",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/ba-ousmane-2024-02-23",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/okpu-frankline-2023-12-06",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/juan-francisco-carlos-2023-12-04",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/shrestha-subash-2023-11-13",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/chirino-peralta-julio-cesar-2023-10-08",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/melvin-ariel-calero-mendoza-2022-10",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/salvador-rosales-vargas-2023-04",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/cristian-dumitrascu-2023-03",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/kesley-vial-2022-08",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/benjamin-gonzalez-soto-2022-07",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/pablo-sanchez-gotopo-2021-10",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/elba-maria-centeno-briones-2021-08",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/diego-fernando-gallego-agudelo-2021-03",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/jesse-dean-2021-02",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/felipe-montes-2021-01",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/anthony-jones-2020-12",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/james-tomas-hill-2020-08",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/luis-sanchez-perez-2020-07",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/carlos-ernesto-escobar-mejia-2020-05",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/efrain-romero-de-la-rosa-2018-07",
+      "role": "documented_death"
+    },
+    {
+      "edge": "edge:ledger-membership",
+      "node": "event:death/roxana-hernandez-2018-05",
+      "role": "documented_death"
+    },
+    {
+      "edge": "event:death/prisciliano-trejo-ricano-undated",
+      "node": "person:prisciliano-trejo-ricano",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/randall-gamboa-esquivel-undated",
+      "node": "person:randall-gamboa-esquivel",
+      "role": "deceased"
+    },
+    {
+      "edge": "edge:registry-exclusion-post-release",
+      "node": "registry:ice-death-ledger",
+      "role": "registry"
+    },
+    {
+      "edge": "edge:registry-exclusion-post-release",
+      "node": "event:death/prisciliano-trejo-ricano-undated",
+      "role": "excluded_death"
+    },
+    {
+      "edge": "edge:registry-exclusion-post-release",
+      "node": "event:death/randall-gamboa-esquivel-undated",
+      "role": "excluded_death"
+    },
+    {
+      "edge": "event:death/renee-nicole-good-undated",
+      "node": "person:renee-nicole-good",
+      "role": "deceased"
+    },
+    {
+      "edge": "edge:registry-exclusion-enforcement-ops",
+      "node": "registry:ice-death-ledger",
+      "role": "registry"
+    },
+    {
+      "edge": "edge:registry-exclusion-enforcement-ops",
+      "node": "event:death/renee-nicole-good-undated",
+      "role": "excluded_death"
+    },
+    {
+      "edge": "event:death/kamyar-samimi-undated",
+      "node": "person:kamyar-samimi",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/kamyar-samimi-undated",
+      "node": "facility:aurora-detention-center",
+      "role": "custodial_site"
+    },
+    {
+      "edge": "event:death/jean-jimenez-undated",
+      "node": "person:jean-jimenez",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/jean-jimenez-undated",
+      "node": "facility:stewart-detention-center",
+      "role": "custodial_site"
+    },
+    {
+      "edge": "edge:phr-aclu-mortality-finding",
+      "node": "org:phr",
+      "role": "evaluator"
+    },
+    {
+      "edge": "edge:phr-aclu-mortality-finding",
+      "node": "org:aclu",
+      "role": "evaluator"
+    },
+    {
+      "edge": "edge:phr-aclu-mortality-finding",
+      "node": "event:death/kamyar-samimi-undated",
+      "role": "case_study"
+    },
+    {
+      "edge": "edge:phr-aclu-mortality-finding",
+      "node": "event:death/jean-jimenez-undated",
+      "role": "case_study"
+    },
+    {
+      "edge": "edge:phr-aclu-mortality-finding",
+      "node": "system:ice-detention-network",
+      "role": "evaluated_system"
+    },
+    {
+      "edge": "event:death/carlos-alberto-garay-undated",
+      "node": "person:carlos-alberto-garay",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/carlos-alberto-garay-undated",
+      "node": "country:el-salvador",
+      "role": "country_of_death"
+    },
+    {
+      "edge": "event:death/mario-enrique-sandoval-gomez-2017-06-29",
+      "node": "person:mario-enrique-sandoval-gomez",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/mario-enrique-sandoval-gomez-2017-06-29",
+      "node": "country:el-salvador",
+      "role": "country_of_death"
+    },
+    {
+      "edge": "event:death/tommy-eduardo-paiz-2018-08-04",
+      "node": "person:tommy-eduardo-paiz",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/tommy-eduardo-paiz-2018-08-04",
+      "node": "country:el-salvador",
+      "role": "country_of_death"
+    },
+    {
+      "edge": "event:death/nicolas-p-undated",
+      "node": "person:nicolas-p",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/nicolas-p-undated",
+      "node": "country:el-salvador",
+      "role": "country_of_death"
+    },
+    {
+      "edge": "event:death/javier-surname-withheld-undated",
+      "node": "person:javier-surname-withheld",
+      "role": "deceased"
+    },
+    {
+      "edge": "event:death/javier-surname-withheld-undated",
+      "node": "country:el-salvador",
+      "role": "country_of_death"
+    },
+    {
+      "edge": "edge:hrw-deported-to-danger-findings",
+      "node": "org:hrw",
+      "role": "investigator"
+    },
+    {
+      "edge": "edge:hrw-deported-to-danger-findings",
+      "node": "country:el-salvador",
+      "role": "destination_country"
+    },
+    {
+      "edge": "edge:hrw-deported-to-danger-findings",
+      "node": "event:death/carlos-alberto-garay-undated",
+      "role": "verified_killing"
+    },
+    {
+      "edge": "edge:hrw-deported-to-danger-findings",
+      "node": "event:death/mario-enrique-sandoval-gomez-2017-06-29",
+      "role": "verified_killing"
+    },
+    {
+      "edge": "edge:hrw-deported-to-danger-findings",
+      "node": "event:death/tommy-eduardo-paiz-2018-08-04",
+      "role": "verified_killing"
+    },
+    {
+      "edge": "edge:hrw-deported-to-danger-findings",
+      "node": "event:death/nicolas-p-undated",
+      "role": "verified_killing"
+    },
+    {
+      "edge": "edge:hrw-deported-to-danger-findings",
+      "node": "event:death/javier-surname-withheld-undated",
+      "role": "verified_killing"
+    },
+    {
+      "edge": "edge:monitoring-ceases-at-border",
+      "node": "country:united-states",
+      "role": "monitoring_state"
+    },
+    {
+      "edge": "edge:monitoring-ceases-at-border",
+      "node": "system:ice-detention-network",
+      "role": "monitored_system"
+    },
+    {
+      "edge": "edge:ledger-mandated-by",
+      "node": "law:dhs-appropriations-2018",
+      "role": "source"
+    },
+    {
+      "edge": "edge:ledger-mandated-by",
+      "node": "registry:ice-death-ledger",
+      "role": "target"
+    },
+    {
+      "edge": "edge:directive-escalation-timeline",
+      "node": "law:ice-directive-11003",
+      "role": "source"
+    },
+    {
+      "edge": "edge:directive-escalation-timeline",
+      "node": "registry:ice-death-ledger",
+      "role": "target"
+    },
+    {
+      "edge": "edge:ledger-maintained-by",
+      "node": "registry:ice-death-ledger",
+      "role": "source"
+    },
+    {
+      "edge": "edge:ledger-maintained-by",
+      "node": "org:ice",
+      "role": "target"
+    },
+    {
+      "edge": "edge:odls-operated-by",
+      "node": "system:odls",
+      "role": "source"
+    },
+    {
+      "edge": "edge:odls-operated-by",
+      "node": "org:ice",
+      "role": "target"
+    },
+    {
+      "edge": "edge:ero-part-of-ice",
+      "node": "org:ero",
+      "role": "source"
+    },
+    {
+      "edge": "edge:ero-part-of-ice",
+      "node": "org:ice",
+      "role": "target"
+    },
+    {
+      "edge": "edge:opr-part-of-ice",
+      "node": "org:opr",
+      "role": "source"
+    },
+    {
+      "edge": "edge:opr-part-of-ice",
+      "node": "org:ice",
+      "role": "target"
+    },
+    {
+      "edge": "edge:ihsc-part-of-ice",
+      "node": "org:ihsc",
+      "role": "source"
+    },
+    {
+      "edge": "edge:ihsc-part-of-ice",
+      "node": "org:ice",
+      "role": "target"
+    },
+    {
+      "edge": "edge:hsi-part-of-ice",
+      "node": "org:hsi",
+      "role": "source"
+    },
+    {
+      "edge": "edge:hsi-part-of-ice",
+      "node": "org:ice",
+      "role": "target"
+    },
+    {
+      "edge": "edge:ice-part-of-dhs",
+      "node": "org:ice",
+      "role": "source"
+    },
+    {
+      "edge": "edge:ice-part-of-dhs",
+      "node": "org:dhs",
+      "role": "target"
+    },
+    {
+      "edge": "edge:facility-count-discrepancy",
+      "node": "org:ice",
+      "role": "publisher"
+    },
+    {
+      "edge": "edge:facility-count-discrepancy",
+      "node": "system:ice-detention-network",
+      "role": "described_system"
+    },
+    {
+      "edge": "edge:network-operators",
+      "node": "system:ice-detention-network",
+      "role": "network"
+    },
+    {
+      "edge": "edge:network-operators",
+      "node": "org:geo-group",
+      "role": "contract_operator"
+    },
+    {
+      "edge": "edge:network-operators",
+      "node": "org:corecivic",
+      "role": "contract_operator"
+    },
+    {
+      "edge": "edge:network-operators",
+      "node": "org:usms",
+      "role": "interagency_operator"
+    },
+    {
+      "edge": "edge:cecot-in-el-salvador",
+      "node": "facility:cecot",
+      "role": "source"
+    },
+    {
+      "edge": "edge:cecot-in-el-salvador",
+      "node": "country:el-salvador",
+      "role": "target"
+    },
+    {
+      "edge": "edge:aurora-operated-by-geo",
+      "node": "facility:aurora-detention-center",
+      "role": "source"
+    },
+    {
+      "edge": "edge:aurora-operated-by-geo",
+      "node": "org:geo-group",
+      "role": "target"
+    },
+    {
+      "edge": "edge:stewart-operated-by-corecivic",
+      "node": "facility:stewart-detention-center",
+      "role": "source"
+    },
+    {
+      "edge": "edge:stewart-operated-by-corecivic",
+      "node": "org:corecivic",
+      "role": "target"
+    },
+    {
+      "edge": "event:odls-purge-2026-09-15",
+      "node": "org:ice",
+      "role": "acting_agency"
+    },
+    {
+      "edge": "event:odls-purge-2026-09-15",
+      "node": "system:odls",
+      "role": "modified_system"
+    },
+    {
+      "edge": "event:odls-purge-2026-09-15",
+      "node": "cohort:final-order-concealed",
+      "role": "concealed_population"
+    },
+    {
+      "edge": "edge:purge-undermines-due-process",
+      "node": "event:odls-purge-2026-09-15",
+      "role": "source"
+    },
+    {
+      "edge": "edge:purge-undermines-due-process",
+      "node": "law:28usc2241",
+      "role": "target"
+    },
+    {
+      "edge": "event:wgeid-petition-2026-09",
+      "node": "org:ccr",
+      "role": "petitioner"
+    },
+    {
+      "edge": "event:wgeid-petition-2026-09",
+      "node": "org:aclu",
+      "role": "petitioner"
+    },
+    {
+      "edge": "event:wgeid-petition-2026-09",
+      "node": "org:amnesty",
+      "role": "petitioner"
+    },
+    {
+      "edge": "event:wgeid-petition-2026-09",
+      "node": "org:rfk-human-rights",
+      "role": "petitioner"
+    },
+    {
+      "edge": "event:wgeid-petition-2026-09",
+      "node": "org:raices",
+      "role": "petitioner"
+    },
+    {
+      "edge": "event:wgeid-petition-2026-09",
+      "node": "org:un-wgeid",
+      "role": "petitioned_body"
+    },
+    {
+      "edge": "event:wgeid-petition-2026-09",
+      "node": "event:odls-purge-2026-09-15",
+      "role": "subject_of_petition"
+    },
+    {
+      "edge": "event:wgeid-petition-2026-09",
+      "node": "law:icppced",
+      "role": "legal_basis"
+    },
+    {
+      "edge": "edge:redaction-authorized-by",
+      "node": "law:privacy-act-foia-exemptions",
+      "role": "source"
+    },
+    {
+      "edge": "edge:redaction-authorized-by",
+      "node": "org:ice",
+      "role": "target"
+    },
+    {
+      "edge": "event:salvadoran-pipeline",
+      "node": "org:ice",
+      "role": "removing_agency"
+    },
+    {
+      "edge": "event:salvadoran-pipeline",
+      "node": "cohort:cecot-venezuelans",
+      "role": "transferred_cohort"
+    },
+    {
+      "edge": "event:salvadoran-pipeline",
+      "node": "facility:cecot",
+      "role": "receiving_facility"
+    },
+    {
+      "edge": "event:salvadoran-pipeline",
+      "node": "country:el-salvador",
+      "role": "receiving_state"
+    },
+    {
+      "edge": "edge:cecot-litigation-documents-conditions",
+      "node": "case:jgg-v-trump",
+      "role": "litigation"
+    },
+    {
+      "edge": "edge:cecot-litigation-documents-conditions",
+      "node": "case:dvd-v-dhs",
+      "role": "litigation"
+    },
+    {
+      "edge": "edge:cecot-litigation-documents-conditions",
+      "node": "facility:cecot",
+      "role": "documented_facility"
+    },
+    {
+      "edge": "event:abrego-garcia-removal",
+      "node": "person:kilmar-armando-abrego-garcia",
+      "role": "deported_person"
+    },
+    {
+      "edge": "event:abrego-garcia-removal",
+      "node": "org:ice",
+      "role": "removing_agency"
+    },
+    {
+      "edge": "event:abrego-garcia-removal",
+      "node": "country:el-salvador",
+      "role": "destination"
+    },
+    {
+      "edge": "event:abrego-garcia-removal",
+      "node": "case:abrego-garcia",
+      "role": "adjudicating_case"
+    },
+    {
+      "edge": "event:abrego-garcia-removal",
+      "node": "law:8usc1231b3",
+      "role": "violated_protection"
+    },
+    {
+      "edge": "edge:third-country-circumvents-protections",
+      "node": "event:salvadoran-pipeline",
+      "role": "source"
+    },
+    {
+      "edge": "edge:third-country-circumvents-protections",
+      "node": "law:8usc1231b3",
+      "role": "target"
+    },
+    {
+      "edge": "edge:third-country-circumvents-protections",
+      "node": "law:cat-8cfr1208-16c",
+      "role": "target"
+    },
+    {
+      "edge": "edge:third-country-volume",
+      "node": "org:ice",
+      "role": "removing_agency"
+    },
+    {
+      "edge": "edge:third-country-volume",
+      "node": "country:el-salvador",
+      "role": "destination"
+    },
+    {
+      "edge": "edge:third-country-volume",
+      "node": "country:uzbekistan",
+      "role": "destination"
+    },
+    {
+      "edge": "edge:scotus-permits-removals",
+      "node": "org:scotus",
+      "role": "source"
+    },
+    {
+      "edge": "edge:scotus-permits-removals",
+      "node": "edge:third-country-volume",
+      "role": "target"
+    },
+    {
+      "edge": "edge:metric/adp-2026-mid",
+      "node": "system:ice-detention-network",
+      "role": "measured_system"
+    },
+    {
+      "edge": "edge:metric/bookins-cumulative",
+      "node": "system:ice-detention-network",
+      "role": "measured_system"
+    },
+    {
+      "edge": "edge:metric/noncriminal-share",
+      "node": "system:ice-detention-network",
+      "role": "measured_system"
+    },
+    {
+      "edge": "edge:metric/sixty-day-release-collapse",
+      "node": "system:ice-detention-network",
+      "role": "measured_system"
+    },
+    {
+      "edge": "edge:metric/interior-arrests-multiplier",
+      "node": "system:ice-detention-network",
+      "role": "measured_system"
+    },
+    {
+      "edge": "edge:metric/mortality-2025",
+      "node": "system:ice-detention-network",
+      "role": "measured_system"
+    },
+    {
+      "edge": "edge:metric/demographic-targeting",
+      "node": "system:ice-detention-network",
+      "role": "measured_system"
+    },
+    {
+      "edge": "edge:tracks/ice-death-reporting",
+      "node": "source:ice-death-reporting",
+      "role": "source"
+    },
+    {
+      "edge": "edge:tracks/ice-death-reporting",
+      "node": "registry:ice-death-ledger",
+      "role": "target"
+    },
+    {
+      "edge": "edge:tracks/trac",
+      "node": "source:trac",
+      "role": "source"
+    },
+    {
+      "edge": "edge:tracks/trac",
+      "node": "system:ice-detention-network",
+      "role": "target"
+    },
+    {
+      "edge": "edge:tracks/deportation-data-project",
+      "node": "source:deportation-data-project",
+      "role": "source"
+    },
+    {
+      "edge": "edge:tracks/deportation-data-project",
+      "node": "system:ice-detention-network",
+      "role": "target"
+    },
+    {
+      "edge": "edge:tracks/courtlistener-recap",
+      "node": "source:courtlistener-recap",
+      "role": "source"
+    },
+    {
+      "edge": "edge:tracks/courtlistener-recap",
+      "node": "law:28usc2241",
+      "role": "target"
+    },
+    {
+      "edge": "edge:tracks/freedom-for-immigrants",
+      "node": "source:freedom-for-immigrants",
+      "role": "source"
+    },
+    {
+      "edge": "edge:tracks/freedom-for-immigrants",
+      "node": "system:ice-detention-network",
+      "role": "target"
+    },
+    {
+      "edge": "edge:tracks/third-country-deportation-watch",
+      "node": "source:third-country-deportation-watch",
+      "role": "source"
+    },
+    {
+      "edge": "edge:tracks/third-country-deportation-watch",
+      "node": "facility:cecot",
+      "role": "target"
+    },
+    {
+      "edge": "edge:tracks/odls",
+      "node": "source:odls",
+      "role": "source"
+    },
+    {
+      "edge": "edge:tracks/odls",
+      "node": "cohort:final-order-concealed",
+      "role": "target"
+    }
+  ]
+}

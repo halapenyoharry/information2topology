@@ -212,6 +212,14 @@ This adapter is shape-specific to `data/private/network.json` and would need to 
 
 **Why**: a single hypergraph file is the canonical superposition of distinct topological layers, one per relation type. Each per-layer file is itself a valid hypergraph; merging any subset of them by node-ID losslessly reconstructs the layered topology of those predicates. See [`memory/multilayer_architecture.md`](../../../.claude/projects/-Users-harold-Projects-information2topology/memory/multilayer_architecture.md) for the principle behind this.
 
+### `merge_hypergraphs.py`
+
+**Reads** two or more TopoThink hypergraphs, in priority order.
+
+**Writes** one merged TopoThink hypergraph — the merge-by-ID federation the spec promises (S2): nodes and edges unify on shared ids, attrs union, incidences dedupe on `(edge, node, role, id)`. Conflicting attribute values are never silently resolved: the first value wins and losers are recorded under `attrs["i2t:conflicts"]` as `{key, value, from}`. Output metadata preserves every input's own metadata block under `i2t:merged_inputs`. The merged file is canonical (no `i2t:relation_to_canonical` key).
+
+**Why**: per-source layer files + merge is the update architecture — refreshing one source regenerates one layer, and the merge reconstitutes the whole without losing anything. First consumer: `data/examples/dead-detained-deported/`.
+
 ### `extract_neighborhood.py`
 
 **Reads** a TopoThink hypergraph plus an anchor specification (predicate, ID-prefix, or explicit ID list).

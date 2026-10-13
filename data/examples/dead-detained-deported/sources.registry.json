@@ -1,0 +1,108 @@
+{
+  "_meta": {
+    "purpose": "Operational manifest for keeping the dead-detained-deported hypergraph current. Each entry's id matches a source node in the hypergraph itself, so the update system and the topology describe the same objects.",
+    "updated": "2026-10-04",
+    "pipeline": "update_pipeline.py — `status` shows staleness, `fetch <id> --network` refreshes one source layer (network access only on explicit request), `rebuild` merges all layers into the canonical file.",
+    "principles": [
+      "Snapshots are append-only: raw fetched bytes are saved dated under snapshots/ before any parsing, so extraction is always re-runnable and no information is ever lost to a parser bug.",
+      "One source = one layer file under layers/. A refresh regenerates only that layer; merge-by-node-ID federates the layers into the canonical file.",
+      "Deterministic IDs (ddd_lib slugs) make re-extraction converge on the same nodes, so merges dedupe instead of duplicating.",
+      "Nothing is deleted on update. If a source drops a record, the record stays in its last layer with its extraction timestamp; corrections surface as i2t:conflicts entries, never as silent overwrites."
+    ]
+  },
+  "sources": [
+    {
+      "id": "source:ice-death-reporting",
+      "url": "https://www.ice.gov/detain/detainee-death-reporting",
+      "access": "html-scrape",
+      "cadence_days": 7,
+      "latency": "Statutory 90-day reporting window; interim notices within 2 business days of a death.",
+      "coverage_gap": "Excludes deaths after release/parole and deaths during street-level enforcement operations.",
+      "fetcher": "ice_death_reporting",
+      "layer": "layers/ddd.source-ice-death-reporting.hypergraph.topothink.json",
+      "last_checked": null
+    },
+    {
+      "id": "source:trac",
+      "url": "https://tracreports.org/immigration/",
+      "access": "web-portal; bulk feeds via academic agreement",
+      "cadence_days": 30,
+      "latency": "30-60 day reporting lag; depends on FOIA enforcement lawsuits.",
+      "coverage_gap": "PII redacted (names, A-Numbers); aggregate and record-level only.",
+      "fetcher": null,
+      "layer": "layers/ddd.source-trac.hypergraph.topothink.json",
+      "last_checked": null,
+      "notes": "Detention-statistics tables update monthly. A fetcher would target the ADP and facility tables and emit metric edges on system:ice-detention-network."
+    },
+    {
+      "id": "source:deportation-data-project",
+      "url": "https://deportationdata.org",
+      "access": "bulk CSV/Parquet downloads",
+      "cadence_days": 90,
+      "latency": "Batch releases following federal court orders; quarterly to semi-annual.",
+      "coverage_gap": "Anonymized internal identifiers only; no names.",
+      "fetcher": null,
+      "layer": "layers/ddd.source-deportation-data-project.hypergraph.topothink.json",
+      "last_checked": null,
+      "notes": "The richest microdata: arrests, book-ins, transfers, flight manifests, linkable across years by anonymized id. A fetcher would emit EnforcementAction-style state-change edges and facility nodes."
+    },
+    {
+      "id": "source:courtlistener-recap",
+      "url": "https://www.courtlistener.com/api/rest/v4/",
+      "access": "REST API + webhooks (free tier available, token recommended)",
+      "cadence_days": 1,
+      "latency": "Real-time docket indexing.",
+      "coverage_gap": "Only detainees who secure representation and file federally.",
+      "fetcher": null,
+      "layer": "layers/ddd.source-courtlistener.hypergraph.topothink.json",
+      "last_checked": null,
+      "notes": "Query ideas: new 2241 habeas petitions naming ICE; dockets citing withholding orders. Unsealed filings carry real names and named facilities — the de-anonymization bridge between DDP microdata and persons."
+    },
+    {
+      "id": "source:freedom-for-immigrants",
+      "url": "https://www.freedomforimmigrants.org/map",
+      "access": "web map + published reports",
+      "cadence_days": 90,
+      "latency": "Crowdsourced, visitation-dependent.",
+      "coverage_gap": "Incomplete administrative coverage.",
+      "fetcher": null,
+      "layer": "layers/ddd.source-freedom-for-immigrants.hypergraph.topothink.json",
+      "last_checked": null,
+      "notes": "Best source for facility geocoordinates — the map layer of the infographic."
+    },
+    {
+      "id": "source:third-country-deportation-watch",
+      "url": "https://www.thirdcountrydeportationwatch.org/el-salvador",
+      "access": "published reports and court declarations",
+      "cadence_days": 30,
+      "latency": "Investigative cadence; no continuous census.",
+      "coverage_gap": "Case-level only.",
+      "fetcher": null,
+      "layer": "layers/ddd.source-tcdw.hypergraph.topothink.json",
+      "last_checked": null
+    },
+    {
+      "id": "source:uscri-tcd-tracker",
+      "url": "https://refugees.org/tcdtracker/",
+      "access": "web tracker",
+      "cadence_days": 30,
+      "latency": "unknown",
+      "coverage_gap": "unknown",
+      "fetcher": null,
+      "layer": "layers/ddd.source-uscri.hypergraph.topothink.json",
+      "last_checked": null
+    },
+    {
+      "id": "source:odls",
+      "url": "https://locator.ice.gov",
+      "access": "manual search only — CAPTCHA-gated, no API; requires exact A-Number+country or name+DOB+country",
+      "cadence_days": null,
+      "latency": "n/a",
+      "coverage_gap": "Post-2026-09-15, deliberately returns empty for ~16,000 final-order detainees.",
+      "fetcher": null,
+      "layer": null,
+      "last_checked": null,
+      "notes": "NOT scrapeable (anti-automation by design). Recorded here because its silences are themselves data: a person findable last month and unfindable now is a signal event the graph can represent."
+    }
+  ]
+}
