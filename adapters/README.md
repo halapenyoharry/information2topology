@@ -241,6 +241,7 @@ This adapter is shape-specific to `data/private/network.json` and would need to 
 **Projection rules**:
 - **Arity-2 edges that are NOT reified** → one plain dyadic link, attrs ride on the link.
 - **Arity-≥-3 edges OR reified edges** → a synthetic node (`kind: "hyperedge"` for pure hyperedges, `kind: "edge-as-node"` for reified) plus one dyadic link per incidence. Link direction follows incidence role.
+- **Reified edges** additionally get the edge's own attrs merged onto the `edge-as-node` row (`i2t:predicate`, `i2t:edge_category`, `i2t:note`, …); keys the node row already carries win. Added 2026-10-17 when the first file with a reified edge showed every renderer drawing it as a category-less entity. Regression test: `test_hypergraph_to_dyadic.py`. Reasoning in the [correspondence decision log](../correspondence/json-visual-viewer.md#decision-log).
 - **Predicate** (from `attrs["i2t:predicate"]` with fallbacks `predicate`, `relation`, `type`, `label`) populates both `link.label` and `link.layer` so consumers can use either independently.
 - **Role** on incidences passes through verbatim.
 

@@ -19,6 +19,10 @@ Projection rules (from J2/J3/J4/J5 in the correspondence thread):
                                                   if not in source nodes,
                                                   "edge-as-node" if reified) plus
                                                   one dyadic link per incidence.
+    - Reified (edge id also a node id)         →  the edge's attrs (i2t:predicate,
+                                                  i2t:edge_category, i2t:note, …) are
+                                                  merged onto the edge-as-node row;
+                                                  keys the node row already has win.
     - Predicate (edge.attrs["i2t:predicate"] or fallbacks) becomes link.label AND
       link.layer (so JVV can use either independently).
     - Incidence role passes through verbatim ("source", "target", "member", or any
@@ -145,11 +149,25 @@ def normalize(doc: dict) -> dict:
             # Dyadic projection of an arity-≥-3 or reified edge.
             # The hyperedge needs to exist as a node so dyadic links can address it.
             if reified:
-                # Already in nodes; upgrade its kind.
+                # Already in nodes; upgrade its kind AND carry the edge's own
+                # attrs onto the row. The node row (schema:name, i2t:reified,
+                # whatever the author wrote) wins on key collision; the edge
+                # row supplies what the node row cannot know, above all
+                # i2t:predicate and i2t:edge_category, so a renderer can see
+                # that this addressable thing is still a relation. Before
+                # 2026-10-17 only the kind was upgraded, and every consumer
+                # drew a reified edge as a category-less entity (see
+                # correspondence/json-visual-viewer.md, decision log).
                 if eid in out_node_by_id:
-                    out_node_by_id[eid]["kind"] = "edge-as-node"
-                    if predicate and "label" not in out_node_by_id[eid]:
-                        out_node_by_id[eid]["label"] = predicate
+                    entry = out_node_by_id[eid]
+                    entry["kind"] = "edge-as-node"
+                    if predicate and "label" not in entry:
+                        entry["label"] = predicate
+                    if edge_attrs:
+                        merged = dict(entry.get("attrs") or {})  # copy: never mutate the input doc
+                        for k, v in edge_attrs.items():
+                            merged.setdefault(k, v)
+                        entry["attrs"] = merged
                 else:
                     entry = {"id": eid, "kind": "edge-as-node"}
                     if predicate:
